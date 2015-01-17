@@ -7,6 +7,7 @@ __convert_json_files_to_csv__
 
 Log into your [uBiome account](http://beta.ubiome.com)
 Select "Raw Taxonomy", like this:
+
 ![Alt text](/images/ScreenShot Raw Taxonomy.jpg)
 
 From inside your browser, Save As.. to a filename ending with '.json'.
