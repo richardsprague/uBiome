@@ -10,6 +10,10 @@ Select "Raw Taxonomy", like this:
 
 ![Alt text](/images/ScreenShot Raw Taxonomy.jpg)
 
+you'll see a screen that looks something like this:
+
+![Alt text](/images/uBiome json screenshot.png)
+
 From inside your browser, Save As.. to a filename ending with '.json'.
 
 From R, set the working directory to the location where you saved the uBiome file.
