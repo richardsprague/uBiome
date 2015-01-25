@@ -1,3 +1,4 @@
+
 may<-read.csv("sprague-uBiomeJun2014.csv")
 may$ubiome_bacteriacounts.tax_name
 may$ubiome_bacteriacounts.tax_rank=="species"
