@@ -3,6 +3,12 @@ useful tools for manipulating uBiome information
 
 Some of the scripts require you to first [install R] (http://www.r-project.org).
 
+__uBiome_compare_samples__
+Given two samples, output all the differences, including the difference in count_norm
+
+__uBiome_sample_unique__
+Given two samples, output which rows are the uniquely found in one but not the other.
+
 __convert_json_files_to_csv__
 
 Log into your [uBiome account](http://beta.ubiome.com)
