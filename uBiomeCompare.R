@@ -38,33 +38,17 @@ uBiome_compare_samples <- function(sample1,sample2,rank="species"){
         change_s1_s2
 }
 
-
-maySpecies <-may[may$tax_rank=="species",]
-octSpecies <-oct[oct$tax_rank=="species",]
-
-#sort
-msA<-maySpecies[order(maySpecies$tax_name),] #May species table alphabetized 
-osA<-octSpecies[order(octSpecies$tax_name),] #Oct species table alphabetized 
-
-
-# maySpecies %in% octSpecies
-mayOctMatch<-match(maySpecies$tax_name,octSpecies$tax_name)
-
-ms<-which(maySpecies$tax_name %in% octSpecies$tax_name)
-inMayNotOct<-! (maySpecies$tax_name %in% octSpecies$tax_name)
-ms_not <- which(inMayNotOct )
-extinct <-maySpecies[ms_not,]
-
-os<-which(octSpecies$tax_name %in% maySpecies$tax_name)
-maySpeciesstillInOct <-maySpecies$tax_name[ms] # names of all May species still found in Oct sample
-mayt<-maySpecies[ms,] # full table of all May species still found in Oct
-octt<-octSpecies[os,]
-#important: note that rownnames(octt) maintains references to the original row names from oct
-sapply(rownames(mayt),as.integer) #to convert to a vector, instead of char
-
-maytA<-mayt[order(mayt$tax_name),] #alphabetized version of mayt
-octtA<-octt[order(octt$tax_name),] #alphabetized version of octt
-
-species_change_May_Oct <-data.frame(maytA$tax_name,octtA$count_norm - maytA$count_norm)
-
-write.csv(species_change_May_Oct,file="Sprague-uBiome change May-Oct.csv")
+# which tax rank items (e.g. species) are found in sample1 but not sample2?
+uBiome_sample_unique <- function (sample1,sample2,rank="species"){
+        
+        #pull out just the rows made of the tax rank of interest (usually "species")
+        s1Rank <-sample1[sample1$tax_rank==rank,]
+        s2Rank <-sample2[sample2$tax_rank==rank,]
+        
+        inS1NotS2<-! (s1Rank$tax_name %in% s2Rank$tax_name)
+        s1_not <- which(inS1NotS2 )
+        missing <-s1Rank[s1_not,]
+        missing <- missing[order(missing$count_norm,decreasing=TRUE),] #sort the result by count_norm (normalized count)
+        data.frame(missing$count_norm,missing$tax_name)
+        
+}
