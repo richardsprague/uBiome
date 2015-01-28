@@ -51,9 +51,7 @@ osA<-octSpecies[order(octSpecies$tax_name),] #Oct species table alphabetized
 mayOctMatch<-match(maySpecies$tax_name,octSpecies$tax_name)
 
 ms<-which(maySpecies$tax_name %in% octSpecies$tax_name)
-inMayNotOct<-! (maySpecies$tax_name %in% octSpecies$tax_name)
-ms_not <- which(inMayNotOct )
-extinct <-maySpecies[ms_not,]
+
 
 os<-which(octSpecies$tax_name %in% maySpecies$tax_name)
 maySpeciesstillInOct <-maySpecies$tax_name[ms] # names of all May species still found in Oct sample
