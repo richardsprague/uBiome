@@ -46,4 +46,5 @@ Given two samples, output all the differences, including the difference in count
 [__uBiome_sample_unique__](findUnique.md)
 Given two samples, output which rows are the uniquely found in one but not the other.
 
-[__convert_json_files_to_csv__](convertJsonToCSV.md)
+[__convert_json_files_to_csv__](convertJsonToCSV.md) Convert all JSON files in a
+directory to CSV files, suitable for reading in Excel or use with the other functions here.
