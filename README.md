@@ -1,10 +1,12 @@
 
 ---
 # Getting Started#
-uBiome provides access to the raw data files from your sample.
-The tools here will make it easier to understand the raw data.
+uBiome provides access to the raw data from your sample.
+The tools here will make it easier to understand the information
+in those data files.
 
 Before you begin, you must have two things:
+
 1. raw data from uBiome, in the form of JSON files.
 2. an installed copy of the (free) open source programming language R.
 
