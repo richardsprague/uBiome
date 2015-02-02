@@ -2,6 +2,11 @@
 
 Be sure your working directory is set to the location of your data.
 
+To use this tool, type this in R:
+```
+> source('uBiomeCompare.R')
+
+```
 If your samples are kept in the following CSV files:
 ```
 may<-read.csv("sprague-uBiomeMay2014.csv")

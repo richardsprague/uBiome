@@ -1,5 +1,10 @@
 #Compare uBiome Samples#
 
+To use this tool, type this in R:
+```
+> source('uBiomeCompare.R')
+
+```
 If you have two uBiome CSV files, (for example, named ```may``` and ```jun```)
 try this:
 
@@ -23,4 +28,3 @@ Instead of "phylum", you could also any uBiome ```tax_rank``, including
  [7] "species"       "species_group" "subclass"      "suborder"      "subphylum"     "superkingdom"
  [13] "superphylum"
  ```
- 
