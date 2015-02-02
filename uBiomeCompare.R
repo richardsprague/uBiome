@@ -1,4 +1,10 @@
-setwd("~sprague/OneDrive/Projects/Programming/uBiome/Data")
+# uBiome tools
+# by Richard Sprague 
+# GPL Public License
+
+# first, set your working directory to the place you put the data:
+setwd(".") # you may want to change this line to a different directory.
+
 may<-read.csv("sprague-uBiomeMay2014.csv")
 jun<-read.csv("sprague-uBiomeJun2014.csv")
 
