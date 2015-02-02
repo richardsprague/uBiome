@@ -1,6 +1,17 @@
 
 ---
 # Getting Started#
+uBiome provides access to the raw data files from your sample.
+The tools here will make it easier to understand the raw data.
+
+Before you begin, you must have two things:
+1. raw data from uBiome, in the form of JSON files.
+2. an installed copy of the (free) open source programming language R.
+
+# Get the Data from uBiome #
+
+
+
 Log into your [uBiome account](http://beta.ubiome.com)
 Select "Raw Taxonomy", like this:
 

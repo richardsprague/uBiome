@@ -4,8 +4,8 @@ Be sure your working directory is set to the location of your data.
 
 If your samples are kept in the following CSV files:
 ```
-may
-jun
+may<-read.csv("sprague-uBiomeMay2014.csv")
+jun<-read.csv("sprague-uBiomeJun2014.csv")
 ```
 Then run the following function in R:
 ```
@@ -22,4 +22,4 @@ and R will return a list of ways in which the two samples are unique.
 5               4452 Bacteroidales bacterium ph8
 6               3977       Bilophila wadsworthia
 >
- ``` 
+ ```
