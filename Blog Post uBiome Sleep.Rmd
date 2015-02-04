@@ -22,7 +22,8 @@ You may already know about *pre-biotics*, foods that feed bacteria, as opposed t
 Whoah! You wouldn't believe how wonderfully I slept that night. Over 8 hours of rock-solid, uninterrupted sleep, and more vivid dreams than I've had in years. It was amazing!
 
 After a few days of this, I submitted another sample to uBiome for testing:
-![Alt text](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/ScreenShot%20Raw%20Taxonomy.jpg)
+![Alt text](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_bifido_oct2014.jpg
+)
 
 ```{r, echo=FALSE}
 octBifido <- oct[oct$tax_name=="Bifidobacterium",]
