@@ -16,6 +16,8 @@ Before you begin, you will need:
 
 Check out the [Beginners Guide](./docs/BeginnersGuide.md)
 
+Download the [RuBiome source files](./sources) and load into R.
+
 ---
 
 # uBiome Tools
