@@ -1,4 +1,8 @@
-setwd("~sprague/OneDrive/Projects/Programming/uBiome/Data")
+## Example file showing how I use these utilities
+##
+setwd("../Data") # set your working directory to the place where you keep your data.
+
+source("../sources/uBiomeCompare.R")
 may<-read.csv("sprague-uBiomeMay2014.csv")
 jun<-read.csv("sprague-uBiomeJun2014.csv")
 

@@ -3,21 +3,21 @@
 # GPL Public License
 
 # first, set your working directory to the place you put the data:
-setwd(".") # you may want to change this line to a different directory.
-
-may<-read.csv("sprague-uBiomeMay2014.csv")
-jun<-read.csv("sprague-uBiomeJun2014.csv")
+# setwd(".") # you may want to change this line to a different directory.
+# 
+# may<-read.csv("sprague-uBiomeMay2014.csv")
+# jun<-read.csv("sprague-uBiomeJun2014.csv")
 
 #data for June has weird headings, so this section makes the names consistent
-junNames<-names(jun)
-junNamesS<-strsplit(junNames,"\\.")
-names(junNamesS)<-NULL
-junNamesT<-sapply(junNamesS,function(x){x[2]})
-names(jun)<-junNamesT
-
-oct<-read.csv("sprague-uBiomeOct2014.csv")
-names(jun)
-names(oct)
+# junNames<-names(jun)
+# junNamesS<-strsplit(junNames,"\\.")
+# names(junNamesS)<-NULL
+# junNamesT<-sapply(junNamesS,function(x){x[2]})
+# names(jun)<-junNamesT
+# 
+# oct<-read.csv("sprague-uBiomeOct2014.csv")
+# names(jun)
+# names(oct)
 
 
 # returns a dataframe showing how the two samples compare
