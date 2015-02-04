@@ -4,16 +4,19 @@ uBiome provides access to the raw data from your sample.
 The tools here will make it easier to understand the information
 in those data files.
 
-Before you begin, you must:
+Before you begin, you will need:
 
-1. Download your raw data from uBiome, in the form of JSON files (see below)
-2. [Install R](http://www.r-project.org), the (free) open source
- scientific programming language
+1. An account with http://ubiome.com
+2. Access to [R](http://www.r-project.org), the (free) open source
+ scientific programming language, available for Mac/Windows/Unix.
+
 ---
+
 # Next #
 
 Check out the [Beginners Guide](./docs/BeginnersGuide.md)
-`
+
+---
 
 # uBiome Tools
 useful tools for manipulating uBiome information
