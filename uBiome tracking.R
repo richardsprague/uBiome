@@ -65,4 +65,4 @@ octtA<-octt[order(octt$tax_name),] #alphabetized version of octt
 
 species_change_May_Oct <-data.frame(maytA$tax_name,octtA$count_norm - maytA$count_norm)
 
-write.csv(species_change_May_Oct,file="Sprague-uBiome change May-Oct.csv")
+#write.csv(species_change_May_Oct,file="Sprague-uBiome change May-Oct.csv")

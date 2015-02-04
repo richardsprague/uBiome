@@ -1,42 +1,35 @@
 ---
-title: "uBiome helped my sleep"
+title: "Hacking my sleep with uBiome"
 author: "Richard Sprague @sprague"
 date: "February 3, 2015"
 output: html_document
 ---
-Last year I started to notice my sleep becoming less regular. Nothing serious — thankfully, I’ve never had sleep problems — but I was waking up too early, and I didn’t seem to be quite as refreshed. Maybe it’s just a sign of age, I thought, but then I read in Martin Blaser’s excellent book *Missing Microbes* (p.304)  that most (80%) of the sleep- and mood-regulating neurotransmitter serotonin [is made in the gut](http://www.ncbi.nlm.nih.gov/pubmed/22968153). Can microbes affect sleep?
+About a year ago, I started to notice my sleep becoming less regular. Nothing serious — thankfully, I’ve never had sleep problems — but I was waking up too early, and I didn’t seem to be quite as refreshed. Maybe it’s just a sign of age, I thought, until I read in Martin Blaser’s excellent book *Missing Microbes* (p.304)  that most (80%) of the sleep- and mood-regulating neurotransmitter serotonin [is made in the gut](http://www.ncbi.nlm.nih.gov/pubmed/22968153). Could my gut microbes affect my sleep?
 
 A few internet searches later led me to evidence that [*B. infantis* modulates tryptophan](http://www.pnas.org/content/108/7/3047.long), the stuff in turkey that urban legends have long blamed for [that sleepy feeling](http://www.webmd.com/food-recipes/features/the-truth-about-tryptophan) you get after Thanksgiving dinner.   Seemed like a good target to check, and because I’m a long-time uBiome fan —- I supported them on [Indiegogo](https://www.indiegogo.com/projects/ubiome-sequencing-your-microbiome/x/2449702) almost two years ago -- my  first step was to look at my gut biome results to see my levels of *bifidobacterium*.
 
-As I suspected, I had no *B. infantis*, and in fact my overall *bifido* numbers were pretty low. 
+As I suspected, I had no *B. infantis*, and in fact my overall *bifido* numbers were pretty low as you can see from this item on my uBiome results [sample explorer page](https://beta.ubiome.com/#sampleExplorer/):
 
-```{r, echo=FALSE}
-mayBifido<-may[may$tax_name=="Bifidobacterium",]
-mayBifidoFrame<-data.frame(mayBifido$count_norm,mayBifido$tax_name)
-names(mayBifidoFrame)<-c("count_norm","tax_name")
-mayBifidoFrame
-```
+![Alt text](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_bifido_may2014.jpg
+)
 
-You may already know about *pre-biotics*, foods that feed bacteria, as opposed to *pro-biotics*, which are simply pills or foods that already contain a bunch of (presumably) beneficial microbes. Lately a number of people have noticed that a particular kind of starch, so-called [*resistant starch*](http://www.marksdailyapple.com/the-definitive-guide-to-resistant-starch/) is a prebiotic that acts like a yummy smorgasboard for *bifido* and other bacteria. I followed [a protocol](http://www.gestaltreality.com/2014/02/27/resistant-starch-a-concise-guide/) that uses plain ole [Bob's Red Mill Potato Starch](http://www.bobsredmill.com/potato-starch.html) (easy to find any nice grocery store): just a couple of tablespoons an hour before bedtime to give the starch time to make it to the upper colon where the *bifido* live.
+You may already know about *pre-biotics*, foods that feed bacteria, as opposed to *pro-biotics*, which are simply pills or foods that already contain a bunch of (presumably) beneficial microbes. Lately a number of people have noticed that a particular kind of starch, so-called [*resistant starch*](http://www.marksdailyapple.com/the-definitive-guide-to-resistant-starch/) is a prebiotic that acts like a yummy smorgasboard for *bifido* and other bacteria. I followed [a protocol](http://www.gestaltreality.com/2014/02/27/resistant-starch-a-concise-guide/) that uses plain ole [Bob's Red Mill Potato Starch](http://www.bobsredmill.com/potato-starch.html) (easy to find any nice grocery store): just a couple of tablespoons one hour before bedtime to give the starch time to make it to the upper colon where the *bifido* live.
 
 Whoah! You wouldn't believe how wonderfully I slept that night. Over 8 hours of rock-solid, uninterrupted sleep, and more vivid dreams than I've had in years. It was amazing!
 
 After a few days of this, I submitted another sample to uBiome for testing:
-![Alt text](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_bifido_oct2014.jpg
-)
+![Alt text](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_bifido_oct2014.jpg)
 
-```{r, echo=FALSE}
-octBifido <- oct[oct$tax_name=="Bifidobacterium",]
-octBifidoFrame<-data.frame(octBifido$count_norm,octBifido$tax_name)
-names(octBifidoFrame)<-c("count_norm","tax_name")
-octBifidoFrame
-```
-Look at that! Up from 8,473 to almost 60,000 -- for my gut microbes, that is what you call a *bloom*!
+Holy [bloom](https://en.wikipedia.org/wiki/Algal_bloom), Batman! That's just plain stratospheric: up from 0.847% before the potato starch, to over 5.87% afterwards. That 8x improvement it seems clearly explains my much-improved sleep.
 
-You can also embed plots, for example:
+But nothing's free, right? If the *bifido* are increasing that much, then something else is decreasing. My sleep might be improving, but am I sacrificing some other aspect of my long-term health?
 
-```{r, echo=FALSE}
-plot(cars)
+To find out, I wrote a [couple of utilities](https://github.com/richardsprague/uBiome) to examine my uBiome results in more detail. One of the things I like most about uBiome is that they give users access to the raw data, which [you can convert](http://blog.richardsprague.com/2015/01/how-to-analyze-ubiome-sample-in-excel.html) to work in Excel or another programming environment. If you're interested in more details, you can [read how I did this](http://blog.richardsprague.com/2015/01/using-tools-to-analyze-my-ubiome-results.html) later, but here are some of the major species that went extinct after I took potato starch:
+
+```{r echo=FALSE}
+head(uBiome_sample_unique(may,oct,"species"))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+What do these microbes do? After a few more internet searches, my answer is: nobody knows! We have some guesses, but so far scientists just haven't had enough samples from real people to understand much. That's another reason I hope you'll submit your samples to uBiome, to increase the number of data points that scientists can work with in hopes of understanding this better.
+
+Meanwhile, my sleep continues to be much better than before I began this experiment, so I've stopped taking potato starch and have been substituing a few other foods that seem to affect the microbiome. I've already submitted my before-after samples to uBiome and will let you know what I find in a future post.
