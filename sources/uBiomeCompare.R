@@ -39,6 +39,7 @@ uBiome_compare_samples <- function(sample1,sample2,rank="species"){
         s1_tA<-s1_table[order(s1_table$tax_name),] #alphabetized version of s1_table
         s2_tA<-s2_table[order(s2_table$tax_name),] #alphabetized version of s2_table
         
+        # Return a new data frame with proper column headings
         change_s1_s2 <-data.frame(s1_tA$tax_name,s2_tA$count_norm - s1_tA$count_norm)#, row.names=c("tax_name","count_change"))
         names(change_s1_s2)=c("tax_name","count_change")
         change_s1_s2

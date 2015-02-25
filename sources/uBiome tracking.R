@@ -5,7 +5,7 @@ setwd("../Data") # set your working directory to the place where you keep your d
 source("../sources/uBiomeCompare.R")
 may<-read.csv("sprague-uBiomeMay2014.csv")
 jun<-read.csv("sprague-uBiomeJun2014.csv")
-
+elijah<-read.csv("elijah.csv")
 #data for June has weird headings, so this section makes the names consistent
 junNames<-names(jun)
 junNamesS<-strsplit(junNames,"\\.")
@@ -70,3 +70,5 @@ octtA<-octt[order(octt$tax_name),] #alphabetized version of octt
 species_change_May_Oct <-data.frame(maytA$tax_name,octtA$count_norm - maytA$count_norm)
 
 #write.csv(species_change_May_Oct,file="Sprague-uBiome change May-Oct.csv")
+
+user1<-read.csv("user1-uBiomeOct.csv")
