@@ -12,6 +12,6 @@ convert_json_files_to_csv <- function( directory=getwd()){
     fname <-strsplit(i,split=".json")
     csvName <- paste0(fname[[1]],".csv")
     cat("converting...",i," to ",csvName,"\n")
-   # write.csv(asFrame,file=csvName)
+    write.csv(asFrame,file=csvName)
   }
 }

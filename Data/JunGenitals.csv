@@ -1,0 +1,167 @@
+"","taxon","parent","count","count_norm","avg","tax_name","tax_rank","tax_color"
+"ubiome_bacteriacounts.1","2","131567","22732","1000000",NA,"Bacteria","superkingdom",NA
+"ubiome_bacteriacounts.2","201174","2","21199","932562",NA,"Actinobacteria","phylum","73C7D7"
+"ubiome_bacteriacounts.3","1760","201174","21199","932562",NA,"Actinobacteria","class",NA
+"ubiome_bacteriacounts.4","85003","1760","21193","932298",NA,"Actinobacteridae","subclass",NA
+"ubiome_bacteriacounts.5","2037","85003","21193","932298",NA,"Actinomycetales","order",NA
+"ubiome_bacteriacounts.6","85007","2037","20730","911930",NA,"Corynebacterineae","suborder",NA
+"ubiome_bacteriacounts.7","1653","85007","20725","911710",NA,"Corynebacteriaceae","family",NA
+"ubiome_bacteriacounts.8","1716","1653","20708","910963",NA,"Corynebacterium","genus",NA
+"ubiome_bacteriacounts.9","1239","2","1193","52481",NA,"Firmicutes","phylum","5E6591"
+"ubiome_bacteriacounts.10","441501","1716","1172","51557",NA,"Corynebacterium massiliense","species",NA
+"ubiome_bacteriacounts.11","91061","1239","800","35193",NA,"Bacilli","class",NA
+"ubiome_bacteriacounts.12","1385","91061","747","32861",NA,"Bacillales","order",NA
+"ubiome_bacteriacounts.13","1281","1279","740","32553",NA,"Staphylococcus carnosus","species",NA
+"ubiome_bacteriacounts.14","90964","1385","740","32553",NA,"Staphylococcaceae","family",NA
+"ubiome_bacteriacounts.15","1279","90964","740","32553",NA,"Staphylococcus","genus",NA
+"ubiome_bacteriacounts.16","702953","1716","513","22567",NA,"Corynebacterium sp. NML00-0156","species",NA
+"ubiome_bacteriacounts.17","186801","1239","393","17288",NA,"Clostridia","class",NA
+"ubiome_bacteriacounts.18","186802","186801","393","17288",NA,"Clostridiales","order",NA
+"ubiome_bacteriacounts.19","43765","1716","346","15221",NA,"Corynebacterium amycolatum","species",NA
+"ubiome_bacteriacounts.20","538999","186802","322","14165",NA,"Clostridiales incertae sedis","no_rank",NA
+"ubiome_bacteriacounts.21","543310","538999","317","13945",NA,"Clostridiales Family XI. Incertae Sedis","family",NA
+"ubiome_bacteriacounts.22","85006","2037","247","10866",NA,"Micrococcineae","suborder",NA
+"ubiome_bacteriacounts.23","165779","543310","227","9986",NA,"Anaerococcus","genus",NA
+"ubiome_bacteriacounts.24","57171","1716","221","9722",NA,"Corynebacterium mucifaciens","species",NA
+"ubiome_bacteriacounts.25","2049","85005","216","9502",NA,"Actinomycetaceae","family",NA
+"ubiome_bacteriacounts.26","85005","2037","216","9502",NA,"Actinomycineae","suborder",NA
+"ubiome_bacteriacounts.27","1654","2049","207","9106",NA,"Actinomyces","genus",NA
+"ubiome_bacteriacounts.28","33007","1654","202","8886",NA,"Actinomyces neuii","species",NA
+"ubiome_bacteriacounts.29","36739","85020","190","8358",NA,"Dermabacter","genus",NA
+"ubiome_bacteriacounts.30","85020","85006","190","8358",NA,"Dermabacteraceae","family",NA
+"ubiome_bacteriacounts.31","36740","36739","188","8270",NA,"Dermabacter hominis","species",NA
+"ubiome_bacteriacounts.32","976","68336","158","6951",NA,"Bacteroidetes","phylum","e65848"
+"ubiome_bacteriacounts.33","68336","2","158","6951",NA,"Bacteroidetes/Chlorobi group","superphylum",NA
+"ubiome_bacteriacounts.34","1224","2","148","6511",NA,"Proteobacteria","phylum","2ab69d"
+"ubiome_bacteriacounts.35","161879","1716","145","6379",NA,"Corynebacterium kroppenstedtii","species",NA
+"ubiome_bacteriacounts.36","54007","165779","115","5059",NA,"Anaerococcus octavius","species",NA
+"ubiome_bacteriacounts.37","117743","976","112","4927",NA,"Flavobacteriia","class",NA
+"ubiome_bacteriacounts.38","200644","117743","112","4927",NA,"Flavobacteriales","order",NA
+"ubiome_bacteriacounts.39","49546","200644","112","4927",NA,"Flavobacteriaceae","family",NA
+"ubiome_bacteriacounts.40","395087","237","109","4795",NA,"Flavobacterium ceti","species",NA
+"ubiome_bacteriacounts.41","237","49546","109","4795",NA,"Flavobacterium","genus",NA
+"ubiome_bacteriacounts.42","1236","1224","79","3475",NA,"Gammaproteobacteria","class",NA
+"ubiome_bacteriacounts.43","72274","1236","68","2991",NA,"Pseudomonadales","order",NA
+"ubiome_bacteriacounts.44","135621","72274","68","2991",NA,"Pseudomonadaceae","family",NA
+"ubiome_bacteriacounts.45","286","135621","68","2991",NA,"Pseudomonas","genus",NA
+"ubiome_bacteriacounts.46","1048429","286","68","2991",NA,"Pseudomonas sp. CB113","species",NA
+"ubiome_bacteriacounts.47","938291","165779","65","2859",NA,"Anaerococcus sp. 8405254","species",NA
+"ubiome_bacteriacounts.48","150022","543310","64","2815",NA,"Finegoldia","genus",NA
+"ubiome_bacteriacounts.49","1260","150022","61","2683",NA,"Finegoldia magna","species",NA
+"ubiome_bacteriacounts.50","28211","1224","59","2595",NA,"Alphaproteobacteria","class",NA
+"ubiome_bacteriacounts.51","186826","91061","53","2332",NA,"Lactobacillales","order",NA
+"ubiome_bacteriacounts.52","930451","41275","52","2288",NA,"Brevundimonas sp. CmLB14","species",NA
+"ubiome_bacteriacounts.53","41275","76892","52","2288",NA,"Brevundimonas","genus",NA
+"ubiome_bacteriacounts.54","76892","204458","52","2288",NA,"Caulobacteraceae","family",NA
+"ubiome_bacteriacounts.55","204458","28211","52","2288",NA,"Caulobacterales","order",NA
+"ubiome_bacteriacounts.56","186827","186826","45","1980",NA,"Aerococcaceae","family",NA
+"ubiome_bacteriacounts.57","66831","186827","42","1848",NA,"Facklamia","genus",NA
+"ubiome_bacteriacounts.58","85019","85006","38","1672",NA,"Brevibacteriaceae","family",NA
+"ubiome_bacteriacounts.59","1696","85019","38","1672",NA,"Brevibacterium","genus",NA
+"ubiome_bacteriacounts.60","938293","165779","35","1540",NA,"Anaerococcus sp. 9402080","species",NA
+"ubiome_bacteriacounts.61","200643","976","33","1452",NA,"Bacteroidia","class",NA
+"ubiome_bacteriacounts.62","171549","200643","33","1452",NA,"Bacteroidales","order",NA
+"ubiome_bacteriacounts.63","162289","543310","26","1144",NA,"Peptoniphilus","genus",NA
+"ubiome_bacteriacounts.64","1297","2","25","1100",NA,"Deinococcus-Thermus","phylum",NA
+"ubiome_bacteriacounts.65","33030","162289","24","1056",NA,"Peptoniphilus indolicus","species",NA
+"ubiome_bacteriacounts.66","35757","1716","22","968",NA,"Corynebacterium cystitidis","species",NA
+"ubiome_bacteriacounts.67","186803","186802","19","836",NA,"Lachnospiraceae","family",NA
+"ubiome_bacteriacounts.68","386414","838","19","836",NA,"Prevotella timonensis","species",NA
+"ubiome_bacteriacounts.69","838","171552","19","836",NA,"Prevotella","genus",NA
+"ubiome_bacteriacounts.70","171552","171549","19","836",NA,"Prevotellaceae","family",NA
+"ubiome_bacteriacounts.71","541000","186802","18","792",NA,"Ruminococcaceae","family",NA
+"ubiome_bacteriacounts.72","98671","1663","16","704",NA,"Arthrobacter albus","species",NA
+"ubiome_bacteriacounts.73","186804","186802","16","704",NA,"Peptostreptococcaceae","family",NA
+"ubiome_bacteriacounts.74","1268","85006","16","704",NA,"Micrococcaceae","family",NA
+"ubiome_bacteriacounts.75","1663","1268","16","704",NA,"Arthrobacter","genus",NA
+"ubiome_bacteriacounts.76","270","188786","15","660",NA,"Thermus","genus",NA
+"ubiome_bacteriacounts.77","188786","68933","15","660",NA,"Thermaceae","family",NA
+"ubiome_bacteriacounts.78","68933","188787","15","660",NA,"Thermales","order",NA
+"ubiome_bacteriacounts.79","188787","1297","15","660",NA,"Deinococci","class",NA
+"ubiome_bacteriacounts.80","117747","976","13","572",NA,"Sphingobacteriia","class",NA
+"ubiome_bacteriacounts.81","84566","200666","13","572",NA,"Sphingobacteriaceae","family",NA
+"ubiome_bacteriacounts.82","200666","117747","13","572",NA,"Sphingobacteriales","order",NA
+"ubiome_bacteriacounts.83","62629","1716","12","528",NA,"Corynebacterium thomssenii","species",NA
+"ubiome_bacteriacounts.84","411577","165779","12","528",NA,"Anaerococcus murdochii","species",NA
+"ubiome_bacteriacounts.85","1161127","186804","11","484",NA,"Murdochiella","genus",NA
+"ubiome_bacteriacounts.86","80840","28216","10","440",NA,"Burkholderiales","order",NA
+"ubiome_bacteriacounts.87","1485","31979","10","440",NA,"Clostridium","genus",NA
+"ubiome_bacteriacounts.88","167876","167875","10","440",NA,"bacterium S119","species",NA
+"ubiome_bacteriacounts.89","28216","1224","10","440",NA,"Betaproteobacteria","class",NA
+"ubiome_bacteriacounts.90","38304","1716","10","440",NA,"Corynebacterium tuberculostearicum","species",NA
+"ubiome_bacteriacounts.91","506","80840","10","440",NA,"Alcaligenaceae","family",NA
+"ubiome_bacteriacounts.92","222","506","10","440",NA,"Achromobacter","genus",NA
+"ubiome_bacteriacounts.93","167875","1297","10","440",NA,"unclassified Thermus/Deinococcus group","no_rank",NA
+"ubiome_bacteriacounts.94","31979","186802","10","440",NA,"Clostridiaceae","family",NA
+"ubiome_bacteriacounts.95","815","171549","10","440",NA,"Bacteroidaceae","family",NA
+"ubiome_bacteriacounts.96","816","815","10","440",NA,"Bacteroides","genus",NA
+"ubiome_bacteriacounts.97","37636","270","10","440",NA,"Thermus scotoductus","species",NA
+"ubiome_bacteriacounts.98","72556","222","10","440",NA,"Achromobacter piechaudii","species",NA
+"ubiome_bacteriacounts.99","49928","2323","9","396",NA,"unclassified Bacteria (miscellaneous)","no_rank",NA
+"ubiome_bacteriacounts.100","841","186803","9","396",NA,"Roseburia","genus",NA
+"ubiome_bacteriacounts.101","583272","841","9","396",NA,"Roseburia sp. 11SE38","species",NA
+"ubiome_bacteriacounts.102","2323","2","9","396",NA,"unclassified Bacteria","no_rank",NA
+"ubiome_bacteriacounts.103","50559","186802","8","352",NA,"environmental samples","no_rank",NA
+"ubiome_bacteriacounts.104","1301","1300","8","352",NA,"Streptococcus","genus",NA
+"ubiome_bacteriacounts.105","189710","50559","8","352",NA,"Clostridiales bacterium oral clone MCE3_9","species",NA
+"ubiome_bacteriacounts.106","1300","186826","8","352",NA,"Streptococcaceae","family",NA
+"ubiome_bacteriacounts.107","84567","84566","8","352",NA,"Pedobacter","genus",NA
+"ubiome_bacteriacounts.108","76833","2049","7","308",NA,"Actinobaculum","genus",NA
+"ubiome_bacteriacounts.109","59505","76833","7","308",NA,"Actinobaculum schaalii","species",NA
+"ubiome_bacteriacounts.110","33811","118884","6","264",NA,"unclassified Gammaproteobacteria (miscellaneous)","no_rank",NA
+"ubiome_bacteriacounts.111","118884","1236","6","264",NA,"unclassified Gammaproteobacteria","no_rank",NA
+"ubiome_bacteriacounts.112","1140134","33811","6","264",NA,"gamma proteobacterium B3","species",NA
+"ubiome_bacteriacounts.113","853","216851","6","264",NA,"Faecalibacterium prausnitzii","species",NA
+"ubiome_bacteriacounts.114","1146296","49928","6","264",NA,"bacterium NLAE-zl-P430","species",NA
+"ubiome_bacteriacounts.115","216851","541000","6","264",NA,"Faecalibacterium","genus",NA
+"ubiome_bacteriacounts.116","224372","135619","5","220",NA,"Alcanivoracaceae","family",NA
+"ubiome_bacteriacounts.117","1561","1485","5","220",NA,"Clostridium baratii","species",NA
+"ubiome_bacteriacounts.118","1411023","200630","5","220",NA,"unclassified Peptostreptococcaceae (miscellaneous)","no_rank",NA
+"ubiome_bacteriacounts.119","28453","84566","5","220",NA,"Sphingobacterium","genus",NA
+"ubiome_bacteriacounts.120","543314","538999","5","220",NA,"Clostridiales Family XIII. Incertae Sedis","family",NA
+"ubiome_bacteriacounts.121","31989","204455","5","220",NA,"Rhodobacteraceae","family",NA
+"ubiome_bacteriacounts.122","93682","31989","5","220",NA,"Roseivivax","genus",NA
+"ubiome_bacteriacounts.123","633194","93682","5","220",NA,"Roseivivax lentus","species",NA
+"ubiome_bacteriacounts.124","747603","1411023","5","220",NA,"Peptostreptococcaceae bacterium TM5","species",NA
+"ubiome_bacteriacounts.125","258","28453","5","220",NA,"Sphingobacterium spiritivorum","species",NA
+"ubiome_bacteriacounts.126","204455","28211","5","220",NA,"Rhodobacterales","order",NA
+"ubiome_bacteriacounts.127","293265","270","5","220",NA,"Thermus sp. RH-0401","species",NA
+"ubiome_bacteriacounts.128","135619","1236","5","220",NA,"Oceanospirillales","order",NA
+"ubiome_bacteriacounts.129","169177","33986","5","220",NA,"Exiguobacterium undae","species",NA
+"ubiome_bacteriacounts.130","33986","539742","5","220",NA,"Exiguobacterium","genus",NA
+"ubiome_bacteriacounts.131","539742","539002","5","220",NA,"Bacillales Family XII. Incertae Sedis","no_rank",NA
+"ubiome_bacteriacounts.132","539002","1385","5","220",NA,"Bacillales incertae sedis","no_rank",NA
+"ubiome_bacteriacounts.133","200630","186804","5","220",NA,"unclassified Peptostreptococcaceae","no_rank",NA
+"ubiome_bacteriacounts.134","572511","186803","5","220",NA,"Blautia","genus",NA
+"ubiome_bacteriacounts.135","59753","224372","5","220",NA,"Alcanivorax","genus",NA
+"ubiome_bacteriacounts.136","131111","1654","5","220",NA,"Actinomyces turicensis","species",NA
+"ubiome_bacteriacounts.137","86331","543314","5","220",NA,"Mogibacterium","genus",NA
+"ubiome_bacteriacounts.138","820","816","4","176",NA,"Bacteroides uniformis","species",NA
+"ubiome_bacteriacounts.139","836","171551","4","176",NA,"Porphyromonas","genus",NA
+"ubiome_bacteriacounts.140","38302","1716","4","176",NA,"Corynebacterium mycetoides","species",NA
+"ubiome_bacteriacounts.141","171551","171549","4","176",NA,"Porphyromonadaceae","family",NA
+"ubiome_bacteriacounts.142","1263","541000","3","132",NA,"Ruminococcus","genus",NA
+"ubiome_bacteriacounts.143","238","308865","3","132",NA,"Elizabethkingia meningoseptica","species",NA
+"ubiome_bacteriacounts.144","308865","49546","3","132",NA,"Elizabethkingia","genus",NA
+"ubiome_bacteriacounts.145","227526","1485","3","132",NA,"Clostridium sp. MDA2315","species",NA
+"ubiome_bacteriacounts.146","40518","1263","3","132",NA,"Ruminococcus bromii","species",NA
+"ubiome_bacteriacounts.147","641484","255204","3","132",NA,"Pseudoclavibacter sp. Timone","species",NA
+"ubiome_bacteriacounts.148","255204","85023","3","132",NA,"Pseudoclavibacter","genus",NA
+"ubiome_bacteriacounts.149","85023","85006","3","132",NA,"Microbacteriaceae","family",NA
+"ubiome_bacteriacounts.150","1240104","49928","3","132",NA,"bacterium CCF-01","species",NA
+"ubiome_bacteriacounts.151","1375","186827","3","132",NA,"Aerococcus","genus",NA
+"ubiome_bacteriacounts.152","430522","84567","3","132",NA,"Pedobacter steynii","species",NA
+"ubiome_bacteriacounts.153","87541","1375","3","132",NA,"Aerococcus christensenii","species",NA
+"ubiome_bacteriacounts.154","1111133","162289","2","88",NA,"Peptoniphilus sp. BV3AC2","species",NA
+"ubiome_bacteriacounts.155","186823","1385","2","88",NA,"Alicyclobacillaceae","family",NA
+"ubiome_bacteriacounts.156","227290","82115","2","88",NA,"Rhizobium/Agrobacterium group","no_rank",NA
+"ubiome_bacteriacounts.157","29330","186823","2","88",NA,"Alicyclobacillus","genus",NA
+"ubiome_bacteriacounts.158","184870","184869","2","88",NA,"Varibaculum cambriense","species",NA
+"ubiome_bacteriacounts.159","184869","2049","2","88",NA,"Varibaculum","genus",NA
+"ubiome_bacteriacounts.160","358","1183400","2","88",NA,"Agrobacterium tumefaciens","species",NA
+"ubiome_bacteriacounts.161","1183400","357","2","88",NA,"Agrobacterium tumefaciens complex","species_group",NA
+"ubiome_bacteriacounts.162","357","227290","2","88",NA,"Agrobacterium","genus",NA
+"ubiome_bacteriacounts.163","82115","356","2","88",NA,"Rhizobiaceae","family",NA
+"ubiome_bacteriacounts.164","356","28211","2","88",NA,"Rhizobiales","order",NA
+"ubiome_bacteriacounts.165","207244","186803","2","88",NA,"Anaerostipes","genus",NA
+"ubiome_bacteriacounts.166","46867","1485","2","88",NA,"Clostridium chauvoei","species",NA
