@@ -4,7 +4,6 @@ author: "Richard Sprague @sprague"
 date: "February 25, 2015"
 output: html_document
 ---
-
 The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I've been studying [my uBiome mouth test results](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html). The simple [GitHub RuBiome utilities](https://github.com/richardsprague/uBiome) I use for analyzing my gut will work for that too, so here's a short example of how I did it:
 
 ```{r, echo=FALSE}
@@ -56,7 +55,7 @@ Anything in the genus [*Capnocytophaga*](https://en.wikipedia.org/wiki/Capnocyto
 
 [Streptococcus rubneri](http://www.ncbi.nlm.nih.gov/pubmed/23749274) was discovered a couple years ago, so little is known about it.
 
-[Prevotella buccae](https://microbewiki.kenyon.edu/index.php/Prevotella) is more interesting. It seems to be implicated in periodonal disease (yuk!) but that genus is involved too in breaking down proteins and carbohydrates.
+[Prevotella buccae](https://microbewiki.kenyon.edu/index.php/Prevotella) is more interesting. It seems to be implicated in periodontal disease (yuk!) but that genus is involved too in breaking down proteins and carbohydrates.
 
 Hard to say what's really going on.  Meanwhile, here are the biggest changes (increase) since the first sample:
 ```{r}
