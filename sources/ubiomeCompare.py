@@ -29,5 +29,5 @@ taxRankList(mayy)
 
 bl=taxRankList(b)
 blSet=set(bl)
->>> ml=taxRankList(mayy)
->>> mlSet = set(ml)
+ml=taxRankList(mayy)
+mlSet = set(ml)
