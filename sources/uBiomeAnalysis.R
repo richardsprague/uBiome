@@ -11,3 +11,9 @@ os<-os[order(os$tax_name),]
 head(os$tax_name)
 junMouth[grepl("Streptococcus",junMouth$tax_name),]$tax_name
 
+jun[grepl("prausnitzii",jun$tax_name),]$count_norm
+
+
+lapply(list("may","jun","oct"), function(M) M[grepl(bacteriaStr,M[[tax_name]]),]$count_norm)
+lapply(list("may","jun","oct"), function(M) head(M))
+sapply(c("may","jun","oct"), function(M) head(M))
