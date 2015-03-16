@@ -21,7 +21,7 @@
 
 
 # returns a dataframe showing how the two samples compare
-# 
+# returns the count_norm of sample2 - sample1 (i.e. positive numbers indicate more in sample2)
 uBiome_compare_samples <- function(sample1,sample2,rank="species"){
         
         #pull out just the rows made of the tax rank of interest (usually "species")
