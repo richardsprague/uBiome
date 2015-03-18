@@ -1,0 +1,17 @@
+---
+title: "My uBiome Sleep-Hacking Update"
+author: "Richard Sprague @sprague"
+date: "March 18, 2015"
+output: html_document
+---
+In a post last month about how I use uBiome to [hack my sleep](http://www.ubiomeblog.com/hacking-sleep/), I mentioned the noticable effect potato starch has on *Bifidobacterium*, a common gut bacteria with a well-documented role in the production of many important body hormones, including some that affect sleep.
+
+Although it seemed to greatly help my sleep, I was a bit worried about continuing my experiment because my uBiome results clearly indicated that, perhaps as a side effect of the increased *bifido*, some other microbes appeared to disappear from my gut. My solution? Test myself again, then go off potato starch until I see the results. I said I'd report back, so here's my update.
+
+First let me notice that uBiome test results seem to come much more quickly than in the past. What took several months earlier last year now took only a few weeks. I think this is because uBiome brought some their own shiny new equipment in-house. Because of the faster turnaround, it's much more feasible to do tests like this regularly: test yourself, try something for a few weeks, then test again.
+
+![Overall Summary](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/Screenshot Excel chart phylum jun-jan.jpg)
+
+
+
+
