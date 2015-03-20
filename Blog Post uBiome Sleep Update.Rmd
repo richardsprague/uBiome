@@ -4,13 +4,66 @@ author: "Richard Sprague @sprague"
 date: "March 18, 2015"
 output: html_document
 ---
-In a post last month about how I use uBiome to [hack my sleep](http://www.ubiomeblog.com/hacking-sleep/), I mentioned the noticable effect potato starch has on *Bifidobacterium*, a common gut bacteria with a well-documented role in the production of many important body hormones, including some that affect sleep.
+```{r echo=FALSE}
+<<myfirstchunk cache=FALSE>>
+        
+setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/sources")
+source("/Users/sprague/OneDrive/Projects/Programming/uBiome/sources/uBiome tracking.R")
+# getwd()
+#ls()
+```
+In a post last month about how I use uBiome to [hack my sleep](http://www.ubiomeblog.com/hacking-sleep/), I mentioned the noticable effect potato starch has on [*Bifidobacterium*](https://microbewiki.kenyon.edu/index.php/Bifidobacterium), a common gut bacteria with a well-documented role in the production of many important body hormones, including some that affect sleep.
 
-Although it seemed to greatly help my sleep, I was a bit worried about continuing my experiment because my uBiome results clearly indicated that, perhaps as a side effect of the increased *bifido*, some other microbes appeared to disappear from my gut. My solution? Test myself again, then go off potato starch until I see the results. I said I'd report back, so here's my update.
+Although I seemed to sleep better, I was a bit worried about continuing my experiment because my uBiome results clearly indicated that, perhaps as a side effect of the increased *bifido*, some [other microbes were disappearing](http://drbganimalpharm.blogspot.com/2015/03/peering-into-four-ubiome-stool-analyses.html?m=1). My solution? Test myself again, then go off potato starch until I see the results. I said I'd report back, so here's my update.
 
-First let me notice that uBiome test results seem to come much more quickly than in the past. What took several months earlier last year now took only a few weeks. I think this is because uBiome brought some their own shiny new equipment in-house. Because of the faster turnaround, it's much more feasible to do tests like this regularly: test yourself, try something for a few weeks, then test again.
+By the way, if you (or a friend) have tried uBiome in the past, you'll be pleased that test results now come much more quickly. What took several months earlier last year now took only a few weeks. I think this is because uBiome brought some their own shiny new equipment in-house. Because of the faster turnaround, it's much more feasible to do tests like this regularly: test yourself, try something for a few weeks, then test again.
 
-![Overall Summary](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/Screenshot Excel chart phylum jun-jan.jpg)
+Here's the overall summary of the four tests I've done with uBiome so far:
+![Overall Summary](https://github.com/richardsprague/uBiome/blob/master/images/Screenshot%20Excel%20chart%20phylum%20jun-jan.jpg?raw=true)
+
+Looks reasonably okay. Nobody really knows what a "good" biome is, but given my otherwise overall good health, it's nice to see rough consistency across the samples. The most obvious change for both October and January is that large dark red splotch of *actinobacteria*, of which those sleep-helping *bifidobacterium* are a subset. Nothing unexpected.
+
+But what about overall diversity? Most scientists agree that, just as a wider variety of plants and animals is good for the ecology of a forest in the external world, our internal "bacterial forest" is healthier the more unique organisms we host. 
+
+How many unique types of organisms did uBiome identify in my samples?  Here's a summary:
+
+|Tax Rank      | May          |June            | Oct            | Jan      |
+|-------------|-------------:|---------------:|---------------:|---------:|
+| species        | `r nrow(may[may$tax_rank=="species",])`          |  `r nrow(jun[jun$tax_rank=="species",])` | `r nrow(oct[oct$tax_rank=="species",])` | `r nrow(jan[jan$tax_rank=="species",])` |
+| genus        | `r nrow(may[may$tax_rank=="genus",])`          |  `r nrow(jun[jun$tax_rank=="genus",])` | `r nrow(oct[oct$tax_rank=="genus",])` | `r nrow(jan[jan$tax_rank=="genus",])` |
+| family        | `r nrow(may[may$tax_rank=="family",])`          |  `r nrow(jun[jun$tax_rank=="family",])` | `r nrow(oct[oct$tax_rank=="family",])` | `r nrow(jan[jan$tax_rank=="family",])` |
+
+To understand this table, it's helpful to know a little about how biologists classify lifeforms, because it's not enough to simply look at the species count, the way you might begin if you wanted to measure diversity at the zoo. Instead, scientists divide living things into layered groupings: kingdom, phylum, class, order, family, genus, species. Each layer is a subset of the ones above it.  So for example, the common housecat is the species *Catus*, a member of the genus *Felis* that includes wildcats, which in turn is a member of the family *Felidae* that includes tigers and jaguars. This continues on up through order *Carnivora*, class *Mammilia*, phylum *Chordata* and kingdom *Animalia*. All bacterium are members of the kingdom *Bacteria*, which includes a gazillion other layers of phyla, classes, etc. all the way down to species.
+
+![Biological Classification via Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/93px-Biological_classification_L_Pengo_vflip.svg.png)
+
+The low-cost, revolutionary technology behind uBiome, called [16S rRNA](https://en.wikipedia.org/wiki/16S_ribosomal_RNA), is pretty accurate at the higher classifications of life, but less so when you get down to the genus or species level. In my case, uBiome assigned species names to only half the organisms in my sample, whereas at the family level they identified almost 95%.
+
+So with that in mind, I'm happy to find that, while there was some disappearance at the less-comprehensive family level and below, I lost only one biological order -- and gained six!
+
+Using the [free uBiome tools](https://github.com/richardsprague/uBiome) I host at Github, I found the following new orders of life in January:
+```{r echo=FALSE}
+setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/sources")
+x<-head(uBiome_sample_unique(jan,oct,"order"))
+names(x)<-c("count","tax_name")
+x
+```
+
+and only lost one:
+```{r, echo=FALSE}
+
+x<-head(uBiome_sample_unique(oct,jan,"order"))
+names(x)<-c("count","tax_name")
+x
+```
+That "count", which corresponds roughly with ten-thousandths of a percentage, is pretty insignificant, so I'd say *based on this test* I don't have much to worry about. Other than better sleep, I haven't noticed anything different about my health: my weight, mood, bowel movements, etc. are all just as good as ever. 
+
+**One very important note**: this science is extremely new and you should never use your uBiome results for more than scientific curiosity. My regular physicals show that I'm in perfect health, so to me this is nothing more than a fun experiment, but if you have serious sleep issues -- and especially if you are overweight, or have insulin trouble -- this experiment will do you no good and may even be harmful.  See a doctor!
+
+Finally, shortly after this test I went on vacation to Central America for two weeks of jungle hiking and eating. Immediately after my return to the US, I sent another sample to uBiome to see how my travel affected my gut.  I can't wait to see the results, and I'll update you in a future post.
+
+
+
 
 
 
