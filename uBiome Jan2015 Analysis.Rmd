@@ -9,9 +9,12 @@ As suspected, there *was* a glitch in my latest uBiome results. Apparently a ser
 You can see a number of changes, but what's exciting about this one is that it's the first sample where I was deliberately trying to test something: the effect on my gut of taking potato starch to [hack my sleep](http://www.ubiomeblog.com/hacking-sleep/).
 
 A few details about this sample:
+
 1. Taken on Jan 19th, almost exactly 3 months after my Oct 17th sample.
-2. During the 94 days between samples, I had 31 days of potato starch, a total of about 80 tablespoons.
-3. I had been taking 1 T daily, an hour before bedtime,  for a week before this sample.
+
+2. During the 94 days between samples, I had 31 days of potato starch, a total of about 80 tablespoons, various amounts per day.
+
+3. I had been taking 1 T daily, an hour before bedtime for a week before the test.
 
 To analyze my results, I first popped into my publicly-available [uBiome utilities](https://github.com/richardsprague/uBiome), using the data I had [already downloaded](http://blog.richardsprague.com/2015/01/how-to-analyze-ubiome-sample-in-excel.html) from the site.
 

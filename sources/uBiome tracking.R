@@ -3,9 +3,14 @@
 setwd("../Data") # set your working directory to the place where you keep your data.
 
 source("../sources/uBiomeCompare.R")
+
+# read Richard Sprague data
 may<-read.csv("sprague-uBiomeMay2014.csv")
 jun<-read.csv("sprague-uBiomeJun2014.csv")
-elijah<-read.csv("elijah.csv")
+jan<-read.csv("sprague-ubiomeJan2015x.csv")
+oct<-read.csv("sprague-uBiomeOct2014.csv")
+jan<-read.csv("sprague-ubiomejan2015x.csv")
+
 #data for June has weird headings, so this section makes the names consistent
 junNames<-names(jun)
 junNamesS<-strsplit(junNames,"\\.")
@@ -13,35 +18,36 @@ names(junNamesS)<-NULL
 junNamesT<-sapply(junNamesS,function(x){x[2]})
 names(jun)<-junNamesT
 
-oct<-read.csv("sprague-uBiomeOct2014.csv")
-jan<-read.csv("sprague-ubiomejan2015x.csv")
-names(jun)
-names(oct)
+
+# read other people's data
+
+elijah<-read.csv("elijah.csv")
+
 
 
 # returns a dataframe showing how the two samples compare
 # 
-uBiome_compare_samples <- function(sample1,sample2,rank="species"){
-        
-        #pull out just the rows made of the tax rank of interest (usually "species")
-        s1Rank <-sample1[sample1$tax_rank==rank,]
-        s2Rank <-sample2[sample2$tax_rank==rank,]
-        
-        # which tax_rank (e.g. species) from sample 1 are still found in sample 2?
-        s1_still_found<-which(s1Rank$tax_name %in% s2Rank$tax_name)
-        s2_still_found<-which(s2Rank$tax_name %in% s1Rank$tax_name)
-        
-        s1_table<-s1Rank[s1_still_found,] # full table of all sample 1 species still found in sample 2
-        s2_table<-s2Rank[s2_still_found,]
-        #handy: note that rownames(s2_table) maintains references to the original row names from sample2
-        
-        s1_tA<-s1_table[order(s1_table$tax_name),] #alphabetized version of s1_table
-        s2_tA<-s2_table[order(s2_table$tax_name),] #alphabetized version of s2_table
-        
-        change_s1_s2 <-data.frame(s1_tA$tax_name,s2_tA$count_norm - s1_tA$count_norm)
-        
-        change_s1_s2
-}
+# uBiome_compare_samples <- function(sample1,sample2,rank="species"){
+#         
+#         #pull out just the rows made of the tax rank of interest (usually "species")
+#         s1Rank <-sample1[sample1$tax_rank==rank,]
+#         s2Rank <-sample2[sample2$tax_rank==rank,]
+#         
+#         # which tax_rank (e.g. species) from sample 1 are still found in sample 2?
+#         s1_still_found<-which(s1Rank$tax_name %in% s2Rank$tax_name)
+#         s2_still_found<-which(s2Rank$tax_name %in% s1Rank$tax_name)
+#         
+#         s1_table<-s1Rank[s1_still_found,] # full table of all sample 1 species still found in sample 2
+#         s2_table<-s2Rank[s2_still_found,]
+#         #handy: note that rownames(s2_table) maintains references to the original row names from sample2
+#         
+#         s1_tA<-s1_table[order(s1_table$tax_name),] #alphabetized version of s1_table
+#         s2_tA<-s2_table[order(s2_table$tax_name),] #alphabetized version of s2_table
+#         
+#         change_s1_s2 <-data.frame(s1_tA$tax_name,s2_tA$count_norm - s1_tA$count_norm)
+#         
+#         change_s1_s2
+# }
 
 
 maySpecies <-may[may$tax_rank=="species",]
