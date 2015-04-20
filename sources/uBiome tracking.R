@@ -4,24 +4,6 @@ setwd("../Data") # set your working directory to the place where you keep your d
 
 source("../sources/uBiomeCompare.R")
 
-# read Richard Sprague data
-may<-read.csv("sprague-uBiomeMay2014.csv")
-jun<-read.csv("sprague-uBiomeJun2014.csv")
-jan<-read.csv("sprague-ubiomeJan2015x.csv")
-oct<-read.csv("sprague-uBiomeOct2014.csv")
-jan<-read.csv("sprague-ubiomejan2015x.csv")
-
-#data for June has weird headings, so this section makes the names consistent
-junNames<-names(jun)
-junNamesS<-strsplit(junNames,"\\.")
-names(junNamesS)<-NULL
-junNamesT<-sapply(junNamesS,function(x){x[2]})
-names(jun)<-junNamesT
-
-
-# read other people's data
-
-elijah<-read.csv("elijah.csv")
 
 
 
@@ -78,4 +60,4 @@ species_change_May_Oct <-data.frame(maytA$tax_name,octtA$count_norm - maytA$coun
 
 #write.csv(species_change_May_Oct,file="Sprague-uBiome change May-Oct.csv")
 
-user1<-read.csv("user1-uBiomeOct.csv")
+
