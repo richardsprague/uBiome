@@ -1,0 +1,46 @@
+---
+title: "My microbiome in the jungle"
+output: html_document
+---
+I traveled to central America in February to celebrate my wife's birthday. We spent most of our time in a rural, jungle part of Belize, about a half hour's drive from Benque, near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins, we also did horseback riding, cave exploration, and of course plenty of eating.
+
+
+
+![me at Tikal](https://farm9.staticflickr.com/8594/16063989023_353f14a4dd.jpg)
+
+(Here's a selfie I took in front of the incredibly well-preserved pyramid at Tikal)
+
+How much does travel affect your microbiome? In a famous experiment [published last year](http://genomebiology.com/2014/15/7/R89), Duke University scientist Lawrence David tracked the daily microbiomes of two people for an entire year and [showed significant differences](http://blog.richardsprague.com/2014/07/microbes-over-time.html) when one of the people travelled outside the U.S. 
+
+One of them   has a big effect on the gut microbiome, and I was eager to see what would happen to *me*. I've been testing myself with uBiome for the past year, most recently just a week or two before my trip, so I have a good idea of what my "normal" gut biome looks like when I'm in the US.  I did one more test immediately upon getting home, and I'm happy to report that I now have the results.
+
+#Overall Conclusions
+
+* **Diversity**:  Oddly, my gut biome diversity went *down* slightly. Before the trip, uBiome found 19 unique phyla.  Afterwards, there were only 15.
+* **Increase in unidentified organisms**: uBiome was able to identify only about 91% of what it found at the phyla level. In my previous tests, they found closer to 95+%.  Maybe my apparent drop in diversity was simply a drop in *identifiable* bacteria.
+* **Pathogen plunge**: Counts of my "bad" bacteria, including members of the notorius *Clostridum* genus, which includes many nasty species (e.g. the infamous antibiotic-resistant *C. Difficile*) disappeared, dropping from 0.66% to 0.18%.
+* **Bifido back to normal**.  The *bifidobacterium* that increased 10X when I started taking potato starch hoping to improve sleep, went back down to normal levels.
+* ***Akkermansia*** is gone. Usually considered a "good" bacterium, my levels had been dropping since last Summer, and now finally disappeared completely. Hopefully this is just temporary.
+
+
+
+
+
+```{r}
+setwd("../Data")
+source("../sources/ubiomeCompare.R")
+jan<-read.csv("sprague-ubiomejan2015x.csv")
+
+feb<-read.csv("sprague-ubiomeFeb2015.csv")
+
+# compare my trip to Belize
+# positive numbers mean more because i went to Belize
+janFeb<-uBiome_compare_samples(jan,feb)
+janFebGenus<-uBiome_compare_samples(jan,feb,"genus")
+write.csv(janFebGenus,"belizeTripGenus.csv")
+
+newAfterBelizeGenus<-uBiome_sample_unique(feb,jan,"genus")  # found in feb, but not jan
+extinctAfterBelize<-uBiome_sample_unique(jan,feb,"genus")
+
+head(extinctAfterBelize)
+```

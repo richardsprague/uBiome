@@ -11,7 +11,7 @@ barplot(sally[sally$tax_rank=="phylum",]$count_norm/10000,names.arg=sally[sally$
 sally[sally$tax_rank=="phylum",]
 jan[jan$tax_rank=="phylum",]
 
-
+janFeb<-uBiome_compare_samples(jan,feb)
 
 
 samples<-c(may, jun, oct, jan)

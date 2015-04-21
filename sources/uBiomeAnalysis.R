@@ -13,6 +13,17 @@ jan<-read.csv("sprague-ubiomeJan2015x.csv")
 oct<-read.csv("sprague-uBiomeOct2014.csv")
 jan<-read.csv("sprague-ubiomejan2015x.csv")
 
+feb<-read.csv("sprague-ubiomeFeb2015.csv")
+
+# compare my trip to Belize
+# positive numbers mean more because i went to Belize
+janFeb<-uBiome_compare_samples(jan,feb)
+janFebGenus<-uBiome_compare_samples(jan,feb,"genus")
+write.csv(janFebGenus,"belizeTripGenus.csv")
+
+newAfterBelizeGenus<-uBiome_sample_unique(feb,jan,"genus")  # found in feb, but not jan
+extinctAfterBelize<-uBiome_sample_unique(jan,feb,"genus")
+
 # get Richard Sprague mouth data for two months
 junMouth<-read.csv("junMouth.csv")
 OctMouth<-read.csv("OctMouth.csv")
