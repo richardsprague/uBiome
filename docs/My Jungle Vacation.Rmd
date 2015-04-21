@@ -2,17 +2,19 @@
 title: "My microbiome in the jungle"
 output: html_document
 ---
-I traveled to central America in February to celebrate my wife's birthday. We spent most of our time in a rural, jungle part of Belize, about a half hour's drive from Benque, near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins, we also did horseback riding, cave exploration, and of course plenty of eating.
+How much does travel affect your microbiome? In a famous experiment [published in 2014](http://genomebiology.com/2014/15/7/R89), Duke University scientist Lawrence David tracked the daily microbiomes of two people for an entire year and [found significant differences](http://blog.richardsprague.com/2014/07/microbes-over-time.html) when one of the people travelled outside the U.S. Would the same thing happen to me?
 
+According to my latest uBiome results, the answer is yes. I recently travelled from my home in Seattle to Central America to celebrate my wife's birthday.  We spent most of our time in a rural, jungle part of Belize, about a half hour's drive from Benque, near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins, we also did horseback riding, cave exploration, and of course plenty of eating.
 
+Here's a selfie I took in front of the incredibly well-preserved thousand-year-old pyramid at Tikal:
 
 ![me at Tikal](https://farm9.staticflickr.com/8594/16063989023_353f14a4dd.jpg)
 
-(Here's a selfie I took in front of the incredibly well-preserved pyramid at Tikal)
+I submitted one uBiome gut kit test just before leaving on my trip, and another one immediately after returning home.  Since I've been testing myself regularly with uBiome for the past year, I have a good idea of what [my "normal" gut biome](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html) looks like. Here's my gut after ten days in a Central American jungle:
 
-How much does travel affect your microbiome? In a famous experiment [published last year](http://genomebiology.com/2014/15/7/R89), Duke University scientist Lawrence David tracked the daily microbiomes of two people for an entire year and [showed significant differences](http://blog.richardsprague.com/2014/07/microbes-over-time.html) when one of the people travelled outside the U.S. 
+![my gut after living in the jungle](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_ubiome_feb_overall.jpg)
 
-One of them   has a big effect on the gut microbiome, and I was eager to see what would happen to *me*. I've been testing myself with uBiome for the past year, most recently just a week or two before my trip, so I have a good idea of what my "normal" gut biome looks like when I'm in the US.  I did one more test immediately upon getting home, and I'm happy to report that I now have the results.
+
 
 #Overall Conclusions
 
