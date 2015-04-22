@@ -6,43 +6,56 @@ How much does travel affect your microbiome? In a famous experiment [published i
 
 According to my latest uBiome results, the answer is yes. I recently travelled from my home in Seattle to Central America to celebrate my wife's birthday.  We spent most of our time in a rural, jungle part of Belize, about a half hour's drive from Benque, near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins, we also did horseback riding, cave exploration, and of course plenty of eating.
 
-Here's a selfie I took in front of the incredibly well-preserved thousand-year-old pyramid at Tikal:
+Here's a selfie I took in front of the incredibly well-preserved thousand-year-old pyramid at [Tikal](http://www.smithsonianmag.com/history/secrets-of-the-maya-deciphering-tikal-2289808/):
 
 ![me at Tikal](https://farm9.staticflickr.com/8594/16063989023_353f14a4dd.jpg)
 
-I submitted one uBiome gut kit test just before leaving on my trip, and another one immediately after returning home.  Since I've been testing myself regularly with uBiome for the past year, I have a good idea of what [my "normal" gut biome](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html) looks like. Here's my gut after ten days in a Central American jungle:
+I submitted one uBiome gut kit test just before leaving on our trip, and another immediately after returning home.  Since I've been testing myself regularly with uBiome for the past year, I have a good idea of what [my "normal" gut biome](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html) looks like. Here's the overall picture through time, including results from my [sleep hacking experiments](http://www.ubiomeblog.com/my-ubiome-sleep-hacking-update/) between October and January, which resulted in those big chunks of Actinobacteria, colored brown in the graph, now mostly gone:
+
+![my gut from May till Feb](https://github.com/richardsprague/uBiome/blob/master/images/screenshot_ubiome_mayThruFeb.jpg?raw=true)
+
+Now let's look more closely at the latest sample, the one taken right after returning from the jungle:
 
 ![my gut after living in the jungle](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_ubiome_feb_overall.jpg)
 
+The first thing to note is the big increase in the ratio of firmicutes to bacteroidetes -- a change which is often [associated with obesity](http://www.nature.com/nature/journal/v444/n7122/full/4441022a.html). Interestingly, I *did* gain a couple of pounds during the trip, maybe from all that tasty coconut rice.
 
+Otherwise my uBiome results point in a few more interesting directions:
 
-#Overall Conclusions
-
-* **Diversity**:  Oddly, my gut biome diversity went *down* slightly. Before the trip, uBiome found 19 unique phyla.  Afterwards, there were only 15.
+* **Diversity**:  Oddly, my gut biome diversity went *down* slightly. Before the trip, uBiome found 19 unique phyla.  Afterwards, there were only 15. You wouldn't normally expect diversity to *drop* after exposure to novel microbes from the jungle. But I think there's an easy explanation:
 * **Increase in unidentified organisms**: uBiome was able to identify only about 91% of what it found at the phyla level. In my previous tests, they found closer to 95+%.  Maybe my apparent drop in diversity was simply a drop in *identifiable* bacteria.
 * **Pathogen plunge**: Counts of my "bad" bacteria, including members of the notorius *Clostridum* genus, which includes many nasty species (e.g. the infamous antibiotic-resistant *C. Difficile*) disappeared, dropping from 0.66% to 0.18%.
-* **Bifido back to normal**.  The *bifidobacterium* that increased 10X when I started taking potato starch hoping to improve sleep, went back down to normal levels.
+* **Bifido back to normal**.  The *bifidobacterium* that increased 10X when I started taking potato starch hoping to improve sleep, went back down to normal levels.  My sleep quality, by the way, hasn't changed.
 * ***Akkermansia*** is gone. Usually considered a "good" bacterium, my levels had been dropping since last Summer, and now finally disappeared completely. Hopefully this is just temporary.
 
-
-
-
-
-```{r}
+```{r, echo=FALSE}
 setwd("../Data")
 source("../sources/ubiomeCompare.R")
 jan<-read.csv("sprague-ubiomejan2015x.csv")
 
 feb<-read.csv("sprague-ubiomeFeb2015.csv")
-
 # compare my trip to Belize
 # positive numbers mean more because i went to Belize
 janFeb<-uBiome_compare_samples(jan,feb)
 janFebGenus<-uBiome_compare_samples(jan,feb,"genus")
-write.csv(janFebGenus,"belizeTripGenus.csv")
+#write.csv(janFebGenus,"belizeTripGenus.csv")
 
 newAfterBelizeGenus<-uBiome_sample_unique(feb,jan,"genus")  # found in feb, but not jan
 extinctAfterBelize<-uBiome_sample_unique(jan,feb,"genus")
 
+```
+
+Using my [free public uBiome analysis tools](https://github.com/richardsprague/uBiome), I see that I picked up the following genuses while in the jungle:
+
+```{r}
+
+head(newAfterBelizeGenus)
+```
+
+and a few that went extinct:
+```{r}
 head(extinctAfterBelize)
 ```
+
+What do these bacteria do? As always, who knows? The science is so new that when I look up most of these genuses online and elsewhere, I find almost nothing relevant. All the more reason I hope you'll submit a sample to uBiome the next time *you* travel in the jungle, so we can compare and learn together.
+
