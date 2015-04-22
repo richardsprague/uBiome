@@ -4,21 +4,28 @@ output: html_document
 ---
 How much does travel affect your microbiome? In a famous experiment [published in 2014](http://genomebiology.com/2014/15/7/R89), Duke University scientist Lawrence David tracked the daily microbiomes of two people for an entire year and [found significant differences](http://blog.richardsprague.com/2014/07/microbes-over-time.html) when one of the people travelled outside the U.S. Would the same thing happen to me?
 
-According to my latest uBiome results, the answer is yes. I recently travelled from my home in Seattle to Central America to celebrate my wife's birthday.  We spent most of our time in a rural, jungle part of Belize, about a half hour's drive from Benque, near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins, we also did horseback riding, cave exploration, and of course plenty of eating.
+According to my latest uBiome results, the answer is yes. I recently travelled from my home in Seattle to Central America to celebrate my wife's birthday.  We spent most of our time in a rural, jungle part of Belize, about a half hour's drive from [Benque](http://www.martzfarm.com/), near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins in the area, we also did horseback riding, cave exploration, and of course plenty of eating.
 
 Here's a selfie I took in front of the incredibly well-preserved thousand-year-old pyramid at [Tikal](http://www.smithsonianmag.com/history/secrets-of-the-maya-deciphering-tikal-2289808/):
 
 ![me at Tikal](https://farm9.staticflickr.com/8594/16063989023_353f14a4dd.jpg)
 
-I submitted one uBiome gut kit test just before leaving on our trip, and another immediately after returning home.  Since I've been testing myself regularly with uBiome for the past year, I have a good idea of what [my "normal" gut biome](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html) looks like. Here's the overall picture through time, including results from my [sleep hacking experiments](http://www.ubiomeblog.com/my-ubiome-sleep-hacking-update/) between October and January, which resulted in those big chunks of Actinobacteria, colored brown in the graph, now mostly gone:
-
-![my gut from May till Feb](https://github.com/richardsprague/uBiome/blob/master/images/screenshot_ubiome_mayThruFeb.jpg?raw=true)
-
-Now let's look more closely at the latest sample, the one taken right after returning from the jungle:
+What did the jungle do to my gut?  Here's the uBiome summary of the test I submitted immediately after returning home:
 
 ![my gut after living in the jungle](https://raw.githubusercontent.com/richardsprague/uBiome/master/images/screenshot_ubiome_feb_overall.jpg)
 
-The first thing to note is the big increase in the ratio of firmicutes to bacteroidetes -- a change which is often [associated with obesity](http://www.nature.com/nature/journal/v444/n7122/full/4441022a.html). Interestingly, I *did* gain a couple of pounds during the trip, maybe from all that tasty coconut rice.
+
+The first thing you might notice is the abundance of firmicutes compared to "average", a difference which is often [associated with obesity](http://www.nature.com/nature/journal/v444/n7122/full/4441022a.html). If this had been my only uBiome test, you might think I should have passed on the birthday cake (especially since 23andme also thinks [I'm at risk](http://blog.richardsprague.com/2008/10/whats-in-my-genes-results-from-23andme.html) for obesity). 
+
+Interestingly, I *did* gain a couple of pounds during the trip, maybe from all that tasty [coconut rice and beans](http://www.belize.com/top-ten-things-to-taste-in-belize).
+
+But a single result can't tell you much. Since I've been testing myself regularly with uBiome for the past year, I have a good idea of what [my "normal" gut biome](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html) looks like. Here's the overall picture through time, including results from my [sleep hacking experiments](http://www.ubiomeblog.com/my-ubiome-sleep-hacking-update/) between October and January (see those big chunks of Actinobacteria, colored brown in the graph?):
+
+![my gut from May till Feb](https://github.com/richardsprague/uBiome/blob/master/images/screenshot_ubiome_mayThruFeb.jpg?raw=true)
+
+From my previous uBiome results, you can see that my firmicutes levels bounce up and down, but not dramatically, and the jungle doesn't appear to have changed the major numbers all that much. Incidentally, I soon lost all the extra pounds after returning home to my normal diet.
+
+Seen through time, it's clear that the most unusual change during my trip was the increase in proteobacteria, from less than 1% to almost 8%.  Even more interesting was that the Lawrence David study found the same thing: a westerner traveling to a developing country sees a sharp rise in proteobacteria!
 
 Otherwise my uBiome results point in a few more interesting directions:
 
