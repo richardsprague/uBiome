@@ -1,0 +1,40 @@
+---
+title: "Jungle microbiome details"
+author: "Richard Sprague @sprague"
+date: "April 22, 2015"
+output: html_document
+---
+
+
+
+```{r, echo=FALSE}
+setwd("../Data")
+source("../sources/ubiomeCompare.R")
+jan<-read.csv("sprague-ubiomejan2015x.csv")
+
+feb<-read.csv("sprague-ubiomeFeb2015.csv")
+# compare my trip to Belize
+# positive numbers mean more because i went to Belize
+janFeb<-uBiome_compare_samples(jan,feb)
+janFebGenus<-uBiome_compare_samples(jan,feb,"genus")
+#write.csv(janFebGenus,"belizeTripGenus.csv")
+
+newAfterBelizeGenus<-uBiome_sample_unique(feb,jan,"genus")  # found in feb, but not jan
+extinctAfterBelize<-uBiome_sample_unique(jan,feb,"genus")
+
+```
+
+Using my [free public uBiome analysis tools](https://github.com/richardsprague/uBiome), I see that I picked up the following genuses while in the jungle:
+
+```{r}
+
+head(newAfterBelizeGenus)
+```
+
+and a few that went extinct:
+```{r}
+head(extinctAfterBelize)
+```
+
+What do these bacteria do? As always, who knows? The science is so new that when I look up most of these genuses online and elsewhere, I find almost nothing relevant. All the more reason I hope you'll submit a sample to uBiome the next time *you* travel in the jungle, so we can compare and learn together.
+

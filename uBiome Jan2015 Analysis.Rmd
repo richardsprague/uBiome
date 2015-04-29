@@ -25,9 +25,6 @@ If you want to follow along at home, here are some of the commands I typed.
 setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
 
 topN <- as.integer(10) # a global integer to pick the number of results I'll display
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
-
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
 
 source("../sources/uBiomeCompare.R")
 oct<-read.csv("sprague-uBiomeOct2014.csv")
