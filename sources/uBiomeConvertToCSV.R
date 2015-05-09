@@ -4,8 +4,8 @@
 install.packages("jsonlite")
 library("jsonlite")
 
-convert_json_files_to_csv <- function( directory=getwd()){
-  json_files_in_directory <- list.files(directory, full.name=TRUE,pattern="[[:alnum:]].json")
+convert_json_files_to_csv <- function(pattern= "[[:alnum:]].json", directory=getwd()){
+  json_files_in_directory <- list.files(directory, full.name=TRUE,pattern=pattern)
   for (i in json_files_in_directory){
     json_version <- fromJSON(i)  # returns as a list, so we must convert to a data frame
     asFrame <- do.call("rbind",lapply(json_version,as.data.frame))
