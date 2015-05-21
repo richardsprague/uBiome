@@ -2,6 +2,21 @@
 # Should only keep stuff here in a single session.
 # Okay to delete anything in here after the session is finished.
 
+setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
+
+list.files(pattern="MW[A-Za-z0-9_]*.json")
+
+mwApr<-read.csv("MWApr_24_2014.csv")
+mwAug<-read.csv("MWAug_21_2014.csv")
+mwJan<-read.csv("MWFeb_2_2014.csv")
+mwFeb<-read.csv("MWFeb_23_2015.csv")
+
+mwAugFeb<-uBiome_compare_samples(mwAug,mwFeb)
+mwAugFeb[order(mwAugFeb$count_change),]
+
+mwAugFeb$count_change
+
+convert_json_files_to_csv(pattern="MW[A-Za-z0-9_]*.json")
 uBiome_compare_samples(sally,jan)
 
 pie(sally[sally$tax_rank=="phylum",]$count_norm/10000,labels=sally[sally$tax_rank=="phylum",]$tax_name,col=rainbow(5))
