@@ -20,6 +20,12 @@ Download the [RuBiome source files](./sources) and load into R.
 
 ---
 
+# Bacteria to watch
+
+I use this file to analyze each sample: 
+https://github.com/richardsprague/uBiome/blob/master/Data/sprague%20ubiome%20analysis%202015.xlsx
+Divided into "good" vs. "bad", though that is probably an imprecise distinction. Nevertheless it may be useful to watch these particular organisms when you are starting.
+
 # uBiome Tools
 useful tools for manipulating uBiome information
 
