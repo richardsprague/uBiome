@@ -7,17 +7,21 @@ output: html_document
 The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I've been studying [my uBiome mouth test results](http://blog.richardsprague.com/2014/10/whats-in-my-microbiome.html). The simple [GitHub RuBiome utilities](https://github.com/richardsprague/uBiome) I use for analyzing my gut will work for that too, so here's a short example of how I did it:
 
 ```{r, echo=FALSE}
+.myuBiomePath = "OneDrive/Projects/"
+# set the root path for either Mac or Windows
+if(Sys.info()["sysname"]=="Darwin") kRootPath=paste0("~/",.myuBiomePath) else kRootPath=paste0(paste0("c:/Users/",Sys.info()["login"]),.myuBiomePath)
 
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
+setwd(paste0(kRootPath,"uBiome"))
+#setwd("~/OneDrive/Projects/uBiome")
+# load the uBiome utilities
+source("uBiome.R")
 
+# Now load all the sprague data
+setwd("sprague data")
 topN <- as.integer(5) # a global integer to pick the number of results I'll display
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
 
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
-
-source("../sources/uBiomeCompare.R")
-junMouth<-read.csv("../Data/junMouth.csv")
-OctMouth<-read.csv("../Data/OctMouth.csv")
+junMouth<-read.csv("junMouth.csv")
+OctMouth<-read.csv("OctMouth.csv")
 
 ```
 
