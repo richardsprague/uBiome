@@ -16,7 +16,10 @@ Before you begin, you will need:
 
 Check out the [Beginners Guide](./docs/BeginnersGuide.md)
 
-Download the [RuBiome source files](./sources) and load into R.
+Download the [RuBiome source files](./sources) and copy to the directory of your choice.
+
+Fire up R and run the program [uBiome.R](uBiome.R) to set the correct working directories.
+
 
 ---
 
