@@ -7,8 +7,8 @@ output: html_document
 ```{r echo=FALSE}
 <<myfirstchunk cache=FALSE>>
         
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/sources")
-source("/Users/sprague/OneDrive/Projects/Programming/uBiome/sources/uBiome tracking.R")
+setwd("/Users/sprague/OneDrive/Projects/uBiome/Data/sprague data")
+source("/Users/sprague/OneDrive/Projects/uBiome/sources/uBiome tracking.R")
 # getwd()
 #ls()
 ```

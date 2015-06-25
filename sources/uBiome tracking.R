@@ -4,6 +4,9 @@ setwd("../Data") # set your working directory to the place where you keep your d
 
 source("../sources/uBiomeCompare.R")
 
+# sets the variable .myuBiomePath to the location of the uBiome files directory (either on Windows or Linux/Mac)
+if(Sys.info()["sysname"]=="Darwin")
+        .myuBiomePath <- "~/OneDrive/Projects/uBiome/" else .myuBiomePath <-"C:/Users/Richard Sprague/OneDrive//Projects/uBiome/"
 
 
 

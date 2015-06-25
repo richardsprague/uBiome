@@ -3,23 +3,21 @@
 
 # Before beginning: set your working directory to the location where your data is
 
-setwd("/Users/sprague/OneDrive/Projects/Programming/uBiome/Data")
-source("../sources/uBiomeCompare.R")
+# Load universal header file
+source("../uBiome.R")
 
 # read Richard Sprague gut data
-may<-read.csv("sprague-uBiomeMay2014.csv")
-jun<-read.csv("sprague-uBiomeJun2014.csv")
-jan<-read.csv("sprague-ubiomeJan2015x.csv")
-oct<-read.csv("sprague-uBiomeOct2014.csv")
-jan<-read.csv("sprague-ubiomejan2015x.csv")
-
-feb<-read.csv("sprague-ubiomeFeb2015.csv")
+may<-read.csv("sprague data/sprague-uBiomeMay2014.csv")
+jun<-read.csv("sprague data/sprague-uBiomeJun2014.csv")
+oct<-read.csv("sprague data/sprague-uBiomeOct2014.csv")
+jan<-read.csv("sprague data/sprague-ubiomeJan2015x.csv")
+feb<-read.csv("sprague data/sprague-ubiomeFeb2015.csv")
 
 # compare my trip to Belize
 # positive numbers mean more because i went to Belize
 janFeb<-uBiome_compare_samples(jan,feb)
 janFebGenus<-uBiome_compare_samples(jan,feb,"genus")
-write.csv(janFebGenus,"belizeTripGenus.csv")
+#write.csv(janFebGenus,"belizeTripGenus.csv")
 
 newAfterBelizeGenus<-uBiome_sample_unique(feb,jan,"genus")  # found in feb, but not jan
 extinctAfterBelize<-uBiome_sample_unique(jan,feb,"genus")
