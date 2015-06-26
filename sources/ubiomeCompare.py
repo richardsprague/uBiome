@@ -22,7 +22,7 @@ def taxRankList(ubiomeJSONCounts=b,rank="species"):
     if ubiomeJSONCounts==[]:
         return []
     else:
-        return [ubiomeJSONCounts[0]["tax_name"]] + taxRankList(ubiomeJSONCounts[1:])
+        return [ubiomeJSONCounts[0]["tax_name"]] + taxRankList(ubiomeJSONCounts[1:],rank)
 
 
 taxRankList(mayy)
