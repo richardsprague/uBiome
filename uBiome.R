@@ -12,7 +12,7 @@
 
 .myuBiomePath = "OneDrive/Projects/"
 # set the root path for either Mac or Windows
-if(Sys.info()["sysname"]=="Darwin") kRootPath=paste0("~/",.myuBiomePath) else kRootPath=paste0(paste0("c:/Users/",Sys.info()["login"]),.myuBiomePath)
+if(Sys.info()["sysname"]=="Darwin") kRootPath=paste0("~/",.myuBiomePath) else kRootPath=paste0(paste0("c:/Users/",Sys.info()["login"]),"/",.myuBiomePath)
 
 setwd(paste0(kRootPath,"uBiome"))
 
