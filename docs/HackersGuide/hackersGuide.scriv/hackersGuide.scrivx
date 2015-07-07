@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-07 13:45:29 -0700">
+<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-07 15:27:53 -0700">
     <Binder>
         <BinderItem ID="12" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
             <Title>Non-Fiction Format</Title>
@@ -18,8 +18,13 @@
             <MetaData>
                 <PageBreakBefore>Yes</PageBreakBefore>
             </MetaData>
+            <CorkboardAndOutliner>
+                <OutlinerExpandedState>
+                    <ItemID>4</ItemID>
+                </OutlinerExpandedState>
+            </CorkboardAndOutliner>
             <Children>
-                <BinderItem ID="11" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:06:50 -0700">
+                <BinderItem ID="11" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 15:20:34 -0700">
                     <Title>Title Page</Title>
                     <MetaData>
                         <StatusID>6</StatusID>
@@ -28,7 +33,7 @@
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>119,0</TextSelection>
+                        <TextSelection>73,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem ID="31" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
@@ -140,14 +145,14 @@
                                 <TextSelection>212,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="39" Type="Text" Created="2015-07-07 12:13:08 -0700" Modified="2015-07-07 12:13:15 -0700">
+                        <BinderItem ID="39" Type="Text" Created="2015-07-07 12:13:08 -0700" Modified="2015-07-07 15:07:08 -0700">
                             <Title>16s rRNA</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>18,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="43" Type="Text" Created="2015-07-07 12:18:33 -0700" Modified="2015-07-07 12:18:40 -0700">
@@ -214,6 +219,50 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
+                </BinderItem>
+                <BinderItem ID="49" Type="Folder" Created="2015-07-07 15:11:04 -0700" Modified="2015-07-07 15:11:11 -0700">
+                    <Title>Next Steps</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="50" Type="Text" Created="2015-07-07 15:11:16 -0700" Modified="2015-07-07 15:11:20 -0700">
+                            <Title>Fermented food</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="51" Type="Folder" Created="2015-07-07 15:13:44 -0700" Modified="2015-07-07 15:14:09 -0700">
+                    <Title>Which Organisms to Watch</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="52" Type="Text" Created="2015-07-07 15:14:15 -0700" Modified="2015-07-07 15:18:40 -0700">
+                            <Title>Good and Bad</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>599,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
                 </BinderItem>
             </Children>
         </BinderItem>
@@ -321,7 +370,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 05:24:39 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="392" Characters="2298" Date="2015-07-07 13:43:19 -0700"></PreviousSession>
+        <PreviousSession Words="474" Characters="2846" Date="2015-07-07 13:43:19 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="595.275574,841.861389" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
