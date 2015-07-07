@@ -14,7 +14,7 @@ Before you begin, you will need:
 
 # Next #
 
-Check out the [Beginners Guide](./docs/BeginnersGuide.md)  (better yet, check the [Hackers Guide](./docs/HackersGuide/hackersGuide.html)
+Check out the [Beginners Guide](./docs/BeginnersGuide.md)  (better yet, check the [Hackers Guide](./docs/HackersGuide/hackersGuide.html))
 
 Download the [RuBiome source files](./sources) and copy to the directory of your choice.
 
@@ -25,7 +25,7 @@ Fire up R and run the program [uBiome.R](uBiome.R) to set the correct working di
 
 # Bacteria to watch
 
-I use this file to analyze each sample: 
+I use this file to analyze each sample:
 https://github.com/richardsprague/uBiome/blob/master/Data/sprague%20ubiome%20analysis%202015.xlsx
 Divided into "good" vs. "bad", though that is probably an imprecise distinction. Nevertheless it may be useful to watch these particular organisms when you are starting.
 

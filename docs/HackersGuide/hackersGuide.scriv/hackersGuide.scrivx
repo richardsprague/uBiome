@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-07 12:24:13 -0700">
+<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-07 13:45:29 -0700">
     <Binder>
         <BinderItem ID="12" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
             <Title>Non-Fiction Format</Title>
@@ -64,7 +64,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem ID="6" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:16:31 -0700">
+                        <BinderItem ID="6" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 13:26:31 -0700">
                             <Title>Microbes everywhere!</Title>
                             <MetaData>
                                 <LabelID>4</LabelID>
@@ -73,7 +73,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>32,0</TextSelection>
+                                <TextSelection>1539,0</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem ID="35" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:15:41 -0700">
@@ -172,17 +172,6 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem ID="29" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
-                    <Title>Endnotes</Title>
-                    <MetaData>
-                        <PageBreakBefore>Yes</PageBreakBefore>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <NotesTextSelection>0,0</NotesTextSelection>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
                 <BinderItem ID="45" Type="Folder" Created="2015-07-07 12:19:15 -0700" Modified="2015-07-07 12:19:23 -0700">
                     <Title>How to Analyze Your Microbiome</Title>
                     <MetaData>
@@ -193,14 +182,14 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem ID="47" Type="Text" Created="2015-07-07 12:19:54 -0700" Modified="2015-07-07 12:21:20 -0700">
+                        <BinderItem ID="47" Type="Text" Created="2015-07-07 12:19:54 -0700" Modified="2015-07-07 12:39:57 -0700">
                             <Title>How to get your data</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>167,0</TextSelection>
+                                <TextSelection>250,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="46" Type="Text" Created="2015-07-07 12:19:35 -0700" Modified="2015-07-07 12:23:50 -0700">
@@ -210,10 +199,21 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>60,0</TextSelection>
+                                <TextSelection>92,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
+                </BinderItem>
+                <BinderItem ID="29" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
+                    <Title>Endnotes</Title>
+                    <MetaData>
+                        <PageBreakBefore>Yes</PageBreakBefore>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
                 </BinderItem>
             </Children>
         </BinderItem>
@@ -321,7 +321,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 05:24:39 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="131" Characters="705" Date="2015-07-07 12:01:11 -0700"></PreviousSession>
+        <PreviousSession Words="392" Characters="2298" Date="2015-07-07 13:43:19 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="595.275574,841.861389" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
