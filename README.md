@@ -14,7 +14,7 @@ Before you begin, you will need:
 
 # Next #
 
-Check out the [Beginners Guide](./docs/BeginnersGuide.md)
+Check out the [Beginners Guide](./docs/BeginnersGuide.md)  (better yet, check the [Hackers Guide](./docs/hackersGuide.html)
 
 Download the [RuBiome source files](./sources) and copy to the directory of your choice.
 
