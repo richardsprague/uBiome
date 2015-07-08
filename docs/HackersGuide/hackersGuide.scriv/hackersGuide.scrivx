@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-07 16:35:18 -0700">
+<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-08 15:54:38 -0700">
     <Binder>
         <BinderItem ID="12" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
             <Title>Non-Fiction Format</Title>
@@ -10,7 +10,7 @@
                 <IconFileName>Information.tiff</IconFileName>
             </MetaData>
             <TextSettings>
-                <TextSelection>0,0</TextSelection>
+                <TextSelection>37,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem ID="0" Type="DraftFolder" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 16:27:48 -0700">
@@ -82,24 +82,24 @@
                                 <TextSelection>1539,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem ID="35" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 16:32:29 -0700">
+                                <BinderItem ID="35" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-08 07:32:38 -0700">
                                     <Title>In the air</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                         <NotesTextSelection>0,0</NotesTextSelection>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>116,0</TextSelection>
+                                        <TextSelection>114,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem ID="41" Type="Text" Created="2015-07-07 12:15:46 -0700" Modified="2015-07-07 16:31:27 -0700">
+                                <BinderItem ID="41" Type="Text" Created="2015-07-07 12:15:46 -0700" Modified="2015-07-08 07:31:12 -0700">
                                     <Title>Underground</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                         <NotesTextSelection>0,0</NotesTextSelection>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>240,0</TextSelection>
+                                        <TextSelection>239,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
@@ -136,14 +136,14 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem ID="40" Type="Text" Created="2015-07-07 12:13:24 -0700" Modified="2015-07-07 12:15:09 -0700">
+                        <BinderItem ID="40" Type="Text" Created="2015-07-07 12:13:24 -0700" Modified="2015-07-08 07:45:47 -0700">
                             <Title>The old way: culturing</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>212,0</TextSelection>
+                                <TextSelection>538,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="39" Type="Text" Created="2015-07-07 12:13:08 -0700" Modified="2015-07-07 15:07:08 -0700">
@@ -208,6 +208,16 @@
                                 <TextSelection>92,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
+                        <BinderItem ID="56" Type="Text" Created="2015-07-07 22:04:09 -0700" Modified="2015-07-08 15:54:38 -0700">
+                            <Title>Analyze with Excel</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2907,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
                     </Children>
                 </BinderItem>
                 <BinderItem ID="29" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
@@ -263,6 +273,16 @@
                                 <TextSelection>338,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
+                        <BinderItem ID="59" Type="Text" Created="2015-07-08 07:40:33 -0700" Modified="2015-07-08 07:40:57 -0700">
+                            <Title>Annnoted References</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>49,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
                     </Children>
                 </BinderItem>
             </Children>
@@ -277,6 +297,50 @@
             <TextSettings>
                 <TextSelection>0,0</TextSelection>
             </TextSettings>
+            <Children>
+                <BinderItem ID="60" Type="Image" Created="2015-07-08 14:19:55 -0700" Modified="2015-07-08 14:19:55 -0700">
+                    <Title>uBiomeScreenDownloadData</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="62" Type="Image" Created="2015-07-08 15:38:15 -0700" Modified="2015-07-08 15:38:15 -0700">
+                    <Title>ExcelScreenOverview</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="61" Type="Image" Created="2015-07-08 14:31:04 -0700" Modified="2015-07-08 14:31:04 -0700">
+                    <Title>uBiomeScreenShotTaxonomyJSON</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+            </Children>
         </BinderItem>
         <BinderItem ID="27" Type="Folder" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
             <Title>Ideas</Title>
@@ -316,7 +380,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem ID="53" Type="Text" Created="2015-07-07 16:15:31 -0700" Modified="2015-07-07 16:26:15 -0700">
+                        <BinderItem ID="53" Type="Text" Created="2015-07-07 16:15:31 -0700" Modified="2015-07-08 07:32:16 -0700">
                             <Title>Pseudomonas syringae </Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -324,21 +388,52 @@
                                 <IndexCardImageFileExtension>pdf</IndexCardImageFileExtension>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>67,0</TextSelection>
+                                <TextSelection>17,0</TextSelection>
                             </TextSettings>
                             <References>
                                 <Reference BinderID="35" Destination="[Internal Link]">In the air</Reference>
                             </References>
                         </BinderItem>
-                        <BinderItem ID="54" Type="Text" Created="2015-07-07 16:16:06 -0700" Modified="2015-07-07 16:16:29 -0700">
+                        <BinderItem ID="54" Type="Text" Created="2015-07-07 16:16:06 -0700" Modified="2015-07-08 07:29:56 -0700">
                             <Title>Deinococcus radiodurans </Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>56,0</TextSelection>
+                                <TextSelection>2,0</TextSelection>
                             </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="57" Type="PDF" Created="2015-07-08 07:29:25 -0700" Modified="2015-07-08 07:30:48 -0700">
+                            <Title>Deinococcus radiodurans</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>pdf</FileExtension>
+                                <NotesTextSelection>52,0</NotesTextSelection>
+                            </MetaData>
+                            <MediaSettings>
+                                <CurrentPDFPage>0</CurrentPDFPage>
+                            </MediaSettings>
+                            <References>
+                                <Reference Destination="http://en.wikipedia.org/wiki/Deinococcus_radiodurans">Wikipedia</Reference>
+                            </References>
+                        </BinderItem>
+                        <BinderItem ID="58" Type="Image" Created="2015-07-08 07:31:37 -0700" Modified="2015-07-08 07:32:13 -0700">
+                            <Title>Psudomonas syringae</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>tiff</FileExtension>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                            <References>
+                                <Reference Destination="http://www.wired.com/2011/05/microbes-make-rain/">Wired Article</Reference>
+                            </References>
                         </BinderItem>
                     </Children>
                 </BinderItem>
@@ -416,7 +511,7 @@
     <ProjectTargets Notify="Yes">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 05:24:39 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">500</SessionTarget>
-        <PreviousSession Words="698" Characters="4245" Date="2015-07-07 13:43:19 -0700"></PreviousSession>
+        <PreviousSession Words="1075" Characters="6424" Date="2015-07-08 13:53:20 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="595.275574,841.861389" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>

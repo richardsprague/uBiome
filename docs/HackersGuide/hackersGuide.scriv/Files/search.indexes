@@ -1,62 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="6">
-            <Title>Section</Title>
-        </Document>
-        <Document ID="29">
-            <Title>Endnotes</Title>
-            <Text> All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
-        </Document>
-        <Document ID="11">
-            <Title>Title Page</Title>
-            <Synopsis>Title page to the manuscript.</Synopsis>
-            <Text>&lt;$template_fullName>
-&lt;$template_street>
-&lt;$template_city>
-&lt;$template_state>
-&lt;$template_ZIP>
-&lt;$template_phoneNumber>
-&lt;$Template_email>
-
-(Your agent’s name)
-(Your agent’s address)
-&lt;$wc100> words
-
-
-
-
-
-
-
-
-
-
-&lt;$projecttitle>
-
-by &lt;$fullName></Text>
-            <Notes>This is the title page of the manuscript. Note that “Compile As-Is” is ticked - this ensures that the title page’s formatting doesn’t get changed during the Compile process, even though the formatting of other text documents will be overridden to use a standard 12-point manuscript font.
-
-The &lt;$projecttitle> and &lt;$fullname> tags get replaced with the information set in Project > Meta-Data Settings… > Project Properties. You can edit those settings or just replace this text altogether. (Other information is taken from Address Book when the project is created.)</Notes>
-        </Document>
-        <Document ID="4">
-            <Title>Chapter Subtitle</Title>
-        </Document>
-        <Document ID="27">
-            <Title>Ideas</Title>
-        </Document>
-        <Document ID="35">
-            <Title>Sub-Section</Title>
-        </Document>
-        <Document ID="30">
-            <Title>Foreword</Title>
-        </Document>
         <Document ID="12">
             <Title>Non-Fiction Format</Title>
             <Text>NON-FICTION WITH SUB-HEADS
 
 About This Template
-When compiled (File > Compile), this project will generate a document in standard manuscript format with sub-headings inside the chapters.
+When compiled (File &gt; Compile), this project will generate a document in standard manuscript format with sub-headings inside the chapters.
 
 How To Use This Template
 	•	Edit the Title Page document to ensure it contains the correct information.
@@ -64,10 +14,10 @@ How To Use This Template
 	•	Create a new text document for each sub-section within the chapter folders, giving each the title of the subheading you wish to appear in the text. You can nest text documents for smaller subheadings, like this:
 	#
 	•	If you don’t require a foreword, move the “Foreword” document to the Trash folder. Alternatively, rename it “Preface” or “Introduction” if you prefer. If you would rather the foreword come after the table of contents - as is sometimes the case - drag the “Foreword” document and drop it below the “Contents” document.
-	•	Before compiling, to create your table of contents, simply select all documents you wish to be included in the contents listing (usually this will be the “Foreword”, all chapter folders, and “Endnotes”, but not the nested sub-sections), then go to Edit > Copy Special > Copy Documents as ToC. Then paste into the “Contents” document (use Edit > Paste and Match Style to paste without the dotted underline between the chapter names and page numbers). The resulting linked text and page number tags will be replaced with the final chapter names and page numbers in the compiled document. You don’t need to do this every time you compile, just when chapters have been added, deleted, renamed or moved around. (Note to Microsoft Word users: If you export to Word, you may need to generate a print preview in Word to force the page numbers to show up correctly - they may appear as question marks before doing so.)
+	•	Before compiling, to create your table of contents, simply select all documents you wish to be included in the contents listing (usually this will be the “Foreword”, all chapter folders, and “Endnotes”, but not the nested sub-sections), then go to Edit &gt; Copy Special &gt; Copy Documents as ToC. Then paste into the “Contents” document (use Edit &gt; Paste and Match Style to paste without the dotted underline between the chapter names and page numbers). The resulting linked text and page number tags will be replaced with the final chapter names and page numbers in the compiled document. You don’t need to do this every time you compile, just when chapters have been added, deleted, renamed or moved around. (Note to Microsoft Word users: If you export to Word, you may need to generate a print preview in Word to force the page numbers to show up correctly - they may appear as question marks before doing so.)
 	•	If you have no footnotes or endnotes in your text, be sure to delete the “Endnotes” document.
-	•	“Notes” and “Ideas” folders have been provided for your convenience, although you can replace them or create different top-level folders for your research materials if necessary (these are just regular folders that have had custom icons assigned to them using the Documents > Change Icon feature.)
-	•	Compile your manuscript into standard manuscript format by selecting File > Compile.
+	•	“Notes” and “Ideas” folders have been provided for your convenience, although you can replace them or create different top-level folders for your research materials if necessary (these are just regular folders that have had custom icons assigned to them using the Documents &gt; Change Icon feature.)
+	•	Compile your manuscript into standard manuscript format by selecting File &gt; Compile.
 
 Tables and Figures
 If you need to use tables or figures in your manuscript, you can refer to them using the following tags, replacing “KEYWORD” with a unique word that identifies your table or figure.
@@ -96,7 +46,7 @@ Figure 2: The second coolest character in Firefly.
 Making Changes
 There are various minor changes you can make to the settings to tweak this template so that it better suits your needs, as follows:
 	•	Chapter subtitles: If you don’t want to include the names of your chapter folders below the chapter numbering text in the compiled document, go to the “Formatting” pane in the Compile sheet and deselect “Title” in the list of elements to include. You will also need to edit the title prefix in the “Level Settings”.
-	•	Hierarchical numbering: If you require hierarchical numbering for sub-sections, choose “Non-Fiction with Sub-Heads (Hierarchical)” from the “Format As” menu in Compile. (If this format isn’t in the list, choose “Manage…” at the bottom of the “Format As” menu and tick “Non-Fiction with Sub-Heads (Hierarchical)” in the panel that appears, then click “OK”. It will then be available in the “Format As” menu.) Alternatively, edit the “Level Settings” for each level in the “Formatting” pane of Compile and add the “&lt;$hn>” (for “hierarchical numbering”) tag to the title prefixes. 
+	•	Hierarchical numbering: If you require hierarchical numbering for sub-sections, choose “Non-Fiction with Sub-Heads (Hierarchical)” from the “Format As” menu in Compile. (If this format isn’t in the list, choose “Manage…” at the bottom of the “Format As” menu and tick “Non-Fiction with Sub-Heads (Hierarchical)” in the panel that appears, then click “OK”. It will then be available in the “Format As” menu.) Alternatively, edit the “Level Settings” for each level in the “Formatting” pane of Compile and add the “&lt;$hn&gt;” (for “hierarchical numbering”) tag to the title prefixes. 
 	•	Page header: You can edit the page header in the “Page Settings” pane of the Compile sheet.
 	•	Font: To quickly change the font used throughout the compiled document, use “Quick Font Override” in Compile. To change the font size of the various sub-headings, use the “Formatting” pane.
 
@@ -106,10 +56,128 @@ See the “Sample MS” PDF file in the Research folder for an example of a docu
 ￼
 
 Final Note
-Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template, and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File > Save As Template.</Text>
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template, and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
         </Document>
-        <Document ID="28">
-            <Title>Notes</Title>
+        <Document ID="4">
+            <Title>The Science</Title>
+        </Document>
+        <Document ID="30">
+            <Title>Foreword</Title>
+            <Text>The world of the small is very small indeed.
+</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Microbes everywhere!</Title>
+            <Text>Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning.
+
+These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds — about as much as the brain.
+
+The word “microbe” refers to any tiny organism that carries its own genetic information for purposes of propagating itself. Much smaller even than the cells that make up our body, the vast majority of microbes are bacteria, though viruses and phages fit this description too, as well as archaea, the extremophile life forms that live and thrive in environments too challenging for bacteria. A typical human will have somewhere between [n and m] individual cells — blood, skin, neurons, other tissues — each descended from a single germ cell, the fertilized egg that began dividing itself and multiplying after the moment of conception. By contrast, microbes had to hitch their own rides later, beginning in the womb and turning into a flood at the moment of birth and beyond. But each microbe, like each human cell, remains deeply interconnected with the fates of all the other cells, all the way to the moment of death, and even after that.
+
+
+</Text>
+        </Document>
+        <Document ID="31">
+            <Title>Contents</Title>
+            <Text>Manuscript	&lt;$p&gt;
+Title Page	&lt;$p&gt;
+Contents	&lt;$p&gt;
+Foreword	&lt;$p&gt;
+The Science	&lt;$p&gt;
+Microbes everywhere!	&lt;$p&gt;
+In the air	&lt;$p&gt;
+Underground	&lt;$p&gt;
+A crash course in microbiology	&lt;$p&gt;
+A crash course in botany	&lt;$p&gt;
+The Technology	&lt;$p&gt;
+The old way: culturing	&lt;$p&gt;
+16s rRNA	&lt;$p&gt;
+Gene sequencing	&lt;$p&gt;
+Bioinformatics	&lt;$p&gt;
+How to Analyze Your Microbiome	&lt;$p&gt;
+How to get your data	&lt;$p&gt;
+The basics: web tools	&lt;$p&gt;
+Endnotes	&lt;$p&gt;
+Next Steps	&lt;$p&gt;
+Fermented food	&lt;$p&gt;
+Which Organisms to Watch	&lt;$p&gt;
+Good and Bad	&lt;$p&gt;</Text>
+        </Document>
+        <Document ID="40">
+            <Title>The old way: culturing</Title>
+            <Text>How do you tell which microbe is which?
+
+Until recently, the old fashioned way was the only way. You get some of the bacterium of interest and then grow more of it. In other words, a glorified version of farming.
+
+How do you farm a microbe? Basically, you put it in a petri dish along with something that it likes to eat, and you wait for it to grow. What does it like to eat? Well, that’s the “art”. If you find the right substance and just the right environment, it might grow. Then again, it might not. Much of this is trial and error.
+A bigger problem with culturing is that some organisms need other organisms in order to survive. You may be simply unable to grow the one of interest unless you have a whole colony of other, unrelated but symbiont organisms nearby to provide it something it needs. In other words, it may simply be impossible to grow a bunch of one particular organism in isolation.</Text>
+        </Document>
+        <Document ID="41">
+            <Title>Underground</Title>
+            <Text>Three kilometers underground, in a South African gold mine, scientists discovered [microbe that lives on dirt]
+
+There are even microbes that thrive in radioactive environments, like the dangerous interior of the Chernobyl nuclear reactor.
+
+
+#</Text>
+        </Document>
+        <Document ID="50">
+            <Title>Fermented food</Title>
+            <Text>Once you’ve developed an appreciation for the importance of the microbiome, you’ll want to become more of a farmer, growing your own symbionts.
+
+People have been fermenting food since the distant past, making everything from beer to cheese. Fermentation is an ideal way to preserve food beyond the date at which it is practical to eat.
+
+ </Text>
+        </Document>
+        <Document ID="42">
+            <Title>A crash course in botany</Title>
+            <Text>How do you talk about the relationships between various different life forms?
+
+</Text>
+        </Document>
+        <Document ID="51">
+            <Title>Organisms to Watch</Title>
+        </Document>
+        <Document ID="43">
+            <Title>Gene sequencing</Title>
+            <Text>Gene sequencing
+</Text>
+        </Document>
+        <Document ID="52">
+            <Title>Good and Bad</Title>
+            <Text>As tempting as it is to categorize bacteria into groups like “good” and “bad”, you should avoid that mistake. Very few organisms are always and everywhere either beneficial or harmful. Everything depends on the circumstances.
+For example, from [Blaser p119]
+
+"viridans" streptococci  "live peacefully in everyone's mouth...a leading cause of heart valve infections...normal residents of the mouth, only occasionally entering the bloodstream and landing on a previously damaged valve....if we mix harmless Viridans with pathogenic Group A strep, viridans always win out. They knock back the strep."
+
+</Text>
+        </Document>
+        <Document ID="35">
+            <Title>In the air</Title>
+            <Text>A team in France, performing experiments on snowflakes, discovered microbes in the sky.
+#
+
+!fig(amatoSkyMicrobe)
+
+
+
+</Text>
+        </Document>
+        <Document ID="44">
+            <Title>Bioinformatics</Title>
+            <Text>Once you have the data computerized, the analysis tools leave the wet world of biology and enter the clean world of computing. This marriage is called bioinformatics.
+
+</Text>
+        </Document>
+        <Document ID="27">
+            <Title>Ideas</Title>
+        </Document>
+        <Document ID="53">
+            <Title>Pseudomonas syringae </Title>
+            <Text>
+Pierre Amato :  
+
+</Text>
         </Document>
         <Document ID="36">
             <Title>Sample MS</Title>
@@ -186,8 +254,117 @@ Non-Fiction/Umwan	18
 Non-Fiction/Umwan	19
 </Text>
         </Document>
-        <Document ID="31">
-            <Title>Contents</Title>
+        <Document ID="45">
+            <Title>How to Analyze Your Microbiome</Title>
+        </Document>
+        <Document ID="28">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="54">
+            <Title>Deinococcus radiodurans </Title>
+            <Text>#
+
+
+
+</Text>
+        </Document>
+        <Document ID="37">
+            <Title>A crash course in microbiology</Title>
+            <Text>Start with the cell. All living things are composed of cells.
+
+</Text>
+        </Document>
+        <Document ID="46">
+            <Title>The basics: web tools</Title>
+            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
+
+</Text>
+        </Document>
+        <Document ID="29">
+            <Title>Endnotes</Title>
+            <Text> All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
+        </Document>
+        <Document ID="55">
+            <Title>Interesting Microbes</Title>
+        </Document>
+        <Document ID="38">
+            <Title>The Technology</Title>
+        </Document>
+        <Document ID="47">
+            <Title>How to get your data</Title>
+            <Text>There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
+I recommend the San Francisco company uBiome.
+
+The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
+
+</Text>
+        </Document>
+        <Document ID="56">
+            <Title>Analyze with Excel</Title>
+            <Text>The Illumina machines spit off huge amounts of data (FASTQ files can be hundreds of thousands of lines long), so to be useful you’ll need a summary. UBiome provides a much more concise version called a “raw taxonomy” file, which is generally only a few hundred lines showing just the organisms they think they found in the sample.
+
+What is JSON
+UBiome’s taxonomy files come in a simple structured text format called JSON (JavaScript Object Notation), commonly used across the web. Although it’s not as convenient for people as the rest of the uBiome web site, programmers refer to JSON as “human readable”, because if you squint enough you can sorta tell what it means without a computer program. Here’s a sample:
+
+
+</Text>
+        </Document>
+        <Document ID="39">
+            <Title>16s rRNA</Title>
+            <Text>The 16S shortcut
+
+</Text>
+        </Document>
+        <Document ID="48">
+            <Title>The basics: web tools-1</Title>
+            <Text>their web site to learn more.
+ </Text>
+        </Document>
+        <Document ID="57">
+            <Title>Deinococcus radiodurans</Title>
+            <Text>￼</Text>
+            <Notes>http://en.wikipedia.org/wiki/Deinococcus_radiodurans</Notes>
+        </Document>
+        <Document ID="49">
+            <Title>Next Steps</Title>
+        </Document>
+        <Document ID="0">
+            <Title>Hackers Guide to the Microbiome</Title>
+        </Document>
+        <Document ID="59">
+            <Title>Annnoted References</Title>
+            <Text>Here are my suggestions for additional reading.
+
+</Text>
+        </Document>
+        <Document ID="11">
+            <Title>Title Page</Title>
+            <Synopsis>Title page to the manuscript.</Synopsis>
+            <Text>Richard Sprague
+PO Box 1523
+Mercer Island
+WA
+98040
+Sprague@ensembio.com
+
+
+&lt;$wc100&gt; words
+
+
+
+
+
+
+
+
+
+
+&lt;$projecttitle&gt;
+
+by &lt;$fullName&gt;</Text>
+            <Notes>This is the title page of the manuscript. Note that “Compile As-Is” is ticked - this ensures that the title page’s formatting doesn’t get changed during the Compile process, even though the formatting of other text documents will be overridden to use a standard 12-point manuscript font.
+
+The &lt;$projecttitle&gt; and &lt;$fullname&gt; tags get replaced with the information set in Project &gt; Meta-Data Settings… &gt; Project Properties. You can edit those settings or just replace this text altogether. (Other information is taken from Address Book when the project is created.)</Notes>
         </Document>
     </Documents>
 </SearchIndexes>
