@@ -25,8 +25,8 @@ Fire up R and run the program [uBiome.R](uBiome.R) to set the correct working di
 
 # Bacteria to watch
 
-I use this file to analyze each sample:
-https://github.com/richardsprague/uBiome/blob/master/Data/sprague%20ubiome%20analysis%202015.xlsx
+I use [this Excel file](https://github.com/richardsprague/uBiome/blob/master/Data/sprague%20ubiome%20analysis%202015.xlsx) to analyze each of my samples.
+
 Divided into "good" vs. "bad", though that is probably an imprecise distinction. Nevertheless it may be useful to watch these particular organisms when you are starting.
 
 # uBiome Tools
