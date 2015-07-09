@@ -1,0 +1,498 @@
+Base Header Level: 1
+Title: 
+Author:
+Format: complete
+
+Richard Sprague
+PO Box 1523
+Mercer Island
+WA
+98040
+Sprague@ensembio.com
+
+
+3,200 words
+
+
+
+
+
+
+
+
+
+
+Hackers Guide to the Microbiome
+
+by Richard Sprague
+
+----
+
+# Contents #
+
+Manuscript	?
+Title Page	?
+Contents	?
+Foreword	?
+Chapter One - The Science	?
+Microbes everywhere!	?
+In the air	?
+Underground	?
+A crash course in microbiology	?
+A crash course in botany	?
+Chapter Two - The Technology	?
+The old way: culturing	?
+16s rRNA	?
+Gene sequencing	?
+Bioinformatics	?
+Chapter Three - How to Analyze Your Microbiome	?
+How to get your data	?
+The basics: web tools	?
+Endnotes	?
+Chapter Five - Next Steps	?
+Fermented food	?
+Which Chapter Four - Organisms to Watch	?
+Good and Bad	?
+
+----
+
+# Foreword #
+
+This book is for curious people with little or no knowledge of biology, but who have a reasonable level of comfort with computer software, either as programmer, or as an end-user comfortable with the basics of installing and running common applications (Excel).
+
+The book is divided into four main sections:
+
+1. The Science: an introduction to the field of the microbiome. What makes it so interesting? How do scientists go about studying it? How much is known today and what is likely to be discovered in the future?
+
+2. Technology. What are the instruments and tools available to study the human microbiome? 
+
+3. How to analyze your own microbiome: we'll walk step-by-step through the process of getting and then analyzing data about your own microbiome. Starting with easy-to-understand web tools, we'll walk you through the basics, then show you how to do simple analysis in Excel. For more complicated analysis, we'll introduce simple (free) programming tools and show step-by-step how to use them to study your own microbiome as well as compare it to others.
+
+4. Organisms to watch: Once you've begun the process of studying your own microbes, you'll want to know about some of the common ones and what they do. We'll walk through the basics and show you how to design experiments that let you watch the progress over time.
+
+5. Next steps. The information in this book will introduce you to the basics, but once you see how fascinating the microbiome can be, no doubt you'll want to go further. We'll show you how to begin growing your own favorite microbes, and then give you a taste of some of the tools that professional biologists use to analyze in much more detail.
+
+
+
+
+----
+
+# Chapter One: The Science #
+
+## Microbes everywhere! ##
+
+Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning.
+These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds --- about as much as the brain.
+The word "microbe" refers to any tiny organism that carries its own genetic information for purposes of propagating itself. Far too small to see with the naked eye, dozens could fit inside a typical human cell. The vast majority of microbes are bacteria, though viruses and phages fit this description too, as well as archaea, the extremophile life forms that live and thrive in environments too challenging for bacteria. A typical human will have somewhere between [n and m] individual cells --- blood, skin, neurons, other tissues --- each descended from a single germ cell, the fertilized egg that began dividing itself and multiplying after the moment of conception. By contrast, microbes had to hitch their own rides later, beginning in the womb and turning into a flood at the moment of birth and beyond. But each microbe, like each human cell, remains deeply interconnected with the fates of all the other cells, all the way to the moment of death, and even after that.
+
+
+
+
+### In the air ###
+
+A team in France, performing experiments on snowflakes, discovered microbes in the sky.
+![Psudomonassyringae.png](Psudomonassyringae.png)
+
+1
+
+
+
+
+
+### Underground ###
+
+Three kilometers underground, in a South African gold mine, scientists discovered [microbe that lives on dirt]
+
+There are even microbes that thrive in radioactive environments, like the dangerous interior of the Chernobyl nuclear reactor.
+
+
+![Deinococcusradiodurans.pdf](Deinococcusradiodurans.pdf)
+
+## A crash course in microbiology ##
+
+All life runs on three chemical building blocks:  DNA, RNA, and proteins. Each of these is an arbitrarily-long chain of repeating molecules called nucleotides (DNA or RNA) and amino acids (proteins). Due to constraints on the way atoms interact, the set of building blocks is fixed. All DNA is composed of only four nucleotides: adenine, thymine, guanine, and cytosine, represented by the letters ATGC. RNA is composed of the same molecules, except that uracile (U) is substituted for thymine.
+Similarly, proteins are constructed with only 20 different amino acids, which can again be represented by a short three-character abbreviation.
+The correspondence between these different proteins and combinations of DNA or RNA is referred to as the genetic code. 
+
+
+nonpolar
+polar
+basic
+acidic
+(stop codon)
+Standard genetic code
+1st
+base
+2nd base
+3rd
+base
+T
+C
+A
+G
+T
+TTT
+(Phe/F) Phenylalanine
+TCT
+(Ser/S) Serine
+TAT
+(Tyr/Y) Tyrosine
+TGT
+(Cys/C) Cysteine
+T
+TTC
+TCC
+TAC
+TGC
+C
+TTA
+(Leu/L) Leucine
+TCA
+TAA
+Stop (Ochre)
+TGA
+Stop (Opal)
+A
+TTG
+TCG
+TAG
+Stop (Amber)
+TGG
+(Trp/W) Tryptophan    
+G
+C
+CTT
+CCT
+(Pro/P) Proline
+CAT
+(His/H) Histidine
+CGT
+(Arg/R) Arginine
+T
+CTC
+CCC
+CAC
+CGC
+C
+CTA
+CCA
+CAA
+(Gln/Q) Glutamine
+CGA
+A
+CTG
+CCG
+CAG
+CGG
+G
+A
+ATT
+(Ile/I) Isoleucine
+ACT
+(Thr/T) Threonine        
+AAT
+(Asn/N) Asparagine
+AGT
+(Ser/S) Serine
+T
+ATC
+ACC
+AAC
+AGC
+C
+ATA
+ACA
+AAA
+(Lys/K) Lysine
+AGA
+(Arg/R) Arginine
+A
+ATG[A]
+(Met/M) Methionine
+ACG
+AAG
+AGG
+G
+G
+GTT
+(Val/V) Valine
+GCT
+(Ala/A) Alanine
+GAT
+(Asp/D) Aspartic acid
+GGT
+(Gly/G) Glycine
+T
+GTC
+GCC
+GAC
+GGC
+C
+GTA
+GCA
+GAA
+(Glu/E) Glutamic acid
+GGA
+A
+GTG
+GCG
+GAG
+GGG
+G
+A The codon ATG both codes for methionine and serves as an initiation site: the first ATG in an mRNA's coding region is where translation into protein begins.[1]
+Inverse table (compressed using IUPAC notation)
+Amino acid
+Codons
+Compressed
+
+Amino acid
+Codons
+Compressed
+Ala/A
+GCT, GCC, GCA, GCG
+GCN
+Leu/L
+TTA, TTG, CTT, CTC, CTA, CTG
+YTR, CTN
+Arg/R
+CGT, CGC, CGA, CGG, AGA, AGG
+CGN, MGR
+Lys/K
+AAA, AAG
+AAR
+Asn/N
+AAT, AAC
+AAY
+Met/M
+ATG
+Asp/D
+GAT, GAC
+GAY
+Phe/F
+TTT, TTC
+TTY
+Cys/C
+TGT, TGC
+TGY
+Pro/P
+CCT, CCC, CCA, CCG
+CCN
+Gln/Q
+CAA, CAG
+CAR
+Ser/S
+TCT, TCC, TCA, TCG, AGT, AGC
+TCN, AGY
+Glu/E
+GAA, GAG
+GAR
+Thr/T
+ACT, ACC, ACA, ACG
+ACN
+Gly/G
+GGT, GGC, GGA, GGG
+GGN
+Trp/W
+TGG
+His/H
+CAT, CAC
+CAY
+Tyr/Y
+TAT, TAC
+TAY
+Ile/I
+ATT, ATC, ATA
+ATH
+Val/V
+GTT, GTC, GTA, GTG
+GTN
+START
+ATG
+STOP
+TAA, TGA, TAG
+TAR, TRA
+
+
+As a programmer looking through all of this, you may immediately be inspired to write your own software version of this. After all, the remarkable consistency between all of these building blocks cries out for manipulation by computer.
+In fact, that's exactly what bioinformaticians do, and numerous software packages have been developed to make it easy to treat these building blocks of life like ordinary computer strings. 
+
+Perhaps the biggest challenge is the volume of data to be handled, which can easily be measured in gigabytes for a simple organism, but can require entire server farms in the case of some real-world biological systems. For that reason, much of bioinformatics is about optimizations to improve the speed of processing a large data set, or to simply the presentation in a way that can reveal the most biologically interesting aspects of a problem without wading in over-complexity.
+ 
+One special protein, DNA, can store information
+
+The cell
+
+
+
+
+Start with the cell. All living things are composed of cells, which are tiny self-contained blocks where entropy is kept at bay for as long as possible. Everything in the universe tends over time to fall into disorganized entropy, but cells contain many tricks, honed over billions of years of evolution, to thrive.
+
+Some organisms have a single cell, and others are multi-cell, but the key division of life is not between the number of cells but rather in the complexity of its internals. Human cells, like all multicellular life forms, are classified as eukaryotes, because all of our cells are made of a number of internal features, called organelles, of which the most prominent is the nucleus. 
+Bacteria, by contrast, are prokaryotes. Their cells look much simpler under a microscope: just a cell wall bounding some free-floating objects. 
+
+
+Part of the definition of life is the ability to reproduce, and cells do this by dividing themselves in half in a process called mitosis. 
+
+
+
+## A crash course in botany ##
+
+How do you talk about the relationships between various different life forms?
+
+Since Carl Linnaeus in the 1700's, the science of taxonomy divides all life into seven major categories: Kingdom, Phylum, Class, Order, Family, Genus, Species (which I was taught in sixth grade to remember by the mnemonic "King Philip Came Over for Girl Scouts"). Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can't be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus canis could be anything from a wolf or coyote to a Chihuahua. You cannot mix and match these ranks. If you know something about the number of organisms in one genus, for example, this is meaningful only in comparison to the numbers of another genus. Keep that in mind during our analysis. 
+
+----
+
+# Chapter Two: The Technology #
+
+## Studying the Microbiome ##
+
+Two major problems had to be solved before scientists could begin seriously studying the microbiome.
+First, the various bacteria inside us had to be identified. Since the invention of the microscope, the process was straightforward: collect enough of the organisms of interest and then look at them, either as a whole while cultured in a lab, or individually under the microsoft.
+
+Computer scientists have an easier time than biologists because operations are so fast you can afford to do them over and over. In biology, individual operations are much slower, but you can run them in parallel. That goop in the petri dish is often made of trillions of organisms, each one consuming, producing, and multiplying individually. Even with the very low error rates in ordinary cell division, you have so many organisms that you will regularly get a few mutations, and if the experiment is well-controlled, you will be able to see those mutations.
+
+
+
+
+## The old way: culturing ##
+
+How do you tell which microbe is which?
+
+Until recently, the old fashioned way was the only way. You get some of the bacterium of interest and then grow more of it. In other words, a glorified version of farming.
+
+How do you farm a microbe? Basically, you put it in a petri dish along with something that it likes to eat, and you wait for it to grow. What does it like to eat? Well, that's the "art". If you find the right substance and just the right environment, it might grow. Then again, it might not. Much of this is trial and error.
+A bigger problem with culturing is that some organisms need other organisms in order to survive. You may be simply unable to grow the one of interest unless you have a whole colony of other, unrelated but symbiont organisms nearby to provide it something it needs. In other words, it may simply be impossible to grow a bunch of one particular organism in isolation.
+
+## 16s rRNA ##
+
+The 16S shortcut
+
+
+
+## Gene sequencing ##
+
+Gene sequencing
+
+
+## Bioinformatics ##
+
+Once you have the data computerized, the analysis tools leave the wet world of biology and enter the software world of computing. This marriage is called bioinformatics.
+
+
+
+----
+
+# Chapter Three: How to Analyze Your Microbiome #
+
+## How to get your data ##
+
+There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
+I recommend the San Francisco company uBiome.
+
+The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
+
+
+
+## The basics: web tools ##
+
+After uBiome has notified you of your results, you can go to their web site to learn more.
+
+
+
+## Analyze with Excel ##
+
+The Illumina machines spit off huge amounts of data (FASTQ files can be hundreds of thousands of lines long), so to be useful you'll need a summary. UBiome provides a much more concise version called a "raw taxonomy" file, which is generally only a few hundred lines showing just the organisms they think they found in the sample.
+
+What is JSON
+UBiome's taxonomy files come in a simple structured text format called JSON (JavaScript Object Notation), commonly used across the web. Although it's not as convenient for people as the rest of the uBiome web site, programmers refer to JSON as "human readable", because if you squint enough you can sorta tell what it means without a computer program. Here's a sample:
+
+	{
+	  "ubiome_bacteriacounts": [{
+	    "taxon": "2",
+	    "parent": "131567",
+	    "count": "22691",
+	    "count_norm": "1000000",
+	    "avg": null,
+	    "tax_name": "Bacteria",
+	    "tax_rank": "superkingdom",
+	    "tax_color": null
+	  }, {
+	    "taxon": "1239",
+	    "parent": "2",
+	    "count": "15414",
+	    "count_norm": "679300",
+	    "avg": null,
+	    "tax_name": "Firmicutes",
+	    "tax_rank": "phylum",
+	    "tax_color": "5E6591"
+	  }
+
+JSON is just structured data. That's it.  The data is organized according to keys and values. The keys are unique identifiers and the values are their values. The whole file looks that way. The only requirement of a JSON file is that it be consistent with this pattern, because after all it will need to be read by a computer eventually.
+The uBiome Taxonomy JSON files identify the key ```uBiome_bacteriacounts``` which is mapped to a bunch of fields, each representing a particular organism found in your sample. Look at the figure above to get the basic idea.
+
+Because uBiome JSON files are well-structured, it's easy to process them with other software, including Excel. That's our next step: bring this data into Excel.
+
+Converting uBiome taxonomy JSON to Excel
+
+If you just have one or two files, it's easy to bring uBiome taxonomy data into Excel. Go to the uBiome apps page and click on the section labeled "Download taxonomy".
+
+
+![uBiomeScreenDownloadData.png](uBiomeScreenDownloadData.png)
+
+
+You'll see a page of JSON representing what uBiome found in your sample.
+
+![uBiomeScreenShotTaxonomyJSON.png](uBiomeScreenShotTaxonomyJSON.png)
+
+On a desktop computer, if you select-all (press control-A or command-A) then you can copy this data to the clipboard to prepare to paste it to another web site.
+
+There are many web sites that will convert JSON to a format that will work in Excel. Google "Json to Excel" or "Json to CSV" and you'll find one. Just paste your data into one of those sites to convert it for either Excel's native (XLS or XLSX) format, or the more universal CSV format, readable by Excel. Here are a few of the sites I've tested:
+http://www.convertcsv.com/json-to-csv.htm
+http://www.json-xls.com/json2xls
+
+Once the data is in Excel, you can work with it just as you would with any Excel data sheet. Here's how one of my recent uBiome taxonomy files looks in Mac Excel:
+
+![ExcelScreenOverview.png](ExcelScreenOverview.png)
+
+Yours may look slightly different. Sometimes uBiome changes the labels on the taxonomy slightly, and the ordering of the columns may be different depending on how the JSON was converted, but none of that matters. The key is that you are now able to work with it in a full-blown spreadsheet.
+
+The uBiome data tags
+Let's review the meaning of each of the columns. The uBiome JSON taxonomy data includes the following fields:
+
+The uBiome JSON taxonomy data includes the following fields:count: an absolute measure of number of organisms found in the sample. Without knowing the size of the sample, or how many times the DNA inside was processed through PCR amplification, this number doesn't mean much except in relation to other counts at the same taxonomical rank.count_norm: a "normalized" version of the count, created by simply dividing the count on a given row by the count found on the row with tax_name = Bacteria and then multiplying by one million. It's easier to just think of it as parts per million: each unit is 1 / 10,000th of a percent. For example, if you see a row with count_norm = 500,000, you can just think of that as 50% of the sample.tax_name: this is the classification of the organism based on the level of its taxonomy. If you were looking at a human being, for example, you would see homo sapiens if you selected tax_rank = species, but you'd see mammalia if you selected tax_rank = class.tax_rank: tells the level of the taxonomy. In daily conversation about animals or plants, we usually refer to the species (e.g. homo sapiens), but sometimes it's more useful to talk about bigger groupings of related organisms. For example, humans are members of the class mammalia, along with tigers and horses. If this spreadsheet were counting organisms at the level of class mammalia, the count_norm would almost certainly be bigger than the count_norm for humans alone, unless humans were the only type of mammal found in the sample.  taxon and parent: these help identify the ranking in a more precise way by pointing out which tax_ranks are subsets of which. For example, Bacteroidia above has a parent = 976, meaning that it is a subset of the taxon 976, Bacteroidetes. When you follow the various taxons and parents up the chain, you'll see they all end in the superkingdom Bacteria, which has a taxon of 2. The values for these numbers, incidentally, are taxonomical numbers from the curated database at NCBI, the national bioinformatics center run by the U.S. government. Enter the number into the taxonomy browser at the NCBI Taxonomy Browser and you can learn as much as you want about that organism.tax_color doesn't matter for this anaysis, but uBiome software uses this to colorize their pretty graphs to make them more readable.
+
+----
+
+# Chapter Four: Organisms to Watch #
+
+## Good and Bad ##
+
+As tempting as it is to categorize bacteria into groups like "good" and "bad", you should avoid that mistake. Very few organisms are always and everywhere either beneficial or harmful. Everything depends on the circumstances.
+For example, from [Blaser p119]
+
+"viridans" streptococci  "live peacefully in everyone's mouth...a leading cause of heart valve infections...normal residents of the mouth, only occasionally entering the bloodstream and landing on a previously damaged valve....if we mix harmless Viridans with pathogenic Group A strep, viridans always win out. They knock back the strep."
+
+
+
+----
+
+# Chapter Five: Next Steps #
+
+## Fermented food ##
+
+Once you've developed an appreciation for the importance of the microbiome, you'll want to become more of a farmer, growing your own symbionts.
+
+People have been fermenting food since the distant past, making everything from beer to cheese. Fermentation is an ideal way to preserve food beyond the date at which it is practical to eat.
+
+ 
+
+## Annnoted References ##
+
+Here are my suggestions for additional reading.
+
+
+
+----
+
+# Endnotes #

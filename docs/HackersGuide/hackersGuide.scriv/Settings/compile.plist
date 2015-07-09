@@ -731,7 +731,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 	</array>
 	<key>SCRCompileFrontMatterIDKey</key>
-	<integer>-1</integer>
+	<integer>54</integer>
 	<key>SCRCompileGeneratePDFWithAspose</key>
 	<integer>0</integer>
 	<key>SCRCompileGroupFootnotesBeforePageBreakTypeKey</key>
@@ -869,9 +869,9 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<key>SCRCompileOverrideFlattensFirstParagraphIndent</key>
 	<false/>
 	<key>SCRCompileOverrideFontFaceThroughoutKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompileOverrideFontNameKey</key>
-	<string>Helvetica</string>
+	<string>Georgia</string>
 	<key>SCRCompileOverrideFootnotesFontKey</key>
 	<false/>
 	<key>SCRCompileOverridePrefixSeparatorInInlineLinksKey</key>
