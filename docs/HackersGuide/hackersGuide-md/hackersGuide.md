@@ -11,7 +11,7 @@ WA
 Sprague@ensembio.com
 
 
-3,200 words
+3,800 words
 
 
 
@@ -109,6 +109,8 @@ There are even microbes that thrive in radioactive environments, like the danger
 ![Deinococcusradiodurans.pdf](Deinococcusradiodurans.pdf)
 
 ## A crash course in microbiology ##
+
+Before we learn how to study your own microbiome, let's review some of the science.
 
 All life runs on three chemical building blocks:  DNA, RNA, and proteins. Each of these is an arbitrarily-long chain of repeating molecules called nucleotides (DNA or RNA) and amino acids (proteins). Due to constraints on the way atoms interact, the set of building blocks is fixed. All DNA is composed of only four nucleotides: adenine, thymine, guanine, and cytosine, represented by the letters ATGC. RNA is composed of the same molecules, except that uracile (U) is substituted for thymine.
 Similarly, proteins are constructed with only 20 different amino acids, which can again be represented by a short three-character abbreviation.
@@ -345,6 +347,24 @@ Bacteria make up their own kingdom. Just as the animal kingdom includes everythi
 
 You cannot mix and match these ranks. If you know something about the number of organisms in one genus, for example, this is meaningful only in comparison to the numbers of another genus. Keep that in mind during our analysis. 
 
+
+## What are they doing? ##
+
+Toxoplasma Gondii is a tiny microbe that, for some reason, only likes to reproduce from within the gut of a cat. It can be found in almost all warm-blooded mammals, including humans --- about 30% of us, according to some estimates, and that's after a century of obsession with hygiene that has wiped out countless other tiny inhabitants of the body.
+T. Gondii seem harmless because its hosts appear to show no differences before or after "infection" except in one creature: the mouse. When it finds itself ingested by a mouse, it appears to fade away quietly. MRI scans show large amounts in the gut for a week or two, gradually decreasing until there is apparently nothing. Except: tiny T. Gondii cysts begin to show up in the mouse's brain. Not everywhere, but in just a few strategic places.
+Then something strange happens: the mouse is suddenly attracted to cat urine. And note: its only attraction is to cat urine, not rabbits, not humans --- only cats. Everything else about the mouse appears normal. It still seems to be afraid of the other things that scare mice: other predators, stressful situations. But put a T. Gondii-affected mouse into a maze with different animal urine in the corners and it will rush to the cat side every time.
+
+How is it that T. Gondii is able to be so precise in its effects? It only seems to affect mice, and even then it only apparently makes them attracted to cats. It doesn't apparently cause any other harm to its hosts, so --- somehow --- it must have found a resting place right at the spot in the mouse brain that affects its interest in cats.
+
+Although there doesn't seem to be any major negative consequences to humans hosting T. Gondii, some scientists aren't sure. One man in particular, Jaroslav Flegr, an evolutionary biologist at Charles University in Prague, thinks he has evidence that women who carry it might be more trusting than those who don't. 
+
+T.Gondii isn't the only microbe known to affect the behavior of its host. A more common example is the rabies virus, which upon infection somehow causes a mammal to be more agitated, more likely to strike out --- or bite --- other humans, thereby spreading itself.
+
+Think about this too much, and you'll end up with the obvious question: what other weird microbes are infecting us right now? Can we explain some of our own behaviors this way? Is there a human equivalent of these infections, driving us to do things we "ordinarily" wouldn't do? And maybe these microbes are so ubiquitous, teeming all over us and in our brains, maybe there's no way to even know what "ordinary" or "normal" human behavior is.
+
+
+
+
 ----
 
 # Chapter Two: The Technology #
@@ -392,6 +412,12 @@ Once you have the data computerized, the analysis tools leave the wet world of b
 ## How to get your data ##
 
 There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
+
+That said, just as I mentioned 23andme as a way to find information about your DNA, there are a few ways you can get information about your microbiome.  One way is through a doctor, or other health care provider who can give you a clinical test, just like you might do a blood draw as part of an annual physical. If you have a medical condition, the tests are likely covered by insurance, but tend to be pretty expensive (several hundred dollars or more). 
+
+For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
+
+ The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. 
 I recommend the San Francisco company uBiome.
 
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
@@ -481,6 +507,7 @@ tax_color doesn't matter for this anaysis, but uBiome software uses this to colo
 
 
 
+
 ----
 
 # Chapter Four: Organisms to Watch #
@@ -509,6 +536,8 @@ People have been fermenting food since the distant past, making everything from 
 ## Annnoted References ##
 
 Here are my suggestions for additional reading.
+
+Read more about Toxoplasma Gondii: http://www.theatlantic.com/magazine/archive/2012/03/how-your-cat-is-making-you-crazy/308873/
 
 
 
