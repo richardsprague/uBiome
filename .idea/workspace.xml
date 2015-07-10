@@ -2,10 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba507c08-1c8b-40bc-842f-057f3162b329" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/binder.autosave" afterPath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/binder.autosave" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/hackersGuide.scrivx" afterPath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/hackersGuide.scrivx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/Feb21SampleGreengenes.xlsx" afterPath="$PROJECT_DIR$/Data/sprague data/Feb21SampleGreengenes.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/Sprague MFP Macronutrients Apr Test Period 2015.xlsx" afterPath="$PROJECT_DIR$/Data/sprague data/Sprague MFP Macronutrients Apr Test Period 2015.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/screenshot_ubiome_mayThruFebx.jpg" afterPath="$PROJECT_DIR$/images/screenshot_ubiome_mayThruFebx.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/screenshot_ubiome_mayThruFeby.jpg" afterPath="$PROJECT_DIR$/images/screenshot_ubiome_mayThruFeby.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/MGRAST results/sprague MGRAST AprB/sprague MGRAST AprB Phylum.xlsx" afterPath="$PROJECT_DIR$/Data/MGRAST results/sprague MGRAST AprB/sprague MGRAST AprB Phylum.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/MGRAST results/sprague MGRAST AprB/sprague MGRAST AprB download.xlsx" afterPath="$PROJECT_DIR$/Data/MGRAST results/sprague MGRAST AprB/sprague MGRAST AprB download.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/MGRAST results/sprague MGRAST AprB/sprague MGRAST AprB species.xlsx" afterPath="$PROJECT_DIR$/Data/MGRAST results/sprague MGRAST AprB/sprague MGRAST AprB species.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/sprague-uBiomeOct2014.xlsx" afterPath="$PROJECT_DIR$/Data/sprague data/sprague-uBiomeOct2014.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L002.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L002.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L003.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L003.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L004.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R1__L004.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L002.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L002.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L003.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L003.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L004.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeFeb2015/ssr_13603__R2__L004.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L002.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L002.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L003.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L003.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L004.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R1__L004.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L002.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L002.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L003.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L003.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L004.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprA2015/ssr_15372__R2__L004.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L002.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L002.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L003.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L003.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L004.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R1__L004.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L002.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L002.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L003.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L003.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L004.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeAprB2015/ssr_15759__R2__L004.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R1__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R1__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R2__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R2__L001.fastq.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/belizeTrip.csv" afterPath="$PROJECT_DIR$/Data/sprague data/belizeTrip.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/belizeTripGenus-Sprague2012.csv" afterPath="$PROJECT_DIR$/Data/sprague data/belizeTripGenus-Sprague2012.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/scratchfile.R" afterPath="$PROJECT_DIR$/sources/scratchfile.R" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/sprague one week ubiome.Rmd" afterPath="$PROJECT_DIR$/Data/sprague data/sprague one week ubiome.Rmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/sprague-ubiome-150421.csv" afterPath="$PROJECT_DIR$/Data/sprague data/sprague-ubiome-150421.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/sprague-ubiome-150428.csv" afterPath="$PROJECT_DIR$/Data/sprague data/sprague-ubiome-150428.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uBiome.R" afterPath="$PROJECT_DIR$/uBiome.R" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uBiome.iml" afterPath="$PROJECT_DIR$/.idea/uBiome.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/uBiomeAnalysis.R" afterPath="$PROJECT_DIR$/sources/uBiomeAnalysis.R" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ubiomeCompare.py" afterPath="$PROJECT_DIR$/sources/ubiomeCompare.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,8 +71,28 @@
       <file leaf-file-name="ubiomeCompare.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72115386">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.33258426">
+              <caret line="68" column="99" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sprague-ubiomeMay2014.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/sprague data/Sprague-ubiomeMay2014.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="elijah.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/Others/elijah.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,10 +114,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="23" />
-    <option name="width" value="1246" />
-    <option name="height" value="777" />
+    <option name="x" value="33" />
+    <option name="y" value="34" />
+    <option name="width" value="1772" />
+    <option name="height" value="858" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -82,7 +142,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -143,12 +202,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sprague data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uBiome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uBiome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Others" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -158,7 +236,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Dev/Python/python.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming/python/pyCharm/rikNewCharmProject" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -174,8 +252,8 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYTHONIOENCODING" value="UTF-8" />
-        <env name="PYTHONPATH" value="$PROJECT_DIR$/../uBiome;C:\Users\Richard Sprague\OneDrive\Projects\uBiome:$PROJECT_DIR$" />
+        <env name="PYTHONIOENCODING" value="windows-1252" />
+        <env name="PYTHONPATH" value="$PROJECT_DIR$/../uBiome;C:\Users\Richard Sprague\OneDrive\Projects\uBiome:$PROJECT_DIR$/../uBiome;C:\Users\Richard Sprague\OneDrive\Projects\uBiome" />
         <env name="PYCHARM_HOSTED" value="1" />
         <env name="LC_CTYPE" value="en_US.UTF-8" />
       </envs>
@@ -335,27 +413,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="23" width="1246" height="777" extended-state="6" />
+    <frame x="33" y="34" width="1772" height="858" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25259516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33061224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32621083" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -382,6 +460,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/sprague data/Sprague-ubiomeMay2014.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Others/elijah.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -416,8 +534,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72115386">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Others/elijah.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/sprague data/Sprague-ubiomeMay2014.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydev_run_in_console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0500927">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5361781">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ubiomeCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33258426">
+          <caret line="68" column="99" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
           <folding />
         </state>
       </provider>
