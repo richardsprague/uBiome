@@ -33,14 +33,6 @@ def taxRankList(ubiomeJSON,rank="species"):
         return [ubiomeJSON[0]["tax_name"]] + taxRankList(ubiomeJSON[1:],rank)
 
 
-def ubiomeUnique(sample1,sample2):
-    """
-    returns all organisms that are unique to sample 1
-    :param sample1:
-    :param sample2:
-    :return:
-    """
-    return sample1 - sample2
 
 def ubiomeCountNormOf(taxName, sample):
     """
@@ -66,12 +58,28 @@ def ubiomeAddCountsToList(organismList,sample):
     if organismList == []:
         return []
     else:
-        return [{"tax_name":organismList[0],"count_norm":ubiomeCountNormOf(organismList[0],sample)} ,  ubiomeAddCountsToList(organismList[1:],sample)]
+        return [{"tax_name":organismList[0],"count_norm":ubiomeCountNormOf(organismList[0],sample)}] +  ubiomeAddCountsToList(organismList[1:],sample)
 
 
+def ubiomeCompareSamples(sample1,sample2):
+    """
+    returns a list of organisms from sample1 and the relative amounts compared to sample2. Positive numbers indicate more in sample 1
+    :param sample1: list from the uBiome JSON-formatted sample
+    :param sample2: list from the uBiome JSON-formatted sample
+    :return:
+    """
+    return "still working on implementation"
 
-
-
+def ubiomeUnique(sample1,sample2):
+    """
+    returns all organisms that are unique to sample 1
+    :param sample1:
+    :param sample2:
+    :return:
+    """
+    uniqueSet = set(sample1) - set(sample2)
+    listWithCounts = ubiomeAddCountsToList(list(uniqueSet),sample1)
+    return listWithCounts
 
 
 
@@ -87,8 +95,13 @@ elSet=set(el)
 mlSet = set(ml)
 c=ubiomeAddCountsToList(el,e)
 
+#elcounts=ubiomeAddCountsToList(el,el)
+
+
 commonElijahMay = mlSet & elSet
 uniqueElijah = elSet - mlSet
+
+ecounts= ubiomeAddCountsToList(list(uniqueElijah),e)
 
 #ml=taxRankList(mayy)
 #mlSet = set(ml)
@@ -97,3 +110,5 @@ if __name__=="__main__":
     print("run uBiomeCompare.py")
 else:
     print("uBiomeCompare loaded as a module")
+
+#ubiomeUnique(e,m)
