@@ -145,7 +145,12 @@ People have been fermenting food since the distant past, making everything from 
             <Title>A crash course in botany</Title>
             <Text>How do you talk about the relationships between various different life forms?
 
-Since Carl Linnaeus in the 1700’s, the science of taxonomy divides all life into seven major categories: Kingdom, Phylum, Class, Order, Family, Genus, Species (which I was taught in sixth grade to remember by the mnemonic “King Philip Came Over for Girl Scouts”). Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can’t be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus canis could be anything from a wolf or coyote to a Chihuahua. You cannot mix and match these ranks. If you know something about the number of organisms in one genus, for example, this is meaningful only in comparison to the numbers of another genus. Keep that in mind during our analysis. </Text>
+Since Carl Linnaeus in the 1700’s, the science of taxonomy divides all life into seven major categories: Kingdom, Phylum, Class, Order, Family, Genus, Species (which I was taught in sixth grade to remember by the mnemonic “King Philip Came Over for Girl Scouts”). 
+
+Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can’t be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus canis could be anything from a wolf or coyote to a Chihuahua. 
+
+You cannot mix and match these ranks. If you know something about the number of organisms in one genus, for example, this is meaningful only in comparison to the numbers of another genus. Keep that in mind during our analysis. 
+</Text>
         </Document>
         <Document ID="51">
             <Title>Organisms to Watch</Title>
@@ -282,7 +287,9 @@ Non-Fiction/Umwan	19
         </Document>
         <Document ID="37">
             <Title>A crash course in microbiology</Title>
-            <Text>All life runs on three chemical building blocks:  DNA, RNA, and proteins. Each of these is an arbitrarily-long chain of repeating molecules called nucleotides (DNA or RNA) and amino acids (proteins). Due to constraints on the way atoms interact, the set of building blocks is fixed. All DNA is composed of only four nucleotides: adenine, thymine, guanine, and cytosine, represented by the letters ATGC. RNA is composed of the same molecules, except that uracile (U) is substituted for thymine.
+            <Text>Before we learn how to study your own microbiome, let’s review some of the science.
+
+All life runs on three chemical building blocks:  DNA, RNA, and proteins. Each of these is an arbitrarily-long chain of repeating molecules called nucleotides (DNA or RNA) and amino acids (proteins). Due to constraints on the way atoms interact, the set of building blocks is fixed. All DNA is composed of only four nucleotides: adenine, thymine, guanine, and cytosine, represented by the letters ATGC. RNA is composed of the same molecules, except that uracile (U) is substituted for thymine.
 Similarly, proteins are constructed with only 20 different amino acids, which can again be represented by a short three-character abbreviation.
 The correspondence between these different proteins and combinations of DNA or RNA is referred to as the genetic code. 
 
@@ -540,6 +547,14 @@ Computer scientists have an easier time than biologists because operations are s
         <Document ID="47">
             <Title>How to get your data</Title>
             <Text>There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
+
+That said, just as I mentioned 23andme as a way to find information about your DNA, there are a few ways you can get information about your microbiome.  One way is through a doctor, or other health care provider who can give you a clinical test, just like you might do a blood draw as part of an annual physical. If you have a medical condition, the tests are likely covered by insurance, but tend to be pretty expensive (several hundred dollars or more). 
+
+For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
+
+ The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. 
+
+#
 I recommend the San Francisco company uBiome.
 
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
@@ -606,7 +621,23 @@ Yours may look slightly different. Sometimes uBiome changes the labels on the ta
 The uBiome data tags
 Let’s review the meaning of each of the columns. The uBiome JSON taxonomy data includes the following fields:
 
-The uBiome JSON taxonomy data includes the following fields:count: an absolute measure of number of organisms found in the sample. Without knowing the size of the sample, or how many times the DNA inside was processed through PCR amplification, this number doesn’t mean much except in relation to other counts at the same taxonomical rank.count_norm: a “normalized” version of the count, created by simply dividing the count on a given row by the count found on the row with tax_name = Bacteria and then multiplying by one million. It’s easier to just think of it as parts per million: each unit is 1 / 10,000th of a percent. For example, if you see a row with count_norm = 500,000, you can just think of that as 50% of the sample.tax_name: this is the classification of the organism based on the level of its taxonomy. If you were looking at a human being, for example, you would see homo sapiens if you selected tax_rank = species, but you’d see mammalia if you selected tax_rank = class.tax_rank: tells the level of the taxonomy. In daily conversation about animals or plants, we usually refer to the species (e.g. homo sapiens), but sometimes it’s more useful to talk about bigger groupings of related organisms. For example, humans are members of the class mammalia, along with tigers and horses. If this spreadsheet were counting organisms at the level of class mammalia, the count_norm would almost certainly be bigger than the count_norm for humans alone, unless humans were the only type of mammal found in the sample.  taxon and parent: these help identify the ranking in a more precise way by pointing out which tax_ranks are subsets of which. For example, Bacteroidia above has a parent = 976, meaning that it is a subset of the taxon 976, Bacteroidetes. When you follow the various taxons and parents up the chain, you’ll see they all end in the superkingdom Bacteria, which has a taxon of 2. The values for these numbers, incidentally, are taxonomical numbers from the curated database at NCBI, the national bioinformatics center run by the U.S. government. Enter the number into the taxonomy browser at the NCBI Taxonomy Browser and you can learn as much as you want about that organism.tax_color doesn’t matter for this anaysis, but uBiome software uses this to colorize their pretty graphs to make them more readable.</Text>
+The uBiome JSON taxonomy data includes the following fields:
+
+count: an absolute measure of number of organisms found in the sample. Without knowing the size of the sample, or how many times the DNA inside was processed through PCR amplification, this number doesn’t mean much except in relation to other counts at the same taxonomical rank.
+
+count_norm: a “normalized” version of the count, created by simply dividing the count on a given row by the count found on the row with tax_name = Bacteria and then multiplying by one million. It’s easier to just think of it as parts per million: each unit is 1 / 10,000th of a percent. For example, if you see a row with count_norm = 500,000, you can just think of that as 50% of the sample.
+
+tax_name: this is the classification of the organism based on the level of its taxonomy. If you were looking at a human being, for example, you would see homo sapiens if you selected tax_rank = species, but you’d see mammalia if you selected tax_rank = class.
+
+tax_rank: tells the level of the taxonomy. In daily conversation about animals or plants, we usually refer to the species (e.g. homo sapiens), but sometimes it’s more useful to talk about bigger groupings of related organisms. For example, humans are members of the class mammalia, along with tigers and horses. If this spreadsheet were counting organisms at the level of class mammalia, the count_norm would almost certainly be bigger than the count_norm for humans alone, unless humans were the only type of mammal found in the sample.  
+
+taxon and parent: these help identify the ranking in a more precise way by pointing out which tax_ranks are subsets of which. For example, Bacteroidia above has a parent = 976, meaning that it is a subset of the taxon 976, Bacteroidetes. When you follow the various taxons and parents up the chain, you’ll see they all end in the superkingdom Bacteria, which has a taxon of 2. The values for these numbers, incidentally, are taxonomical numbers from the curated database at NCBI, the national bioinformatics center run by the U.S. government. Enter the number into the taxonomy browser at the NCBI Taxonomy Browser and you can learn as much as you want about that organism.
+
+tax_color doesn’t matter for this anaysis, but uBiome software uses this to colorize their pretty graphs to make them more readable.
+
+
+
+</Text>
         </Document>
         <Document ID="39">
             <Title>16s rRNA</Title>
@@ -824,8 +855,28 @@ TAR, TRA
             <Text>￼</Text>
             <Notes>http://en.wikipedia.org/wiki/Deinococcus_radiodurans</Notes>
         </Document>
+        <Document ID="66">
+            <Title>What are they doing?</Title>
+            <Text>Toxoplasma Gondii is a tiny microbe that, for some reason, only likes to reproduce from within the gut of a cat. It can be found in almost all warm-blooded mammals, including humans — about 30% of us, according to some estimates, and that’s after a century of obsession with hygiene that has wiped out countless other tiny inhabitants of the body.
+T. Gondii seem harmless because its hosts appear to show no differences before or after “infection” except in one creature: the mouse. When it finds itself ingested by a mouse, it appears to fade away quietly. MRI scans show large amounts in the gut for a week or two, gradually decreasing until there is apparently nothing. Except: tiny T. Gondii cysts begin to show up in the mouse’s brain. Not everywhere, but in just a few strategic places.
+Then something strange happens: the mouse is suddenly attracted to cat urine. And note: its only attraction is to cat urine, not rabbits, not humans — only cats. Everything else about the mouse appears normal. It still seems to be afraid of the other things that scare mice: other predators, stressful situations. But put a T. Gondii-affected mouse into a maze with different animal urine in the corners and it will rush to the cat side every time.
+
+How is it that T. Gondii is able to be so precise in its effects? It only seems to affect mice, and even then it only apparently makes them attracted to cats. It doesn’t apparently cause any other harm to its hosts, so — somehow — it must have found a resting place right at the spot in the mouse brain that affects its interest in cats.
+
+Although there doesn’t seem to be any major negative consequences to humans hosting T. Gondii, some scientists aren’t sure. One man in particular, Jaroslav Flegr, an evolutionary biologist at Charles University in Prague, thinks he has evidence that women who carry it might be more trusting than those who don’t. 
+
+T.Gondii isn’t the only microbe known to affect the behavior of its host. A more common example is the rabies virus, which upon infection somehow causes a mammal to be more agitated, more likely to strike out — or bite — other humans, thereby spreading itself.
+
+Think about this too much, and you'll end up with the obvious question: what other weird microbes are infecting us right now? Can we explain some of our own behaviors this way? Is there a human equivalent of these infections, driving us to do things we “ordinarily” wouldn't do? And maybe these microbes are so ubiquitous, teeming all over us and in our brains, maybe there's no way to even know what “ordinary” or “normal” human behavior is.
+
+
+</Text>
+        </Document>
         <Document ID="49">
             <Title>Next Steps</Title>
+        </Document>
+        <Document ID="67">
+            <Title>American Gut</Title>
         </Document>
         <Document ID="0">
             <Title>Hackers Guide to the Microbiome</Title>
@@ -833,6 +884,8 @@ TAR, TRA
         <Document ID="59">
             <Title>Annnoted References</Title>
             <Text>Here are my suggestions for additional reading.
+
+Read more about Toxoplasma Gondii: http://www.theatlantic.com/magazine/archive/2012/03/how-your-cat-is-making-you-crazy/308873/
 
 </Text>
         </Document>

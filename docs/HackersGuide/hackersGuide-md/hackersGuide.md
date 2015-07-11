@@ -11,7 +11,7 @@ WA
 Sprague@ensembio.com
 
 
-3,800 words
+4,400 words
 
 
 
@@ -418,6 +418,8 @@ That said, just as I mentioned 23andme as a way to find information about your D
 For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
 
  The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. 
+
+![AmericanGut.png](AmericanGut.png)
 I recommend the San Francisco company uBiome.
 
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
@@ -530,6 +532,19 @@ For example, from [Blaser p119]
 Once you've developed an appreciation for the importance of the microbiome, you'll want to become more of a farmer, growing your own symbionts.
 
 People have been fermenting food since the distant past, making everything from beer to cheese. Fermentation is an ideal way to preserve food beyond the date at which it is practical to eat.
+
+Fermenting your own foods is surprisingly easy.
+
+Yogurt
+One of the easiest ferments is home-made yogurt. Pour a few cups of whole milk into a saucepan and heat to not-quite-boiling. You'll need to get it above 160 degrees, the temperature that kills bacteria in milk, but if it goes all the way to boiling the milk will taste scalded. Even that's not the end of the world, but you may as well try to keep it under that. Use a kitchen thermometer the first few times if you like, but soon you'll be able to tell intuitively because you'll see steam rising from the surface of the milk, but no boiling bubbles.
+After the milk has been heated, remove and pour it into a glass bowl. Let it sit until it cools to about 110 degrees. Here, a kitchen thermometer is more useful, especially the first time because the exact temperature is more important. Warmer than 110 degrees and the lactobacillus yogurt bacteria will die; too much lower and they won't grow. Once you have the hang of it, you'll be able to tell based on the touch: it'll feel unpleasantly warmer than your hand (which should be 98 degrees) but not too warm to touch.
+Once the milk hits that rough temperature zone, pour in a tiny amount of yogurt from another source.  This is called the "starter" yogurt and the best is to use a bit of leftover from your previous batch, but for your first attempt you can use any commercially-purchased yogurt. Sweetened, flavored, non-fat --- any kind is okay as long as it has live cultures in it.
+Be sure not to use too much yogurt. Definitely no more than a tablespoon, and perhaps even just a teaspoon or two. Because of the small amounts, you'll be tempted to think you need more, but in this case more is definitely not better. Too much starter will suffocate the mixture. Whenever I've had an unsuccessful batch it's almost always due to having too much starter.
+Mix the starter thoroughly into the lukewarm milk and then cover it up and put it someplace warm. The key is to keep the mixture close to that magical 110 degree point. Some people put it overnight in an oven set to the lowest temperature, but if you don't like running the oven overnight you can try wrapping it tightly with something that will retain the heat through the night. If have a high-quality thermos-style cooler, you can set it inside there, and some people cover it with thick towels and set it in the warmest part of the house. Another option is to use a heating pad, set to the lowest setting and placed underneath the bowl. The important thing is to keep the mixture at the warm temperatures that the bacteria need in order to breed.
+Set in a quiet place for about 8-10 hours. Overnight is ideal. When you open the bowl again, you'll find the mixture no longer resembles milk, but has been transformed into a much thicker consistency --- a yogurt. It will taste sour, and if you're not accustomed to plain, unsweetened yogurt you may even think that is has spoiled. Nope, that's just how pure, real yogurt is meant to taste.
+
+Pickling
+
 
  
 
