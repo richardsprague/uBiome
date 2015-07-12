@@ -1,24 +1,39 @@
+
+### uBiomeCompare.py
+### lets you analyze your uBiome sample
+###
+
 __author__ = 'sprague'
 
 import json
 
-# sample JSON object pulled straight from uBiome
 
-jsonFile = open("../Data/others/elijah.json")
-elijah=json.load(jsonFile)
 
-with open("../Data/sprague data/Sprague-ubiomeMay2014.json") as jFile2:
-    may = json.load(jFile2)
+class ubiomeSample():
+    """ class representation of a well-formed uBiome sample
 
-m = may["ubiome_bacteriacounts"]
+    """
+    def __init__(self,fname):
+        """ initialize with a string representing the path to a uBiome-formatted JSON file
+        """
+        jsonFile = open(fname)
+        sourceJson = json.load(jsonFile)
+        self.sampleList = sourceJson["ubiome_bacteriacounts"]
+        self.taxRankList = []
 
-e = elijah["ubiome_bacteriacounts"]
+    def taxranklist(self, rank="species"):
+        if self.taxRankList: # already computed, so don't recompute
+            return self.taxRankList
+        for organism in self.sampleList:
+            self.taxRankList = self.taxRankList + [organism["tax_name"]]
 
-def taxRankOf(ubiomeJSONCounts=e,rank="species"):
-    for i in ubiomeJSONCounts:
-        if i["tax_rank"] == rank:
-                print(i["tax_name"])
-    return 25
+
+
+# def taxRankOf(ubiomeJSONCounts,rank="species"):
+#     for i in ubiomeJSONCounts:
+#         if i["tax_rank"] == rank:
+#                 print(i["tax_name"])
+#     return 25
 
 def taxRankList(ubiomeJSON,rank="species"):
     """
@@ -81,6 +96,11 @@ def ubiomeUnique(sample1,sample2):
     listWithCounts = ubiomeAddCountsToList(list(uniqueSet),sample1)
     return listWithCounts
 
+# sample JSON object pulled straight from uBiome
+
+#jsonFile = open("../Data/others/elijah.json")
+#elijah=json.load(jsonFile)
+
 
 
 ## Python sets:
@@ -89,25 +109,35 @@ def ubiomeUnique(sample1,sample2):
 ## a & b
 ## a ^ b  # in a or b but not both
 
-el=taxRankList(e)
-ml=taxRankList(m)
-elSet=set(el)
-mlSet = set(ml)
-c=ubiomeAddCountsToList(el,e)
+class ubiomeApp():
+    def run(self):
+        msample = ubiomeSample("../Data/sprague data/Sprague-ubiomeMay2014.json")
+        m = msample.sampleList
+        esample = ubiomeSample("../Data/others/elijah.json")
+        e = esample.sampleList
+        el=taxRankList(e)
+        ml=taxRankList(m)
+        elSet=set(el)
+        mlSet = set(ml)
+        c=ubiomeAddCountsToList(el,e)
 
 #elcounts=ubiomeAddCountsToList(el,el)
 
 
-commonElijahMay = mlSet & elSet
-uniqueElijah = elSet - mlSet
+        commonElijahMay = mlSet & elSet
+        uniqueElijah = elSet - mlSet
 
-ecounts= ubiomeAddCountsToList(list(uniqueElijah),e)
+        ecounts= ubiomeAddCountsToList(list(uniqueElijah),e)
+        esample.taxranklist()
+        print("ecounts=",len(ecounts))
 
 #ml=taxRankList(mayy)
 #mlSet = set(ml)
 
 if __name__=="__main__":
     print("run uBiomeCompare.py")
+    myApp = ubiomeApp()
+    myApp.run()
 else:
     print("uBiomeCompare loaded as a module")
 
