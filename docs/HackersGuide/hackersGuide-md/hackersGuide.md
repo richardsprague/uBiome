@@ -11,7 +11,7 @@ WA
 Sprague@ensembio.com
 
 
-4,400 words
+6,000 words
 
 
 
@@ -365,6 +365,15 @@ Think about this too much, and you'll end up with the obvious question: what oth
 
 
 
+## Studying the Human Microbiome ##
+
+Studying the Human Microbiome
+
+During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
+
+The Human Microbiome Project was launched in 2008 by the National Institutes of Health with a budget of $115M.
+
+
 ----
 
 # Chapter Two: The Technology #
@@ -417,10 +426,21 @@ That said, just as I mentioned 23andme as a way to find information about your D
 
 For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
 
- The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. 
+ The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. American Gut boasts an impressive number of practicing research scientists, including several of the key contributors to the Human Microbiome 
 
 ![AmericanGut.png](AmericanGut.png)
 I recommend the San Francisco company uBiome.
+
+History of uBiome
+The company was founded in late 2012 by Jessica Richman and Zach Apte, who met while doing graduate studies at Oxford. Jessica, with an undergraduate degree from Stanford, was studying public policy, using computers to understand how new ideas go viral. Zach was a biologist studying the microbiome, disappointed at how long it took to collect the vast number of samples required to do the science. The problem, they realized, was not lack of interest from the general public. There was no shortage of people interested in the microbiome and its affect on health, many of whom would happily contribute samples if they could help the science. They suspected that many of these "citizen scientists" were so eager to help that they might even pay for the privilege of participating in an experiment, particularly if they could receive personalized results of their own tests.
+In November 2012, they launched their first crowd funding campaign on the site Indiegogo, hoping to raise $100,000 to start the business. They started by selling "perks", $89 for a gut kit, $399 for a five-sample kit, offering to run the samples through the sequencing machine that Zach Apte was using at the University of California San Francisco biotech startup garage. To their surprise, the campaign raised more than $350,000, and the company was off and running.
+Since uBiome focused from the beginning on crowd-sourced open science, their kits were designed to be as easy to use as possible. With glossy-printed, step-by-step directions and an attractive kit with well-labeled test tubes, they wanted to let ordinary people take samples and submit them with as little fuss as possible.
+At the lab, uBiome also focused on automation. They built two special collection robots that could open the test tubes with the ultimate goal that they'd be able to submit to the sequencing machine with barely any human intervention.
+![uBiomeRobot20130917001011-robot.jpg](uBiomeRobot20130917001011-robot.jpg)
+
+
+The strong start with the Indiegogo campaign brought them enough money to start the business, but more importantly it attracted the attention of other investors who soon contributed $1.5M to the new company. Eventually the uBiome staff signed on to the prestigious Y-Combinator, the startup incubator that has given birth to many famous names including Airbnb, Reddit, Dropbox and others, and landed an additional $3M investment from the prestigious venture capital firm Andreessen Horowitz.
+With the new investment capital, uBiome was able to open a new headquarters and buy their own $300,000 NextSeq500 gene sequencing machine and more automation to help them process the samples more quickly.
 
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
 
@@ -544,7 +564,24 @@ Mix the starter thoroughly into the lukewarm milk and then cover it up and put i
 Set in a quiet place for about 8-10 hours. Overnight is ideal. When you open the bowl again, you'll find the mixture no longer resembles milk, but has been transformed into a much thicker consistency --- a yogurt. It will taste sour, and if you're not accustomed to plain, unsweetened yogurt you may even think that is has spoiled. Nope, that's just how pure, real yogurt is meant to taste.
 
 Pickling
+The next step after yogurt-making is also easy. It takes a little longer, from one to several weeks, but lets you expand your fermentation skills to many more foods. The most basic one is cabbage, to make your own sauerkraut.
+Think of fermentation as a type of farming, only instead of large plants that you see, you're farming with invisible microbes. In both cases the object is to start with a small seed that grows into a full crop. For sauerkraut, the microbes are naturally occurring on the leaves of plants and vegetables. You just need to put them into the right environment so the microbes can grow. 
+Start with a small head of cabbage and a grater. If you don't have a grater, then just chop it into small pieces. Cabbage is already covered with tiny microbes, but the interesting ones will not reproduce in the presence of oxygen; you need to get them out of the air. The best way to do that is to submerge them in a liquid --- in this case we'll use the naturally occurring water inside the cabbage leaves themselves. The purpose of grating or chopping is simply to let the water escape from the leaves until it covers the entire mixture.
+You'll need some type of container to submerge the leaves. Best is something made of glass or ceramic, though any container is fine as long as it doesn't react with the acids that will be produced by the microbes. A standard mason jar works, for example, or even a cleaned-out jar of pasta sauce. Make sure you have a lid for the container, and make sure the lid doesn't close too tightly. If you use something with a screw-top lid (like a pasta sauce jar) just pop a few tiny holes in the lid. The microbes will be producing carbon dioxide as they ferment, and you'll need a way for the gases to leave or the container will explode.
+Begin packing the cabbage leaves into the container as tightly as possible. While doing this, most people add some salt. The salt serves two purposes; it adds flavor, and it helps draw more water out of the plant. Just a small amount of salt is enough: about what you would use if you were seasoning it for flavor: a few shakes on each cabbage leaf as you peel it is enough, or maybe a total of a tablespoon or two for a small head of cabbage. Continue to pile more leaves into the container until it is full.
+If you're doing everything correctly, there will be a nice layer of liquid that completely covers the leaves in the container. Remember that the microbes can't reproduce if there is air, so covering with liquid is essential. If you see any green leaves poking out of the liquid, pack them down further. It may help to find an insert of some kind to place directly over the leaves, perhaps anthe lid to a smaller sized jar, one that fits inside the container and lets you squish the leaves even tighter. The key is to keep everything submerged in liquid.
+Put as many cabbage leaves as you can into the container and close the lid, but be careful: the bacteria in the jar will soon start to produce carbon dioxide gas, which will put pressure on the container. That's the reason for the air holes you poked in the lid beforehand. You may want to cover the entire jar with a loose-fitting piece of cellophane, or an old cloth, as a precaution in case the aroma begins to attract insects.
+That's it! Leave the fermenting jar in a cool, undisturbed place and then check on it for the first few days. Make sure the liquid has entirely submerged the cabbage leaves. Within a day or two you'll also notice some air bubbles in the liquid --- the sign that the fermentation has begun to work. Now, just let the jar rest for another several days or more. The longer it sits, the more acidic it will become. If you like a sour taste, let it sit for a week or two, maybe even up to a month or more. If you want a more subtle flavor, take it out in a few days. Feel free to sniff the jar every day or two to decide when you think it's ready.
+When finished, it will look and smell like sauerkraut. If some of the leaves were not entirely submerged in liquid, it's possible that a layer of moldy fungus has appeared, unsightly but not a problem. Just scrape off whatever doesn't look like sauerkraut and eat the rest.
 
+What's happening in sauerkraut
+The transformation from cabbage leaves to sauerkraut happens thanks to a complex interaction of bacteria starting with some members of the Leuconostoc species that occur naturally on the cabbage leaves. These are anaerobic organisms --- they can't live in oxygen. When submerged in the cabbage liquid, however, they thrive, consuming all the sugars they can find and converting them to lactic acid, giving off carbon dioxide as a byproduct. You'll know the reaction is occurring when you spot tiny bubbles at the surface of the liquid a few hours after beginning the reaction.
+Sadly for the Leuconostoc, they are too good at what they do. Eventually they'll consume all of the sugars they find transforming the liquid into a sour concoction, and as result the environment turns too acidic for them and they die.
+By then, the conditions have become ideal for another species, lactobacillus, which was pretty much designed for acidic liquids, and they finish off the remaining sugars, until the acidic level reaches PH=3, at which point their work is done.
+Fortunately for humans, the pathogens that could cause us harm are unable to survive in this high-acidic environment, and would be out-competed by the existing microbes anyway, so the final mixture is perfectly healthy.
+
+More fermentation
+Just about any food can be fermented, as people in all cultures have known since pre-history. Many common ethnic foods, such as miso (soybean) or kimchee (cabbage), are possible only thanks to fermentation. When you eat "cured" bacon or sausage, you are eating something that resulted from a complex interaction between microbes and meat. 
 
  
 

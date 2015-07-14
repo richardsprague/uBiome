@@ -22,12 +22,50 @@ class ubiomeSample():
         self.taxRankList = []
 
     def taxranklist(self, rank="species"):
+        """ returns a list of all organisms in this sample that are species.
+        """
         if self.taxRankList: # already computed, so don't recompute
             return self.taxRankList
         for organism in self.sampleList:
             self.taxRankList = self.taxRankList + [organism["tax_name"]]
 
 
+    def ubiomeCountNormOf(self, taxName):
+        """
+        returns the count_norm of a given taxName for a sample
+        :param taxName: string representation of a uBiome tax_name
+        :param sample:
+        :return:
+        """
+        for organism in self.sampleList:
+            if organism["tax_name"]==taxName:
+                assert isinstance(organism, dict)
+                return int(organism["count_norm"])
+
+
+    def ubiomeAddCountsToList(self,organismList):
+        """
+
+        :rtype : list
+        :param organismList: a  list of organism tax_names
+        :param sample: a well-formed uBiome JSON-formatted sample
+        :return: a list of dictionaries that includes the tax_name for the sample, plus its count_norm
+        """
+        if organismList == []:
+            return []
+        else:
+            return [{"tax_name":organismList[0],"count_norm":self.ubiomeCountNormOf(organismList[0])}] +  self.ubiomeAddCountsToList(organismList[1:])
+
+    def ubiomeUnique(self,sample2):
+        """
+        returns all organisms that are unique to sample 1
+        :type sample2: object
+        :param sample2:
+        :return:
+        """
+        uniqueSet = set(self.taxranklist()) - set(sample2.taxranklist())
+        listWithCounts = ubiomeAddCountsToList(list(uniqueSet),self.sampleList)
+        return listWithCounts
 
 # def taxRankOf(ubiomeJSONCounts,rank="species"):
 #     for i in ubiomeJSONCounts:
@@ -130,6 +168,8 @@ class ubiomeApp():
         ecounts= ubiomeAddCountsToList(list(uniqueElijah),e)
         esample.taxranklist()
         print("ecounts=",len(ecounts))
+        print("countnorm=",esample.ubiomeCountNormOf("Bacteria"))
+  #      esample.ubiomeUnique(msample)
 
 #ml=taxRankList(mayy)
 #mlSet = set(ml)
