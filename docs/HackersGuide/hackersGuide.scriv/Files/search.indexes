@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="69">
+            <Title>uBiomeRobot20130917001011-robot</Title>
+            <Notes>http://d2oadd98wnjs7n.cloudfront.net/file_attachments/78901/files/20130917001011-robot.jpg?1379401811
+
+https://www.indiegogo.com/projects/ubiome-sequencing-your-microbiome#/updates</Notes>
+        </Document>
         <Document ID="12">
             <Title>Non-Fiction Format</Title>
             <Text>NON-FICTION WITH SUB-HEADS
@@ -591,13 +597,33 @@ That said, just as I mentioned 23andme as a way to find information about your D
 
 For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
 
- The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. 
+ The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. American Gut boasts an impressive number of practicing research scientists, including several of the key contributors to the Human Microbiome 
 
 #
 I recommend the San Francisco company uBiome.
 
+History of uBiome
+The company was founded in late 2012 by Jessica Richman and Zach Apte, who met while doing graduate studies at Oxford. Jessica, with an undergraduate degree from Stanford, was studying public policy, using computers to understand how new ideas go viral. Zach was a biologist studying the microbiome, disappointed at how long it took to collect the vast number of samples required to do the science. The problem, they realized, was not lack of interest from the general public. There was no shortage of people interested in the microbiome and its affect on health, many of whom would happily contribute samples if they could help the science. They suspected that many of these “citizen scientists” were so eager to help that they might even pay for the privilege of participating in an experiment, particularly if they could receive personalized results of their own tests.
+In November 2012, they launched their first crowd funding campaign on the site Indiegogo, hoping to raise $100,000 to start the business. They started by selling “perks”, $89 for a gut kit, $399 for a five-sample kit, offering to run the samples through the sequencing machine that Zach Apte was using at the University of California San Francisco biotech startup garage. To their surprise, the campaign raised more than $350,000, and the company was off and running.
+Since uBiome focused from the beginning on crowd-sourced open science, their kits were designed to be as easy to use as possible. With glossy-printed, step-by-step directions and an attractive kit with well-labeled test tubes, they wanted to let ordinary people take samples and submit them with as little fuss as possible.
+At the lab, uBiome also focused on automation. They built two special collection robots that could open the test tubes with the ultimate goal that they’d be able to submit to the sequencing machine with barely any human intervention.
+￼
+
+
+The strong start with the Indiegogo campaign brought them enough money to start the business, but more importantly it attracted the attention of other investors who soon contributed $1.5M to the new company. Eventually the uBiome staff signed on to the prestigious Y-Combinator, the startup incubator that has given birth to many famous names including Airbnb, Reddit, Dropbox and others, and landed an additional $3M investment from the prestigious venture capital firm Andreessen Horowitz.
+With the new investment capital, uBiome was able to open a new headquarters and buy their own $300,000 NextSeq500 gene sequencing machine and more automation to help them process the samples more quickly.
+
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
 
+</Text>
+        </Document>
+        <Document ID="70">
+            <Title>Studying the Human Microbiome</Title>
+            <Text>Studying the Human Microbiome
+
+During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
+
+The Human Microbiome Project was launched in 2008 by the National Institutes of Health with a budget of $115M.
 </Text>
         </Document>
         <Document ID="56">
@@ -927,6 +953,10 @@ Think about this too much, and you'll end up with the obvious question: what oth
 Read more about Toxoplasma Gondii: http://www.theatlantic.com/magazine/archive/2012/03/how-your-cat-is-making-you-crazy/308873/
 
 </Text>
+        </Document>
+        <Document ID="68">
+            <Title>Untitled</Title>
+            <Text>#</Text>
         </Document>
         <Document ID="11">
             <Title>Title Page</Title>
