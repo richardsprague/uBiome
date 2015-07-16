@@ -86,6 +86,7 @@ class ubiomeSample():
 
     def writeCSV(self,filename):
         with open(filename,'w',newline='') as csvFile:
+            print("Writing to",filename)
             ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=self.sampleList[0].keys())
             ubiomeWriter.writeheader()
             for organism in self.sampleList:
@@ -96,26 +97,6 @@ class ubiomeDiffSample(ubiomeSample):
     def __init__(self,sampleList):
         self.sampleList = sampleList
         self.taxRankList = []
-
-
-
-# def taxRankOf(ubiomeJSONCounts,rank="species"):
-#     for i in ubiomeJSONCounts:
-#         if i["tax_rank"] == rank:
-#                 print(i["tax_name"])
-#     return 25
-
-def taxRankList(ubiomeJSON,rank="species"):
-    """
-    Returns a list of all tax_names in uBiomeJSONCounts
-    :param ubiomeJSON: JSON-formatted list of dictionaries, each of which contains info about an organism
-    :param rank: botanical rank (i.e. kingdom, phylum, class, order, family, genus, species)
-    :return: list
-    """
-    if ubiomeJSON==[]:
-        return []
-    else:
-        return [ubiomeJSON[0]["tax_name"]] + taxRankList(ubiomeJSON[1:],rank)
 
 
 
@@ -146,32 +127,6 @@ def ubiomeAddCountsToList(organismList,sample):
         return [{"tax_name":organismList[0],"count_norm":ubiomeCountNormOf(organismList[0],sample)}] +  ubiomeAddCountsToList(organismList[1:],sample)
 
 
-def ubiomeCompareSamples(sample1,sample2):
-    """
-    returns a list of organisms from sample1 and the relative amounts compared to sample2. Positive numbers indicate more in sample 1
-    :param sample1: list from the uBiome JSON-formatted sample
-    :param sample2: list from the uBiome JSON-formatted sample
-    :return:
-    """
-    return "still working on implementation"
-
-def ubiomeUnique(sample1,sample2):
-    """
-    returns all organisms that are unique to sample 1
-    :param sample1:
-    :param sample2:
-    :return:
-    """
-    uniqueSet = set(taxRankList(sample1)) - set(taxRankList(sample2))
-    listWithCounts = ubiomeAddCountsToList(list(uniqueSet),sample1)
-    return listWithCounts
-
-# sample JSON object pulled straight from uBiome
-
-#jsonFile = open("../Data/others/elijah.json")
-#elijah=json.load(jsonFile)
-
-
 
 ## Python sets:
 ## a - b
@@ -188,30 +143,6 @@ class ubiomeApp():
         print("len esample.unique",len(unique.sampleList))
         unique.writeCSV("esample.csv")
 
-       # print("esample.unique=",unique)
-        # print("esample unique=",len(unique))
-        # esample.showContents()
-        # print("msample:")
-        # # msample.showContents()
-        e = esample.sampleList
-        el=taxRankList(e)
-        ml=taxRankList(m)
-        elSet=set(el)
-        mlSet = set(ml)
-        c=ubiomeAddCountsToList(el,e)
-
-#elcounts=ubiomeAddCountsToList(el,el)
-
-
-        commonElijahMay = mlSet & elSet
-        uniqueElijah = elSet - mlSet
-       # print("unique=",ubiomeUnique(m,e))
-
-        ecounts= ubiomeAddCountsToList(list(uniqueElijah),e)
-        esample.taxranklist()
-       # esample.writeCSV("esample.csv")
-        print("ecounts=",len(ecounts))
-        print("countnorm=",esample.countNormOf("Bacteria"))
 
 
 if __name__=="__main__":
@@ -221,4 +152,3 @@ if __name__=="__main__":
 else:
     print("uBiomeCompare loaded as a module")
 
-#ubiomeUnique(e,m)
