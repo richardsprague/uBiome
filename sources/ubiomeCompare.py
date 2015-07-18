@@ -9,7 +9,6 @@ this text is ignored
 
 >>> myApp.testUnique()
 44
-writing to csv
 >>> v = myApp.testCompare(myApp.esample,myApp.msample)
 >>> len(v.sampleList)
 195
@@ -24,6 +23,9 @@ __author__ = 'sprague'
 
 import json
 import csv
+import sys
+from argparse import ArgumentParser
+
 
 
 class Taxon():
@@ -146,12 +148,19 @@ class UbiomeSample():
         return diffSample
 
     def writeCSV(self,filename):
-        with open(filename,'w') as csvFile:
-            print('writing to csv')
-            ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=self.sampleList[0].keys())
+        if filename==sys.stdout:
+            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=self.sampleList[0].keys())
+            #print('writing to csv')
             ubiomeWriter.writeheader()
             for organism in self.sampleList:
                 ubiomeWriter.writerow(organism)
+        else:
+            with open(filename,'w') as csvFile:
+                #print('writing to csv')
+                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=self.sampleList[0].keys())
+                ubiomeWriter.writeheader()
+                for organism in self.sampleList:
+                    ubiomeWriter.writerow(organism)
 
 
 class UbiomeDiffSample(UbiomeSample):
@@ -186,9 +195,9 @@ class UbiomeDiffSample(UbiomeSample):
 ## a ^ b  # in a or b but not both
 
 class ubiomeApp():
-    def load(self):
-        self.msample = UbiomeSample("../Data/sprague data/Sprague-ubiomeMay2014.json")
-        self.esample = UbiomeSample("../Data/others/elijah.json")
+    def __init__(self,fname1,fname2):
+        self.msample = UbiomeSample(fname1)
+        self.esample = UbiomeSample(fname2)
 
 
 
@@ -198,21 +207,58 @@ class ubiomeApp():
         #print("len esample.unique",len(unique.sampleList))
         unique.writeCSV("esample.csv")
 
+    def runUnique(self):
+        unique=self.esample.unique(self.msample)
+        #print("len esample.unique",len(unique.sampleList))
+        unique.writeCSV(sys.stdout)
+
     def testCompare(self,sample1,sample2):
-        return sample1.compareWith(sample2)
+        compare=sample1.compareWith(sample2)
+        compare.writeCSV("ecompare.csv")
+        return compare
+
+    def runCompare(self,sample1,sample2):
+        compare=sample1.compareWith(sample2)
+        compare.writeCSV(sys.stdout)
+        return compare
 
 
 
 if __name__=="__main__":
-    print("run uBiomeCompare.py")
+    #print("run uBiomeCompare.py")
     import doctest
-    myApp = ubiomeApp()
-    myApp.load()
-    #myApp.testUnique()
-    v = myApp.testCompare(myApp.esample,myApp.msample)
 
-    doctest.testmod()
-    print("all tests successful")
+
+    parser = ArgumentParser()
+    parser.add_argument("-c","--compare",help="Compare sample1 with with sample2")
+    parser.add_argument("-u","--unique",help="Find items in sample1 not in sample2")
+    parser.add_argument("-d","--debug",help="turn debug mode to run tests")
+    parser.add_argument("sample2",help="sample you are comparing to")
+    args = parser.parse_args()
+    if args.compare:
+        #print("Compare Sample 1 Args=",args.compare,args.sample2)
+        a=args.compare
+        b=args.sample2
+    if args.unique:
+        #print("Unique Sample 1",args.unique,args.sample2)
+        a=args.unique
+        b=args.sample2
+
+   # a = "../Data/sprague data/Sprague-ubiomeMay2014.json"
+   # b = "../Data/others/elijah.json"
+    myApp = ubiomeApp(a,b)
+    if args.unique:
+        myApp.runUnique()
+    if args.compare:
+        myApp.runCompare(myApp.esample,myApp.msample)
+
+    DEBUG = False
+
+    if DEBUG:
+        myApp.testUnique()
+        v = myApp.testCompare(myApp.esample,myApp.msample)
+        doctest.testmod()
+        print("all tests successful")
 else:
     print("uBiomeCompare loaded as a module")
 
