@@ -31,17 +31,19 @@
 <p class="binderItem"><strong>Title Page</strong><br/>Title page to the manuscript.</p>
 </li>
 <li>
-<p class="binderItem"><strong>Contents</strong><br/>Manuscript <$p><br/>
-Title Page <$p><br/>
-Contents <$p><br/>
+<p class="binderItem"><strong>Contents</strong><br/>Contents <$p><br/>
 Foreword <$p><br/>
 The Science <$p><br/>
+Intro <$p><br/>
 Microbes everywhere! <$p><br/>
 In the air <$p><br/>
 Underground <$p><br/>
 A crash course in microbiology <$p><br/>
 A crash course in botany <$p><br/>
+What are they doing? <$p><br/>
+Studying the Human Microbiome <$p><br/>
 The Technology <$p><br/>
+Studying the Microbiome <$p><br/>
 The old way: culturing <$p><br/>
 16s rRNA <$p><br/>
 Gene sequencing <$p><br/>
@@ -49,11 +51,8 @@ Bioinformatics <$p><br/>
 How to Analyze Your Microbiome <$p><br/>
 How to get your data <$p><br/>
 The basics: web tools <$p><br/>
-Endnotes <$p><br/>
-Next Steps <$p><br/>
-Fermented food <$p><br/>
-Which Organisms to Watch <$p><br/>
-Good and Bad <$p></p>
+Analyze with Excel <$p><br/>
+Comparing sam...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Foreword</strong><br/>This book is for curious people with little or no knowledge of biology, but who have a reasonable level of comfort with computer software, either as programmer, or as an end-user comfortable with the basics of installing and running common applications (Excel).<br/>
@@ -77,10 +76,11 @@ The book is divided into four main sections:<br/>
 <ul>
 <li>
 <p class="binderItem"><strong>In the air</strong><br/>A team in France, performing experiments on snowflakes, discovered microbes in the sky.<br/>
-#<br/>
+<br/>
 <br/>
 !fig(amatoSkyMicrobe)<br/>
 <br/>
+These microbes are so numerous that they affect the climate. <br/>
 <br/>
 </p>
 </li>
@@ -90,7 +90,10 @@ The book is divided into four main sections:<br/>
 There are even microbes that thrive in radioactive environments, like the dangerous interior of the Chernobyl nuclear reactor.<br/>
 <br/>
 <br/>
-#</p>
+<br/>
+<br/>
+<br/>
+Subglacial Lake Whillans is a lake found under more than 800 meters of ice in the West Antarctic. A careful underground bore hole was inserted by a team from Louisiana State University in 2014 [http://www.nature.com/nature/journal/v512/n7514/full/nature136...</p>
 </li>
 </ul>
 <hr/>
@@ -102,9 +105,7 @@ All life runs on three chemical building blocks:  DNA, RNA, and proteins. Each o
 <li>
 <p class="binderItem"><strong>A crash course in botany</strong><br/>How do you talk about the relationships between various different life forms?<br/>
 <br/>
-Since Carl Linnaeus in the 1700’s, the science of taxonomy divides all life into seven major categories: Kingdom, Phylum, Class, Order, Family, Genus, Species (which I was taught in sixth grade to remember by the mnemonic “King Philip Came Over for Girl Scouts”). <br/>
-<br/>
-Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is ...</p>
+A taxon is a simple unit of life. A homo sapiens is a taxon, but so is a primate. A mammal is a taxon too. It might seem odd in the ordinary biological world to bother using the same term ‘taxon’ to refer to all of those units, but for bacteria and anything that reproduces asexually, it’s an important distinction because often, taxonomists don’t agree about whether a group of organisms is part of the same taxon or not...</p>
 </li>
 <li>
 <p class="binderItem"><strong>What are they doing?</strong><br/>Toxoplasma Gondii is a tiny microbe that, for some reason, only likes to reproduce from within the gut of a cat. It can be found in almost all warm-blooded mammals, including humans — about 30% of us, according to some estimates, and that’s after a century of obsession with hygiene that has wiped out countless other tiny inhabitants of the body.<br/>
@@ -162,6 +163,11 @@ That said, just as I mentioned 23andme as a way to find information about your D
 </li>
 <li>
 <p class="binderItem"><strong>The basics: web tools</strong><br/>After uBiome has notified you of your results, you can go to their web site to learn more.<br/>
+<br/>
+The first thing you’ll notice is a pretty chart like this one:<br/>
+<br/>
+<br/>
+This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla —the highest, broadest level of classification. If you’re like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. <br/>
 </p>
 </li>
 <li>
@@ -169,6 +175,13 @@ That said, just as I mentioned 23andme as a way to find information about your D
 <br/>
 What is JSON<br/>
 UBiome’s taxonomy files come in a simple structured text format called JSON (JavaScript Object Notation), commonly used across the web. Although it’s not a...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Comparing samples</strong><br/>The uBiome JSON taxonomy file is extremely helpful at giving you a short summary of what you care about most in a sample: the organisms within it and their relative amounts. But even with these annotations, there’s a limit to what you can learn in a single sample. To be able to start hacking your microbiome, you will need to learn how to compare multiple samples.<br/>
+There are two main things you’ll want to measure when comparing two samples:<br/>
+<br/>
+<br/>
+Uniqueness: which organisms are found in only one sampl...</p>
 </li>
 </ul>
 <hr/>
@@ -201,7 +214,7 @@ Yogurt<br/>
 One of the easiest ferments is home-made yogurt. Pour a few cups of whole milk into a saucepan and heat to ...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Annnoted References</strong><br/>Here are my suggestions for additional reading.<br/>
+<p class="binderItem"><strong>Annnotated References</strong><br/>Here are my suggestions for additional reading.<br/>
 <br/>
 Read more about Toxoplasma Gondii: http://www.theatlantic.com/magazine/archive/2012/03/how-your-cat-is-making-you-crazy/308873/<br/>
 </p>

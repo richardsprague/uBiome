@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-15 09:20:11 -0700">
+<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-07-22 16:12:00 -0700">
     <Binder>
         <BinderItem ID="12" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 12:01:13 -0700">
             <Title>Non-Fiction Format</Title>
@@ -19,10 +19,14 @@
                 <PageBreakBefore>Yes</PageBreakBefore>
             </MetaData>
             <CorkboardAndOutliner>
-                <SelectedSubdocumentIDs>41</SelectedSubdocumentIDs>
+                <SelectedSubdocumentIDs>4, 6, 29-31, 35, 37-47, 49-52, 56, 59, 64, 66, 70-72</SelectedSubdocumentIDs>
                 <OutlinerExpandedState>
                     <ItemID>4</ItemID>
                     <ItemID>6</ItemID>
+                    <ItemID>38</ItemID>
+                    <ItemID>45</ItemID>
+                    <ItemID>51</ItemID>
+                    <ItemID>49</ItemID>
                 </OutlinerExpandedState>
             </CorkboardAndOutliner>
             <Children>
@@ -38,7 +42,7 @@
                         <TextSelection>73,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem ID="31" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-07 15:34:24 -0700">
+                <BinderItem ID="31" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-22 16:10:04 -0700">
                     <Title>Contents</Title>
                     <MetaData>
                         <PageBreakBefore>Yes</PageBreakBefore>
@@ -46,7 +50,7 @@
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>491,0</TextSelection>
+                        <TextSelection>629,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem ID="30" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-08 17:01:01 -0700">
@@ -78,7 +82,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>9192,0</TextSelection>
+                                <TextSelection>157,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="6" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-15 09:17:46 -0700">
@@ -93,25 +97,25 @@
                                 <TextSelection>596,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem ID="35" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-08 17:03:29 -0700">
+                                <BinderItem ID="35" Type="Text" Created="2015-07-07 12:01:13 -0700" Modified="2015-07-22 15:40:52 -0700">
                                     <Title>In the air</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                         <NotesTextSelection>0,0</NotesTextSelection>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>114,0</TextSelection>
+                                        <TextSelection>178,0</TextSelection>
                                         <Target Type="Words" Notify="No">1000</Target>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem ID="41" Type="Text" Created="2015-07-07 12:15:46 -0700" Modified="2015-07-08 17:03:43 -0700">
+                                <BinderItem ID="41" Type="Text" Created="2015-07-07 12:15:46 -0700" Modified="2015-07-22 15:40:52 -0700">
                                     <Title>Underground</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                         <NotesTextSelection>0,0</NotesTextSelection>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>242,0</TextSelection>
+                                        <TextSelection>987,0</TextSelection>
                                         <Target Type="Words" Notify="No">1000</Target>
                                     </TextSettings>
                                 </BinderItem>
@@ -128,25 +132,25 @@
                                 <Target Type="Words" Notify="No">1000</Target>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="42" Type="Text" Created="2015-07-07 12:17:10 -0700" Modified="2015-07-08 16:38:18 -0700">
+                        <BinderItem ID="42" Type="Text" Created="2015-07-07 12:17:10 -0700" Modified="2015-07-22 15:20:39 -0700">
                             <Title>A crash course in botany</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>951,0</TextSelection>
+                                <TextSelection>1249,0</TextSelection>
                                 <Target Type="Words" Notify="No">1000</Target>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="66" Type="Text" Created="2015-07-10 05:58:38 -0700" Modified="2015-07-10 06:40:13 -0700">
+                        <BinderItem ID="66" Type="Text" Created="2015-07-10 05:58:38 -0700" Modified="2015-07-22 15:19:42 -0700">
                             <Title>What are they doing?</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>2158,0</TextSelection>
+                                <TextSelection>2639,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="70" Type="Text" Created="2015-07-14 16:04:17 -0700" Modified="2015-07-14 16:11:37 -0700">
@@ -243,14 +247,14 @@
                                 <TextSelection>1074,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="46" Type="Text" Created="2015-07-07 12:19:35 -0700" Modified="2015-07-07 12:23:50 -0700">
+                        <BinderItem ID="46" Type="Text" Created="2015-07-07 12:19:35 -0700" Modified="2015-07-22 16:05:23 -0700">
                             <Title>The basics: web tools</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>90,0</TextSelection>
+                                <TextSelection>446,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="56" Type="Text" Created="2015-07-07 22:04:09 -0700" Modified="2015-07-08 16:24:36 -0700">
@@ -261,6 +265,17 @@
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>5683,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="72" Type="Text" Created="2015-07-19 14:45:18 -0700" Modified="2015-07-19 15:27:29 -0700">
+                            <Title>Comparing samples
+</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>3082,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -307,14 +322,14 @@
                                 <TextSelection>9209,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="59" Type="Text" Created="2015-07-08 07:40:33 -0700" Modified="2015-07-10 06:35:12 -0700">
-                            <Title>Annnoted References</Title>
+                        <BinderItem ID="59" Type="Text" Created="2015-07-08 07:40:33 -0700" Modified="2015-07-20 20:24:27 -0700">
+                            <Title>Annnotated References</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>178,0</TextSelection>
+                                <TextSelection>48,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -343,11 +358,39 @@
                 <TextSelection>0,0</TextSelection>
             </TextSettings>
             <Children>
+                <BinderItem ID="74" Type="Image" Created="2015-07-22 16:02:24 -0700" Modified="2015-07-22 16:02:24 -0700">
+                    <Title>uBiomeGutChart</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
                 <BinderItem ID="60" Type="Image" Created="2015-07-08 14:19:55 -0700" Modified="2015-07-08 14:19:55 -0700">
                     <Title>uBiomeScreenDownloadData</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                         <FileExtension>png</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="73" Type="Image" Created="2015-07-22 15:59:33 -0700" Modified="2015-07-22 15:59:33 -0700">
+                    <Title>uBiomeGutSample</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
                         <NotesTextSelection>0,0</NotesTextSelection>
                         <ShowSynopsisImage>Yes</ShowSynopsisImage>
                     </MetaData>
@@ -568,7 +611,7 @@
         </Collection>
         <Collection Type="RecentSearch" ID="2655DDF6-4AB8-42CB-A433-1CD76FC351D2" Color="0.922 0.91 0.98">
             <Title>Search Results</Title>
-            <SearchSettings Operator="Exact" Type="All" CaseSensitive="No">non-fiction format</SearchSettings>
+            <SearchSettings Operator="Exact" Type="All" CaseSensitive="No">rabies</SearchSettings>
         </Collection>
         <Collection Type="Arbitrary" ID="6AFA2080-9C74-469E-960C-1F8D242F33A6" Color="0.739895 0.981936 0.810368">
             <Title>Interesting Microbes</Title>
@@ -615,7 +658,7 @@
     <ProjectTargets Notify="Yes">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 05:24:39 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">500</SessionTarget>
-        <PreviousSession Words="1694" Characters="9776" Date="2015-07-15 09:06:17 -0700"></PreviousSession>
+        <PreviousSession Words="211" Characters="1305" Date="2015-07-22 14:29:32 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="595.275574,841.861389" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>

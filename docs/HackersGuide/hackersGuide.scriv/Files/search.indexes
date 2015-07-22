@@ -88,26 +88,31 @@ The book is divided into four main sections:
         </Document>
         <Document ID="6">
             <Title>Microbes everywhere!</Title>
-            <Text>Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning.
-These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds — about as much as the brain.
+            <Text>Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning. These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds — about as much as the brain.
+
+
 The word “microbe” refers to any tiny organism that carries its own genetic information for purposes of propagating itself. Far too small to see with the naked eye, dozens could fit inside a typical human cell. The vast majority of microbes are bacteria, though viruses and phages fit this description too, as well as archaea, the extremophile life forms that live and thrive in environments too challenging for bacteria. A typical human will have somewhere between [n and m] individual cells — blood, skin, neurons, other tissues — each descended from a single germ cell, the fertilized egg that began dividing itself and multiplying after the moment of conception. By contrast, microbes had to hitch their own rides later, beginning in the womb and turning into a flood at the moment of birth and beyond. But each microbe, like each human cell, remains deeply interconnected with the fates of all the other cells, all the way to the moment of death, and even after that.
 
 
 </Text>
+            <Comments>source?
+</Comments>
         </Document>
         <Document ID="31">
             <Title>Contents</Title>
-            <Text>Manuscript	&lt;$p&gt;
-Title Page	&lt;$p&gt;
-Contents	&lt;$p&gt;
+            <Text>Contents	&lt;$p&gt;
 Foreword	&lt;$p&gt;
 The Science	&lt;$p&gt;
+Intro	&lt;$p&gt;
 Microbes everywhere!	&lt;$p&gt;
 In the air	&lt;$p&gt;
 Underground	&lt;$p&gt;
 A crash course in microbiology	&lt;$p&gt;
 A crash course in botany	&lt;$p&gt;
+What are they doing?	&lt;$p&gt;
+Studying the Human Microbiome	&lt;$p&gt;
 The Technology	&lt;$p&gt;
+Studying the Microbiome	&lt;$p&gt;
 The old way: culturing	&lt;$p&gt;
 16s rRNA	&lt;$p&gt;
 Gene sequencing	&lt;$p&gt;
@@ -115,11 +120,15 @@ Bioinformatics	&lt;$p&gt;
 How to Analyze Your Microbiome	&lt;$p&gt;
 How to get your data	&lt;$p&gt;
 The basics: web tools	&lt;$p&gt;
-Endnotes	&lt;$p&gt;
+Analyze with Excel	&lt;$p&gt;
+Comparing samples
+	&lt;$p&gt;
+Organisms to Watch	&lt;$p&gt;
+Good and Bad	&lt;$p&gt;
 Next Steps	&lt;$p&gt;
 Fermented food	&lt;$p&gt;
-Which Organisms to Watch	&lt;$p&gt;
-Good and Bad	&lt;$p&gt;</Text>
+Annnotated References	&lt;$p&gt;
+Endnotes	&lt;$p&gt;</Text>
         </Document>
         <Document ID="40">
             <Title>The old way: culturing</Title>
@@ -137,7 +146,15 @@ A bigger problem with culturing is that some organisms need other organisms in o
 There are even microbes that thrive in radioactive environments, like the dangerous interior of the Chernobyl nuclear reactor.
 
 
-#</Text>
+#
+
+
+Subglacial Lake Whillans is a lake found under more than 800 meters of ice in the West Antarctic. A careful underground bore hole was inserted by a team from Louisiana State University in 2014 [http://www.nature.com/nature/journal/v512/n7514/full/nature13667.html]  and found more than 4,000 different species of bacteria surviving under the ice. The total bacterial count was not that different from the count you’d find in surface lakes on other parts of the planet, a fact that is especially surprising for an environment that hasn’t had a ray of light in millions of years. The bacteria instead thrive on iron, sulphur, and nitrogen as energy sources.
+http://earthsky.org/earth/diverse-microbes-found-deep-beneath-antarctic-ice-sheet
+
+￼
+
+</Text>
         </Document>
         <Document ID="50">
             <Title>Fermented food</Title>
@@ -181,9 +198,14 @@ Just about any food can be fermented, as people in all cultures have known since
             <Title>A crash course in botany</Title>
             <Text>How do you talk about the relationships between various different life forms?
 
+A taxon is a simple unit of life. A homo sapiens is a taxon, but so is a primate. A mammal is a taxon too. It might seem odd in the ordinary biological world to bother using the same term ‘taxon’ to refer to all of those units, but for bacteria and anything that reproduces asexually, it’s an important distinction because often, taxonomists don’t agree about whether a group of organisms is part of the same taxon or not.
+
+
 Since Carl Linnaeus in the 1700’s, the science of taxonomy divides all life into seven major categories: Kingdom, Phylum, Class, Order, Family, Genus, Species (which I was taught in sixth grade to remember by the mnemonic “King Philip Came Over for Girl Scouts”). 
 
-Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can’t be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus canis could be anything from a wolf or coyote to a Chihuahua. 
+
+
+Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can’t be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus Canis could be anything from a wolf or coyote to a Chihuahua. 
 
 You cannot mix and match these ranks. If you know something about the number of organisms in one genus, for example, this is meaningful only in comparison to the numbers of another genus. Keep that in mind during our analysis. 
 </Text>
@@ -215,6 +237,7 @@ For example, from [Blaser p119]
 
 !fig(amatoSkyMicrobe)
 
+These microbes are so numerous that they affect the climate. 
 
 
 </Text>
@@ -228,15 +251,17 @@ For example, from [Blaser p119]
 
 </Text>
         </Document>
+        <Document ID="70">
+            <Title>Studying the Human Microbiome</Title>
+            <Text>Studying the Human Microbiome
+
+During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
+
+The Human Microbiome Project was launched in 2008 by the National Institutes of Health with a budget of $115M.
+</Text>
+        </Document>
         <Document ID="27">
             <Title>Ideas</Title>
-        </Document>
-        <Document ID="53">
-            <Title>Pseudomonas syringae </Title>
-            <Text>
-Pierre Amato :  
-
-</Text>
         </Document>
         <Document ID="36">
             <Title>Sample MS</Title>
@@ -319,8 +344,59 @@ Non-Fiction/Umwan	19
         <Document ID="45">
             <Title>How to Analyze Your Microbiome</Title>
         </Document>
-        <Document ID="28">
-            <Title>Notes</Title>
+        <Document ID="71">
+            <Title>Intro</Title>
+            <Text>I’m a software guy, and when I think about what it means to be human, I think first of course of all the various “software” we are made of: our language, culture, education, behaviors — all things that seem to us to be flexible, even arbitrary, but which define us as individuals. But as with computers, the software can only run as well as the hardware, so I’m interested in that too: what is the CPU, the memory, the graphics card? and how can you expand or make it better and faster? What should you do to maintain your hardware?
+
+To learn more about your hardware, you can of course measure various things about yourself: temperature, blood tests, activity levels. New products like the Apple Watch are making this much easier, and in the near future you’ll see an explosion of new and better ways to measure your body’s hardware and with better, more actionable measurement come many ways to modify and optimize your health along the way. All of these new wearable computing devices recognize that you  are a unique individual and that we always should treat the patient, not the statistics. So what is the part of you that is fundamentally you?
+
+The obvious place to start is with DNA, and our human genes. I was excited when 23andme (and other services) came out about ten years ago, letting each of us inexpensively see our internal hardware, perhaps to learn more about the things that make us unique, and maybe peer into our futures, to the degree that biological traits like susceptibility to various diseases or conditions is hereditary and unchangeable.
+
+But after a while I realized how little of what we learn about DNA is actionable. If you find you have the “gene for”  Alzheimer’s disease or Parkinson’s, or any of the other traits that have been linked to specific genes, what can you do about it? In nearly every case, the advice is exactly what you should be doing even if you don't have that trait: eat well and get lots of exercise.
+
+
+Fortunately, it’s not just our DNA
+In fact, if you could point a scanner at me and pull out everything, all the “hardware” inside me right now, you’d find a curious fact: although sure, 99% of the weight and size of what you see is human (blood, skin, bones, organs, etc.), only about 10% of the cells are human, and even less than that  — only about 1%  — of the DNA-storing genes are human.
+
+What’s the rest? Who am I, if only 1% of the genes inside me are human? The answer is microbes, and as befits something that so outnumbers the “human” part of us, they play a large role in everything about what we do, from our health to our moods and even, as I’ll show, to our motivations.
+
+Microbes are older than any of us
+We tend to think of the invisible, single-celled microbes as "primitive", not nearly as "advanced" as we humans, with our marvelous brains and ability to transform the earth with airplanes and skyscrapers and nuclear reactors and all the rest. But that's what we would think, wouldn't we? In fact, the microbes are everywhere, literally everywhere on earth, in the sky, even deep underground. We can't go anywhere without encountering microbes because, well, there are even microbes on and inside us. Humans can't survive without microbes. So what does it even mean to say we're "better" or more "advanced" than they are?
+
+Before the microscope, people didn't even know that microbes existed. Similarly, until the advent of large-scale gene sequencing machines in the past ten years, almost nothing was known about the amazing ubiquity and resilience of microbes.
+
+Yes, they’re single-celled and yes many of their cellular functions seem more straightforward than the functions of a multi-cellular creature like us, but it would be a mistake to assume that means microbes -- collectively -- are less influential, and certainly it would be a big error to assume they are less important. Fact is, these organisms have been around, breathing, eating, multiplying, for billions of years, often in pretty much the same form that they are today. These things have survived every imaginable planetary condition from volcanoes to the depths of the ocean to the inside of nuclear reactors. Global Warming means nothing to these guys, who have seen and thrived all over the earth since the day life first appeared.
+
+What they want
+Because they have such a huge advantage over us, in lifespan (each microbe is an exact divided copy of itself, going back a zillion generations), in speed of replication (they can double in just a few minutes under the right conditions),  and ubiquity (as I said, cellwise they far outnumber us), they can afford to colonize every new imaginable environment. 
+
+And that's what they do, every time a new frontier opens to them. The moment of your birth, for example, when you left the (mostly) sterile conditions of your mother's womb, they immediately flooded all over your skin, mostly coming from your mother, and in that fresh environment they used their first-mover advantage to get a stronghold that in many cases lasts your entire life. Many (most?) of the microbes that matter arrived inside you this way, originally, and many of them are still there today, decades, even half a century or more later. 
+
+To survive, they need one thing: something to eat. Being so tiny, they don't need much, and they mostly eat things that you (and other larger creatures) weren't interested in anyway. (Or, since they were here first, it's probably more accurate to say that you and I must live on the foods that they don't want. A cheeseburger is only food for you because you snatch it faster than they do. Leave it outside for a while and they'll get it eventually).
+
+Who’s in charge?
+Collectively, the multitude species of microbes will eat just about everything, but individually each species has its preferences. When they're outside the body, as I said, they can "colonize" new territories (like fresh baby skin) to get what they want, but those inside your tummy are at the mercy of whatever it is you decide to put into your mouth.
+
+Often, that's not a big deal: many species thrive on the same proteins, carbohydrates, and fats that you do. But some species do better than others with certain types of foods, and this is where the line between your human desires and theirs becomes unclear.
+
+Eighty percent of all your brain's outside receptors -- counting all the nerve endings everywhere on your skin -- eighty percent complete their connections in the gut. The main switching grounds, an area called the vagus nerve, does something.  What? We know very little, but we see some evidence that the purpose -- the reason that not 1% or 10% or 50% but a full 80% of all the receptors go to the gut -- is so the microbes can tell your brain what to do.
+
+When you find yourself feeling hungry, ask yourself who is feeling hungry. Scientists have traced that feeling of hunger to changes in certain hormones like leptin, but wait -- why did the leptin levels change in the first place? Could it be that a microbes someplace was manipulating your leptin levels, perhaps by poking that vagus nerve just the right way -- to get your brain to start thinking about whatever food that microbe wants?
+
+This isn't as ridiculous as it sounds, the idea that microbes could influence your feelings and desires. Think about a disease like the rabies microbe. Because it spreads through saliva, it can't find new territory unless its host somehow finds itself exchanging saliva -- biting -- another potential host. So guess what a rabies victim can't stop thinking about? Biting a new victim.  The microbe literally puts a thought into the mind.
+
+There are many other examples, so many in fact as to be potentially a bit disturbing when we realize that we humans may be much more at the mercy of tiny microbes than we think.  Links have been made between microbes and schizophrenia, stress, anxiety, self-grooming, and much more.  Autism Spectral Disorders, which have always seemed puzzling because of the relationship they seem to have with digestive problems, are also linked to microbes,  or the lack thereof.
+
+Perhaps the most intriguing example is the common parasite Toxoplasma gondii, the strange organism that can only reproduce in the intestines of cats. A parasite seen often in all warm-blooded mammals, it's found in about a third of the global population of humans too.  It's one of the reasons they tell pregnant women to stay away from cat litter. But here's the interesting part: when a Toxo protozoa infects a mouse, it leaves cysts in the mouse brain that make it attracted to cat urine! Yes, it changes the neurology of a mouse so that it's more likely to end up inside a cat's tummy -- exactly where it can reproduce.
+
+Think about this too much, and you'll end up with the obvious question: what other weird microbes are infecting us right now? Can we explain some of our own behaviors this way? Is there a human equivalent of these infections, driving us to do things we "ordinarily" wouldn't do? And maybe these microbes are so ubiquitous, teeming all over us and in our brains, maybe there's no way to even know what "ordinary" or "normal" human behavior is.
+
+
+What is health?
+There’s a new idea in science (well, maybe it's not new, but it's new to me and that's why I'm talking about this). Maybe you can't really think about human hardware without thinking about the whole ecology that goes with it, the various organisms live in and around us and greatly outnumber us.
+
+When you think this way, then suddenly "health" takes on a whole new meaning, because we're no longer talking about the status of a single organism -- me -- but rather about the entire function "eco-system" of many, many living things, including  the "me" that I want to refer to as a human.
+</Text>
         </Document>
         <Document ID="54">
             <Title>Deinococcus radiodurans </Title>
@@ -329,6 +405,9 @@ Non-Fiction/Umwan	19
 
 
 </Text>
+        </Document>
+        <Document ID="28">
+            <Title>Notes</Title>
         </Document>
         <Document ID="37">
             <Title>A crash course in microbiology</Title>
@@ -559,13 +638,10 @@ Part of the definition of life is the ability to reproduce, and cells do this by
 
 </Text>
         </Document>
-        <Document ID="63">
-            <Title>Pasted Graphic 1</Title>
-            <Text>￼</Text>
-        </Document>
-        <Document ID="46">
-            <Title>The basics: web tools</Title>
-            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
+        <Document ID="53">
+            <Title>Pseudomonas syringae </Title>
+            <Text>
+Pierre Amato :  
 
 </Text>
         </Document>
@@ -576,8 +652,16 @@ Part of the definition of life is the ability to reproduce, and cells do this by
         <Document ID="55">
             <Title>Interesting Microbes</Title>
         </Document>
-        <Document ID="38">
-            <Title>The Technology</Title>
+        <Document ID="46">
+            <Title>The basics: web tools</Title>
+            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
+
+The first thing you’ll notice is a pretty chart like this one:
+#
+
+This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla —the highest, broadest level of classification. If you’re like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. 
+
+￼</Text>
         </Document>
         <Document ID="64">
             <Title>Studying the Microbiome</Title>
@@ -588,6 +672,9 @@ Computer scientists have an easier time than biologists because operations are s
 
 
 </Text>
+        </Document>
+        <Document ID="38">
+            <Title>The Technology</Title>
         </Document>
         <Document ID="47">
             <Title>How to get your data</Title>
@@ -615,15 +702,6 @@ With the new investment capital, uBiome was able to open a new headquarters and 
 
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
 
-</Text>
-        </Document>
-        <Document ID="70">
-            <Title>Studying the Human Microbiome</Title>
-            <Text>Studying the Human Microbiome
-
-During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
-
-The Human Microbiome Project was launched in 2008 by the National Institutes of Health with a budget of $115M.
 </Text>
         </Document>
         <Document ID="56">
@@ -915,10 +993,39 @@ TAR, TRA
             <Text>their web site to learn more.
  </Text>
         </Document>
+        <Document ID="63">
+            <Title>Pasted Graphic 1</Title>
+            <Text>￼</Text>
+        </Document>
         <Document ID="57">
             <Title>Deinococcus radiodurans</Title>
             <Text>￼</Text>
             <Notes>http://en.wikipedia.org/wiki/Deinococcus_radiodurans</Notes>
+        </Document>
+        <Document ID="72">
+            <Title>Comparing samples
+</Title>
+            <Text>The uBiome JSON taxonomy file is extremely helpful at giving you a short summary of what you care about most in a sample: the organisms within it and their relative amounts. But even with these annotations, there’s a limit to what you can learn in a single sample. To be able to start hacking your microbiome, you will need to learn how to compare multiple samples.
+There are two main things you’ll want to measure when comparing two samples:
+
+
+Uniqueness: which organisms are found in only one sample and not the other? If you are comparing two samples from the same individual (e.g. Yourself), then uniqueness is another way of talking about either extinctions (when a taxon has disappeared entirely in a later sample) and appearances (when a new taxon magically shows up). In other words, you care a lot about the order in which the samples were taken.
+On the other hand, if you’re comparing two separate individuals, then the ordering of the samples doesn’t matter. Uniqueness just tells which organisms are unique to a specific person.
+
+Relative abundance: which person has more of which organism? There are two senses in which we care about the relative frequency of an organism’s occurrence in a sample. You might care, among all the taxons found, which ones are more highly represented in absolute amounts?  Or you might care on a relative basis. To help understand why this matters, it may help to think of the following specific example:
+In many Americans the phylum Firmicutes makes up a majority of the sample, often reaching 60% or more. You might find two people, one who has 60% Firmicutes and the other with 30% — only half as much. The relative difference is 2x and the absolute difference is 30 percentage points.
+On the other hand, you might find Bifidobacterium makes up 10% of the first sample and 5% of the second. In this case, the relative difference is 2x — just like the Firmicutes case — but the absolute difference is only 5 percentage points, much less than in the first example. 
+The built-in uBiome web tools look for relative differences. A taxon might be a minuscule component of both samples, but when you start from a small base, even a few additional organisms can make up a big percentage change. In the extreme case, a sample with a count_norm of 100 compared to another sample with a count_norm of 300 will show a 3X increase — very high in aBiome terms, even though the absolute difference is only 300 - 100 = 200 organisms.
+Compare that with a an organism with a count_norm of 50,000 in one sample and 51,000 in another sample. UBiome’s algorithms will treat these as a virtual tie, even though the absolute number of organisms in the second sample outnumber the first by 1,000 organisms.
+
+Which method of measuring is better? It depend on what you care more about.  Some species need have only a tiny representation in a sample to make a big difference in health outcomes. 
+I prefer to use both methods of measurement: absolute number changes matter for the most popular taxons, and relative amounts matter more for the less-popular ones.
+
+
+
+
+
+</Text>
         </Document>
         <Document ID="66">
             <Title>What are they doing?</Title>
@@ -931,6 +1038,9 @@ How is it that T. Gondii is able to be so precise in its effects? It only seems 
 Although there doesn’t seem to be any major negative consequences to humans hosting T. Gondii, some scientists aren’t sure. One man in particular, Jaroslav Flegr, an evolutionary biologist at Charles University in Prague, thinks he has evidence that women who carry it might be more trusting than those who don’t. 
 
 T.Gondii isn’t the only microbe known to affect the behavior of its host. A more common example is the rabies virus, which upon infection somehow causes a mammal to be more agitated, more likely to strike out — or bite — other humans, thereby spreading itself.
+
+Or syphilus, the disease spread by the bacterium [syphilius] and causes its host to go insane. The microbe is somehow able to infect the mind of the victim.
+In general, sexually transmitted diseases are especially likely to have behavioral consequences. A sexual disease that produces symptoms is unlikely to spread, yet it still requires contact with a new victim. Perhaps the ideal vector is a behavioral change, making the host more likely to come in contact with a new host.
 
 Think about this too much, and you'll end up with the obvious question: what other weird microbes are infecting us right now? Can we explain some of our own behaviors this way? Is there a human equivalent of these infections, driving us to do things we “ordinarily” wouldn't do? And maybe these microbes are so ubiquitous, teeming all over us and in our brains, maybe there's no way to even know what “ordinary” or “normal” human behavior is.
 
@@ -947,7 +1057,7 @@ Think about this too much, and you'll end up with the obvious question: what oth
             <Title>American Gut</Title>
         </Document>
         <Document ID="59">
-            <Title>Annnoted References</Title>
+            <Title>Annnotated References</Title>
             <Text>Here are my suggestions for additional reading.
 
 Read more about Toxoplasma Gondii: http://www.theatlantic.com/magazine/archive/2012/03/how-your-cat-is-making-you-crazy/308873/

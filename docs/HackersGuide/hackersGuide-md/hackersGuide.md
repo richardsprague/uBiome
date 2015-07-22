@@ -11,7 +11,7 @@ WA
 Sprague@ensembio.com
 
 
-7,600 words
+8,600 words
 
 
 
@@ -30,17 +30,19 @@ by Richard Sprague
 
 # Contents #
 
-Manuscript	?
-Title Page	?
 Contents	?
 Foreword	?
 Chapter One - The Science	?
+Intro	?
 Microbes everywhere!	?
 In the air	?
 Underground	?
 A crash course in microbiology	?
 A crash course in botany	?
+What are they doing?	?
+Studying the Human Microbiome	?
 Chapter Two - The Technology	?
+Studying the Microbiome	?
 The old way: culturing	?
 16s rRNA	?
 Gene sequencing	?
@@ -48,11 +50,14 @@ Bioinformatics	?
 Chapter Three - How to Analyze Your Microbiome	?
 How to get your data	?
 The basics: web tools	?
-Endnotes	?
+Analyze with Excel	?
+Comparing samples	?
+Chapter Four - Organisms to Watch	?
+Good and Bad	?
 Chapter Five - Next Steps	?
 Fermented food	?
-Which Chapter Four - Organisms to Watch	?
-Good and Bad	?
+Annnotated References	?
+Endnotes	?
 
 ----
 
@@ -150,6 +155,7 @@ A team in France, performing experiments on snowflakes, discovered microbes in t
 
 1
 
+These microbes are so numerous that they affect the climate. 
 
 
 
@@ -162,6 +168,14 @@ There are even microbes that thrive in radioactive environments, like the danger
 
 
 ![Deinococcusradiodurans.pdf](Deinococcusradiodurans.pdf)
+
+
+Subglacial Lake Whillans is a lake found under more than 800 meters of ice in the West Antarctic. A careful underground bore hole was inserted by a team from Louisiana State University in 2014 [http://www.nature.com/nature/journal/v512/n7514/full/nature13667.html]  and found more than 4,000 different species of bacteria surviving under the ice. The total bacterial count was not that different from the count you'd find in surface lakes on other parts of the planet, a fact that is especially surprising for an environment that hasn't had a ray of light in millions of years. The bacteria instead thrive on iron, sulphur, and nitrogen as energy sources.
+http://earthsky.org/earth/diverse-microbes-found-deep-beneath-antarctic-ice-sheet
+
+![PastedGraphic.tiff](PastedGraphic.tiff)
+
+
 
 ## A crash course in microbiology ##
 
@@ -396,9 +410,14 @@ Part of the definition of life is the ability to reproduce, and cells do this by
 
 How do you talk about the relationships between various different life forms?
 
+A taxon is a simple unit of life. A homo sapiens is a taxon, but so is a primate. A mammal is a taxon too. It might seem odd in the ordinary biological world to bother using the same term 'taxon' to refer to all of those units, but for bacteria and anything that reproduces asexually, it's an important distinction because often, taxonomists don't agree about whether a group of organisms is part of the same taxon or not.
+
+
 Since Carl Linnaeus in the 1700's, the science of taxonomy divides all life into seven major categories: Kingdom, Phylum, Class, Order, Family, Genus, Species (which I was taught in sixth grade to remember by the mnemonic "King Philip Came Over for Girl Scouts"). 
 
-Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can't be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus canis could be anything from a wolf or coyote to a Chihuahua. 
+
+
+Bacteria make up their own kingdom. Just as the animal kingdom includes everything from humans to jellyfish to beetles, the diversity of bacterial life is enormous, a point which can't be emphasized too much. This is true at every rank in the taxonomy. Even two organisms that are the same at a lower rank, like genus, might have radically different affects on the human body, just as a member of the animal genus Canis could be anything from a wolf or coyote to a Chihuahua. 
 
 You cannot mix and match these ranks. If you know something about the number of organisms in one genus, for example, this is meaningful only in comparison to the numbers of another genus. Keep that in mind during our analysis. 
 
@@ -414,6 +433,9 @@ How is it that T. Gondii is able to be so precise in its effects? It only seems 
 Although there doesn't seem to be any major negative consequences to humans hosting T. Gondii, some scientists aren't sure. One man in particular, Jaroslav Flegr, an evolutionary biologist at Charles University in Prague, thinks he has evidence that women who carry it might be more trusting than those who don't. 
 
 T.Gondii isn't the only microbe known to affect the behavior of its host. A more common example is the rabies virus, which upon infection somehow causes a mammal to be more agitated, more likely to strike out --- or bite --- other humans, thereby spreading itself.
+
+Or syphilus, the disease spread by the bacterium [syphilius] and causes its host to go insane. The microbe is somehow able to infect the mind of the victim.
+In general, sexually transmitted diseases are especially likely to have behavioral consequences. A sexual disease that produces symptoms is unlikely to spread, yet it still requires contact with a new victim. Perhaps the ideal vector is a behavioral change, making the host more likely to come in contact with a new host.
 
 Think about this too much, and you'll end up with the obvious question: what other weird microbes are infecting us right now? Can we explain some of our own behaviors this way? Is there a human equivalent of these infections, driving us to do things we "ordinarily" wouldn't do? And maybe these microbes are so ubiquitous, teeming all over us and in our brains, maybe there's no way to even know what "ordinary" or "normal" human behavior is.
 
@@ -505,7 +527,12 @@ The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina
 
 After uBiome has notified you of your results, you can go to their web site to learn more.
 
+The first thing you'll notice is a pretty chart like this one:
+![uBiomeGutChart.jpg](uBiomeGutChart.jpg)
 
+This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla ---the highest, broadest level of classification. If you're like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. 
+
+![uBiomeGutSample.jpg](uBiomeGutSample.jpg)
 
 ## Analyze with Excel ##
 
@@ -585,6 +612,31 @@ tax_color doesn't matter for this anaysis, but uBiome software uses this to colo
 
 
 
+## Comparing samples
+ ##
+
+The uBiome JSON taxonomy file is extremely helpful at giving you a short summary of what you care about most in a sample: the organisms within it and their relative amounts. But even with these annotations, there's a limit to what you can learn in a single sample. To be able to start hacking your microbiome, you will need to learn how to compare multiple samples.
+There are two main things you'll want to measure when comparing two samples:
+
+
+Uniqueness: which organisms are found in only one sample and not the other? If you are comparing two samples from the same individual (e.g. Yourself), then uniqueness is another way of talking about either extinctions (when a taxon has disappeared entirely in a later sample) and appearances (when a new taxon magically shows up). In other words, you care a lot about the order in which the samples were taken.
+On the other hand, if you're comparing two separate individuals, then the ordering of the samples doesn't matter. Uniqueness just tells which organisms are unique to a specific person.
+
+Relative abundance: which person has more of which organism? There are two senses in which we care about the relative frequency of an organism's occurrence in a sample. You might care, among all the taxons found, which ones are more highly represented in absolute amounts?  Or you might care on a relative basis. To help understand why this matters, it may help to think of the following specific example:
+In many Americans the phylum Firmicutes makes up a majority of the sample, often reaching 60% or more. You might find two people, one who has 60% Firmicutes and the other with 30% --- only half as much. The relative difference is 2x and the absolute difference is 30 percentage points.
+On the other hand, you might find Bifidobacterium makes up 10% of the first sample and 5% of the second. In this case, the relative difference is 2x --- just like the Firmicutes case --- but the absolute difference is only 5 percentage points, much less than in the first example. 
+The built-in uBiome web tools look for relative differences. A taxon might be a minuscule component of both samples, but when you start from a small base, even a few additional organisms can make up a big percentage change. In the extreme case, a sample with a count_norm of 100 compared to another sample with a count_norm of 300 will show a 3X increase --- very high in aBiome terms, even though the absolute difference is only 300 - 100 = 200 organisms.
+Compare that with a an organism with a count_norm of 50,000 in one sample and 51,000 in another sample. UBiome's algorithms will treat these as a virtual tie, even though the absolute number of organisms in the second sample outnumber the first by 1,000 organisms.
+
+Which method of measuring is better? It depend on what you care more about.  Some species need have only a tiny representation in a sample to make a big difference in health outcomes. 
+I prefer to use both methods of measurement: absolute number changes matter for the most popular taxons, and relative amounts matter more for the less-popular ones.
+
+
+
+
+
+
+
 ----
 
 # Chapter Four: Organisms to Watch #
@@ -640,7 +692,7 @@ Just about any food can be fermented, as people in all cultures have known since
 
  
 
-## Annnoted References ##
+## Annnotated References ##
 
 Here are my suggestions for additional reading.
 
