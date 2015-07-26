@@ -35,7 +35,7 @@ class UbiomeSample():
             self.readJSONfile(fname)
         else:
             self.sampleList = []
-       # self.taxRankList = []
+        self.taxnamelist = []
 
     def readJSONfile(self,fname):
         jsonFile = open(fname)
@@ -53,8 +53,8 @@ class UbiomeSample():
             uniqueTable = prettytable.PrettyTable(["Tax_Name","Tax_Rank","Count_Norm"])
             for i in self.sampleList:
                 uniqueTable.add_row([i["tax_name"],i["tax_rank"],i["count_norm"]])
-            print(uniqueTable)
-            return
+            #print(uniqueTable)
+            return uniqueTable
 
 
     def sort(self,sortBy="tax_name"):
@@ -74,17 +74,16 @@ class UbiomeSample():
             l=l-1
             i+=1
 
-  #      print("taxlist\n",self.taxranklist())
+  #      print("taxlist\n",self.taxnamelist())
 
-    # def taxranklist(self, rank="species"):
-    #     """ returns a list of all organisms in this sample that are species.
-    #     """
-    #     if self.taxRankList: # already computed, so don't recompute
-    #         return self.taxRankList
-    #     for taxon in self.sampleList:
-    #         if taxon["tax_rank"]==rank:
-    #             self.taxRankList = self.taxRankList + [taxon["tax_name"]]
-    #     return self.taxRankList
+    def taxnames(self):
+        """ returns a list of all organisms in this sample
+        """
+        if self.taxnamelist: # already computed, so don't recompute
+            return self.taxnamelist
+        for taxon in self.sampleList:
+            self.taxnamelist = self.taxnamelist + [taxon["tax_name"]]
+        return self.taxnamelist
 
 
     def countNormOf(self, taxName):
@@ -187,9 +186,68 @@ class UbiomeDiffSample(UbiomeSample):
     """
     def __init__(self,sampleList):
         self.sampleList = sampleList
-        #self.taxRankList = []
+        self.taxnameList = []
+
+class UbiomeMultiSample():
+    """
+    merge a bunch of samples into a single data frame
+    [ fullTaxList, sample1Quantities, sample2Quantities, ... ]
+
+    fullTaxList is a list containing strings of tax_name; fullTaxList[0] = "tax_name"
+    sampleQuantities is a list where sampleQuantities[0] = "July"  and [1..n] correspond to Quants for fullTaxList[1..n]
+
+    usage: (assuming sample1 and sample2 are of class UbiomeSample)
+
+    x = UbiomeMultiSample()  # initializing
+    x.merge(sample1) #
 
 
+    """
+    def __init__(self,newSample = []):
+        self.fullTaxList = ["tax_name"]
+        self.samples = []
+        if newSample:
+            self.fullTaxList +=newSample.taxnames()
+            self.samples+=[[newSample.__str__()]+[sample["count_norm"] for sample in newSample.sampleList]]
+
+
+    def showContents(self):
+        print("length of fullTaxList=",len(self.fullTaxList),end=" ")
+        print([self.fullTaxList[i] for i in range(10)])
+        print("length of samples=",len(self.samples),end=" ")
+        print([self.samples[len(self.samples)-1][i] for i in range(10)])
+
+
+    def merge(self,sample2):
+        """
+
+        :param sample2: UbiomeSample
+        :return:
+        """
+        newTaxa = set(sample2.taxnames()) - set(self.fullTaxList)
+        self.fullTaxList+=list(newTaxa)
+        newTaxons = [sample2.taxonOf(taxa)for taxa in list(newTaxa)]
+        # #[sample["count_norm"] for sample in sample2.sampleList]
+        oldSamplesList = [self.samples[len(self.samples)-1]]
+        newCounts =  oldSamplesList[0][1:] + [taxon["count_norm"] for taxon in newTaxons]
+        self.samples += [[sample2.__str__()] + newCounts]
+
+    def writeCSV(self,filename):
+        if filename==sys.stdout:
+            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=["tax_name"]+ [sample[0] for sample in self.samples])
+            #print('writing to csv')
+            ubiomeWriter.writeheader()
+            for i,taxa in enumerate(self.fullTaxList):
+                rowDict = {"tax_name":taxa}
+                sampleDict = {sample[i]:sample[i] for sample in self.samples}
+                ubiomeWriter.writerow({"tax_name":taxa})
+        else:
+            with open(filename,'w') as csvFile:
+                #print('writing to csv')
+                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=["tax_name"]+ [sample.keys() for sample in self.samples])
+                ubiomeWriter.writeheader()
+                for taxa in self.fullTaxList:
+                    ubiomeWriter.writerow(taxa)
 
 
 ## Python sets:

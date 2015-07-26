@@ -49,11 +49,17 @@ aprJulc = apr.compareWith(jul)
 aprJulu = apr.unique(jul)
 
 aprJulu.sort("count_norm")
-aprJulu.prettyPrint()
+aprJuluPretty = aprJulu.prettyPrint()
 
 #aprJulu.writeCSV(sys.stdout)
 #aprJulu.prettyPrint()
 
+x = ubiome.UbiomeMultiSample(apr)
+x.showContents()
+print("...merging with july...")
+x.merge(jul)
+x.showContents()
+# x.writeCSV(sys.stdout)  # this line doesn't quite work yet.
 
 #
 # uniqueTable = prettytable.PrettyTable(["Tax_Name","Tax_Rank","Count_Norm"])
