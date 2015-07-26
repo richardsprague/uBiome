@@ -35,27 +35,56 @@ class UbiomeSample():
             self.readJSONfile(fname)
         else:
             self.sampleList = []
-        self.taxRankList = []
+       # self.taxRankList = []
 
     def readJSONfile(self,fname):
         jsonFile = open(fname)
         sourceJson = json.load(jsonFile)
         self.sampleList = sourceJson["ubiome_bacteriacounts"] # a list of dicts
 
+    def prettyPrint(self):
+        try:
+            __import__("prettytable")
+        except ImportError:
+            #print("no prettyprint available")
+            return
+        else:
+            import prettytable
+            uniqueTable = prettytable.PrettyTable(["Tax_Name","Tax_Rank","Count_Norm"])
+            for i in self.sampleList:
+                uniqueTable.add_row([i["tax_name"],i["tax_rank"],i["count_norm"]])
+            print(uniqueTable)
+            return
+
+
+    def sort(self,sortBy="tax_name"):
+        self.sampleList = sorted(self.sampleList,key=lambda k:k[sortBy],reverse=True)
+        return True
+
+
+
+
 
     def showContents(self):
-        print("length=",len(self.sampleList))
-        print("taxlist\n",self.taxranklist())
+        l = len(self.sampleList)
+        print("length=",l)
+        i=0
+        while l>10&i<10:
+            print(self.sampleList[i])
+            l=l-1
+            i+=1
 
-    def taxranklist(self, rank="species"):
-        """ returns a list of all organisms in this sample that are species.
-        """
-        if self.taxRankList: # already computed, so don't recompute
-            return self.taxRankList
-        for taxon in self.sampleList:
-            if taxon["tax_rank"]==rank:
-                self.taxRankList = self.taxRankList + [taxon["tax_name"]]
-        return self.taxRankList
+  #      print("taxlist\n",self.taxranklist())
+
+    # def taxranklist(self, rank="species"):
+    #     """ returns a list of all organisms in this sample that are species.
+    #     """
+    #     if self.taxRankList: # already computed, so don't recompute
+    #         return self.taxRankList
+    #     for taxon in self.sampleList:
+    #         if taxon["tax_rank"]==rank:
+    #             self.taxRankList = self.taxRankList + [taxon["tax_name"]]
+    #     return self.taxRankList
 
 
     def countNormOf(self, taxName):
@@ -158,7 +187,7 @@ class UbiomeDiffSample(UbiomeSample):
     """
     def __init__(self,sampleList):
         self.sampleList = sampleList
-        self.taxRankList = []
+        #self.taxRankList = []
 
 
 
@@ -195,6 +224,7 @@ class ubiomeApp():
     def runCompare(self):
         compare=self.sample1.compareWith(self.sample2)
         compare.writeCSV(sys.stdout)
+        compare.prettyPrint()
         return compare
 
 

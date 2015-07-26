@@ -21,6 +21,7 @@ __author__ = 'sprague'
 
 import ubiome
 import sys
+import prettytable
 
 DEBUG = True
 
@@ -47,6 +48,19 @@ apr = ubiome.UbiomeSample("../Data/sprague data/sprague-ubiome-150428.json")
 aprJulc = apr.compareWith(jul)
 aprJulu = apr.unique(jul)
 
-aprJulu.writeCSV(sys.stdout)
+aprJulu.sort("count_norm")
+aprJulu.prettyPrint()
+
+#aprJulu.writeCSV(sys.stdout)
+#aprJulu.prettyPrint()
+
+
+#
+# uniqueTable = prettytable.PrettyTable(["Tax_Name","Tax_Rank","Count_Norm"])
+# for i in aprJulu.sampleList:
+#     uniqueTable.add_row([i["tax_name"],i["tax_rank"],i["count_norm"]])
+#
+# print(uniqueTable)
+
 
 
