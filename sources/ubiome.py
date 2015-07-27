@@ -80,8 +80,11 @@ class UbiomeSample():
 
   #      print("taxlist\n",self.taxnamelist())
 
+
+
     def taxnames(self):
         """ returns a list of all organisms in this sample
+        :return: list
         """
         if self.taxnamelist: # already computed, so don't recompute
             return self.taxnamelist
@@ -230,9 +233,17 @@ class UbiomeMultiSample():
         :param sample2: UbiomeSample
         :return:
         """
-        newTaxNames = set(sample2.taxnames()) - set(self.fullTaxList)
-        self.fullTaxList+=list(newTaxNames)
-        newTaxons = [sample2.taxonOf(taxa)for taxa in list(newTaxNames)]
+        #newTaxNamesX = set(sample2.taxnames()) - set(self.fullTaxList)
+
+        # find the taxNames missing from fullTaxList
+        newTaxNamesL = []
+        sampleTaxNames = sample2.taxnames()
+        for taxName in sampleTaxNames:
+            if taxName not in self.fullTaxList: newTaxNamesL+=[taxName]
+        #newTaxNames = set(newTaxNamesL)
+
+        self.fullTaxList+=newTaxNamesL
+        newTaxons = [sample2.taxonOf(taxa)for taxa in newTaxNamesL]
 
         #[sample["count_norm"] for sample in sample2.sampleList]
         oldSamplesList = self.samples[len(self.samples)-1]
