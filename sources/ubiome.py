@@ -10,6 +10,7 @@ __author__ = 'sprague'
 import json
 import csv
 import sys
+import __future__
 from argparse import ArgumentParser
 
 
@@ -78,8 +79,6 @@ class UbiomeSample():
             l=l-1
             i+=1
 
-  #      print("taxlist\n",self.taxnamelist())
-
 
 
     def taxnames(self):
@@ -89,7 +88,7 @@ class UbiomeSample():
         if self.taxnamelist: # already computed, so don't recompute
             return self.taxnamelist
         for taxon in self.sampleList:
-            self.taxnamelist = self.taxnamelist + [taxon["tax_name"]]
+            self.taxnamelist = self.taxnamelist + [[taxon["tax_name"],taxon["tax_rank"]]]
         return self.taxnamelist
 
 
@@ -211,7 +210,7 @@ class UbiomeMultiSample():
 
     """
     def __init__(self,newSample = []):
-        self.fullTaxList = ["tax_name"]
+        self.fullTaxList = [["tax_name","tax_rank"]]
         self.samples = []
         if newSample:
             self.fullTaxList +=newSample.taxnames()
@@ -219,7 +218,7 @@ class UbiomeMultiSample():
 
 
     def showContents(self):
-        print("length of fullTaxList=",len(self.fullTaxList),end=" ")
+        print("length of fullTaxList=",len(self.fullTaxList))
         print([self.fullTaxList[i] for i in range(10)])
         print("length of samples=",len(self.samples))
         for sample in self.samples:
@@ -228,22 +227,29 @@ class UbiomeMultiSample():
 
 
     def merge(self,sample2):
-        """
+        """ merge the current multiSample with sample2.  This operation is mutable
+        so you permanently modify the current UbiomeMultiSample when you do this.
 
         :param sample2: UbiomeSample
         :return:
         """
-        #newTaxNamesX = set(sample2.taxnames()) - set(self.fullTaxList)
 
         # find the taxNames missing from fullTaxList
         newTaxNamesL = []
         sampleTaxNames = sample2.taxnames()
-        for taxName in sampleTaxNames:
-            if taxName not in self.fullTaxList: newTaxNamesL+=[taxName]
-        #newTaxNames = set(newTaxNamesL)
+
+        Sample2ZippedList = sample2.taxnames()
+        justSample2TaxNames, justSample2TaxRanks = zip(*Sample2ZippedList)
+        justFullTaxNames, justFullTaxRanks = zip(*self.fullTaxList)
+
+        newTaxRanksL = []
+        for i,taxName in enumerate(sampleTaxNames):
+            if taxName not in self.fullTaxList:
+                newTaxNamesL+=[taxName]
+                newTaxRanksL+=[justFullTaxRanks[i]]
 
         self.fullTaxList+=newTaxNamesL
-        newTaxons = [sample2.taxonOf(taxa)for taxa in newTaxNamesL]
+        newTaxons = [sample2.taxonOf(taxa[0])for taxa in newTaxNamesL]
 
         #[sample["count_norm"] for sample in sample2.sampleList]
         oldSamplesList = self.samples[len(self.samples)-1]
@@ -254,7 +260,7 @@ class UbiomeMultiSample():
         # [oldSample.taxonOf(self.fullTaxList[i]) for taxon in oldSample]
         newSampleCountsForPreviousTaxa = []
         for i in range(len(oldSamplesList)-1):
-            taxonForTaxName = sample2.taxonOf(self.fullTaxList[i+1])
+            taxonForTaxName = sample2.taxonOf(self.fullTaxList[i+1][0])
             if taxonForTaxName:
                 taxCount = taxonForTaxName["count_norm"]
             else: taxCount = 0
@@ -269,7 +275,6 @@ class UbiomeMultiSample():
         # new length of a sample is len(newTaxons)+ len(oldSamplesList)
         # fill previous samples with count_norm = 0
         for i, sample in enumerate(self.samples):
-            print("sample ",i," len=",len(sample))
             if len(self.samples[i])<(len(newCounts)+1):
                 self.samples[i]=self.samples[i] + [0 for k in range(len(newTaxons))]
 
@@ -277,23 +282,27 @@ class UbiomeMultiSample():
 
     def writeCSV(self,filename):
         if filename==sys.stdout:
-            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=["tax_name"]+ [sample[0] for sample in self.samples])
+            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=["tax_name"]+ ["tax_rank"] + [sample[0] for sample in self.samples])
             #print('writing to csv')
             ubiomeWriter.writeheader()
             for i,taxa in enumerate(self.fullTaxList):
-                rowDict = ["tax_name",taxa]
+                taxName, taxRank = taxa
+                rowDict = ["tax_name",taxName]
+                rankDict = ["tax_rank",taxRank]
                 sampleDict = [[sample[0],sample[i]] for sample in self.samples]
-                ubiomeWriter.writerow(dict([rowDict]+sampleDict))
+                ubiomeWriter.writerow(dict([rowDict]+[rankDict] +sampleDict))
         else:
             with open(filename,'w') as csvFile:
                 #print('writing to csv')
-                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=["tax_name"]+ [sample[0] for sample in self.samples])
+                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=["tax_name"]+ ["tax_rank"] + [sample[0] for sample in self.samples])
                 #print('writing to csv')
                 ubiomeWriter.writeheader()
                 for i,taxa in enumerate(self.fullTaxList):
-                    rowDict = ["tax_name",taxa]
+                    taxName, taxRank = taxa
+                    rowDict = ["tax_name",taxName]
+                    rankDict = ["tax_rank",taxRank]
                     sampleDict = [[sample[0],sample[i]] for sample in self.samples]
-                    ubiomeWriter.writerow(dict([rowDict]+sampleDict))
+                    ubiomeWriter.writerow(dict([rowDict]+[rankDict] +sampleDict))
 
 
 ## Python sets:

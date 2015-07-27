@@ -12,7 +12,8 @@ python ubiomeCompare -c "../Data/sprague data/Sprague-ubiomeMay2014.json" "../Da
 >>> len(v.sampleList)
 139
 >>> testRikAll()
-length of fullTaxList= 905 [['tax_name', 'tax_rank'], ['Bacteria', 'superkingdom'], ['Firmicutes', 'phylum'], ['Clostridia', 'class'], ['Clostridiales', 'order'], ['Bacteroidetes/Chlorobi group', 'superphylum'], ['Bacteroidetes', 'phylum'], ['Bacteroidia', 'class'], ['Bacteroidales', 'order'], ['Ruminococcaceae', 'family']]
+length of fullTaxList= 905
+[['tax_name', 'tax_rank'], ['Bacteria', 'superkingdom'], ['Firmicutes', 'phylum'], ['Clostridia', 'class'], ['Clostridiales', 'order'], ['Bacteroidetes/Chlorobi group', 'superphylum'], ['Bacteroidetes', 'phylum'], ['Bacteroidia', 'class'], ['Bacteroidales', 'order'], ['Ruminococcaceae', 'family']]
 length of samples= 7
 May 2014 ---> 905
 Oct 2014 ---> 905
@@ -66,7 +67,7 @@ def testRikAll():
     x.showContents()
     x.writeCSV("spragueResults.csv")
 
-DEBUG = False
+DEBUG = True
 
 
 if DEBUG:
