@@ -28,7 +28,7 @@ class UbiomeSample():
 
     """
 
-    def __init__(self,fname=[]):
+    def __init__(self,fname=[],name=[]):
         """ initialize with a string representing the path to a uBiome-formatted JSON file
         """
         if fname:
@@ -36,6 +36,10 @@ class UbiomeSample():
         else:
             self.sampleList = []
         self.taxnamelist = []
+        if not name:
+            self.name = fname
+        else:
+            self.name = name
 
     def readJSONfile(self,fname):
         jsonFile = open(fname)
@@ -208,14 +212,16 @@ class UbiomeMultiSample():
         self.samples = []
         if newSample:
             self.fullTaxList +=newSample.taxnames()
-            self.samples+=[[newSample.__str__()]+[sample["count_norm"] for sample in newSample.sampleList]]
+            self.samples+=[[newSample.name]+[sample["count_norm"] for sample in newSample.sampleList]]
 
 
     def showContents(self):
         print("length of fullTaxList=",len(self.fullTaxList),end=" ")
         print([self.fullTaxList[i] for i in range(10)])
-        print("length of samples=",len(self.samples),end=" ")
-        print([self.samples[len(self.samples)-1][i] for i in range(10)])
+        print("length of samples=",len(self.samples))
+        for sample in self.samples:
+            print(sample[0],"--->",len(sample))
+        print("latest sample:",[self.samples[len(self.samples)-1][i] for i in range(10)])
 
 
     def merge(self,sample2):
@@ -224,13 +230,39 @@ class UbiomeMultiSample():
         :param sample2: UbiomeSample
         :return:
         """
-        newTaxa = set(sample2.taxnames()) - set(self.fullTaxList)
-        self.fullTaxList+=list(newTaxa)
-        newTaxons = [sample2.taxonOf(taxa)for taxa in list(newTaxa)]
-        # #[sample["count_norm"] for sample in sample2.sampleList]
-        oldSamplesList = [self.samples[len(self.samples)-1]]
-        newCounts =  oldSamplesList[0][1:] + [taxon["count_norm"] for taxon in newTaxons]
-        self.samples += [[sample2.__str__()] + newCounts]
+        newTaxNames = set(sample2.taxnames()) - set(self.fullTaxList)
+        self.fullTaxList+=list(newTaxNames)
+        newTaxons = [sample2.taxonOf(taxa)for taxa in list(newTaxNames)]
+
+        #[sample["count_norm"] for sample in sample2.sampleList]
+        oldSamplesList = self.samples[len(self.samples)-1]
+        #newCounts =  oldSamplesList[0][1:] + [taxon["count_norm"] for taxon in newTaxons]
+        # problem: newCounts contains the sample counts from the previous sample, not the current one.
+        # need to generate a list of counts that correspond to the organisms in fullTaxList
+        # if I have the UbiomeSample object for the previous sample, this is easy to compute:
+        # [oldSample.taxonOf(self.fullTaxList[i]) for taxon in oldSample]
+        newSampleCountsForPreviousTaxa = []
+        for i in range(len(oldSamplesList)-1):
+            taxonForTaxName = sample2.taxonOf(self.fullTaxList[i+1])
+            if taxonForTaxName:
+                taxCount = taxonForTaxName["count_norm"]
+            else: taxCount = 0
+            newSampleCountsForPreviousTaxa+=[taxCount]
+        newCounts =  newSampleCountsForPreviousTaxa + [taxon["count_norm"] for taxon in newTaxons]
+
+
+
+
+        self.samples += [[sample2.name] + newCounts]
+
+        # new length of a sample is len(newTaxons)+ len(oldSamplesList)
+        # fill previous samples with count_norm = 0
+        for i, sample in enumerate(self.samples):
+            print("sample ",i," len=",len(sample))
+            if len(self.samples[i])<(len(newCounts)+1):
+                self.samples[i]=self.samples[i] + [0 for k in range(len(newTaxons))]
+
+
 
     def writeCSV(self,filename):
         if filename==sys.stdout:
@@ -238,16 +270,19 @@ class UbiomeMultiSample():
             #print('writing to csv')
             ubiomeWriter.writeheader()
             for i,taxa in enumerate(self.fullTaxList):
-                rowDict = {"tax_name":taxa}
-                sampleDict = {sample[i]:sample[i] for sample in self.samples}
-                ubiomeWriter.writerow({"tax_name":taxa})
+                rowDict = ["tax_name",taxa]
+                sampleDict = [[sample[0],sample[i]] for sample in self.samples]
+                ubiomeWriter.writerow(dict([rowDict]+sampleDict))
         else:
             with open(filename,'w') as csvFile:
                 #print('writing to csv')
-                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=["tax_name"]+ [sample.keys() for sample in self.samples])
+                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=["tax_name"]+ [sample[0] for sample in self.samples])
+                #print('writing to csv')
                 ubiomeWriter.writeheader()
-                for taxa in self.fullTaxList:
-                    ubiomeWriter.writerow(taxa)
+                for i,taxa in enumerate(self.fullTaxList):
+                    rowDict = ["tax_name",taxa]
+                    sampleDict = [[sample[0],sample[i]] for sample in self.samples]
+                    ubiomeWriter.writerow(dict([rowDict]+sampleDict))
 
 
 ## Python sets:
