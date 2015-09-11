@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba507c08-1c8b-40bc-842f-057f3162b329" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Richard Sprague\OneDrive\Projects\uBiome\docs\HackersGuide\hackersGuide-md\Diversity:genusInverseShannon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Richard Sprague\OneDrive\Projects\uBiome\docs\HackersGuide\hackersGuide.scriv\Files\Docs\31.links" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Richard Sprague\OneDrive\Projects\uBiome\docs\HackersGuide\hackersGuide.scriv\Files\Docs\6.links" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Richard Sprague\OneDrive\Projects\uBiome\docs\HackersGuide\hackersGuide.scriv\Files\Docs\6.rtf" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Richard Sprague\OneDrive\Projects\uBiome\docs\HackersGuide\hackersGuide.scriv\Files\Docs\79.rtf" afterPath="" />
@@ -48,7 +49,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R1__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R1__L001.fastq.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R2__L001.fastq.gz" afterPath="$PROJECT_DIR$/Data/sprague data/fastq-spragueuBiomeMay2014/ssr_6547__R2__L001.fastq.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/31.links" afterPath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/31.links" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/31.rtf" afterPath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/31.rtf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/35.rtf" afterPath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/35.rtf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/47.rtf" afterPath="$PROJECT_DIR$/docs/HackersGuide/hackersGuide.scriv/Files/Docs/47.rtf" />

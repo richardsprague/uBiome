@@ -10,7 +10,7 @@ WA
 Sprague@ensembio.com
 
 
-15,100 words
+16,200 words
 
 
 
@@ -27,41 +27,56 @@ by Richard Sprague
 
 ----
 
+# Contents #
+
+Hackers Guide to the Microbiome	?
 Title Page	?
 Contents	?
 Foreword	?
 Chapter One - The Science	?
 Intro	?
-Chapter Two - Microbes everywhere!	?
+Microbes everywhere!	?
 In the air	?
 Underground	?
-Chapter Three - Microbes	?
+Microbes	?
+What is a microbe?	?
+Microbes in the gut	?
+Microbes of the skin	?
 A crash course in microbiology	?
 A crash course in botany	?
 What are they doing?	?
 Studying the Human Microbiome	?
-Chapter Four - The Technology	?
+Chapter Two - The Technology	?
 Studying the Microbiome	?
 The old way: culturing	?
 16s rRNA	?
 Gene sequencing	?
 Bioinformatics	?
-Chapter Five - How to Analyze Your Microbiome	?
+Chapter Three - How to Analyze Your Microbiome	?
 How to get your data	?
 The basics: web tools	?
 Analyze with Excel	?
 Comparing samples	?
-More comparison	?
+Comparison over time	?
 Measuring Diversity	?
-Chapter Seven - Organisms to Watch	?
+Chapter Four - Experiment Examples	?
+A/B Testing	?
+Hacking my sleep	?
+Visit the jungle	?
+Looking into your mouth	?
+Comparing with food	?
+Chapter Five - Organisms to Watch	?
 Good and Bad	?
 Gut Guardians	?
-Chapter Eight - Next Steps	?
+Chapter Six - Next Steps	?
 Fermented food	?
+Overselling the microbiome	?
 Annnotated References	?
 Endnotes	?
 
 ----
+
+# Foreword #
 
 This book is for curious people with little or no knowledge of biology, but who have a reasonable level of comfort with computer software, either as programmer, or as an end-user comfortable installing and running common applications like Excel.  Using plenty of hands-on examples, you’ll learn the basics of the human microbiome and how to study and manipulate the microbes inside you.
 
@@ -88,12 +103,11 @@ The Science #
 
 ----
 
-I’m a software guy, and when I think about what it means to be human, I think first of course of all the various “software” we are made of: our language, culture, education, behaviors — all things that seem to us to be flexible, even arbitrary, but which define us as individuals. But as with computers, the software can only run as well as the hardware, so I’m interested in that too: what is the CPU, the memory, the graphics card? and how can you expand or make it better and faster? What should you do to maintain your hardware?
+## Intro ##
 
-To learn more about your hardware, you can of course measure various things about yourself: temperature, blood tests, activity levels. Wearable sensors like the Apple Watch are making this much easier, and in the near future you’ll see an explosion of new and better ways to measure your body’s hardware and with better, more actionable measurement come many ways to modify and optimize your health along the way. All of these new wearable computing devices recognize that you are a unique individual and that we always should treat the patient, not the statistics. So what is the part of you that is fundamentally you?
-
+Humans, like computers, can be broadly described in terms of software and hardware. Our software includes things like language, culture, education, behaviors — the aspects of ourselves that seem most flexible, even arbitrary, but which define us as individuals. There are many ways to improve your software: through education, reading, or interesting conversations with others.
+To improve your hardware, you can of course measure various things about yourself: temperature, blood tests, activity levels. Wearable sensors like the Apple Watch are making this much easier, and in the near future you’ll see an explosion of new and better ways to measure your body’s hardware and with better, more actionable measurement come many ways to modify and optimize your health along the way. All of these new wearable computing devices recognize that you are a unique individual and that we always should treat the patient, not the statistics. So what is the part of you that is fundamentally you?
 The obvious place to start is with DNA, and our human genes. I was excited when 23andme (and other services) came out about ten years ago, letting each of us inexpensively see our internal hardware, perhaps to learn more about the things that make us unique, and maybe peer into our futures, to the degree that biological traits like susceptibility to various diseases or conditions is hereditary and unchangeable.
-
 But after a while I realized how little of what we learn about DNA is actionable. If you find you have the “gene for”  Alzheimer’s disease or Parkinson’s, or any of the other traits that have been linked to specific genes, what can you do about it? In nearly every case, the advice is exactly what you should be doing even if you don't have that trait: eat well and get lots of exercise.
 
 
@@ -142,10 +156,20 @@ When you think this way, then suddenly "health" takes on a whole new meaning, be
 
 ----
 
-## CHAPTER TWO
-Microbes everywhere! ##
+## Microbes everywhere! ##
 
 ----
+
+## In the air ##
+
+Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning. These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds — about as much as the brain.
+
+The word “microbe” refers to any tiny organism that carries its own genetic information for purposes of propagating itself. Far too small to see with the naked eye, dozens could fit inside a typical human cell. The vast majority of microbes are bacteria, though viruses and phages fit this description too, as well as archaea, the extremophile life forms that live and thrive in environments too challenging for bacteria.
+
+ A typical human will have somewhere between [n and m]<span class="annotation" style="color:#7C5F64"> source?
+</span> individual cells — blood, skin, neurons, other tissues — each descended from a single germ cell, the fertilized egg that began dividing itself and multiplying after the moment of conception. By contrast, microbes had to hitch their own rides later, beginning in the womb and turning into a flood at the moment of birth and beyond. But each microbe, like each human cell, remains deeply interconnected with the fates of all the other cells, all the way to the moment of death, and even after that.
+
+[Examples of odd microbes everywhere]
 
 A team in France, performing experiments on snowflakes, discovered microbes in the sky.
 ![][Psudomonassyringae.png]
@@ -165,6 +189,8 @@ http://tass.ru/en/non-political/745635
 
 ----
 
+## Underground ##
+
 Three kilometers underground, in a South African gold mine, scientists discovered [microbe that lives on dirt]
 
 There are even microbes that thrive in radioactive environments, like the dangerous interior of the Chernobyl nuclear reactor.
@@ -182,12 +208,18 @@ http://earthsky.org/earth/diverse-microbes-found-deep-beneath-antarctic-ice-shee
 
 ----
 
-## CHAPTER THREE
-Microbes ##
+## Microbes ##
 
 ----
 
-Questions: what is a “microbe”?
+## What is a microbe? ##
+
+Scientists have known since Pasteur times that our bodies and environment are awash in other species, microbial bystanders that seem to grow everywhere. But the techniques for uncovering which organisms are where and what they are doing was revolutionized in the first decade of the 2000s by those new-fangled gene sequencers that were so usefully applied to human genes.
+The old technique for studying the microbial life around us required taking a sample, inserting it into a culture of some nutrient broth known to be good for breeding microbes, and waiting a few days to see what grows (or doesn’t). That’s still a common way to study microbes, and that couple-of-day incubation period is one reason you don’t get your lab tests back for a few days.
+Now, thanks to new machines originally developed for mass DNA sequencing, the process of finding and understanding microbes has been revolutionized. It’s now possible to search for new life forms without growing them in a culture, and this has made possible a major shift in how to think about life —and what is important and special about human hardware.
+Unlike the genetic discoveries you can make by understanding your DNA (from a low-cost consumer service like 23andme), much of the news from the microbial world is actionable. There’s little, if anything, you can do if you find you have a particular type of gene that gives you, say, a propensity to alzheimers for example. But because the microbes around you are constantly changing anyway, and because you can influence which ones grow and which don’t, the world of the human micro biome is eminently actionable. 
+
+What is a “microbe”?
 
 Answer: it’s a microorganism, the focus of the field of microbiology, and including everything from bacteria to single-
 
@@ -200,6 +232,8 @@ The result is a lot of genes, as we said, at least 10x the number harbored by th
 
 ----
 
+## Microbes in the gut ##
+
 
 The Appendix
 
@@ -211,6 +245,8 @@ My own interest in this subject is not idle curiosity. About fifty years ago, do
 
 ----
 
+## Microbes of the skin ##
+
 Microbes of the skin
 
 Microbes of the gut are important, but many other organisms are crawling all over you too.
@@ -221,6 +257,8 @@ Nature does not like waste, especially not anything associated with a living bod
 One such hanger-on, is the bacterium Nitrosomonas eutropha. It thrives in your skin and makes a living from oxidizing, that is, converting to oxygen, the ammonia that is naturally present in the waste secreted by your sweat glands.
 
 ----
+
+## A crash course in microbiology ##
 
 Before we learn how to study your own microbiome, let’s review some of the science.
 
@@ -451,6 +489,8 @@ Part of the definition of life is the ability to reproduce, and cells do this by
 
 ----
 
+## A crash course in botany ##
+
 How do you talk about the relationships between various different life forms?
 
 A taxon is a simple unit of life. A homo sapiens is a taxon, but so is a primate. A mammal is a taxon too. It might seem odd in the ordinary biological world to bother using the same term ‘taxon’ to refer to all of those units, but for bacteria and anything that reproduces asexually, it’s an important distinction because often, taxonomists don’t agree about whether a group of organisms is part of the same taxon or not.
@@ -466,6 +506,8 @@ You cannot mix and match these ranks. If you know something about the number of 
 
 
 ----
+
+## What are they doing? ##
 
 Toxoplasma Gondii is a tiny microbe that, for some reason, only likes to reproduce from within the gut of a cat. It can be found in almost all warm-blooded mammals, including humans — about 30% of us, according to some estimates, and that’s after a century of obsession with hygiene that has wiped out countless other tiny inhabitants of the body.
 T. Gondii seem harmless because its hosts appear to show no differences before or after “infection” except in one creature: the mouse. When it finds itself ingested by a mouse, it appears to fade away quietly. MRI scans show large amounts in the gut for a week or two, gradually decreasing until there is apparently nothing. Except: tiny T. Gondii cysts begin to show up in the mouse’s brain. Not everywhere, but in just a few strategic places.
@@ -487,6 +529,8 @@ Think about this too much, and you'll end up with the obvious question: what oth
 
 ----
 
+## Studying the Human Microbiome ##
+
 Studying the Human Microbiome
 
 During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
@@ -496,10 +540,12 @@ The Human Microbiome Project was launched in 2008 by the National Institutes of 
 
 ----
 
-# CHAPTER FOUR
+# CHAPTER TWO
 The Technology #
 
 ----
+
+## Studying the Microbiome ##
 
 Two major problems had to be solved before scientists could begin seriously studying the microbiome.
 First, the various bacteria inside us had to be identified. Since the invention of the microscope, the process was straightforward: collect enough of the organisms of interest and then look at them, either as a whole while cultured in a lab, or individually under the microsoft.
@@ -511,6 +557,8 @@ Computer scientists have an easier time than biologists because operations are s
 
 ----
 
+## The old way: culturing ##
+
 How do you tell which microbe is which?
 
 Until recently, the old fashioned way was the only way. You get some of the bacterium of interest and then grow more of it. In other words, a glorified version of farming.
@@ -519,6 +567,8 @@ How do you farm a microbe? Basically, you put it in a petri dish along with some
 A bigger problem with culturing is that some organisms need other organisms in order to survive. You may be simply unable to grow the one of interest unless you have a whole colony of other, unrelated but symbiont organisms nearby to provide it something it needs. In other words, it may simply be impossible to grow a bunch of one particular organism in isolation.
 
 ----
+
+## 16s rRNA ##
 
 The 16S shortcut
 
@@ -535,10 +585,14 @@ It’s this two-step combination, 16S “skimming” and a database lookup, that
 
 ----
 
+## Gene sequencing ##
+
 Gene sequencing
 
 
 ----
+
+## Bioinformatics ##
 
 Once you have the data computerized, the analysis tools leave the wet world of biology and enter the software world of computing. This marriage is called bioinformatics.
 
@@ -546,18 +600,23 @@ Once you have the data computerized, the analysis tools leave the wet world of b
 
 ----
 
-# CHAPTER FIVE
+# CHAPTER THREE
 How to Analyze Your Microbiome #
 
 ----
 
-There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
+## How to get your data ##
 
-That said, just as I mentioned 23andme as a way to find information about your DNA, there are a few ways you can get information about your microbiome.  One way is through a doctor, or other health care provider who can give you a clinical test, just like you might do a blood draw as part of an annual physical. If you have a medical condition, the tests are likely covered by insurance, but tend to be pretty expensive (several hundred dollars or more). 
+There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
+One way is through a doctor, or other health care provider who can give you a clinical test, just like you might do a blood draw as part of an annual physical. If you have a medical condition, the tests are likely covered by insurance, but tend to be pretty expensive (several hundred dollars or more). Genova Diagnostics is the market leader, and will give your doctor a report that looks something like this:
+
+![][https___www_gdx_net_core_sample-reports_CDSA-Sample-Report_pdf.jpg]
+Though expensive, Genova results are intended to be clinically significant. Many of their diagnostics are FDA approved, so your doctor can be assured they’re of the highest quality. They test beyond the microbiome, for example, looking at organic acids that are often associated with gut problems. They will also identify parasites, which won’t be detected with 16S technology.
+On the other hand, since Genova tests are intended for a doctor, the best you can hope for is a PDF copy of their final results, similar to the chart above. If you’re an experimenter, this won’t be nearly enough, and you’ll soon want the raw data.
 
 For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
 
- The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. American Gut boasts an impressive number of practicing research scientists, including several of the key contributors to the Human Microbiome 
+ The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. American Gut boasts an impressive number of practicing research scientists, including several of the key contributors to the Human Microbiome Project.
 
 ![][AmericanGut.png]
 I recommend the San Francisco company uBiome.
@@ -579,6 +638,8 @@ The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina
 
 ----
 
+## The basics: web tools ##
+
 After uBiome has notified you of your results, you can go to their web site to learn more.
 
 The first thing you’ll notice is a pretty chart like this one:
@@ -589,6 +650,8 @@ This shows the overall breakdown of the bacteria they found in your gut. In this
 ![][uBiomeGutSample.jpg]
 
 ----
+
+## Analyze with Excel ##
 
 The Illumina machines spit off huge amounts of data (FASTQ files can be hundreds of thousands of lines long), so to be useful you’ll need a summary. UBiome provides a much more concise version called a “raw taxonomy” file, which is generally only a few hundred lines showing just the organisms they think they found in the sample.
 
@@ -668,6 +731,9 @@ Of these fields, the most important ones are tax_name, tax_rank, and count_norm.
 
 ----
 
+## Comparing samples
+ ##
+
 The uBiome JSON taxonomy file is extremely helpful at giving you a short summary of what you care about most in a sample: the organisms within it and their relative amounts. But even with these annotations, there’s a limit to what you can learn in a single sample. To be able to start hacking your microbiome, you will need to learn how to compare multiple samples.
 There are two main things you’ll want to measure when comparing two samples:
 
@@ -690,27 +756,23 @@ I prefer to use both methods of measurement: absolute number changes matter for 
 
 
 
-----
+## Comparison over time ##
 
-I often read news about a fresh scientific discovery involving the microbiome and immediately wonder if the discovery applies to me. For example, I recently saw [a study from Oregon State University](http://www.sciencedaily.com/releases/2015/06/150622182034.htm) that seemed to find a link between high sugar diets and “cognitive flexibility”, i.e. your ability to adapt and adjust to changing circumstances. The study’s author, Kathy Magnusson, a professor in the OSU College of Veterinary Medicine, found that mice who eat lots of sugar have elevated levels of Clostridiales bacteria, and that this seemed to relate to a slower ability to solve a maze.  Hmmm, I thought — how much Clostridiales do I have?
-
-If you have just one uBiome result, that’s easy: log into [http://app.ubiome.com](http://app.ubiome.com) and search for it in the section “All My Bacteria”. (As far as I know there’s no “search” button yet on the uBiome dashboard). But in my experience a single result doesn’t tell you much. You really need at least two and hopefully several uBiome results to see what might be actionable. In my case, I want to know how my Clostridiales may have changed over time.
-
-I programmed a short Python script to generate a single Excel table with every bacteria I’ve ever found, and then a series of columns with the amount found in each sample. Something like [this](https://github.com/ubiome-opensource/microbiome-data/blob/master/sprague/spragueResultsthruJun2015.xlsx):
-
-<img src="images/ubiomeExcelMultiTable.jpg" alt="Excel sheet" width="640"/>
-
+All my uBiome results in a single table
+I often read news about a fresh scientific discovery involving the microbiome and immediately wonder if the discovery applies to me. For example, I recently saw a study from Oregon State University that seemed to find a link between high sugar diets and “cognitive flexibility”, i.e. your ability to adapt and adjust to changing circumstances. The study’s author, Kathy Magnusson, a professor in the OSU College of Veterinary Medicine, found that mice who eat lots of sugar have elevated levels of Clostridiales bacteria, and that this seemed to relate to a slower ability to solve a maze. Hmmm, I thought — how much Clostridiales do I have?
+If you have just one uBiome result, that’s easy: log into http://app.ubiome.com and search for it in the section “All My Bacteria”. (As far as I know there’s no “search” button yet on the uBiome dashboard). But in my experience a single result doesn’t tell you much. You really need at least two and hopefully several uBiome results to see what might be actionable. In my case, I want to know how my Clostridiales may have changed over time.
+I programmed a short Python script to generate a single Excel table with every bacteria I’ve ever found, and then a series of columns with the amount found in each sample. Something like this:
+![][ubiomeExcelMultiTable.jpg]
 The data makes it easy to generate a chart showing how my Clostridiales changes over time:
+![][ubiomeExcelClostridiales.jpg]
+Hmmm, in my case it looks like something happened since last fall to increase my Clostridiales levels. Maybe it was the potato starch I tried in order to hack my sleep? Was it my trip to Central America in February? And of course the biggest question: has the increase affected my cognitive flexibility? I’m not really sure. Whatever happened, the level of Clostridiales seems to have stabilized in the past couple of months.
+uBiome has identified more than 900 unique taxa (groups of organisms) in the half-dozen samples I've submitted over the past year, and after running this script I have them all laid out on a single page. Now, armed with this one spreadsheet I can search anytime for a new microbe and quickly see if I have it now, or if it's ever been detected in a previous test. Reading news about microbiome has taken on a whole new personal meaning when I can see if the discovery relates to me.
+If you know a little Python, you can make the same spreadsheet with your samples using the ubiome.py Python module on the ubiome-opensource GitHub repository; the script that generated my spreadsheet is there too as an example. And while you’re at it, please upload your own uBiome sample results to the same repository so we can compare.
 
-<img src="images/ubiomeExcelClostridiales.jpg" alt="Clostriales chart"  width="640" />
-
-Hmmm, in my case it looks like something happened since last fall to increase my Clostridiales levels. Maybe it was the potato starch I tried in order to [hack my sleep](http://www.ubiomeblog.com/hacking-sleep/)?  Was it my [trip to Central America](http://www.ubiomeblog.com/my-microbiome-in-the-jungle/) in February?  And of course the biggest question: has the increase affected my cognitive flexibility? I’m [not really sure](http://blog.richardsprague.com/2015/07/my-qs15-slides.html).  Whatever happened, the level of Clostridiales  seems to have stabilized in the past couple of months.
-
-uBiome has identified more than 900 unique taxa (groups of organisms) in the half-dozen samples I've submitted over the past year, and after running this script I have them all laid out on a single page.  Now, armed with this one spreadsheet I can search anytime for a new microbe and quickly see if I have it now, or if it's ever been detected in a previous test. Reading news about microbiome has taken on a whole new personal meaning when I can see if the discovery relates to me.
-
-If you know a little Python, you can make the same spreadsheet with your samples using the ubiome.py Python module on the [ubiome-opensource GitHub repository](https://github.com/ubiome-opensource); the script that generated my spreadsheet is [there](https://github.com/ubiome-opensource/microbiome-tools/blob/master/ubiomeSample.py) too as an example. And while you’re at it, please upload your own uBiome sample results to the same repository so we can compare.
 
 ----
+
+## Measuring Diversity ##
 
 Diversity
 While there are few agreed-upon standards for what constitutes a good or bad microbiome, nearly everyone agrees that a diverse microbiome is better than one that is less diverse. How can we measure diversity?
@@ -721,7 +783,7 @@ Since 16S technology doesn’t capture all the species information, or the gener
 Ecologists have suffered from this problem for a long time, and they came up with a few metrics to get around the problem. They start by considering what it means to say something is more diverse than another. Consider a forest that has 1,000 trees in it.  If all the trees are, say, aspen trees, then that forest is not as diverse as another one that also has 1,000 trees and 1,000 unique species.
 Ecologists call this the Shannon number, after the information theorist Claude Shannon, who was the first mathematician to systematically try to measure information.  To Shannon, whose work was concerned with code breaking in World War II, a radio signal that carries information (i.e. a code) is noticeably different from one that is random noise.  He applied a specific formula to tell how different a signal looks compared to random noise, a variation of which can be applied to an ecosystem to tell how different it is from one that is completely dead (0) or has nothing but the same or similar organisms.
 There is a slightly more ecologically interesting version of the Shannon number, called the Inverse Simpson number, that looks at the total number of unique life forms in an ecosystem and then weights each by the number of individuals of that type of species. Here is my diversity as measured with the Inverse Shannon number:
-![][Diversity:genusInverseShannon.jpg]
+![][DiversitygenusInverseShannon.jpg]
 
 As you can see, the overall level of diversity in my samples has been going down over the past year. Why?
 
@@ -732,14 +794,27 @@ As you can see, the overall level of diversity in my samples has been going down
 
 ----
 
+## CHAPTER FOUR
+Experiment Examples ##
+
+----
+
+### A/B Testing ###
+
 What is A/B testing?
 
 [Here’s a discussion of the science behind A/B testing, why it’s important to compare apples to apples, etc.]
 
+Example Experiments
+The best way to start is to experiment on yourself. Here are a few examples:
+
+[Note: in this draft these examples are mostly unedited from blog posts.  Need to update them and make them fit the rest of the book, but are here as examples to give the basic idea]
 
 
-## CHAPTER SIX
-Experiment Examples ##
+
+----
+
+### Hacking my sleep ###
 
 Hacking my sleep
 
@@ -768,6 +843,10 @@ What do these microbes do? After a few more internet searches, my answer is: nob
 Meanwhile, my sleep continues to be much better than before I began this experiment, so I’ve stopped taking potato starch and have been substituting a few other foods that seem to affect the microbiome. 
 
 
+----
+
+### Visit the jungle ###
+
 My microbiome in the jungle
 How much does travel affect your microbiome? In a famous experiment published in 2014, Duke University scientist Lawrence David tracked the daily microbiomes of two people for an entire year and found significant differences when one of the people travelled outside the U.S. Would the same thing happen to me?
 According to my latest uBiome results, the answer is yes. I recently travelled from my home in Seattle to Central America to celebrate my wife’s birthday. We spent most of our time in a rural, jungle part of Belize, about a half hour’s drive from Benque, near the border with Guatemala. Besides viewing the fantastic, well-preserved Mayan ruins, we also did horseback riding, cave exploration, and of course plenty of eating.
@@ -793,6 +872,10 @@ and a few that went extinct:
 What do these bacteria do? As always, who knows? The science is so new that when I look up most of these genuses online and elsewhere, I find almost nothing relevant. All the more reason I hope you’ll submit a sample to uBiome the next time you travel in the jungle, so we can compare and learn together.
 
 
+----
+
+### Looking into your mouth ###
+
 Looking into my mouth microbiome
 
 The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I’ve been studying my uBiome mouth test results. The simple GitHub RuBiome utilities I use for analyzing my gut will work for that too, so here’s a short example of how I did it:
@@ -817,6 +900,10 @@ Hard to say what’s really going on. Meanwhile, here are the biggest changes (i
 	##                                  tax_name count_change ## 64         Streptococcus pseudopneumoniae        62007 ## 68         Veillonella sp. oral taxon 780         8065 ## 41                       Neisseria oralis         4693 ## 2  Abiotrophia sp. oral clone P4PA_155 P1         2308 ## 28                 Granulicatella elegans         1987
 Whoah! That first one, Streptococcus pseudopneumoniae, looks nasty! Wikipedia says it may cause pneumonia, though a recent medical journal says more hopefully that it “treads the fine line between commensal and pathogen” which is a scientific gobbleygook way of saying nobody has a clue. All the more reason to keep testing, submitting, and getting more data. 
 
+
+----
+
+### Comparing with food ###
 
 How does food affect my microbiome?
 
@@ -880,12 +967,44 @@ Using the macronutrient data I collected daily with MyFitnessPal (exported to CS
 As you can see, though I apparently ate about 20% more overall during the week of my test, my dietary cholesterol was conspicuously lower than normal. Did this affect my microbiome?  My next step will be to search the medical and biology literature to see if there is are known relationships between dietary cholesterol and Faecalibacterium.  Will I find something new?  That’s the exciting part about this type of citizen science: armed with my own data and imagination, new discoveries are everywhere.
 
 
+## Beyond the Microbiome: DNA ##
+
+How to analyze your 23andme results
+[This section describes briefly how to pull your 23andme results to your computer for analysis and comparison with microbiome results]
+
+23andme says I’m a slow caffeine metabolizer because I have the AC genotype at SNP rs762551. You’d think that means I’m extra sensitive to caffeine before bedtime, but that’s not the case: I sleep just fine even if I have a cup of high-octane coffee after dinner. My 99-year-old grandmother drinks coffee by the potful, crediting its warmth as a calming effect to make her drowsy.
+
+A study in Nature by Javier A. Ceja-Navarro et al names Pseudomonas Fulva as a bacterium active in the guts of a coffee bean pest. Caffeine is normally toxic to insects, but P. Fulva neutralizes the caffeine, apparently using the demethylase ndmA gene. 
+
+Maybe my own caffeine metabolism is also affecting by a similar gut bacteria that I have in abundance but which is missing in other people. I already checked for Pseudomonas Fulva — I don’t have it in any of my uBiome samples.  I do have abundant levels of the genus Pseudomonas, but that is not the same thing.
+
+It should be possible to screen every one of my gut bacteria demethylizing ndMA gene, but I’m not sure how to do that. If I did find the gene in one of the gut bacteria I harbor, then that would be pretty cool: a microbe that helps me drink coffee.
+
+The following code, written in R, will let you pull all your 23andme results into a data frame that you can analyze in more detail.
+
+> genes<-read.delim("genome_Richard_Sprague_20080928082410.txt",comment.char="#")
+> head(genes)
+
+will list all the genes, now presented in a dataframe with headers: 
+> names(genes)
+[1] "rsid"       "chromosome" "position"   "genotype"  
+> 
+
+Now find a particular SNP using something like this: 
+
+> genes[genes["rsid"]=="i3001542",]
+           rsid chromosome position genotype
+579746 i3001542         MT    16522       CC
+
+
 ----
 
-# CHAPTER SEVEN
+# CHAPTER FIVE
 Organisms to Watch #
 
 ----
+
+## Good and Bad ##
 
 As tempting as it is to categorize bacteria into groups like “good” and “bad”, you should avoid that mistake. Very few organisms are always and everywhere either beneficial or harmful. Everything depends on the circumstances.
 For example, from [Blaser p119]
@@ -899,6 +1018,8 @@ H.Pylori
 
 
 ----
+
+## Gut Guardians ##
 
 The Gut Guardians
 Grace Liu is a PharmD from the Bay Area who has been fascinated by the gut microbiome for many years. She focuses on the following organisms she calls the “gut guardians”, the keystone species that, when properly groomed will keep pathogenic organisms at bay and ensure the overall health of the body’s ecosystem.
@@ -933,10 +1054,12 @@ Bacteroidetes/Firmicutes ratio
 
 ----
 
-# CHAPTER EIGHT
+# CHAPTER SIX
 Next Steps #
 
 ----
+
+## Fermented food ##
 
 Once you’ve developed an appreciation for the importance of the microbiome, you’ll want to become more of a farmer, growing your own symbionts.
 
@@ -974,11 +1097,17 @@ Just about any food can be fermented, as people in all cultures have known since
 
  
 
+----
+
+## Overselling the microbiome ##
+
 Now a warning. Our understanding of the microbiome is in its infancy, with new techniques and discoveries coming along every day. The costs have plummeted dramatically, whether measured in money or in the time and resource commitment needed to explore the science. After all, this book is itself proof for how easy it is for “normal” people can learn and make their own discoveries.
 All of this new interest is a recipe for getting carried away, and you’ll find many examples, especially once you understand the science a bit for yourself. Jonathan Eisen is a microbiologist who has been studying the microbiome for decades and he has created a blog list he calls “Overselling the Microbiome Award”, with many examples.
 
 
 ----
+
+## Annnotated References ##
 
 Here are my suggestions for additional reading.
 
@@ -1051,13 +1180,15 @@ Another book that explains a provocative idea that our immune systems need regul
 
 ----
 
-
+# Endnotes #
 
 [Psudomonassyringae.png]: Psudomonassyringae.png width=245px height=180px
 
-[Deinococcusradiodurans.pdf]: Deinococcusradiodurans.pdf
+[Deinococcusradiodurans.pdf]: Deinococcusradiodurans.pdf width=153px height=176px
 
 [PastedGraphic.png]: PastedGraphic.png
+
+[https___www_gdx_net_core_sample-reports_CDSA-Sample-Report_pdf.jpg]: https___www_gdx_net_core_sample-reports_CDSA-Sample-Report_pdf.jpg width=383px height=493px
 
 [AmericanGut.png]: AmericanGut.png width=245px height=112px
 
@@ -1073,9 +1204,13 @@ Another book that explains a provocative idea that our immune systems need regul
 
 [ExcelScreenOverview.png]: ExcelScreenOverview.png width=505px height=312px
 
+[ubiomeExcelMultiTable.jpg]: ubiomeExcelMultiTable.jpg width=780px height=236px
+
+[ubiomeExcelClostridiales.jpg]: ubiomeExcelClostridiales.jpg width=825px height=362px
+
 [Diversitythroughtime.jpg]: Diversitythroughtime.jpg
 
-[Diversity:genusInverseShannon.jpg]: Diversity:genusInverseShannon.jpg
+[DiversitygenusInverseShannon.jpg]: DiversitygenusInverseShannon.jpg
 
 [sprague-1.jpg]: sprague-1.jpg width=446px height=52px
 

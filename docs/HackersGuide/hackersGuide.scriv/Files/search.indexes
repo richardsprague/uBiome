@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="53">
-            <Title>Pseudomonas syringae </Title>
-            <Text>
-Pierre Amato :  
+        <Document ID="46">
+            <Title>The basics: web tools</Title>
+            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
 
-</Text>
+The first thing you’ll notice is a pretty chart like this one:
+#
+
+This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla —the highest, broadest level of classification. If you’re like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. 
+
+￼</Text>
         </Document>
         <Document ID="61">
             <Title>uBiomeScreenShotTaxonomyJSON</Title>
+        </Document>
+        <Document ID="106">
+            <Title>Beyond the Microbiome: DNA</Title>
+            <Text>How to analyze your 23andme results
+[This section describes briefly how to pull your 23andme results to your computer for analysis and comparison with microbiome results]
+
+23andme says I’m a slow caffeine metabolizer because I have the AC genotype at SNP rs762551. You’d think that means I’m extra sensitive to caffeine before bedtime, but that’s not the case: I sleep just fine even if I have a cup of high-octane coffee after dinner. My 99-year-old grandmother drinks coffee by the potful, crediting its warmth as a calming effect to make her drowsy.
+
+A study in Nature by Javier A. Ceja-Navarro et al names Pseudomonas Fulva as a bacterium active in the guts of a coffee bean pest. Caffeine is normally toxic to insects, but P. Fulva neutralizes the caffeine, apparently using the demethylase ndmA gene. 
+
+Maybe my own caffeine metabolism is also affecting by a similar gut bacteria that I have in abundance but which is missing in other people. I already checked for Pseudomonas Fulva — I don’t have it in any of my uBiome samples.  I do have abundant levels of the genus Pseudomonas, but that is not the same thing.
+
+It should be possible to screen every one of my gut bacteria demethylizing ndMA gene, but I’m not sure how to do that. If I did find the gene in one of the gut bacteria I harbor, then that would be pretty cool: a microbe that helps me drink coffee.
+
+The following code, written in R, will let you pull all your 23andme results into a data frame that you can analyze in more detail.
+
+&gt; genes&lt;-read.delim("genome_Richard_Sprague_20080928082410.txt",comment.char="#")
+&gt; head(genes)
+
+will list all the genes, now presented in a dataframe with headers: 
+&gt; names(genes)
+[1] "rsid"       "chromosome" "position"   "genotype"  
+&gt; 
+
+Now find a particular SNP using something like this: 
+
+&gt; genes[genes["rsid"]=="i3001542",]
+           rsid chromosome position genotype
+579746 i3001542         MT    16522       CC
+</Text>
+        </Document>
+        <Document ID="54">
+            <Title>Deinococcus radiodurans </Title>
+            <Text>#
+
+
+
+</Text>
         </Document>
         <Document ID="47">
             <Title>How to get your data</Title>
@@ -22,7 +64,7 @@ On the other hand, since Genova tests are intended for a doctor, the best you ca
 
 For "normal" people, just curious about the science like I am, there are two other ways to find out your microbiome:
 
- The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. American Gut boasts an impressive number of practicing research scientists, including several of the key contributors to the Human Microbiome 
+ The first is called American Gut Project, associated with a lab at the University of California San Diego and others.  For a $100 donation, they'll send you a sampling kit which you send back to get a breakdown of your gut bacteria. American Gut boasts an impressive number of practicing research scientists, including several of the key contributors to the Human Microbiome Project.
 
 ￼
 I recommend the San Francisco company uBiome.
@@ -40,35 +82,6 @@ With the new investment capital, uBiome was able to open a new headquarters and 
 
 The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina.
 
-</Text>
-        </Document>
-        <Document ID="54">
-            <Title>Deinococcus radiodurans </Title>
-            <Text>#
-
-
-
-</Text>
-        </Document>
-        <Document ID="106">
-            <Title>Beyond the Microbiome: DNA</Title>
-            <Text>How to analyze your 23andme results
-[This section describes how 
-The following code, written in R, will let you pull all your 23andme results into a data frame that you can analyze in more detail.
-
-&gt; genes&lt;-read.delim("genome_Richard_Sprague_20080928082410.txt",comment.char="#")
-&gt; head(genes)
-
-will list all the genes, now presented in a dataframe with headers: 
-&gt; names(genes)
-[1] "rsid"       "chromosome" "position"   "genotype"  
-&gt; 
-
-Now find a particular SNP using something like this: 
-
-&gt; genes[genes["rsid"]=="i3001542",]
-           rsid chromosome position genotype
-579746 i3001542         MT    16522       CC
 </Text>
         </Document>
         <Document ID="62">
@@ -90,6 +103,10 @@ During the late 1990s, biologists around the world were racing to complete the f
 
 The Human Microbiome Project was launched in 2008 by the National Institutes of Health with a budget of $115M.
 </Text>
+        </Document>
+        <Document ID="63">
+            <Title>Pasted Graphic 1</Title>
+            <Text>￼</Text>
         </Document>
         <Document ID="56">
             <Title>Analyze with Excel</Title>
@@ -171,10 +188,6 @@ Of these fields, the most important ones are tax_name, tax_rank, and count_norm.
         </Document>
         <Document ID="49">
             <Title>Next Steps</Title>
-        </Document>
-        <Document ID="63">
-            <Title>Pasted Graphic 1</Title>
-            <Text>￼</Text>
         </Document>
         <Document ID="71">
             <Title>Intro</Title>
@@ -266,9 +279,6 @@ I prefer to use both methods of measurement: absolute number changes matter for 
 
 
 </Text>
-        </Document>
-        <Document ID="58">
-            <Title>Psudomonas syringae</Title>
         </Document>
         <Document ID="65">
             <Title>DNA codon table</Title>
@@ -470,6 +480,9 @@ TAA, TGA, TAG
 TAR, TRA
 </Text>
         </Document>
+        <Document ID="58">
+            <Title>Psudomonas syringae</Title>
+        </Document>
         <Document ID="80">
             <Title>What is a microbe?</Title>
             <Text>Scientists have known since Pasteur times that our bodies and environment are awash in other species, microbial bystanders that seem to grow everywhere. But the techniques for uncovering which organisms are where and what they are doing was revolutionized in the first decade of the 2000s by those new-fangled gene sequencers that were so usefully applied to human genes.
@@ -662,6 +675,9 @@ https://www.indiegogo.com/projects/ubiome-sequencing-your-microbiome#/updates</N
         <Document ID="6">
             <Title>Microbes everywhere!</Title>
         </Document>
+        <Document ID="83">
+            <Title>Microbiome: reading list</Title>
+        </Document>
         <Document ID="76">
             <Title>More comparison</Title>
             <Text>I often read news about a fresh scientific discovery involving the microbiome and immediately wonder if the discovery applies to me. For example, I recently saw [a study from Oregon State University](http://www.sciencedaily.com/releases/2015/06/150622182034.htm) that seemed to find a link between high sugar diets and “cognitive flexibility”, i.e. your ability to adapt and adjust to changing circumstances. The study’s author, Kathy Magnusson, a professor in the OSU College of Veterinary Medicine, found that mice who eat lots of sugar have elevated levels of Clostridiales bacteria, and that this seemed to relate to a slower ability to solve a maze.  Hmmm, I thought — how much Clostridiales do I have?
@@ -682,18 +698,10 @@ uBiome has identified more than 900 unique taxa (groups of organisms) in the hal
 
 If you know a little Python, you can make the same spreadsheet with your samples using the ubiome.py Python module on the [ubiome-opensource GitHub repository](https://github.com/ubiome-opensource); the script that generated my spreadsheet is [there](https://github.com/ubiome-opensource/microbiome-tools/blob/master/ubiomeSample.py) too as an example. And while you’re at it, please upload your own uBiome sample results to the same repository so we can compare.</Text>
         </Document>
-        <Document ID="83">
-            <Title>Microbiome: reading list</Title>
-        </Document>
         <Document ID="91">
             <Title>Overselling the microbiome</Title>
             <Text>Now a warning. Our understanding of the microbiome is in its infancy, with new techniques and discoveries coming along every day. The costs have plummeted dramatically, whether measured in money or in the time and resource commitment needed to explore the science. After all, this book is itself proof for how easy it is for “normal” people can learn and make their own discoveries.
 All of this new interest is a recipe for getting carried away, and you’ll find many examples, especially once you understand the science a bit for yourself. Jonathan Eisen is a microbiologist who has been studying the microbiome for decades and he has created a blog list he calls “Overselling the Microbiome Award”, with many examples.
-</Text>
-        </Document>
-        <Document ID="84">
-            <Text>
-
 </Text>
         </Document>
         <Document ID="78">
@@ -771,8 +779,32 @@ As you can see, the overall level of diversity in my samples has been going down
 
 </Text>
         </Document>
-        <Document ID="79">
-            <Title>Microbes</Title>
+        <Document ID="93">
+            <Title>Looking into your mouth</Title>
+            <Text>Looking into my mouth microbiome
+
+The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I’ve been studying my uBiome mouth test results. The simple GitHub RuBiome utilities I use for analyzing my gut will work for that too, so here’s a short example of how I did it:
+
+First I loaded my uBiome data into two variables, one for each sample: June 2014 (junMouth) and the other from October 2014 (OctMouth), after a visit to my dentist.
+Let’s see which species are new in the later (October) sample:
+octToJunChange &lt;- uBiome_sample_unique(OctMouth,junMouth)
+##   count                        missing.tax_name ## 1  3640                  bacterium NLAE-zl-P562 ## 2  2725                 Streptococcus sanguinis ## 3  2075               Capnocytophaga gingivalis ## 4  1969 Peptostreptococcus sp. oral clone FG014 ## 5  1618                 Granulicatella adiacens
+One of those species, Streptococcus sanguinis looks interesting. Wikipedia says this:
+S. sanguinis is a normal inhabitant of the healthy human mouth where it is particularly found in dental plaque, where it modifies the environment to make it less hospitable for other strains of Streptococcus that cause cavities, such as Streptococcus mutans.
+No cavities? Nice! More good news: this quick check confirms that I don’t have any S. mutans:
+OctMouth[grepl("Streptococcus",OctMouth$tax_name),]$tax_name
+## [1] Streptococcus                      Streptococcus pseudopneumoniae     ## [3] Streptococcus sanguinis            Streptococcus constellatus         ## [5] Streptococcus anginosus group      Streptococcus sp. oral clone GM006 ## [7] Streptococcus thermophilus         Streptococcus oralis               ## [9] Streptococcus gordonii             ## 250 Levels: [Eubacterium] sulci ... Veillonellaceae
+Then I look at the species that disappeared (went extinct) between the two samples:
+junToOctChange &lt;- uBiome_sample_unique(junMouth,OctMouth)
+##   count                        missing.tax_name ## 1  6034                Capnocytophaga granulosa ## 2  4153 Peptostreptococcus sp. oral clone FL008 ## 3  3375         Prevotella sp. oral clone ID019 ## 4  2691                   Streptococcus rubneri ## 5  1571                       Prevotella buccae
+Anything in the genus Capnocytophaga is an opportunistic pathogen, so I say good riddance. Usually they’re fine, but if your immune system dips they can turn bad.
+Streptococcus rubneri was discovered a couple years ago, so little is known about it.
+Prevotella buccae is more interesting. It seems to be implicated in periodontal disease (yuk!) but that genus is involved too in breaking down proteins and carbohydrates.
+Hard to say what’s really going on. Meanwhile, here are the biggest changes (increase) since the first sample:
+junToOctCompare &lt;- uBiome_compare_samples(junMouth,OctMouth)
+##                                  tax_name count_change ## 64         Streptococcus pseudopneumoniae        62007 ## 68         Veillonella sp. oral taxon 780         8065 ## 41                       Neisseria oralis         4693 ## 2  Abiotrophia sp. oral clone P4PA_155 P1         2308 ## 28                 Granulicatella elegans         1987
+Whoah! That first one, Streptococcus pseudopneumoniae, looks nasty! Wikipedia says it may cause pneumonia, though a recent medical journal says more hopefully that it “treads the fine line between commensal and pathogen” which is a scientific gobbleygook way of saying nobody has a clue. All the more reason to keep testing, submitting, and getting more data. 
+</Text>
         </Document>
         <Document ID="12">
             <Title>Non-Fiction Format</Title>
@@ -831,38 +863,11 @@ See the “Sample MS” PDF file in the Research folder for an example of a docu
 Final Note
 Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template, and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
         </Document>
-        <Document ID="93">
-            <Title>Looking into your mouth</Title>
-            <Text>Looking into my mouth microbiome
-
-The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I’ve been studying my uBiome mouth test results. The simple GitHub RuBiome utilities I use for analyzing my gut will work for that too, so here’s a short example of how I did it:
-
-First I loaded my uBiome data into two variables, one for each sample: June 2014 (junMouth) and the other from October 2014 (OctMouth), after a visit to my dentist.
-Let’s see which species are new in the later (October) sample:
-octToJunChange &lt;- uBiome_sample_unique(OctMouth,junMouth)
-##   count                        missing.tax_name ## 1  3640                  bacterium NLAE-zl-P562 ## 2  2725                 Streptococcus sanguinis ## 3  2075               Capnocytophaga gingivalis ## 4  1969 Peptostreptococcus sp. oral clone FG014 ## 5  1618                 Granulicatella adiacens
-One of those species, Streptococcus sanguinis looks interesting. Wikipedia says this:
-S. sanguinis is a normal inhabitant of the healthy human mouth where it is particularly found in dental plaque, where it modifies the environment to make it less hospitable for other strains of Streptococcus that cause cavities, such as Streptococcus mutans.
-No cavities? Nice! More good news: this quick check confirms that I don’t have any S. mutans:
-OctMouth[grepl("Streptococcus",OctMouth$tax_name),]$tax_name
-## [1] Streptococcus                      Streptococcus pseudopneumoniae     ## [3] Streptococcus sanguinis            Streptococcus constellatus         ## [5] Streptococcus anginosus group      Streptococcus sp. oral clone GM006 ## [7] Streptococcus thermophilus         Streptococcus oralis               ## [9] Streptococcus gordonii             ## 250 Levels: [Eubacterium] sulci ... Veillonellaceae
-Then I look at the species that disappeared (went extinct) between the two samples:
-junToOctChange &lt;- uBiome_sample_unique(junMouth,OctMouth)
-##   count                        missing.tax_name ## 1  6034                Capnocytophaga granulosa ## 2  4153 Peptostreptococcus sp. oral clone FL008 ## 3  3375         Prevotella sp. oral clone ID019 ## 4  2691                   Streptococcus rubneri ## 5  1571                       Prevotella buccae
-Anything in the genus Capnocytophaga is an opportunistic pathogen, so I say good riddance. Usually they’re fine, but if your immune system dips they can turn bad.
-Streptococcus rubneri was discovered a couple years ago, so little is known about it.
-Prevotella buccae is more interesting. It seems to be implicated in periodontal disease (yuk!) but that genus is involved too in breaking down proteins and carbohydrates.
-Hard to say what’s really going on. Meanwhile, here are the biggest changes (increase) since the first sample:
-junToOctCompare &lt;- uBiome_compare_samples(junMouth,OctMouth)
-##                                  tax_name count_change ## 64         Streptococcus pseudopneumoniae        62007 ## 68         Veillonella sp. oral taxon 780         8065 ## 41                       Neisseria oralis         4693 ## 2  Abiotrophia sp. oral clone P4PA_155 P1         2308 ## 28                 Granulicatella elegans         1987
-Whoah! That first one, Streptococcus pseudopneumoniae, looks nasty! Wikipedia says it may cause pneumonia, though a recent medical journal says more hopefully that it “treads the fine line between commensal and pathogen” which is a scientific gobbleygook way of saying nobody has a clue. All the more reason to keep testing, submitting, and getting more data. 
-</Text>
+        <Document ID="79">
+            <Title>Microbes</Title>
         </Document>
         <Document ID="87">
             <Title>Diversity through time</Title>
-        </Document>
-        <Document ID="88">
-            <Title>Diversity: genus Inverse Shannon</Title>
         </Document>
         <Document ID="95">
             <Title>Looking into my mouth microbiome</Title>
@@ -923,6 +928,9 @@ junToOctCompare &lt;- uBiome_compare_samples(junMouth,OctMouth)
 Whoah! That first one, Streptococcus pseudopneumoniae, looks nasty! Wikipedia says it may cause pneumonia, though a recent medical journal says more hopefully that it “treads the fine line between commensal and pathogen”
 
 which is a scientific gobbleygook way of saying nobody has a clue. All the more reason to keep testing, submitting, and getting more data. I just sent two more kits to uBiome, and will let you know more as soon as I get back the results.</Text>
+        </Document>
+        <Document ID="88">
+            <Title>Diversity genus Inverse Shannon</Title>
         </Document>
         <Document ID="89">
             <Title>A/B Testing</Title>
@@ -1742,20 +1750,6 @@ uBiome has identified more than 900 unique taxa (groups of organisms) in the hal
 If you know a little Python, you can make the same spreadsheet with your samples using the ubiome.py Python module on the ubiome-opensource GitHub repository; the script that generated my spreadsheet is there too as an example. And while you’re at it, please upload your own uBiome sample results to the same repository so we can compare.
 </Text>
         </Document>
-        <Document ID="60">
-            <Title>uBiomeScreenDownloadData</Title>
-        </Document>
-        <Document ID="46">
-            <Title>The basics: web tools</Title>
-            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
-
-The first thing you’ll notice is a pretty chart like this one:
-#
-
-This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla —the highest, broadest level of classification. If you’re like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. 
-
-￼</Text>
-        </Document>
         <Document ID="39">
             <Title>16s rRNA</Title>
             <Text>The 16S shortcut
@@ -1770,6 +1764,16 @@ If you cut up bacterial cells (“lyse” them, to use the technical term) to pu
 Once you have a bunch of that 16S ribosomal RNA, you know that you have bacterial RNA and that’s what the Illumina NextSeq 500 will sequence. This represents a huge subset, a nearly trivial percentage of all the DNA in the overall sample, but combined with one more shortcut, it’s enough to accurately identify the sample.
 The remaining shortcut is possible thanks to years of research of sequencing the genes in bacteria. Scientists in labs around the world have been faithfully digging up samples of bacteria, and performing whole-gene sequencing on what they find. These sequences are kept in a  large public database run by the National Institutes of Health, and if you have a snippet of DNA — even a small snippet — you can do a string compare against all the genes that have already been analyzed. When you find a match, you can be pretty sure that your sample contains this type of bacteria.
 It’s this two-step combination, 16S “skimming” and a database lookup, that makes it cost effective to study the millions of organisms in your microbiome. You don’t have to do a complete gene sequence on every single bacterium; just trust that the tiny subset of RNA in the 16S region is enough to uniquely match something already in the bacterial database.</Text>
+        </Document>
+        <Document ID="53">
+            <Title>Pseudomonas syringae </Title>
+            <Text>
+Pierre Amato :  
+
+</Text>
+        </Document>
+        <Document ID="60">
+            <Title>uBiomeScreenDownloadData</Title>
         </Document>
     </Documents>
 </SearchIndexes>
