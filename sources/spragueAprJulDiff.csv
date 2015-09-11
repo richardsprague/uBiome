@@ -1,0 +1,220 @@
+count_norm,tax_name,tax_rank
+-65,unclassified Peptostreptococcaceae (miscellaneous),no_rank
+-836,Lentisphaeria,class
+-5119,bacterium NLAE-zl-H54,species
+-580,Methanomassiliicoccus luminyensis B10,no_rank
+3353,bacterium NLAE-zl-P827,species
+48960,bacterium NLAE-zl-P430,species
+3079,Bacteroidales bacterium ph8,species
+-580,Methanomassiliicoccus luminyensis,species
+-580,Methanomassiliicoccus,genus
+3952,Sutterellaceae,family
+74164,Christensenellaceae,family
+145,Flavonifractor,genus
+8092,Negativicutes,class
+3452,Acidaminococcaceae,family
+8092,Selenomonadales,order
+-28,Blautia faecis,species
+27,Blautia stercoris,species
+-59,Cytophagales,order
+-59,Cytophagia,class
+-65,Peptostreptococcaceae bacterium TM5,species
+-7789,Odoribacter laneus YIT 12061,no_rank
+11463,Lactobacillus rogosae,species
+-82,Bacteroides rodentium,species
+414,Lachnospiraceae bacterium 1_1_57FAA,species
+-1100,Anaerosporobacter,genus
+2070,Synergistaceae,family
+2070,Synergistales,order
+2070,Synergistia,class
+-96,Anaerostipes hadrus,species
+980,Pyramidobacter,genus
+-17034,Odoribacter laneus,species
+10995,Roseburia sp. 11SE38,species
+3854,Parasutterella,genus
+-256,Butyricimonas,genus
+-741,Victivallaceae bacterium NML 080035,species
+-741,unclassified Victivallaceae,no_rank
+-9217,Blautia,genus
+168,Anaerotruncus sp. NML 070203,species
+2765,Butyricimonas virosa,species
+1181,Tenericutes,phylum
+-57996,Ruminococcaceae,family
+6050,Coprococcus sp. DJF_CR49,species
+-415,Bacteroides cellulosilyticus DSM 14838,no_rank
+1647,Erysipelotrichales,order
+1647,Erysipelotrichia,class
+2070,Synergistetes,phylum
+3729,Parasutterella excrementihominis,species
+3359,Barnesiella intestinihominis,species
+377,Oscillibacter,genus
+-580,unclassified Methanomicrobia,no_rank
+938,Synergistes sp. 3_1_syn1,species
+1881,Cronobacter,genus
+-96,ecological metagenomes,no_rank
+430,organismal metagenomes,no_rank
+1551,Coprococcus comes,species
+430,human gut metagenome,no_rank
+361,metagenomes,no_rank
+3394,Barnesiella,genus
+964,Parabacteroides,genus
+2773,Roseburia inulinivorans,species
+3159,unclassified Bacteroidales,no_rank
+53,Alistipes shahii,species
+611,Alistipes onderdonkii,species
+-7548,Bacteroides plebeius,species
+120,Flavonifractor plautii,species
+5719,Subdoligranulum,genus
+-1619,Bacteroides salyersiae,species
+-16546,Odoribacter,genus
+-836,Victivallales,no_rank
+-836,Lentisphaerae,phylum
+27,metagenome,no_rank
+1960,Coriobacterineae,suborder
+-728,Victivallaceae,family
+-56,Marvinbryantia,genus
+-415,Bacteroides cellulosilyticus,species
+-34,butyrate-producing bacterium SR1/1,order
+721,Anaerotruncus,genus
+7158,Akkermansia,genus
+4819,Alistipes,genus
+-580,Methanomicrobia,class
+-35407,Faecalibacterium,genus
+377,Oscillospiraceae,family
+-262,Alistipes finegoldii,species
+2158,Subdoligranulum variabile,species
+-90,Desulfobacterales,order
+7603,Desulfovibrionales,order
+-6952,Anaerostipes,genus
+-77,Neisseriales,order
+-40083,Bacteroides massiliensis,species
+-2453,Caulobacterales,order
+-90,Rhodobacterales,order
+-602,Rhodospirillales,order
+134,Acidobacteriia,class
+7287,Verrucomicrobiaceae,family
+7287,Verrucomicrobiae,class
+-7236,Actinobacteria,phylum
+-80208,Bacteroidia,class
+-173,unclassified Peptostreptococcaceae,no_rank
+7603,Desulfovibrionaceae,family
+1929,Dorea,genus
+444,unclassified Lachnospiraceae,no_rank
+11693,Lactobacillales,order
+-2722,Paenibacillaceae,family
+-5588,unclassified Clostridiales,no_rank
+625,Peptococcaceae,family
+1671,Eubacteriaceae,family
+2042,Peptostreptococcaceae,family
+10463,Lachnospiraceae,family
+-7199,Clostridiales,order
+-7227,Clostridia,class
+3079,unclassified Bacteroidales (miscellaneous),no_rank
+712,Methanobacteria,class
+-2477,Prevotellaceae,family
+-11954,Porphyromonadaceae,family
+5316,Rikenellaceae,family
+-79243,Bacteroidales,order
+-633,Thalassospira,genus
+-83,Chromatiales,order
+-204,environmental samples,no_rank
+-124,environmental samples,no_rank
+24,cellular organisms,no_rank
+-375,Fibrobacteres/Acidobacteria group,superphylum
+1647,Erysipelotrichaceae,family
+-16,Burkholderiaceae,family
+-2200,Flavobacteriia,class
+-2655,butyrate-producing bacterium A1-86,species
+205,Collinsella,genus
+2028,Enterobacteriales,order
+8956,Bacilli,class
+-83,Cytophagaceae,family
+-9233,Bifidobacteriales,order
+-9233,Actinobacteridae,subclass
+1960,Coriobacteriales,order
+1960,Coriobacteridae,subclass
+1936,Coriobacteriaceae,family
+-131,Comamonadaceae,family
+15880,Burkholderiales,order
+-2453,Caulobacteraceae,family
+12225,Oxalobacteraceae,family
+7287,Verrucomicrobia,phylum
+-3600,Pseudomonadales,order
+7798,delta/epsilon subdivisions,subphylum
+-82398,Bacteroidetes/Chlorobi group,superphylum
+4,Acidobacteria,phylum
+6451,Chlamydiae/Verrucomicrobia group,superphylum
+-204,environmental samples,no_rank
+48533,unclassified Bacteria (miscellaneous),no_rank
+-112,environmental samples,no_rank
+7287,Verrucomicrobiales,order
+-161,environmental samples,no_rank
+-144,Bacteroides caccae,species
+286,Parabacteroides merdae,species
+-153,Ruminococcus lactaris,species
+1898,Pseudobutyrivibrio,genus
+-614,Rhodospirillaceae,family
+-2453,Brevundimonas,genus
+-1963,[Ruminococcus] obeum,species
+-6281,Ruminococcus bromii,species
+4145,Dialister,genus
+-5788,unclassified Clostridiales (miscellaneous),no_rank
+1217,Eubacterium siraeum,species
+-150,Eubacterium hallii,species
+6566,Bilophila wadsworthia,species
+7069,Bilophila,genus
+11476,Lactobacillaceae,family
+8278,Coprococcus,genus
+2893,Phascolarctobacterium faecium,species
+2884,Phascolarctobacterium,genus
+-96,Burkholderia,genus
+-3659,Clostridiaceae,family
+4061,Veillonellaceae,family
+3832,Mollicutes,class
+-9233,Bifidobacteriaceae,family
+24,Euryarchaeota,phylum
+7798,Deltaproteobacteria,class
+15716,Betaproteobacteria,class
+-3198,Alphaproteobacteria,class
+1881,Cronobacter sakazakii,species
+413,Odoribacter splanchnicus,species
+-9108,Lachnospira,genus
+-9997,Bifidobacterium animalis,species
+-85,unclassified sequences,no_rank
+1036,Synergistes,genus
+1472,Gardnerella,genus
+48545,unclassified Bacteria,no_rank
+875,Methanobrevibacter smithii,species
+712,Methanobrevibacter,genus
+712,Methanobacteriaceae,family
+712,Methanobacteriales,order
+24,Archaea,superkingdom
+-7236,Actinobacteria,class
+1646,Eubacterium,genus
+-10501,Bifidobacterium,genus
+11476,Lactobacillus,genus
+120,Clostridium baratii,species
+-3680,Clostridium clostridioforme,species
+-4114,Clostridium,genus
+-2737,Bacillales,order
+52,Streptococcus thermophilus,species
+187,Streptococcus,genus
+205,Streptococcaceae,family
+1627,Sarcina,genus
+9273,Ruminococcus,genus
+11305,Firmicutes,phylum
+-2050,Gammaproteobacteria,class
+17598,Proteobacteria,phylum
+-83,Chromatiaceae,family
+-82398,Bacteroidetes,phylum
+11494,Herbaspirillum,genus
+-28532,Faecalibacterium prausnitzii,species
+24655,Roseburia,genus
+-1056,Butyrivibrio,genus
+357,Parabacteroides distasonis,species
+-1152,Bacteroides uniformis,species
+-62183,Bacteroides,genus
+-72229,Bacteroidaceae,family
+2016,Enterobacteriaceae,family
+0,Bacteria,superkingdom
+-61,root,root

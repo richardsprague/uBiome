@@ -8,6 +8,10 @@
 	<dict/>
 	<key>DisableFileRecoveryOnOpen</key>
 	<true/>
+	<key>EnabledCompilePresets</key>
+	<array>
+		<string>MicrobeGuide</string>
+	</array>
 	<key>QRPanelSettings</key>
 	<dict>
 		<key>39</key>
@@ -93,8 +97,12 @@
 			</array>
 			<key>TextSettings</key>
 			<dict>
+				<key>hasMultiplePages</key>
+				<false/>
 				<key>textScale</key>
 				<integer>100</integer>
+				<key>usesFacingPages</key>
+				<false/>
 			</dict>
 			<key>WindowFrame</key>
 			<string>419 191 475 522 0 0 1280 777 </string>
@@ -121,19 +129,57 @@
 			<key>WindowFrame</key>
 			<string>423 191 475 522 0 0 1280 777 </string>
 		</dict>
+		<key>79</key>
+		<dict>
+			<key>BinderID</key>
+			<integer>79</integer>
+			<key>CurrentMetaData</key>
+			<integer>-1</integer>
+			<key>ShowsFormatBar</key>
+			<true/>
+			<key>ShowsMetaData</key>
+			<false/>
+			<key>SplitInfo</key>
+			<array>
+				<string>{{0, 273}, {475, 163}}</string>
+			</array>
+			<key>TextSettings</key>
+			<dict>
+				<key>textScale</key>
+				<integer>100</integer>
+			</dict>
+			<key>WindowFrame</key>
+			<string>419 191 475 522 0 0 1280 777 </string>
+		</dict>
 	</dict>
 	<key>SCRSelectedCompileOptionsInfoSaveName</key>
 	<dict>
 		<key>Tag</key>
-		<integer>0</integer>
+		<integer>5</integer>
 		<key>Title</key>
-		<string>Custom</string>
+		<string>MicrobeGuide</string>
 	</dict>
+	<key>UnhoistedBinderState</key>
+	<array>
+		<integer>0</integer>
+		<integer>4</integer>
+		<integer>6</integer>
+		<integer>79</integer>
+		<integer>38</integer>
+		<integer>45</integer>
+		<integer>92</integer>
+		<integer>51</integer>
+		<integer>49</integer>
+		<integer>28</integer>
+		<integer>27</integer>
+		<integer>1</integer>
+		<integer>55</integer>
+	</array>
 	<key>binderIsCollapsed</key>
 	<false/>
 	<key>binderSelection</key>
 	<array>
-		<integer>34</integer>
+		<integer>37</integer>
 	</array>
 	<key>binderSplitFrames</key>
 	<array>
@@ -144,15 +190,19 @@
 	<array>
 		<integer>0</integer>
 		<integer>4</integer>
-		<integer>6</integer>
 		<integer>38</integer>
 		<integer>45</integer>
+		<integer>92</integer>
 		<integer>51</integer>
 		<integer>49</integer>
 		<integer>28</integer>
 		<integer>27</integer>
 		<integer>1</integer>
 		<integer>55</integer>
+		<integer>96</integer>
+		<integer>2</integer>
+		<integer>97</integer>
+		<integer>98</integer>
 	</array>
 	<key>binderWidth</key>
 	<real>223</real>
@@ -177,7 +227,7 @@
 		<string>{{0, 102}, {223, 512}}</string>
 	</array>
 	<key>collectionsTabListIsCollapsed</key>
-	<true/>
+	<false/>
 	<key>editorSplitFrames</key>
 	<array>
 		<string>{{0, 0}, {632, 301}}</string>
@@ -245,7 +295,7 @@
 	<integer>0</integer>
 	<key>mainDocumentEditor.binderDocuments</key>
 	<array>
-		<integer>91</integer>
+		<integer>106</integer>
 	</array>
 	<key>mainDocumentEditor.corkboardVisible</key>
 	<false/>
@@ -287,7 +337,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>86</integer>
+					<integer>93</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -295,7 +345,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>87</integer>
+					<integer>102</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -303,7 +353,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>86</integer>
+					<integer>92</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -311,7 +361,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>88</integer>
+					<integer>103</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -319,7 +369,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>86</integer>
+					<integer>92</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -327,7 +377,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>39</integer>
+					<integer>102</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -335,7 +385,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>11</integer>
+					<integer>103</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -343,7 +393,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>31</integer>
+					<integer>102</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -351,7 +401,63 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>76</integer>
+					<integer>93</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>102</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>92</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>89</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>92</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>103</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>102</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>56</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -363,278 +469,6 @@
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>11</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>0</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>0</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>4</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>0</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>49</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>75</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>49</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>50</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>49</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>50</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>29</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>66</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>35</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>0</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>11</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>71</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>64</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>45</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>47</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>0</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>11</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>45</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
 			</dict>
 			<dict>
 				<key>BinderDocIDs</key>
@@ -663,7 +497,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>31</integer>
+					<integer>92</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -671,7 +505,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>85</integer>
+					<integer>93</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -679,7 +513,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>88</integer>
+					<integer>104</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -687,7 +521,49 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>90</integer>
+					<integer>92</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>103</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>92</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>6</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>4</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>35</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -703,7 +579,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>11</integer>
+					<integer>6</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -711,7 +587,31 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>31</integer>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>80</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>80</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -735,31 +635,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>6</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>71</integer>
+					<integer>79</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -775,15 +651,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>0</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
+					<integer>79</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -791,7 +659,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>30</integer>
+					<integer>6</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -799,7 +667,47 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>71</integer>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>6</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>92</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>103</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>89</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -823,6 +731,38 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
+					<integer>38</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>45</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
 					<integer>6</integer>
 				</array>
 				<key>ViewMode</key>
@@ -839,6 +779,72 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>92</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>6</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>79</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>86</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>6</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{13213, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
 					<integer>6</integer>
 				</array>
 				<key>ViewMode</key>
@@ -855,7 +861,15 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>41</integer>
+					<integer>80</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>37</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -871,91 +885,14 @@
 				<integer>1</integer>
 			</dict>
 			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>11</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>11</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>31</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>38</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>30</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>70</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>42</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>70</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
 				<key>AggregateSelection</key>
 				<string>{0, 0}</string>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>4</integer>
+					<integer>79</integer>
+					<integer>80</integer>
+					<integer>81</integer>
+					<integer>82</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>1</integer>
@@ -965,31 +902,359 @@
 				<string>{0, 0}</string>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>38</integer>
+					<integer>6</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>1</integer>
 			</dict>
 			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
 				<key>BinderDocIDs</key>
 				<array>
+					<integer>6</integer>
+					<integer>35</integer>
 					<integer>41</integer>
 				</array>
 				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>71</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
 					<integer>6</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>76</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>105</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>76</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>105</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>31</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>12</integer>
+					<integer>0</integer>
+					<integer>11</integer>
+					<integer>31</integer>
+					<integer>30</integer>
+					<integer>4</integer>
+					<integer>71</integer>
+					<integer>6</integer>
+					<integer>35</integer>
+					<integer>41</integer>
+					<integer>79</integer>
+					<integer>80</integer>
+					<integer>81</integer>
+					<integer>82</integer>
+					<integer>37</integer>
+					<integer>42</integer>
+					<integer>66</integer>
+					<integer>70</integer>
+					<integer>38</integer>
+					<integer>64</integer>
+					<integer>40</integer>
+					<integer>39</integer>
+					<integer>43</integer>
+					<integer>44</integer>
+					<integer>45</integer>
+					<integer>47</integer>
+					<integer>46</integer>
+					<integer>56</integer>
+					<integer>72</integer>
+					<integer>105</integer>
+					<integer>86</integer>
+					<integer>92</integer>
+					<integer>89</integer>
+					<integer>103</integer>
+					<integer>102</integer>
+					<integer>93</integer>
+					<integer>104</integer>
+					<integer>51</integer>
+					<integer>52</integer>
+					<integer>75</integer>
+					<integer>49</integer>
+					<integer>50</integer>
+					<integer>91</integer>
+					<integer>59</integer>
+					<integer>29</integer>
+					<integer>28</integer>
+					<integer>74</integer>
+					<integer>60</integer>
+					<integer>73</integer>
+					<integer>62</integer>
+					<integer>61</integer>
+					<integer>90</integer>
+					<integer>69</integer>
+					<integer>88</integer>
+					<integer>87</integer>
+					<integer>27</integer>
+					<integer>1</integer>
+					<integer>36</integer>
+					<integer>55</integer>
+					<integer>53</integer>
+					<integer>54</integer>
+					<integer>57</integer>
+					<integer>67</integer>
+					<integer>58</integer>
+					<integer>65</integer>
+					<integer>96</integer>
+					<integer>2</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>11</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>31</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>12</integer>
+					<integer>0</integer>
+					<integer>11</integer>
+					<integer>31</integer>
+					<integer>30</integer>
+					<integer>4</integer>
+					<integer>71</integer>
+					<integer>6</integer>
+					<integer>35</integer>
+					<integer>41</integer>
+					<integer>79</integer>
+					<integer>80</integer>
+					<integer>81</integer>
+					<integer>82</integer>
+					<integer>37</integer>
+					<integer>42</integer>
+					<integer>66</integer>
+					<integer>70</integer>
+					<integer>38</integer>
+					<integer>64</integer>
+					<integer>40</integer>
+					<integer>39</integer>
+					<integer>43</integer>
+					<integer>44</integer>
+					<integer>45</integer>
+					<integer>47</integer>
+					<integer>46</integer>
+					<integer>56</integer>
+					<integer>72</integer>
+					<integer>105</integer>
+					<integer>86</integer>
+					<integer>92</integer>
+					<integer>89</integer>
+					<integer>103</integer>
+					<integer>102</integer>
+					<integer>93</integer>
+					<integer>104</integer>
+					<integer>51</integer>
+					<integer>52</integer>
+					<integer>75</integer>
+					<integer>49</integer>
+					<integer>50</integer>
+					<integer>91</integer>
+					<integer>59</integer>
+					<integer>29</integer>
+					<integer>28</integer>
+					<integer>74</integer>
+					<integer>60</integer>
+					<integer>73</integer>
+					<integer>62</integer>
+					<integer>61</integer>
+					<integer>90</integer>
+					<integer>69</integer>
+					<integer>88</integer>
+					<integer>87</integer>
+					<integer>27</integer>
+					<integer>1</integer>
+					<integer>36</integer>
+					<integer>55</integer>
+					<integer>53</integer>
+					<integer>54</integer>
+					<integer>57</integer>
+					<integer>67</integer>
+					<integer>58</integer>
+					<integer>65</integer>
+					<integer>96</integer>
+					<integer>2</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>12</integer>
+					<integer>0</integer>
+					<integer>11</integer>
+					<integer>31</integer>
+					<integer>30</integer>
+					<integer>4</integer>
+					<integer>71</integer>
+					<integer>6</integer>
+					<integer>35</integer>
+					<integer>41</integer>
+					<integer>79</integer>
+					<integer>80</integer>
+					<integer>81</integer>
+					<integer>82</integer>
+					<integer>37</integer>
+					<integer>42</integer>
+					<integer>66</integer>
+					<integer>70</integer>
+					<integer>38</integer>
+					<integer>64</integer>
+					<integer>40</integer>
+					<integer>39</integer>
+					<integer>43</integer>
+					<integer>44</integer>
+					<integer>45</integer>
+					<integer>47</integer>
+					<integer>46</integer>
+					<integer>56</integer>
+					<integer>72</integer>
+					<integer>105</integer>
+					<integer>86</integer>
+					<integer>92</integer>
+					<integer>89</integer>
+					<integer>103</integer>
+					<integer>102</integer>
+					<integer>93</integer>
+					<integer>104</integer>
+					<integer>51</integer>
+					<integer>52</integer>
+					<integer>75</integer>
+					<integer>49</integer>
+					<integer>50</integer>
+					<integer>91</integer>
+					<integer>59</integer>
+					<integer>29</integer>
+					<integer>28</integer>
+					<integer>74</integer>
+					<integer>60</integer>
+					<integer>73</integer>
+					<integer>62</integer>
+					<integer>61</integer>
+					<integer>90</integer>
+					<integer>69</integer>
+					<integer>88</integer>
+					<integer>87</integer>
+					<integer>27</integer>
+					<integer>1</integer>
+					<integer>36</integer>
+					<integer>55</integer>
+					<integer>53</integer>
+					<integer>54</integer>
+					<integer>57</integer>
+					<integer>67</integer>
+					<integer>58</integer>
+					<integer>65</integer>
+					<integer>96</integer>
+					<integer>2</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>AggregateSelection</key>
+				<string>{0, 0}</string>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>0</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>31</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -1019,11 +1284,27 @@
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>6</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>BinderDocIDs</key>
+				<array>
+					<integer>47</integer>
+				</array>
+				<key>ViewMode</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
 				<key>AggregateSelection</key>
 				<string>{0, 0}</string>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>6</integer>
+					<integer>0</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>1</integer>
@@ -1031,7 +1312,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>71</integer>
+					<integer>11</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -1039,7 +1320,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>6</integer>
+					<integer>31</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -1047,7 +1328,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>71</integer>
+					<integer>64</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -1055,7 +1336,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>50</integer>
+					<integer>47</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -1071,19 +1352,11 @@
 				<integer>1</integer>
 			</dict>
 			<dict>
-				<key>BinderDocIDs</key>
-				<array>
-					<integer>50</integer>
-				</array>
-				<key>ViewMode</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
 				<key>AggregateSelection</key>
 				<string>{0, 0}</string>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>49</integer>
+					<integer>45</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>1</integer>
@@ -1091,7 +1364,7 @@
 			<dict>
 				<key>BinderDocIDs</key>
 				<array>
-					<integer>91</integer>
+					<integer>106</integer>
 				</array>
 				<key>ViewMode</key>
 				<integer>0</integer>
@@ -1115,7 +1388,7 @@
 			<key>status</key>
 			<real>49</real>
 			<key>title</key>
-			<real>332</real>
+			<real>364</real>
 			<key>totalProgress</key>
 			<real>64</real>
 			<key>totalTargetCount</key>
@@ -1126,6 +1399,7 @@
 	<array>
 		<integer>4</integer>
 		<integer>6</integer>
+		<integer>79</integer>
 		<integer>38</integer>
 		<integer>45</integer>
 		<integer>51</integer>
@@ -1136,15 +1410,15 @@
 	<key>mainDocumentEditor.rulerIsVisible</key>
 	<false/>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {658, 565}}</string>
+	<string>{{0, 0}, {658, 534}}</string>
 	<key>mainDocumentEditor.selectedRanges</key>
-	<string>{720, 0}</string>
+	<string>{64, 0}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>hasMultiplePages</key>
 		<false/>
 		<key>isRulerVisible</key>
-		<false/>
+		<true/>
 		<key>textScale</key>
 		<integer>100</integer>
 		<key>usesFacingPages</key>
@@ -1153,7 +1427,7 @@
 	<key>mainDocumentEditor.textMode</key>
 	<integer>0</integer>
 	<key>mainWindowFrame</key>
-	<string>138 111 1119 659 0 0 1280 777 </string>
+	<string>133 111 1119 659 0 0 1280 777 </string>
 	<key>previousDocumentTargetType</key>
 	<integer>0</integer>
 	<key>projectNotesSplitState</key>

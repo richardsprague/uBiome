@@ -12,16 +12,17 @@ python ubiomeCompare -c "../Data/sprague data/Sprague-ubiomeMay2014.json" "../Da
 >>> len(v.sampleList)
 139
 >>> testRikAll()
-length of fullTaxList= 905
+length of fullTaxList= 939
 [['tax_name', 'tax_rank'], ['Bacteria', 'superkingdom'], ['Firmicutes', 'phylum'], ['Clostridia', 'class'], ['Clostridiales', 'order'], ['Bacteroidetes/Chlorobi group', 'superphylum'], ['Bacteroidetes', 'phylum'], ['Bacteroidia', 'class'], ['Bacteroidales', 'order'], ['Ruminococcaceae', 'family']]
-length of samples= 7
-May 2014 ---> 905
-Oct 2014 ---> 905
-Jan 2015 ---> 905
-Feb 2015 ---> 905
-Apr21 ---> 905
-Apr28 ---> 905
-Jun 2015 ---> 905
+length of samples= 8
+May 2014 ---> 939
+Jun 2014 ---> 939
+Oct 2014 ---> 939
+Jan 2015 ---> 939
+Feb 2015 ---> 939
+Apr21 ---> 939
+Apr28 ---> 939
+Jun 2015 ---> 939
 latest sample: ['Jun 2015', 1000000, 684322, 673988, 673880, 219758, 219758, 217323, 216241, 406568]
 
 
@@ -57,6 +58,7 @@ def testRikAll():
     #aprJulu.prettyPrint()
 
     x = ubiome.UbiomeMultiSample(may14)
+    x.merge(jun14)
     x.merge(oct14)
     x.merge(jan)
     x.merge(feb)
@@ -65,7 +67,7 @@ def testRikAll():
     x.merge(jul)
     #x.writeCSV(sys.stdout)
     x.showContents()
-    x.writeCSV("spragueResults.csv")
+   # x.writeCSV("spragueResults.csv")
 
 DEBUG = True
 

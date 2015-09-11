@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>If you only submit one or two samples, the standard uBiome web
+page (at <http</title>
+
+</head>
+<body>
+<p>If you only submit one or two samples, the standard uBiome web
+page (at <a href="http://app.ubiome.com)">http://app.ubiome.com)</a> offers plenty of information about your microbiome. You can
+look at the percentage breakdown of different bacteria, compare them
+with other users or to yourself over time, and dig deeper with
+descriptions of the most common organisms and what they do. But if you
+really want to understand your microbiome, uBiome offers much more: full
+access to all the raw data, literally millions of snippets of genetic
+information ready to analyze.</p>
+
+<p>I recently wrote a detailed description for the July 2015 issue of
+O’Reilly’s Biocoder magazine (available as a free download here:
+<a href="http://www.oreilly.com/biocoder/">http://www.oreilly.com/biocoder/</a> ) and I encourage you to read the
+whole thing for more details, but here’s a short summary. Three steps
+to get more from your data:</p>
+
+<h1>STEP 1</h1>
+
+<p>First, click the “Download taxonomy” button on <a href="https://app.ubiome.com/">the web page for your
+sample</a>.
+<img src="Jul2015%20images/DownloadSample.jpg" alt="" /></p>
+
+<p>Although it will look like gobbledygook, you can turn this into an Excel
+spreadsheet easily enough. Select the info on the page and
+copy/paste it into a site that will convert it automatically into a CSV
+file of Comma-Separated Values. (I use <a href="http://konklone.io/json/">http://konklone.io/json/</a> or
+<a href="http://www.convertcsv.com/json-to-csv.htm)">http://www.convertcsv.com/json-to-csv.htm)</a>. Open the CSV file from
+Excel and ignore everything but these three columns: <code>tax_rank</code>,
+<code>tax_name</code> and <code>count_norm</code>.</p>
+
+<p><img src="Jul2015%20images/ExcelSnippet.jpg" alt="" /></p>
+
+<p>Now it's a simple matter of running some standard Excel filtering
+operations on the data. Filter <code>tax_rank</code> by “phylum”, "species" or whatever other taxonomic rank you care about and then sort the
+<code>count_norm</code> field from largest to smallest. The <code>count_norm</code> numbers
+correspond to parts per million; divide by 10,000 to convert to percentages of that sample.</p>
+
+<p>By the way, a big bonus awaits you in the taxonomy file that you can’t
+get from the standard uBiome web page: species information. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2045242/">Most scientists
+trust</a> the 16S
+rRNA technology down to the genus level, but there is more uncertainty
+at the species level, so uBiome doesn’t publish it to the web page. Drag
+it into Excel, though, and you can make up your own mind about whether
+you trust the species info or not.  (And as always, keep in mind that you should never treat uBiome results as medical information; if you're sick, see a doctor.)</p>
+
+<h1>STEP 2</h1>
+
+<p>Head to the new <a href="http://www.ubiomeblog.com/invitation-to-join-the-ubiome-github-repository/">uBiome open source microbiome-tools GitHub page</a> and
+<a href="https://github.com/ubiome-opensource/microbiome-tools/blob/master/ubiome.py">download ubiome.py</a>. If you have the Python language on your
+computer you can run this file without installing anything extra. (All Macs come with it built-in; Windows users <a href="http://python.org">download it for free</a>).</p>
+
+<p>Let’s say your spouse has the sample in a file called Wife1.JSON and
+yours is in Husband1.JSON. On a Mac, open Terminal and run the following
+command:</p>
+
+<p><code>&gt; python ubiome.py –u Husband1.JSON Wife1.JSON \&gt;
+HusbandUnique.CSV
+</code></p>
+
+<p>The new file, HusbandUnique.CSV contains just those organisms that are
+unique to the Husband1 sample, i.e. are found in the husband’s microbiome and
+not the wife’s.</p>
+
+<p>Similarly, the following command will give you a file that contains the
+relative differences between every organism in Husband1 and Wife1:</p>
+
+<p><code>&gt; python ubiome.py –c Husband1.JSON Wife1.JSON \&gt;
+HusbandWifeCompare.CSV
+</code></p>
+
+<p>Read HusbandWifeCompare.CSV into Excel, sort and filter it, and you'll see something like this:</p>
+
+<p><img src="Jul2015%20images/ExcelCompare.jpg" alt="" /></p>
+
+<p>Positive numbers indicate more in the Wife1 sample; negative numbers are more in Husband1. Armed with this information, you can try to understand the reasons behind the differences. Follow <a href="http://www.ubiomeblog.com/category/learning/">the uBiome Blog</a> for <a href="http://www.ubiomeblog.com/one-week-change-in-my-microbiome/">some</a> <a href="http://www.ubiomeblog.com/my-microbiome-in-the-jungle/">examples</a> of how I've done this.</p>
+
+<h1>STEP 3</h1>
+
+<p>Finally, if you’re really into serious number crunching, uBiome gives
+you the raw output from a state-of-the-art Illumina NextSeq 500 in the form
+of FASTQ files. If you know what that is, you probably already know how
+to read them, but if not please look at the BioCoder article for an
+introduction. With a little work, the FASTQ files will let you see
+precisely which genes were detected in your sample. Since so much of the
+microbiome is still unexplored, you may find pieces that are missing
+from the regular uBiome output, so this is your chance to go straight to
+the underlying genetic information for more.</p>
+
+<p>For example, I was able to compute the following measure of diversity
+from my most recent sample. It’s a measure <a href="http://blog.richardsprague.com/2015/05/my-gut-diversity-through-time.html">I’ll track</a> for all of my
+samples:</p>
+
+<p><img src="Jul2015%20images/AlphaDiversity.jpg" alt="" /></p>
+
+<h1>Going Even Further</h1>
+
+<p>I’ve barely scratched the surface of what’s possible when you use your
+raw uBiome data. Please look at the <a href="http://www.oreilly.com/biocoder">BioCoder article</a> for more
+step-by-step instructions, and <a href="http://twitter.com/sprague">contact me</a>
+if you have other questions. Meanwhile, please upload your own samples
+to the <a href="https://github.com/ubiome-opensource">uBiome Open Source GitHub</a> and feel free to compare yours to the ones there,
+so we can all learn more together.</p>
+</body>
+</html>

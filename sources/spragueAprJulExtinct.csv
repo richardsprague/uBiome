@@ -1,0 +1,198 @@
+tax_rank,count_norm,tax_name
+order,12,Nitrospinales
+class,12,Nitrospinia
+phylum,12,Nitrospinae
+species,31,Streptococcus rubneri
+species,98,Collinsella sp. GD3
+species,270,Porphyromonadaceae bacterium AIP925.11
+species,18,Clostridium sp. 619
+species,3959,Brachyspira sp. NSH-25
+species,37,Clostridiales bacterium RM3
+species,153,bacterium NLAE-zl-G423
+species,12,bacterium NLAE-zl-G256
+no_rank,2013,Defluviitalea
+family,2013,Defluviitaleaceae
+species,117,Clostridiales bacterium CIEAF 022
+species,12,Blautia sp. YHC-4
+species,31,bacterium NLAE-zl-P562
+order,18,Bacteroidetes Order II. Incertae sedis
+genus,55,Pseudoflavonifractor
+no_rank,141,Parabacteroides johnsonii CL02T12C29
+no_rank,12,Bacteroides ovatus CL02T12C04
+no_rank,12,Yersinia enterocolitica subsp. palearctica 105.5R(r)
+genus,92,Christensenella
+species,12,Burkholderia kururiensis
+species,117,rumen bacterium NK4A214
+no_rank,55,Bacteroides oleiciplenus YIT 12058
+species,135,Clostridium sp. AUH-JLC235
+species,25,Escherichia sp. P14
+no_rank,12,Johnsonella ignava ATCC 51276
+species,338,Subdoligranulum sp. 4_3_54A2FAA
+species,31,Tannerella sp. 6_1_58FAA_CT1
+species,18,Lachnospiraceae bacterium 2_1_58FAA
+species_group,12,Bacillus subtilis group
+genus,117,Gordonibacter
+species,92,Bacteroides sp. TP-5
+species,92,Alistipes indistinctus
+species,55,Bacteroides oleiciplenus
+species,141,Clostridiales bacterium L2-14
+genus,31,Hydrogenoanaerobacterium
+species,1099,Ruminococcus faecis
+no_rank,49,Acidaminococcus fermentans DSM 20731
+species,12,Clostridium sp. AG07-1
+family,18,Rhodothermaceae
+no_rank,12,Chitinophagaceae
+family,12,Thermoanaerobacterales Family III. Incertae Sedis
+class,12,Holophagae
+no_rank,12,unclassified Pseudomonadales
+species,117,Gordonibacter pamelaeae
+species,74,Clostridium lavalense
+no_rank,55,unclassified Acidobacteria
+genus,264,Adlercreutzia
+species,264,Adlercreutzia equolifaciens
+genus,74,Moryella
+genus,18,Desulfovirgula
+species,141,Parabacteroides johnsonii
+no_rank,282,unclassified Porphyromonadaceae
+species_group,18,Enterobacter cloacae complex
+genus,12,Paludibacter
+species,276,butyrate-producing bacterium PH05YA09
+no_rank,12,Syntrophobacter fumaroxidans MPOB
+species,209,Bacteroides intestinalis
+species,12,Veillonella sp. oral clone VeillE3
+species,31,Clostridium sp. ID5
+species,12,Ruminococcus sp. ID1
+order,12,Anaerolineales
+class,12,Anaerolineae
+genus,12,Oribacterium
+species,12,Streptococcus pseudopneumoniae
+order,638,butyrate-producing bacterium ART55/1
+species,12,Haemophilus pittmaniae
+species,12,Veillonella rodentium
+no_rank,31,Anaplasma marginale str. St. Maries
+species,37,Clostridium sp. MDA2315
+species,12,Lachnospiraceae bacterium 19gly4
+family,12,Syntrophobacteraceae
+order,12,Syntrophobacterales
+family,18,Desulfobulbaceae
+genus,43,Allisonella
+no_rank,12,unclassified Peptococcaceae
+class,3959,Spirochaetia
+phylum,3959,Spirochaetes
+phylum,43,Chloroflexi
+family,25,Flammeovirgaceae
+order,31,Sphingobacteriales
+genus,31,Tannerella
+genus,632,Turicibacter
+family,12,Carnobacteriaceae
+family,98,Bacillaceae
+family,18,Thermoanaerobacteraceae
+genus,12,Shuttleworthia
+species,12,Victivallis vadensis
+genus,12,Victivallis
+subspecies,12,Yersinia enterocolitica subsp. palearctica
+family,3959,Brachyspiraceae
+genus,104,Catenibacterium
+order,12,Pasteurellales
+family,12,Thiotrichaceae
+species,61,Desulfovibrio sp. oral clone BB161
+no_rank,620,unclassified Deltaproteobacteria (miscellaneous)
+genus,55,Pectobacterium
+genus,18,Oscillospira
+species,12,Syntrophobacter fumaroxidans
+no_rank,12,unclassified Betaproteobacteria
+no_rank,12,unclassified Gammaproteobacteria
+class,31,Sphingobacteriia
+species,129,Coprococcus catus
+species,55,Pseudoflavonifractor capillosus
+no_rank,12,unclassified Ehrlichia
+species,55,butyrate-producing bacterium L1-93
+family,25,Staphylococcaceae
+no_rank,12,unclassified Pseudomonadales (miscellaneous)
+subclass,37,Rubrobacteridae
+species,12,Eggerthella lenta
+genus,12,Eggerthella
+species,147,Clostridium disporicum
+species,12,Bacillus clausii
+order,12,Thiotrichales
+family,12,Phyllobacteriaceae
+family,25,Syntrophomonadaceae
+order,31,Thermoanaerobacterales
+genus,12,Mesorhizobium
+phylum,12,Microgenomates
+no_rank,12,Bacillus clausii KSM-K16
+species,31,Holdemania filiformis
+genus,86,Holdemania
+species,18,Desulfovibrio simplex
+genus,104,Anaerofilum
+species,288,Clostridium chauvoei
+no_rank,620,unclassified Deltaproteobacteria
+species,12,Johnsonella ignava
+genus,12,Johnsonella
+genus,74,Sutterella
+species,387,Eubacterium desmolans
+no_rank,12,unclassified Gammaproteobacteria (miscellaneous)
+no_rank,12,unclassified Betaproteobacteria (miscellaneous)
+order,104,Nitrosomonadales
+genus,12,Syntrophobacter
+genus,3959,Brachyspira
+genus,25,Veillonella
+species,12,Bacteroides ovatus
+genus,399,Peptococcus
+species,12,Bifidobacterium dentium
+species,12,Bifidobacterium adolescentis
+species,12,Lactobacillus sakei
+species,203,Clostridium leptum
+species,86,Clostridium sp.
+genus,25,Bacillus
+species,18,Lactococcus lactis
+genus,18,Lactococcus
+species,12,Streptococcus sanguinis
+genus,12,Staphylococcus
+genus,12,Flexibacter
+genus,12,Ehrlichia
+family,43,Anaplasmataceae
+species,368,Acidaminococcus fermentans
+genus,368,Acidaminococcus
+species,12,Desulfovibrio desulfuricans
+genus,160,Desulfovibrio
+genus,12,Syntrophomonas
+species,718,Oxalobacter formigenes
+genus,718,Oxalobacter
+species,25,Butyrivibrio fibrisolvens
+species,31,Anaplasma marginale
+genus,31,Anaplasma
+order,43,Rickettsiales
+genus,12,Haemophilus
+family,12,Pasteurellaceae
+species,12,Yersinia enterocolitica
+genus,12,Yersinia
+genus,25,Escherichia
+species,55,Pectobacterium carotovorum
+species,18,Enterobacter cloacae
+genus,18,Enterobacter
+family,31,Neisseriaceae
+family,12,Moraxellaceae
+order,12,Rhizobiales
+order,3959,Spirochaetales
+**********************************************************************
+File "ubiomeCompare.py", line 14, in __main__
+Failed example:
+    myApp.testUnique()
+Expected:
+    384
+Got:
+    176
+**********************************************************************
+File "ubiomeCompare.py", line 17, in __main__
+Failed example:
+    len(v.sampleList)
+Expected:
+    139
+Got:
+    219
+**********************************************************************
+1 items had failures:
+   2 of   4 in __main__
+***Test Failed*** 2 failures.
+all tests successful

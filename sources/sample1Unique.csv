@@ -1,0 +1,385 @@
+tax_rank,tax_name,count_norm
+species,Peptostreptococcus stomatis,8
+no_rank,Cellulophaga lytica DSM 7489,8
+species,Lactobacillus sp. MNFS-3,8
+no_rank,Akkermansia muciniphila ATCC BAA-835,8
+species,Collinsella sp. GD3,8
+species,Clostridium scindens,8
+no_rank,Herbaspirillum lusitanum P6-12,8
+species,Herbaspirillum lusitanum,8
+order,Nitrosomonadales,8
+class,Caldilineae,8
+order,Caldilineales,8
+family,Thermoanaerobacterales Family IV. Incertae Sedis,8
+genus,Sporomusa,8
+species,Veillonellaceae bacterium canine oral taxon 211,8
+species,Cellulophaga lytica,8
+genus,Cellulophaga,8
+no_rank,Bacteroides ovatus CL03T12C18,8
+species,Actinomyces sp. oral clone CT047,8
+species,Clostridiaceae bacterium DJF_VR07,8
+subclass,Acidimicrobidae,8
+species,Eubacterium contortum,8
+order,Desulfarculales,8
+class,Fibrobacteria,8
+phylum,Fibrobacteres,8
+no_rank,unclassified Veillonellaceae,8
+no_rank,unclassified Clostridiaceae,8
+order,Bdellovibrionales,8
+no_rank,Dialister micraerophilus DSM 19965,8
+species,Dialister micraerophilus,8
+species,Clostridiales bacterium oral clone MCE3_9,8
+species,Haemophilus pittmaniae,8
+species,Clostridium symbiosum,8
+no_rank,Clostridium symbiosum WAL-14163,8
+suborder,Frankineae,8
+family,Geodermatophilaceae,8
+genus,Geodermatophilus,8
+no_rank,Johnsonella ignava ATCC 51276,8
+family,Moraxellaceae,8
+species,Johnsonella ignava,8
+species,Bacillus clausii,8
+family,Gracilibacteraceae,8
+species,Corynebacterium jeikeium,8
+species,Brachyspira sp. NSH-25,8
+genus,Brachyspira,8
+genus,Rothia,8
+family,Brachyspiraceae,8
+species,Bacteroides ovatus,8
+phylum,Cyanobacteria,8
+family,Coxiellaceae,8
+genus,Aggregatibacter,8
+no_rank,Bacillus clausii KSM-K16,8
+genus,Fonticella,8
+genus,Johnsonella,8
+genus,Peptostreptococcus,8
+species,Bifidobacterium stellenboschense,8
+family,Desulfomicrobiaceae,8
+phylum,Chlorobi,8
+class,Chlorobia,8
+no_rank,Desulfotomaculum carboxydivorans CO-1-SRB,8
+species,Desulfotomaculum carboxydivorans,8
+species,Serratia marcescens,8
+genus,Desulfotomaculum,8
+family,Microbacteriaceae,8
+genus,Enorma,8
+species,Enorma massiliensis,8
+no_rank,Enorma massiliensis phI,8
+genus,Actinobacillus,8
+genus,Pseudoclavibacter,8
+species,Actinobacillus porcinus,8
+species,bacterium mpn-isolate group 25,8
+genus,Macrococcus,8
+species,Clostridium sp. M62/1,8
+no_rank,unclassified Sphingobacteriia,8
+family,Legionellaceae,8
+genus,Porphyromonas,8
+species,Porphyromonas sp. oral clone BS045,8
+genus,Candidatus Isobeggiatoa,8
+species,Bacteroides helcogenes,8
+no_rank,Bacteroides helcogenes P 36-108,8
+no_rank,Clostridium asparagiforme DSM 15981,8
+family,Caldicoprobacteraceae,8
+family,Thiotrichaceae,8
+order,Thiotrichales,8
+species,Clostridium asparagiforme,8
+no_rank,Bacteroides plebeius DSM 17135,8
+no_rank,Bacteroides fragilis NCTC 9343,8
+species,Bacteroides fragilis,8
+species,Pseudoclavibacter sp. Timone,8
+species,bacterium NLAE-zl-G256,12
+no_rank,unclassified Coriobacteriaceae,12
+family,Candidatus Midichloriaceae,12
+genus,Azoarcus,12
+species,Coriobacteriaceae bacterium GD5,12
+species,Bacteroides fluxus,12
+family,Carnobacteriaceae,12
+genus,Trichococcus,12
+family,Brevibacteriaceae,12
+family,Methylococcaceae,12
+species,Streptococcus rubneri,12
+species,Butyricimonas sp. GD2,12
+species,Turicibacter sanguinis,12
+species,Solobacterium moorei,12
+no_rank,unclassified Methylococcaceae,12
+genus,Solobacterium,12
+species,Bifidobacterium saeculare,12
+order,Methylococcales,12
+genus,Parvibacter,12
+species,Corynebacterium sp. NML00-0156,12
+genus,Brevibacterium,12
+species,bacterium NLAE-zl-H12,16
+species,Ruminococcus sp. JC304,16
+order,Rhodobacterales,16
+species,Lactobacillus rhamnosus,16
+no_rank,Anaplasma marginale str. St. Maries,16
+genus,Anaplasma,16
+species,Anaplasma marginale,16
+genus,Staphylococcus,16
+no_rank,Burkholderiales Genera incertae sedis,16
+species,Lachnospiraceae bacterium 19gly4,16
+order,Cardiobacteriales,16
+genus,Serratia,16
+family,Desulfobacteraceae,16
+order,Legionellales,16
+genus,Mogibacterium,16
+no_rank,unclassified Burkholderiales,16
+family,Clostridiales Family XIII. Incertae Sedis,16
+family,Rhodocyclaceae,20
+suborder,Pseudonocardineae,20
+order,Rhodocyclales,20
+genus,Marvinbryantia,20
+genus,Gemella,20
+family,Pseudonocardiaceae,20
+species,Eubacterium sp. 3_1_31,20
+species,Desulfovibrio sp. enrichment culture clone Jdgsrb034,20
+genus,Amycolatopsis,20
+genus,Megasphaera,20
+species,Corynebacterium tuberculostearicum,20
+species,Clostridium sp. YIT 12070,20
+species,bacterium NLAE-zl-P562,20
+species,Gemella haemolysans,20
+no_rank,unclassified Peptococcaceae,20
+species,Bifidobacterium breve,20
+family,Xanthomonadaceae,24
+species,Eggerthella lenta,24
+family,Comamonadaceae,24
+genus,Robinsoniella,24
+genus,Eggerthella,24
+species,Veillonella sp. oral clone VeillD5,24
+family,Clostridiales Family XII. Incertae Sedis,24
+order,Oceanospirillales,24
+family,Alcanivoracaceae,24
+species,Bacteroides caccae,24
+family,Defluviitaleaceae,24
+family,Staphylococcaceae,24
+class,Opitutae,24
+genus,Gardnerella,24
+no_rank,Defluviitalea,24
+species,Clostridium chauvoei,28
+species,Bifidobacterium thermacidophilum,28
+no_rank,Bacillales incertae sedis,28
+genus,Oscillospira,28
+no_rank,Bacillales Family XI. Incertae Sedis,28
+order,Chromatiales,28
+family,Chromatiaceae,28
+genus,Oribacterium,28
+species,Anaerotruncus colihominis,28
+no_rank,OM43 clade,28
+family,Clostridiales Family XI. Incertae Sedis,28
+species,Alistipes indistinctus,28
+no_rank,unclassified Methylophilales,28
+order,Methylophilales,28
+species,Corynebacterium mucifaciens,28
+species,Clostridiales bacterium CIEAF 022,28
+species,Blautia sp. YHC-4,28
+species,Ruminococcus sp. 14531,32
+species,Eubacterium hallii,32
+species,Arthrobacter crystallopoietes,32
+genus,Cellulosilyticum,32
+no_rank,Arthrobacter crystallopoietes BAB-32,32
+order,Cytophagales,32
+species,Akkermansia muciniphila,32
+order,Xanthomonadales,32
+class,Cytophagia,32
+species,Bifidobacterium longum,32
+family,Cytophagaceae,32
+no_rank,unclassified Clostridia,32
+genus,Bacillus,32
+no_rank,unclassified Clostridia (miscellaneous),32
+species,Clostridium sp.,36
+phylum,Planctomycetes,36
+phylum,Spirochaetes,36
+class,Spirochaetia,36
+species,Clostridium sp. CM-C52,36
+genus,Catenibacterium,36
+species,Herbaspirillum sp. TSA30,36
+order,Spirochaetales,36
+species,Clostridium sp. YIT 12069,36
+species,Prevotella buccalis,40
+genus,Haemophilus,40
+family,Bacillaceae,40
+genus,Arthrobacter,40
+no_rank,Acidaminococcus fermentans DSM 20731,44
+species,bacterium NLAE-zl-G423,44
+no_rank,Barnesiella intestinihominis YIT 11860,44
+family,Thermoanaerobacteraceae,47
+genus,Anaerofilum,47
+genus,Desulfovirgula,47
+order,Desulfobacterales,47
+genus,Veillonella,47
+genus,Denitrobacterium,47
+family,Micrococcaceae,47
+genus,Enterorhabdus,51
+family,Paenibacillaceae,51
+species,Bifidobacterium animalis,51
+genus,Paenibacillus,51
+no_rank,OMG group,55
+order,Pasteurellales,55
+family,Pasteurellaceae,55
+no_rank,OM182 clade,55
+suborder,Sorangiineae,55
+order,Myxococcales,55
+species,Clostridium clariflavum,59
+no_rank,Clostridium clariflavum DSM 19732,59
+family,Listeriaceae,59
+species,Listeria monocytogenes,59
+no_rank,Listeria monocytogenes serotype 4b str. CLIP 80459,59
+genus,Papillibacter,59
+genus,Listeria,59
+species,Holdemania filiformis,63
+species,[Streptococcus] pleomorphus,67
+no_rank,unclassified Erysipelotrichaceae,67
+species,Corynebacterium freneyi,67
+no_rank,Clostridiales incertae sedis,67
+order,Thermoanaerobacterales,71
+family,Nitrospiraceae,75
+order,Nitrospirales,75
+phylum,Nitrospirae,75
+class,Nitrospira,75
+genus,Pedobacter,79
+suborder,Micrococcineae,79
+species,[Ruminococcus] obeum,79
+genus,Prevotella,79
+no_rank,Peptoclostridium difficile M120,83
+species,Bacteroides rodentium,83
+genus,Peptoclostridium,83
+species,Peptoclostridium difficile,83
+genus,Nocardia,83
+genus,Pantoea,87
+class,Dehalococcoidia,87
+species,Pantoea endophytica,87
+family,Prevotellaceae,87
+species,Oxalobacter formigenes,87
+genus,Oxalobacter,87
+species,Clostridium leptum,91
+species,Gordonibacter pamelaeae,95
+phylum,Chloroflexi,95
+genus,Gordonibacter,95
+species,Cronobacter sakazakii,99
+genus,Holdemania,99
+genus,Cronobacter,99
+genus,Pseudoflavonifractor,107
+species,Pseudoflavonifractor capillosus,107
+species_group,Enterobacter cloacae complex,115
+family,Syntrophomonadaceae,115
+species,Flavonifractor plautii,115
+species,Enterobacter cloacae,115
+genus,Enterobacter,115
+genus,Ehrlichia,119
+no_rank,unclassified Ehrlichia,119
+species,Lactococcus lactis,123
+genus,Lactococcus,123
+no_rank,unclassified Deltaproteobacteria (miscellaneous),127
+no_rank,unclassified Deltaproteobacteria,127
+family,Anaplasmataceae,135
+genus,Pectobacterium,135
+species,Pectobacterium carotovorum,135
+species,Victivallis vadensis,139
+species,Clostridium lavalense,139
+genus,Corynebacterium,142
+species,butyrate-producing bacterium L1-93,142
+species,Alistipes finegoldii,142
+species,bacterium enrichment culture clone Ecwsrb035,146
+genus,Victivallis,150
+family,Corynebacteriaceae,154
+genus,Flavonifractor,158
+species,Blautia stercoris,162
+species,Lachnospiraceae bacterium 1_1_57FAA,162
+species,Parabacteroides johnsonii,170
+genus,Butyrivibrio,170
+no_rank,Parabacteroides johnsonii CL02T12C29,170
+species,Lactobacillus paracasei,174
+species_group,Lactobacillus casei group,174
+no_rank,unclassified Lachnospiraceae,178
+order,Rickettsiales,178
+species,bacterium NLAE-zl-P827,182
+species,Clostridium disporicum,182
+genus,Collinsella,190
+species,[Clostridium] spiroforme,194
+genus,Erysipelatoclostridium,194
+genus,Allisonella,202
+order,Bacillales,230
+genus,Hydrogenoanaerobacterium,257
+genus,Christensenella,269
+family,Geobacteraceae,277
+order,Desulfuromonadales,277
+species,Subdoligranulum sp. 4_3_54A2FAA,289
+species,Bacteroides intestinalis,297
+no_rank,unclassified Acidobacteria,301
+genus,Tannerella,305
+species,Tannerella sp. 6_1_58FAA_CT1,305
+order,butyrate-producing bacterium SR1/1,305
+species,Clostridiales bacterium 60-7e,328
+species,butyrate-producing bacterium PH05YA09,348
+species,rumen bacterium NK4A214,348
+species,iron-reducing bacterium enrichment culture clone FeC_1_A3,372
+species,Anaerotruncus sp. NML 070203,376
+order,Enterobacteriales,451
+family,Enterobacteriaceae,451
+species,Ruminococcus sp. ID1,459
+species,Eubacterium desmolans,463
+genus,Adlercreutzia,475
+species,Adlercreutzia equolifaciens,475
+species,Clostridium sp. ID5,491
+genus,Thermobrachium,499
+genus,Eubacterium,530
+genus,Peptococcus,574
+genus,Oscillibacter,590
+family,Oscillospiraceae,609
+species,Coprococcus catus,625
+species,Streptococcus thermophilus,633
+family,Eubacteriaceae,637
+species,Clostridium sp. AUH-JLC235,732
+species,Bacteroides salyersiae,748
+species,Desulfovibrio sp. oral clone BB161,780
+genus,Desulfovibrio,799
+species,Acidaminococcus fermentans,807
+genus,Acidaminococcus,815
+species,Coprococcus comes,938
+order,butyrate-producing bacterium ART55/1,1065
+species,Clostridium baratii,1223
+species,Lactobacillus rogosae,1286
+no_rank,unclassified Victivallaceae,1520
+species,Victivallaceae bacterium NML 080035,1520
+genus,Lactobacillus,1528
+family,Lactobacillaceae,1528
+genus,Anaerotruncus,1532
+family,Victivallaceae,1670
+class,Lentisphaeria,1698
+phylum,Lentisphaerae,1698
+no_rank,Victivallales,1698
+species,Synergistes sp. 3_1_syn1,1856
+genus,Synergistes,1987
+family,Coriobacteriaceae,1991
+subclass,Coriobacteridae,2042
+suborder,Coriobacterineae,2042
+order,Coriobacteriales,2042
+species,Dialister sp. oral clone BS095,2074
+species,Clostridiales bacterium L2-14,2268
+genus,Turicibacter,2406
+species,Butyricimonas virosa,2466
+species,Blautia faecis,2715
+genus,Sarcina,3851
+genus,Pyramidobacter,3922
+species,Bilophila wadsworthia,3977
+genus,Bilophila,3993
+species,Bacteroidales bacterium ph8,4452
+no_rank,unclassified Bacteroidales (miscellaneous),4452
+no_rank,unclassified Bacteroidales,4630
+family,Desulfovibrionaceae,5070
+order,Desulfovibrionales,5077
+genus,Herbaspirillum,5802
+family,Oxalobacteraceae,5889
+order,Synergistales,5944
+family,Synergistaceae,5944
+class,Synergistia,5944
+phylum,Synergistetes,5944
+class,Deltaproteobacteria,6015
+genus,Dialister,6039
+subphylum,delta/epsilon subdivisions,6075
+family,Veillonellaceae,6348
+species,Roseburia sp. 11SE38,6906
+species,Bifidobacterium tsurumiense,8295
+species,Parabacteroides merdae,9914
+species,Bacteroides plebeius,74140

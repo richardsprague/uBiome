@@ -1,0 +1,68 @@
+---
+title: "Sprague One Week uBiome"
+author: "Richard Sprague"
+date: "Wednesday, May 27, 2015"
+output: html_document
+---
+First I load the two different data sets into some the variables ```A``` (for the April 21 sample) and ```B``` (April 28), exactly one week apart.
+```{r, echo=FALSE}
+.myuBiomePath = "OneDrive/Projects/"
+# set the root path for either Mac or Windows
+if(Sys.info()["sysname"]=="Darwin") kRootPath=paste0("~/",.myuBiomePath) else kRootPath=paste0(paste0("c:/Users/",Sys.info()["login"]),"/",.myuBiomePath)
+
+setwd(paste0(kRootPath,"uBiome"))
+#setwd("~/OneDrive/Projects/uBiome")
+# load the uBiome utilities
+source("uBiome.R")
+setwd("sprague data")
+
+A<-read.csv("sprague-ubiome-150421.csv")
+B<-read.csv("sprague-ubiome-150428.csv")
+
+```
+
+Which genuses increased during the week?
+```{r}
+
+increased<-uBiome_compare_samples(A,B,"genus")
+increased[order(increased$count_change,decreasing=TRUE),]
+```
+
+and which decreased?
+```{r}
+
+decreased<-uBiome_compare_samples(B,A,"phylum")
+decreased[order(decreased$count_change,decreasing=TRUE),]
+```
+
+Then I want to see how many new species appeared at the end of the week:
+
+```{r}
+extinct <-uBiome_sample_unique(A,B) # which became extinct in the later sample?
+emerged <- uBiome_sample_unique(B,A) # which are new to the later sample?
+
+head(emerged)
+
+```
+
+The ```count.norm``` field is so low among the new organisms that they're hardly worth mentioning. More likely a statistical fluke than anything else.
+
+Here are the ones that went extinct at the end of the week:
+
+```{r}
+head(extinct)
+```
+
+The counts are low here too, which is not surprising considering that only a week has passed. The microbes that were going to die out were probably already low at the beginning of the week.
+
+What about overall changes? The [new uBiome web site](http://www.ubiomeblog.com/announcing-the-new-ubiome-data-website/) makes it much easier to compare one sample with another. In my case, it shows the following changes over the week:
+
+During this experiment, I carefully tracked the food I ate using the [MyFitnessPal app](http://www.myfitnesspal.com/mobile/iphone) on my phone. Then, using [a handy data exporter](https://www.designbyvh.com/myfitnesspal-export-data/), I summarized the macronutrient information like this:
+
+
+
+Alex, you may want to give the [Nobel Prize Committee](http://www.nobelprize.org/nomination/) a heads-up.
+
+
+
+

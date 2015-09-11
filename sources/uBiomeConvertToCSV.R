@@ -1,5 +1,10 @@
 # converts every json file in directory to a CSV file
 
+# you can convert a single JSON file to CSV like this:
+# convert_json_files_to_csv(pattern="sprague-nose-1410.json")
+
+
+
 # the following packages must be loaded before using this function
 install.packages("jsonlite")
 library("jsonlite")

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.3.3 (/Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3)" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/.Rproj.user" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.Rproj.user" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.4.3 (C:\Users\Richard Sprague\Anaconda3\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

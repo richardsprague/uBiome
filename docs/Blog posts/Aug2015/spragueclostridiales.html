@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>All my uBiome results in a single table</title>
+
+</head>
+<body>
+<h1>All my uBiome results in a single table</h1>
+
+<p>I often read news about a fresh scientific discovery involving the microbiome and immediately wonder if the discovery applies to me. For example, I recently saw <a href="http://www.sciencedaily.com/releases/2015/06/150622182034.htm">a study from Oregon State University</a> that seemed to find a link between high sugar diets and “cognitive flexibility”, i.e. your ability to adapt and adjust to changing circumstances. The study’s author, Kathy Magnusson, a professor in the OSU College of Veterinary Medicine, found that mice who eat lots of sugar have elevated levels of Clostridiales bacteria, and that this seemed to relate to a slower ability to solve a maze.  Hmmm, I thought — how much Clostridiales do I have?</p>
+
+<p>If you have just one uBiome result, that’s easy: log into <a href="http://app.ubiome.com">http://app.ubiome.com</a> and search for it in the section “All My Bacteria”. (As far as I know there’s no “search” button yet on the uBiome dashboard). But in my experience a single result doesn’t tell you much. You really need at least two and hopefully several uBiome results to see what might be actionable. In my case, I want to know how my Clostridiales may have changed over time.</p>
+
+<p>I programmed a short Python script to generate a single Excel table with every bacteria I’ve ever found, and then a series of columns with the amount found in each sample. Something like <a href="https://github.com/ubiome-opensource/microbiome-data/blob/master/sprague/spragueResultsthruJun2015.xlsx">this</a>:</p>
+
+<p><img src="images/ubiomeExcelMultiTable.jpg" alt="Excel sheet" width="640"/></p>
+
+<p>The data makes it easy to generate a chart showing how my Clostridiales changes over time:</p>
+
+<p><img src="images/ubiomeExcelClostridiales.jpg" alt="Clostriales chart"  width="640" /></p>
+
+<p>Hmmm, in my case it looks like something happened since last fall to increase my Clostridiales levels. Maybe it was the potato starch I tried in order to <a href="http://www.ubiomeblog.com/hacking-sleep/">hack my sleep</a>?  Was it my <a href="http://www.ubiomeblog.com/my-microbiome-in-the-jungle/">trip to Central America</a> in February?  And of course the biggest question: has the increase affected my cognitive flexibility? I’m <a href="http://blog.richardsprague.com/2015/07/my-qs15-slides.html">not really sure</a>.  Whatever happened, the level of Clostridiales  seems to have stabilized in the past couple of months.</p>
+
+<p>uBiome has identified more than 900 unique taxa (groups of organisms) in the half-dozen samples I've submitted over the past year, and after running this script I have them all laid out on a single page.  Now, armed with this one spreadsheet I can search anytime for a new microbe and quickly see if I have it now, or if it's ever been detected in a previous test. Reading news about microbiome has taken on a whole new personal meaning when I can see if the discovery relates to me.</p>
+
+<p>If you know a little Python, you can make the same spreadsheet with your samples using the ubiome.py Python module on the <a href="https://github.com/ubiome-opensource">ubiome-opensource GitHub repository</a>; the script that generated my spreadsheet is <a href="https://github.com/ubiome-opensource/microbiome-tools/blob/master/ubiomeSample.py">there</a> too as an example. And while you’re at it, please upload your own uBiome sample results to the same repository so we can compare.</p>
+</body>
+</html>

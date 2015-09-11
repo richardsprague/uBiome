@@ -7,53 +7,61 @@ if(Sys.info()["sysname"]=="Darwin") kRootPath=paste0("~/",.myuBiomePath) else kR
 
 setwd(paste0(kRootPath,"uBiome"))
 
-# load the uBiome utilities
-source("sources/uBiomeCompare.R")
-
-# Now load all the sprague data
 setwd("Data/sprague data")
+allSprague <- read.csv("spragueResultsThruJun2015.csv")
+
+allGenus <- allSprague[allSprague$tax_rank=="genus",]
+allPhylum<-allSprague[allSprague$tax_rank=="phylum",]
+allSpecies<-allSprague[allSprague$tax_rank=="species",]
+require("vegan")
+
+sapply(allSprague[,-(1:2)],fisher.alpha)
+allSamples <- allGenus[,-(1:2)] # vector with just the genus vectors
+
+require("ggplot2")
+dV <- sapply(allSamples,fisher.alpha) #diversity vector
+plot(dV,xaxt="n",main="Genus Diversity")
+axis(1,1:8,labels=names(dV))
+
+names(dV)<-c(as.Date("2014-5-23"),as.Date("2014-6-10"),as.Date("2014-10-23"),as.Date("2015-1-15"),as.Date("2015-2-20"),as.Date("2015-4-20"),as.Date("2015-4-27"),as.Date("2015-6-15"))
+g<-names(allSprague)
+
+dP <- sapply(allPhylum[-(1:2),-(1:2)],diversity)  #everything but the top 2 Phyla
+dPDates<-as.Date(names(dV))
+plot(dP~dPDates,main="Phylum Diversity (non-Major)",xlab="",ylab="diversity",xaxt="n")
+axis(1,at=dPDates,labels=g[-(1:2)],las=2)
+
+g<-names(allSprague)
+
+# genus Fisher-Alpha diversity
+dG <- sapply(allGenus[,-(1:2)],fisher.alpha)  
+plot(dG~dPDates,main="Genus Diversity",xlab="",ylab="Fisher-Alpha Diversity",xaxt="n")
+axis(1,at=dPDates,labels=g[-(1:2)],las=2)
+abline(lm(dG~dPDates),col="red")
+
+#genus diversity
+dG <- sapply(allGenus[,-(1:2)],diversity,index="invsimpson")  
+plot(dG~dPDates,main="Genus Diversity",xlab="",ylab="Inv Simpson Diversity",xaxt="n")
+axis(1,at=dPDates,labels=g[-(1:2)],las=2)
+abline(lm(dG~dPDates),col="red")
+
+g<-names(allSprague)
+#Phyla diversity
+dP <- sapply(allPhylum[,-(1:2)],diversity,index="invsimpson")  
+plot(dP~dPDates,main="Phylum Diversity",xlab="",ylab="Inv Simpson Diversity",xaxt="n")
+axis(1,at=dPDates,labels=g[-(1:2)],las=2)
+abline(lm(dP~dPDates),col="red")
 
 
-a<-c("b1","b2","b3","b4")
-aranks<-c("species","phylum","phylum","species")
-acounts1<-c(76,77,78,79)
-acounts2<-c(86,87,88,89)
+#species diversity
+dS <- sapply(allSpecies[,-(1:2)],fisher.alpha)
+plot(dS~dPDates,main="Species Diversity",xlab="",ylab="Fisher-Alpha Diversity",xaxt="n")
+axis(1,at=dPDates,labels=g[-(1:2)],las=2)
+abline(lm(dS~dPDates),col="red")
 
-rik<-data.frame(a,aranks,acounts1,acounts2)
-names(rik)<-c("tax_name","tax_rank","sample_count1","sample_count2")
+names(dV)<-c(as.Date("2014-5-23"),as.Date("2014-6-10"),as.Date("2014-10-23"),as.Date("2015-1-15"),as.Date("2015-2-20"),as.Date("2015-4-20"),as.Date("2015-4-27"),as.Date("2015-6-15"))
 
-# count of all species in sample 2:
-rik[rik$tax_rank=="species",][paste0("sample_count",2)]
 
-rik[rik$sample_count2,]
-rik$sample_count2
-
-test<-function(...){
-        for (i in list(...)){
-                cat(i)
-        }
-}
-
-# return just the organisms in sample data frames.
-# enter as many data frames as you like
-samplesCountsOf<-function(...) {
-        x <- 0
-        funArgs <- list(...)
-        cat("length=",length(funArgs))
-        if (length(funArgs)==0){
-                x<-NULL
-        } else if (length(funArgs)==1){
-                x<-funArgs[[1]]$tax_name
-        } else {
-                x<-c(funArgs[[1]]$tax_name,samplesCountsOf(funArgs[[-1]]))
-        }
-      
-    #    for(sample in list(...) ){
-    #            x <- c(x,sample$count_norm)           
-     #   }
-       # x[order(x)]
-    
-    x
-}
-
+plot(sapply(allSprague[-(1:3),-(1:2)],fisher.alpha),ylab="Diversity",xaxt="n",main="All Diversity")
+axis(1,1:8,labels=names(dV))
 

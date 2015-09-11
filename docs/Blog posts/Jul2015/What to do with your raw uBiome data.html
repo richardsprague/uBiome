@@ -1,0 +1,265 @@
+<html>
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"__ __";}
+@font-face
+	{font-family:"__ ____";}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Calibri;}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Calibri Light";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light";
+	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Calibri;}
+span.TitleChar
+	{font-family:"Calibri Light";
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{font-family:"Calibri Light";
+	color:#2E74B5;}
+.MsoChpDefault
+	{font-family:Calibri;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoTitle>What to do with your raw uBiome data</p>
+
+<p class=MsoNormal>For most people who do just one or two tests, the standard
+uBiome web page (at <a href="http://app.ubiome.com)">http://app.ubiome.com)</a>
+offers plenty of information. You can look at the percentage breakdown of
+different bacteria, compare them with other users or to yourself over time, and
+dig deeper with descriptions of the most common organisms and what they do. But
+if you really want to understand your microbiome, uBiome offers much more: full
+access to all the raw data: literally millions of snippets of genetic
+information ready to analyze.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I recently wrote a detailed description for the July 2015
+issue of O’Reilly’s Biocoder magazine (available as a free download here: <a
+href="http://www.oreilly.com/biocoder/">http://www.oreilly.com/biocoder/</a> )
+and I encourage you to read the whole thing for more details, but here’s a
+short summary of three steps to get more from your data:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>STEP 1</h1>
+
+<p class=MsoNormal>First, click the “Download taxonomy” button on <a
+href="https://app.ubiome.com/">the web page for your sample</a>. </p>
+
+<p class=MsoNormal><img border=0 width=333 height=344 id="_x0000_i1027"
+src="Jul2015%20images/DownloadSample.jpg"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Although it will look like gobbley-gook, you can turn this
+into an Excel spreadsheet easily enough: just select the info on the page and
+copy/paste it into a site that will convert it automatically into a CSV file. (I
+use <a href="http://konklone.io/json/">http://konklone.io/json/</a> or <a
+href="http://www.convertcsv.com/json-to-csv.htm)">http://www.convertcsv.com/json-to-csv.htm)</a>
+&nbsp;Read the CSV file into Excel and there will be three columns you care
+about:&nbsp; “tax_rank”, “tax_name” and “count_norm”.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img border=0 width=231 height=185 id="_x0000_i1026"
+src="Jul2015%20images/ExcelSnippet.jpg"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Then it’s a simple matter of running some standard Excel
+filtering operations on the data. Filter tax_rank by “Phylum” and then sort the
+count_norm field from largest to smallest. The count_norm numbers correspond to
+parts per million – just divide by 10,000 to get the percentages.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>By the way, a big bonus awaits you in the taxonomy file that
+you can’t get from the standard web page: species information. <a
+href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2045242/">Most scientists
+trust</a> the 16S rRNA technology down to the genus level, but there is more
+uncertainty at the species level, so uBiome doesn’t publish it to the web page.
+Drag it into Excel, though, and you can make up your own mind about whether you
+trust the species info or not.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>STEP 2</h1>
+
+<p class=MsoNormal>Zip to the new uBiome open source microbiome-tools GitHub
+page and download ubiomeCompare.py.&nbsp; If you have the Python language on
+your computer (all Macs come with it built-in), you can run this file without
+installing anything extra. If not, download it for free at <a
+href="http://python.org">http://python.org</a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Let’s say your spouse has the sample in a file called
+Wife1.JSON and yours is in Husband1.JSON.&nbsp; On a Mac, open Terminal and run
+the following command:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&gt; python ubiomeCompare.py –u Husband1.JSON Wife1.JSON
+&gt; HusbandUnique.CSV</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The new file, HusbandUnique.CSV contains just those
+organisms that are unique to the Husband1 sample, i.e. are found in the
+husband’s biome and not the wife’s.&nbsp; </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Similarly, the following command will give you a file that
+contains the relative differences between every organism in Husband1 and Wife1:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&gt; python ubiomeCompare.py –c Husband1.JSON Wife1.JSON
+&gt; HusbandUnique.CSV</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>STEP 3</h1>
+
+<p class=MsoNormal>Finally, if you’re really into serious number crunching,
+uBiome gives you the raw output from their expensive Illumina NextSeq 500 in
+the form of FASTQ files.&nbsp; If you know what that is, you probably already
+know how to read them, but if not please look at the BioCoder article for an
+introduction. With a little work, the FASTQ files will let you see precisely
+which genes were detected in your sample. Since so much of the microbiome is
+still unexplored, you may find pieces that are missing from the regular uBiome
+output, so this is your chance to go straight to the underlying genetic
+information for more.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For example, I was able to compute the following measure of
+diversity from my most recent sample.&nbsp; It’s a measure I’ll track for all
+of my samples</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img border=0 width=467 height=206 id="Picture 4"
+src="What%20to%20do%20with%20your%20raw%20uBiome%20data.fld/image001.png"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>Going Even Further</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I’ve barely scratched the surface of what’s possible when
+you use your raw uBiome data. Please look at the BioCoder article for more
+step-by-step instructions, and <a href="http://twitter.com/sprague">contact me</a>
+if you have other questions.&nbsp; Meanwhile, please upload your own samples to
+the uBiome GitHub and feel free to compare yours to the ones there, so we can
+all learn more together.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

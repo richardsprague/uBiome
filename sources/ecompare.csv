@@ -1,0 +1,196 @@
+count_norm,tax_rank,tax_name
+1,order,Oceanospirillales
+-4605,no_rank,unclassified Bacteroidales
+-4427,no_rank,unclassified Bacteroidales (miscellaneous)
+-11,phylum,Planctomycetes
+17,family,Caldicoprobacteraceae
+-4427,species,Bacteroidales bacterium ph8
+-117,species,Alistipes finegoldii
+-2441,species,Butyricimonas virosa
+1,family,Alcanivoracaceae
+9,genus,Staphylococcus
+1,family,Staphylococcaceae
+-205,order,Bacillales
+17,no_rank,unclassified Clostridiaceae
+-2049,no_rank,environmental samples
+13,species,Bacteroides fluxus
+-82560,family,Christensenellaceae
+1,species,Eggerthella lenta
+-3,species,Clostridium chauvoei
+-1198,species,Clostridium baratii
+-7,species,Bifidobacterium longum
+1,genus,Eggerthella
+29,species,Actinomyces odontolyticus
+-58,species,Gordonibacter pamelaeae
+21,genus,Actinomyces
+-9053,species,Alistipes onderdonkii
+29,order,Desulfarculales
+21,family,Actinomycetaceae
+21,suborder,Actinomycineae
+-4130,order,Caulobacterales
+-4122,family,Caulobacteraceae
+29,species,Peptostreptococcus stomatis
+-2024,no_rank,environmental samples
+42,species,Eubacterium contortum
+-255,order,butyrate-producing bacterium SR1/1
+-1675,species,Clostridium sp. MDA2315
+-92,genus,Corynebacterium
+-104,family,Corynebacteriaceae
+-318,species,Butyricimonas sp. 214-4
+-187,suborder,Corynebacterineae
+-49,genus,Holdemania
+38,genus,Parvibacter
+-954,family,Peptococcaceae
+-499,genus,Peptococcus
+59,order,Rhodobacterales
+63,family,Defluviitaleaceae
+63,no_rank,Defluviitalea
+-273,order,Actinomycetales
+-6261,family,Veillonellaceae
+67,genus,Megasphaera
+17,species,Bacteroides rodentium
+72,species,Blautia sp. YHC-4
+100,species,Streptococcus rubneri
+100,species,Butyricimonas sp. GD2
+10,genus,Enterobacter
+-7501,no_rank,unclassified Peptostreptococcaceae
+-7414,no_rank,unclassified Peptostreptococcaceae (miscellaneous)
+-7414,species,Peptostreptococcaceae bacterium TM5
+55,genus,Gordonibacter
+154,species,Alistipes shahii
+-434,family,Oscillospiraceae
+-415,genus,Oscillibacter
+-1357,genus,Anaerotruncus
+5,species,bacterium NLAE-zl-P827
+-1328,genus,Lactobacillus
+26,species_group,Lactobacillus casei group
+26,species,Lactobacillus paracasei
+-40827,genus,Odoribacter
+-4102,species,Odoribacter splanchnicus
+-39644,genus,Coprococcus
+-1304,family,Lactobacillaceae
+-4125,genus,Butyricimonas
+241,species,Haemophilus pittmaniae
+-7091,species,Parasutterella excrementihominis
+254,genus,Peptostreptococcus
+-7226,genus,Parasutterella
+266,species,Enorma massiliensis
+266,no_rank,Enorma massiliensis phI
+266,genus,Enorma
+234,genus,Haemophilus
+-411,species,Bacteroides salyersiae
+-2044,genus,Turicibacter
+-11334,family,Peptostreptococcaceae
+298,species,Clostridium lavalense
+363,species,Lactococcus lactis
+363,genus,Lactococcus
+579,species,Eubacterium hallii
+695,genus,Serratia
+-3182,genus,Bilophila
+-4259,family,Desulfovibrionaceae
+-3166,species,Bilophila wadsworthia
+-4229,order,Desulfovibrionales
+410,genus,Adlercreutzia
+410,species,Adlercreutzia equolifaciens
+-5190,subphylum,delta/epsilon subdivisions
+-5130,class,Deltaproteobacteria
+659,species,Eubacterium desmolans
+1127,species,Clostridium scindens
+-27705,species,Clostridium clostridioforme
+1207,genus,Collinsella
+814,species,Streptococcus thermophilus
+1439,species,bacterium NLAE-zl-P562
+1438,genus,Flavonifractor
+1481,species,Flavonifractor plautii
+-2389,genus,Streptococcus
+1701,genus,Actinobacillus
+1701,species,Actinobacillus porcinus
+-18525,genus,Alistipes
+-18872,family,Rikenellaceae
+1893,family,Clostridiales Family XI. Incertae Sedis
+1854,no_rank,Clostridiales incertae sedis
+1928,order,Pasteurellales
+1928,family,Pasteurellaceae
+1988,species,Bifidobacterium breve
+-6515,order,Bifidobacteriales
+-6515,family,Bifidobacteriaceae
+-6440,genus,Bifidobacterium
+-2057,family,Streptococcaceae
+2021,genus,Pantoea
+-6788,subclass,Actinobacteridae
+1653,genus,Eubacterium
+1546,family,Eubacteriaceae
+1598,species,Ruminococcus faecis
+-8910,order,Erysipelotrichales
+-8887,family,Erysipelotrichaceae
+-8910,class,Erysipelotrichia
+-3047,order,Lactobacillales
+-3260,class,Bacilli
+-14319,genus,Barnesiella
+-6786,species,Anaerostipes hadrus
+-20855,species,Bacteroides uniformis
+3754,family,Rhodospirillaceae
+3754,order,Rhodospirillales
+3817,genus,Thalassospira
+-541,class,Alphaproteobacteria
+-2329,species,Roseburia sp. 11SE38
+-30410,genus,Clostridium
+-35703,family,Clostridiaceae
+3509,family,Coriobacteriaceae
+3508,subclass,Coriobacteridae
+3508,order,Coriobacteriales
+3508,suborder,Coriobacterineae
+5662,species,Blautia stercoris
+-3304,species,Parabacteroides merdae
+1558,genus,Subdoligranulum
+4126,genus,Phascolarctobacterium
+3166,family,Acidaminococcaceae
+-3304,class,Actinobacteria
+-3304,phylum,Actinobacteria
+-3229,order,Selenomonadales
+-3229,class,Negativicutes
+7595,species,Lachnospiraceae bacterium 1_1_57FAA
+10024,no_rank,unclassified Lachnospiraceae
+-686,species,bacterium NLAE-zl-H54
+7095,species,Roseburia inulinivorans
+705,genus,Parabacteroides
+15647,species,butyrate-producing bacterium L1-93
+-60076,family,Porphyromonadaceae
+15063,genus,Dorea
+20606,genus,Pectobacterium
+-30384,genus,Ruminococcus
+15098,family,Sutterellaceae
+9183,order,Burkholderiales
+9159,class,Betaproteobacteria
+11976,genus,Roseburia
+16939,genus,Lachnospira
+20871,genus,Anaerostipes
+32479,no_rank,unclassified Clostridiales (miscellaneous)
+10105,species,Bacteroides massiliensis
+34171,no_rank,unclassified Clostridiales
+-54847,species,Faecalibacterium prausnitzii
+52577,species,[Ruminococcus] obeum
+-84428,genus,Bacteroides
+-86217,family,Bacteroidaceae
+32952,genus,Blautia
+-33119,genus,Faecalibacterium
+-174423,order,Bacteroidales
+-174620,class,Bacteroidia
+-174593,superphylum,Bacteroidetes/Chlorobi group
+-174586,phylum,Bacteroidetes
+82718,genus,Pseudobutyrivibrio
+125030,species,Cronobacter sakazakii
+125030,genus,Cronobacter
+-120182,family,Ruminococcaceae
+150607,family,Enterobacteriaceae
+150869,order,Enterobacteriales
+147862,class,Gammaproteobacteria
+151276,phylum,Proteobacteria
+161539,species,bacterium NLAE-zl-P430
+161477,no_rank,unclassified Bacteria (miscellaneous)
+161477,no_rank,unclassified Bacteria
+208019,family,Lachnospiraceae
+-71926,order,Clostridiales
+-72187,class,Clostridia
+-87725,phylum,Firmicutes
+0,superkingdom,Bacteria

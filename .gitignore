@@ -4,3 +4,6 @@
 uBiome.Rproj
 Data/Others
 braintest.RData
+.idea/
+sources/__pycache__/
+docs/HackersGuide/hackersGuide.scriv/

@@ -1,0 +1,69 @@
+count_norm,tax_rank,tax_name
+162,no_rank,Bacillales incertae sedis
+162,no_rank,Bacillales Family XI. Incertae Sedis
+162,no_rank,unclassified Burkholderiales
+162,no_rank,Burkholderiales Genera incertae sedis
+162,genus,Xylophilus
+108,genus,Desulfotomaculum
+4112,species,butyrate-producing bacterium T2-132
+108,no_rank,Barnesiella intestinihominis YIT 11860
+108,order,Acholeplasmatales
+108,family,Acholeplasmataceae
+325,species,Bacteroides vulgatus
+325,no_rank,Bacteroides vulgatus ATCC 8482
+108,no_rank,unidentified
+325,no_rank,Clostridiales incertae sedis
+325,family,Clostridiales Family XII. Incertae Sedis
+108,order,Bdellovibrionales
+2110,family,Flavobacteriaceae
+487,order,Pleurocapsales
+325,species,Bifidobacterium longum
+2759,genus,Paenibacillus
+2976,species,Butyricimonas sp. 214-4
+433,class,Zetaproteobacteria
+433,order,Mariprofundales
+433,family,Mariprofundaceae
+108,species,Bacteroides helcogenes
+108,no_rank,Bacteroides helcogenes P 36-108
+108,species,Clostridium indolis
+2218,order,Flavobacteriales
+108,family,Cryomorphaceae
+108,order,Gallionellales
+108,family,Gallionellaceae
+3625,family,Pseudomonadaceae
+379,phylum,Fibrobacteres
+379,class,Fibrobacteria
+162,order,Legionellales
+162,family,Coxiellaceae
+108,species,Ruminococcus flavefaciens
+108,no_rank,Ruminococcus flavefaciens FD-1
+974,phylum,Cyanobacteria
+108,subclass,Oscillatoriophycideae
+108,order,Oscillatoriales
+162,family,Marinilabiliaceae
+162,order,Rhodocyclales
+162,family,Rhodocyclaceae
+108,order,Xanthomonadales
+108,family,Xanthomonadaceae
+108,class,Thermoplasmata
+**********************************************************************
+File "ubiomeCompare.py", line 14, in __main__
+Failed example:
+    myApp.testUnique()
+Expected:
+    384
+Got:
+    47
+**********************************************************************
+File "ubiomeCompare.py", line 17, in __main__
+Failed example:
+    len(v.sampleList)
+Expected:
+    139
+Got:
+    215
+**********************************************************************
+1 items had failures:
+   2 of   4 in __main__
+***Test Failed*** 2 failures.
+all tests successful
