@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="46">
-            <Title>The basics: web tools</Title>
-            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
+        <Document ID="53">
+            <Title>Pseudomonas syringae </Title>
+            <Text>
+Pierre Amato :  
 
-The first thing you’ll notice is a pretty chart like this one:
-#
-
-This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla —the highest, broadest level of classification. If you’re like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. 
-
-￼</Text>
+</Text>
         </Document>
         <Document ID="61">
             <Title>uBiomeScreenShotTaxonomyJSON</Title>
@@ -45,14 +41,6 @@ Now find a particular SNP using something like this:
 579746 i3001542         MT    16522       CC
 </Text>
         </Document>
-        <Document ID="54">
-            <Title>Deinococcus radiodurans </Title>
-            <Text>#
-
-
-
-</Text>
-        </Document>
         <Document ID="47">
             <Title>How to get your data</Title>
             <Text>There are several ways for an individual to get access to the powerful sequencers that make 16S rRNA analysis possible. 
@@ -84,6 +72,14 @@ The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina
 
 </Text>
         </Document>
+        <Document ID="54">
+            <Title>Deinococcus radiodurans </Title>
+            <Text>#
+
+
+
+</Text>
+        </Document>
         <Document ID="62">
             <Title>ExcelScreenOverview</Title>
         </Document>
@@ -97,16 +93,10 @@ The most popular gene sequencer is the NextSeq500, from San Diego-based Illumina
         </Document>
         <Document ID="70">
             <Title>Studying the Human Microbiome</Title>
-            <Text>Studying the Human Microbiome
-
-During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
+            <Text>During the late 1990s, biologists around the world were racing to complete the first sequence of the human genome, a first draft of which was available in June 2000, and the project was declared complete in 2003. With this sequence available, scientists now had the first rough map of all the genes that make up a human being, and they were hopeful that this would be quickly followed by new discoveries linking genes to health. 
 
 The Human Microbiome Project was launched in 2008 by the National Institutes of Health with a budget of $115M.
 </Text>
-        </Document>
-        <Document ID="63">
-            <Title>Pasted Graphic 1</Title>
-            <Text>￼</Text>
         </Document>
         <Document ID="56">
             <Title>Analyze with Excel</Title>
@@ -189,54 +179,46 @@ Of these fields, the most important ones are tax_name, tax_rank, and count_norm.
         <Document ID="49">
             <Title>Next Steps</Title>
         </Document>
+        <Document ID="107">
+            <Title>DiversitygenusInverseShannon</Title>
+        </Document>
+        <Document ID="63">
+            <Title>Pasted Graphic 1</Title>
+            <Text>￼</Text>
+        </Document>
         <Document ID="71">
             <Title>Intro</Title>
-            <Text>Humans, like computers, can be broadly described in terms of software and hardware. Our software includes things like language, culture, education, behaviors — the aspects of ourselves that seem most flexible, even arbitrary, but which define us as individuals. There are many ways to improve your software: through education, reading, or interesting conversations with others.
-To improve your hardware, you can of course measure various things about yourself: temperature, blood tests, activity levels. Wearable sensors like the Apple Watch are making this much easier, and in the near future you’ll see an explosion of new and better ways to measure your body’s hardware and with better, more actionable measurement come many ways to modify and optimize your health along the way. All of these new wearable computing devices recognize that you are a unique individual and that we always should treat the patient, not the statistics. So what is the part of you that is fundamentally you?
-The obvious place to start is with DNA, and our human genes. I was excited when 23andme (and other services) came out about ten years ago, letting each of us inexpensively see our internal hardware, perhaps to learn more about the things that make us unique, and maybe peer into our futures, to the degree that biological traits like susceptibility to various diseases or conditions is hereditary and unchangeable.
-But after a while I realized how little of what we learn about DNA is actionable. If you find you have the “gene for”  Alzheimer’s disease or Parkinson’s, or any of the other traits that have been linked to specific genes, what can you do about it? In nearly every case, the advice is exactly what you should be doing even if you don't have that trait: eat well and get lots of exercise.
+            <Text>In the age-old argument about nurture vs. nature, most of the scientific conclusions over the past half-century point to a resounding victory for nature. From twin studies to gene sequencing, nearly any rigorous scientific attempt to compare the role of genes with the environment show the powerful role that DNA plays in everything from illness to physical aptitude to intelligence and even behavior. The inescapable conclusion seems to be that yes, genes are destiny.
+If you are interested in health or well-being, you may find yourself using a wearable device like a FitBit or Apple Watch, or a nutrition or dieting app like MyFitnessPal, hoping to optimize some aspect of your physical body, but hard work and discipline will take you only so far. As you reach the limits of how much you can change, you’ll settle into the discovery that the genetic component is undeniable.  Over 1 million customers of the genetic testing company 23andme have opted to look at their genes in part to understand better what their own limits are.
+Still, despite much progress since the unveiling of the Human Genome Project in 2001, there are frustratingly few examples of genes that decisively determine one trait or another. Except for a few simple cases like eye or hair color, most genes seem merely to increase or decrease the odds one way or another. Despite the headlines, when you read the details you’ll be disappointed at how little about genetic testing is actionable. With rare exceptions, you won’t find the gene that is to blame for your obesity or the one to thank for your high IQ.
 
 
 Fortunately, it’s not just our DNA
 In fact, if you could point a scanner at me and pull out everything, all the “hardware” inside me right now, you’d find a curious fact: although sure, 99% of the weight and size of what you see is human (blood, skin, bones, organs, etc.), only about 10% of the cells are human, and even less than that  — only about 1%  — of the DNA-storing genes are human.
-
 What’s the rest? Who am I, if only 1% of the genes inside me are human? The answer is microbes, and as befits something that so outnumbers the “human” part of us, they play a large role in everything about what we do, from our health to our moods and even, as I’ll show, to our motivations.
 
 Microbes are older than any of us
 We tend to think of the invisible, single-celled microbes as "primitive", not nearly as "advanced" as we humans, with our marvelous brains and ability to transform the earth with airplanes and skyscrapers and nuclear reactors and all the rest. But that's what we would think, wouldn't we? In fact, the microbes are everywhere, literally everywhere on earth, in the sky, even deep underground. We can't go anywhere without encountering microbes because, well, there are even microbes on and inside us. Humans can't survive without microbes. So what does it even mean to say we're "better" or more "advanced" than they are?
-
 Before the microscope, people didn't even know that microbes existed. Similarly, until the advent of large-scale gene sequencing machines in the past ten years, almost nothing was known about the amazing ubiquity and resilience of microbes.
-
 Yes, they’re single-celled and yes many of their cellular functions seem more straightforward than the functions of a multi-cellular creature like us, but it would be a mistake to assume that means microbes -- collectively -- are less influential, and certainly it would be a big error to assume they are less important. Fact is, these organisms have been around, breathing, eating, multiplying, for billions of years, often in pretty much the same form that they are today. These things have survived every imaginable planetary condition from volcanoes to the depths of the ocean to the inside of nuclear reactors. Global Warming means nothing to these guys, who have seen and thrived all over the earth since the day life first appeared.
 
 What they want
 Because they have such a huge advantage over us, in lifespan (each microbe is an exact divided copy of itself, going back a zillion generations), in speed of replication (they can double in just a few minutes under the right conditions),  and ubiquity (as I said, cellwise they far outnumber us), they can afford to colonize every new imaginable environment. 
-
 And that's what they do, every time a new frontier opens to them. The moment of your birth, for example, when you left the (mostly) sterile conditions of your mother's womb, they immediately flooded all over your skin, mostly coming from your mother, and in that fresh environment they used their first-mover advantage to get a stronghold that in many cases lasts your entire life. Many (most?) of the microbes that matter arrived inside you this way, originally, and many of them are still there today, decades, even half a century or more later. 
-
 To survive, they need one thing: something to eat. Being so tiny, they don't need much, and they mostly eat things that you (and other larger creatures) weren't interested in anyway. (Or, since they were here first, it's probably more accurate to say that you and I must live on the foods that they don't want. A cheeseburger is only food for you because you snatch it faster than they do. Leave it outside for a while and they'll get it eventually).
 
 Who’s in charge?
 Collectively, the multitude species of microbes will eat just about everything, but individually each species has its preferences. When they're outside the body, as I said, they can "colonize" new territories (like fresh baby skin) to get what they want, but those inside your tummy are at the mercy of whatever it is you decide to put into your mouth.
-
 Often, that's not a big deal: many species thrive on the same proteins, carbohydrates, and fats that you do. But some species do better than others with certain types of foods, and this is where the line between your human desires and theirs becomes unclear.
-
 Eighty percent of all your brain's outside receptors -- counting all the nerve endings everywhere on your skin -- eighty percent complete their connections in the gut. The main switching grounds, an area called the vagus nerve, does something.  What? We know very little, but we see some evidence that the purpose -- the reason that not 1% or 10% or 50% but a full 80% of all the receptors go to the gut -- is so the microbes can tell your brain what to do.
-
 When you find yourself feeling hungry, ask yourself who is feeling hungry. Scientists have traced that feeling of hunger to changes in certain hormones like leptin, but wait -- why did the leptin levels change in the first place? Could it be that a microbes someplace was manipulating your leptin levels, perhaps by poking that vagus nerve just the right way -- to get your brain to start thinking about whatever food that microbe wants?
-
 This isn't as ridiculous as it sounds, the idea that microbes could influence your feelings and desires. Think about a disease like the rabies microbe. Because it spreads through saliva, it can't find new territory unless its host somehow finds itself exchanging saliva -- biting -- another potential host. So guess what a rabies victim can't stop thinking about? Biting a new victim.  The microbe literally puts a thought into the mind.
-
 There are many other examples, so many in fact as to be potentially a bit disturbing when we realize that we humans may be much more at the mercy of tiny microbes than we think.  Links have been made between microbes and schizophrenia, stress, anxiety, self-grooming, and much more.  Autism Spectral Disorders, which have always seemed puzzling because of the relationship they seem to have with digestive problems, are also linked to microbes,  or the lack thereof.
-
 Perhaps the most intriguing example is the common parasite Toxoplasma gondii, the strange organism that can only reproduce in the intestines of cats. A parasite seen often in all warm-blooded mammals, it's found in about a third of the global population of humans too.  It's one of the reasons they tell pregnant women to stay away from cat litter. But here's the interesting part: when a Toxo protozoa infects a mouse, it leaves cysts in the mouse brain that make it attracted to cat urine! Yes, it changes the neurology of a mouse so that it's more likely to end up inside a cat's tummy -- exactly where it can reproduce.
-
 Think about this too much, and you'll end up with the obvious question: what other weird microbes are infecting us right now? Can we explain some of our own behaviors this way? Is there a human equivalent of these infections, driving us to do things we "ordinarily" wouldn't do? And maybe these microbes are so ubiquitous, teeming all over us and in our brains, maybe there's no way to even know what "ordinary" or "normal" human behavior is.
-
 
 What is health?
 Western medicine tends to think reductively about health, dividing the body into pieces like organs and cells and prescribing interventions that target one particular aspect of whole, with specific drugs or supplements. But of course nothing as complex as the body and health can be simplified this much. Maybe you can't really think about human hardware without thinking about the whole ecology that goes with it, the various organisms live in and around us and greatly outnumber us.
-
 When you think this way, then suddenly "health" takes on a whole new meaning, because we're no longer talking about the status of a single organism -- me -- but rather about the entire function "eco-system" of many, many living things, including  the "me" that I want to refer to as a human.
 </Text>
         </Document>
@@ -254,6 +236,87 @@ Computer scientists have an easier time than biologists because operations are s
             <Title>Deinococcus radiodurans</Title>
             <Text>￼</Text>
             <Notes>http://en.wikipedia.org/wiki/Deinococcus_radiodurans</Notes>
+        </Document>
+        <Document ID="108">
+            <Title>Appendix I Make your own data</Title>
+            <Text>This book uses the uBiome service for all examples because at the time of writing, that’s the most convenient and low-cost way to get your data. If you don’t have access to uBiome, you can still run all the examples using the techniques described here.
+
+Please note that although this will give you a file that lets you run all the examples, your taxonomy data may be significantly different from the results you get from uBiome. Each lab uses its own database of 16S lookup data, but uBiome’s is proprietary and not available to other labs. 
+Scientists from different labs will argue fiercely for the correctness of their own particular way of analyzing data, but the science is too new for much agreement. Fortunately, this won’t generally affect the conclusions you make from your own experiments as long as you are consistent. It’s meaningless to compare data generated from uBiome’s lab with one from another lab, so just stick to one format.
+
+To get started, the only thing you’ll need is a FASTQ file. These are typically very long (tens of thousands of lines) text file that looks something like this:
+@SRR835775.1 1/1
+TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTCACCCTAACCCTAACCCTAACCGTATCCGTCACCCTAACCCTAAC
++
+???B1ADDD8??BB+C?B+:AA883CEE8?C3@DDD3)?D2;DC?8?=BAD=@C@(.6.6=A?=?@##################################
+@SRR835775.2 2/1
+TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACC
++
+CCCFFFFFGHHGHJJJJJIJGIIJJJJJJJIJIJJJJJFJJFGIIIIH=CBFCF=CCEG)=&gt;EHB2@@DEC&gt;;;?=;(=?BBD?59?BA###########
+@SRR835775.3 3/1
+TAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGGGTTAGG
++
+
+This contains information about the gene sequencing hardware uBiome used for this sample. The other lines in the raw text file contain the actual base pairs detected by the sequencer, along with quality information to indicate the certainty of a particular read. In my case, the entire file is over 170,000 lines long, and that’s just one of the eight files in the FASTQ archive. That’s a lot of data!
+
+To use the examples in the book, you’ll need to convert that long file into a table of taxa that includes information about the type and quantity found in your sample.
+
+
+
+Using MGRAST to generate your data
+
+This contains information about the gene sequencing hardware uBiome used for this sample. The other lines in the raw text file contain the actual base pairs detected by the sequencer, along with quality information to indicate the certainty of a particular read. In my case, the entire file is over 170,000 lines long, and that’s just one of the eight files in the FASTQ archive. That’s a lot of data!
+
+Although it’s possible to analyze this data on my own in a tool like BioPython, it’s much easier to submit the raw data to a public gene processing server, such as the Metagenomics Analysis Server (MG RAST) hosted by Argonne National Labs at this site:
+
+http://metagenomics.anl.gov/
+
+Note: You must use the Firefox browser (not Chrome, IE, or Safari), and before submitting any jobs you must apply for a (free) login ID, which you receive by email in a day or two.
+
+After logging in with your new account ID, click the “upload” icon on the home page and follow the process to prepare and submit your data:
+
+#
+
+1.	Ignore the part about preparing the meta data; you can add it later.
+2.	Upload files. The site offers to let you upload from the web browser, but I’ve had better luck using their api and the following curl command:
+
+curl -H "auth: webkey" -X POST -F "upload=@/path_to_file/metagenome.fasta" "http://api.metagenomics.anl.gov/1/inbox/" &gt; curl_output.txt
+
+I just type this from Terminal on my Mac. Note that you’ll need to get your own webkey (hit the ‘view webkey’ button on the submission page) which you will substitute into the curl command line above. Also change the filename part of the “upload=@” section to point to the correct file. Note that uBiome fastq files are compressed, but it’s okay to upload them as-is. You’ll uncompress them on the server after the upload.
+
+3.	Manage your inbox.  Once the file has successfully uploaded, you’ll see it in your inbox.  At this point, you should “unpack selected” if you uploaded a compressed file.  Note depending on how busy the server is, it may be minutes or even hours of waiting, and pressing “update inbox” before you see the File Information shown below.
+￼
+
+
+
+Next you’re ready to submit the data
+
+
+Here are my suggestions for this section
+
+1.	Check the box to say you won’t supply metadata.
+2.	Create a new project and select it.
+3.	Select the files you uploaded
+4.	Use the default values to choose pipeline options
+5.	Submit the job, being sure to make the data publicly accessible immediately, to increase the priority.
+
+There you go!  Now a job has been submitted and you wait for it to complete. It usually takes a day or two to complete, after which you’ll receive an email notification. After that, click the bar chart icon on the upper right of the page:
+
+
+
+This brings you to an analysis page where you can study your data in much more detail.
+
+When I select my data under “Metagenomes” on the analysis page, I’m offered several options for Annotation Sources. Since the uBiome fastq data comes from 16S ribosomal RNA, I choose to compare my data against one of the large databases of known RNA. The popular Greengenes database is one of them, so I select it, and then ask to generate a table of the results.
+
+￼
+
+The table, sorted by abundance and filtered to phylum, looks like this:
+
+￼
+The results roughly conform to what we see from uBiome: the most common organisms are the same in each case, and although the scales are different, the abundance computed corresponds roughly to what we see from the uBiome count field.
+
+Other MG RAST tools let you compare your data against other databases of bacteria and proteins, graph the results, and perform sophisticated statistical analysis to determine other unique features of your sample. You can also compare your sample to microbiomes that have been uploaded by others, enabling you to study your results in much more detail.
+ </Text>
         </Document>
         <Document ID="72">
             <Title>Comparing samples
@@ -279,6 +342,9 @@ I prefer to use both methods of measurement: absolute number changes matter for 
 
 
 </Text>
+        </Document>
+        <Document ID="58">
+            <Title>Psudomonas syringae</Title>
         </Document>
         <Document ID="65">
             <Title>DNA codon table</Title>
@@ -480,21 +546,9 @@ TAA, TGA, TAG
 TAR, TRA
 </Text>
         </Document>
-        <Document ID="58">
-            <Title>Psudomonas syringae</Title>
-        </Document>
         <Document ID="80">
-            <Title>What is a microbe?</Title>
-            <Text>Scientists have known since Pasteur times that our bodies and environment are awash in other species, microbial bystanders that seem to grow everywhere. But the techniques for uncovering which organisms are where and what they are doing was revolutionized in the first decade of the 2000s by those new-fangled gene sequencers that were so usefully applied to human genes.
-The old technique for studying the microbial life around us required taking a sample, inserting it into a culture of some nutrient broth known to be good for breeding microbes, and waiting a few days to see what grows (or doesn’t). That’s still a common way to study microbes, and that couple-of-day incubation period is one reason you don’t get your lab tests back for a few days.
-Now, thanks to new machines originally developed for mass DNA sequencing, the process of finding and understanding microbes has been revolutionized. It’s now possible to search for new life forms without growing them in a culture, and this has made possible a major shift in how to think about life —and what is important and special about human hardware.
-Unlike the genetic discoveries you can make by understanding your DNA (from a low-cost consumer service like 23andme), much of the news from the microbial world is actionable. There’s little, if anything, you can do if you find you have a particular type of gene that gives you, say, a propensity to alzheimers for example. But because the microbes around you are constantly changing anyway, and because you can influence which ones grow and which don’t, the world of the human micro biome is eminently actionable. 
-
-What is a “microbe”?
-
-Answer: it’s a microorganism, the focus of the field of microbiology, and including everything from bacteria to single-
-
-A gene is an instruction for making a protein. There are roughly 30,000 genes in your body, so there should be at least 30,000 proteins floating about, though actually it’s much more complicated. The gene represents the instructions, but which proteins are expressed depends on a complex interaction among the rest of your DNA and its environment. The science of  figuring it all out is called proteomics, and it’s difficult to say exactly how many proteins are produced in your body.
+            <Title>Microbes in your body</Title>
+            <Text>A gene is an instruction for making a protein. There are roughly 30,000 genes in your body, so there should be at least 30,000 proteins floating about, though actually it’s much more complicated. The gene represents the instructions, but which proteins are expressed depends on a complex interaction among the rest of your DNA and its environment. The science of  figuring it all out is called proteomics, and it’s difficult to say exactly how many proteins are produced in your body.
 One reason it’s difficult is that you don’t produce all the proteins. In fact, you carry many more genes than the 30,000 that we find from sequencing the human genome. The other genes — roughly ten times as many as those carried by your DNA —are from various other microbial life forms that are found all over, and often inside your body. The collection of all the genes expressed by these tiny microbes is called the micro biome, and it’s enormous.
 Most microbes are bacteria, and for our purposes you can assume that’s what we mean, though in reality there are others: archaea (the most ancient form of life, similar to bacteria and generally found in extremely hostile environments), viruses (which are tricky to describe as “life” because they don’t reproduce without help from other cells), and the viruses that plague bacteria (called phages). Each of these has a role to play in the kinds of proteins that appear in your body, though precisely which one does what is a very complicated question that science is only beginning to explore systematically.
 In the olden days, before the development of gene sequencing technology, scientists studying these tiny non-human lifeforms within us had to take a sample from your body (skin, feces, nose, genitals), place it into a petri dish with some kind of broth known to be good for bacterial growth, and wait a few days to see what shows up. Bacteria reproduce asexually, through mitosis cell division, and when the conditions are right they can quickly go from just a few organisms to enough to be seen by the visible eye — sometimes in just a few hours. Nevertheless this traditional way of studying the micro biome was very time-consuming and often hit-or-miss: although many bacteria reproduce well outside the body, many — perhaps most — don’t. And even if you are fortunate enough — or clever and persistent enough — to grow a significant number of bacteria this way, there are limits to what you can find from simply observing them. It’s difficult to uncover the relationships (taxonomy) among different species, and often you’re forced to rely simply on judgement calls based on the shape, size, or other physical characteristics of the organism.
@@ -506,7 +560,12 @@ The result is a lot of genes, as we said, at least 10x the number harbored by th
         </Document>
         <Document ID="66">
             <Title>What are they doing?</Title>
-            <Text>Toxoplasma Gondii is a tiny microbe that, for some reason, only likes to reproduce from within the gut of a cat. It can be found in almost all warm-blooded mammals, including humans — about 30% of us, according to some estimates, and that’s after a century of obsession with hygiene that has wiped out countless other tiny inhabitants of the body.
+            <Text>We don’t normally pay much attention to the role that microbes play in our daily lives, other than as an annoyance that occasionally makes us sick. But the more that scientists uncover, the more it becomes clear that something this old and ubiquitous is not nearly as hands-off as we think.
+
+[Examples of microbes that can affect the brain ]
+
+Microbes can change the brain’s personality
+Toxoplasma Gondii is a tiny microbe that, for some reason, only likes to reproduce from within the gut of a cat. It can be found in almost all warm-blooded mammals, including humans — about 30% of us, according to some estimates, and that’s after a century of obsession with hygiene that has wiped out countless other tiny inhabitants of the body.
 T. Gondii seem harmless because its hosts appear to show no differences before or after “infection” except in one creature: the mouse. When it finds itself ingested by a mouse, it appears to fade away quietly. MRI scans show large amounts in the gut for a week or two, gradually decreasing until there is apparently nothing. Except: tiny T. Gondii cysts begin to show up in the mouse’s brain. Not everywhere, but in just a few strategic places.
 Then something strange happens: the mouse is suddenly attracted to cat urine. And note: its only attraction is to cat urine, not rabbits, not humans — only cats. Everything else about the mouse appears normal. It still seems to be afraid of the other things that scare mice: other predators, stressful situations. But put a T. Gondii-affected mouse into a maze with different animal urine in the corners and it will rush to the cat side every time.
 
@@ -563,6 +622,8 @@ Courseware
 Gut Check: Exploring Your Microbiome
 
 
+Software
+https://github.com/biocore
 
 Other
 
@@ -597,14 +658,21 @@ Another book that explains a provocative idea that our immune systems need regul
         </Document>
         <Document ID="81">
             <Title>Microbes in the gut</Title>
-            <Text>
-The Appendix
+            <Text>Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning. These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds — about as much as the brain.
+
+
+
+ A typical human will have somewhere between [n and m] individual cells — blood, skin, neurons, other tissues — each descended from a single germ cell, the fertilized egg that began dividing itself and multiplying after the moment of conception. By contrast, microbes had to hitch their own rides later, beginning in the womb and turning into a flood at the moment of birth and beyond. But each microbe, like each human cell, remains deeply interconnected with the fates of all the other cells, all the way to the moment of death, and even after that.
+
+Your Appendix
 
 Somewhere near the border between the small intestine and the large intestine (colon), there is a small, pinkie-like appendage bulging inconspicuously into the abdominal cavity. For most of the period of modern western medicine, nobody knew its function, other as a source of severe pain when it occasionally exploded in infections that until the development of antibiotics were usually fatal.
 Fun fact: the only death among the hundred or so frontiersmen and explorers on the Lewis and Clark expedition in the early 1800s was caused by appendicitis — a terrible, painful death in the wilderness but one that would have been just as inevitable at the finest hospitals in the world at the time.
 What’s known is that the appendix apparently houses three things: tissue from the immune system, a bunch of what are called IgA antibodies that fight infections, and tons of bacteria. What’s also known is that people who have their appendix removed surgically — usually as a result of one of those terrible infections — recover to live apparently normal lives, with no side effects even decades upon decades later. So what is the appendix doing?
 One clue comes from a recent study of 254 patients recovering from a C. Difficil infection, a horridly tenacious bacterium that has gained near-complete resistance to antibiotics and is notoriously difficult to treat. In the study, those with an appendix saw their infections come back 11% of the time, but those with no appendix suffered re-infection rates of 44% — a large and significant difference that has caused most scientists to speculate that the appendix is harboring something that enables the body to recover after a microbial disaster.
 My own interest in this subject is not idle curiosity. About fifty years ago, doctors at a small town hospital gave an appendectomy to my five-year-old self in order to treat an unusual belly ache. While doing what was apparently an exploratory surgery to find the cause, they came upon my otherwise healthy-looking appendix and decided on the spot to simply remove it. “Why not?” I’m sure they thought at the time. “If nothing else, it’ll prevent him from appendicitis”, which is as tautologically sound a reason as any.</Text>
+            <Comments>source?
+</Comments>
         </Document>
         <Document ID="74">
             <Title>uBiomeGutChart</Title>
@@ -614,9 +682,7 @@ My own interest in this subject is not idle curiosity. About fifty years ago, do
         </Document>
         <Document ID="82">
             <Title>Microbes of the skin</Title>
-            <Text>Microbes of the skin
-
-Microbes of the gut are important, but many other organisms are crawling all over you too.
+            <Text>Microbes of the gut are important, but many other organisms are crawling all over you too.
 It should be no surprise that the most obvious place for them to live is on your outside: your skin and hair. We usually think of bacteria, fungi, or viruses, as something to eradicate, pests that can only be there to cause problems. The natural state of the body is pristinely washed: clean, with no dirt or other blemishes.
 This pristine state has never been true. Humans, like all other multi-celled creatures, have lived forever in a bath of foreign ride-hitchers of all types. This micro-fauna is as natural to us as the air we breath, and like air, our bodies need a good environment to be at our best.
 The body maintains its temperature well, occasionally cooling itself off by channeling excess water through the sweat glands and onto the surface of the skin. Besides water, this sweat contains small amounts of other matter, including elements that toss molecules into the air, many of which, upon landing on the olfactory glands of another person will be sensed as a smell — an odor, body odor. 
@@ -647,6 +713,7 @@ Faecalibacterium prausnitzii is the most abundant bacterium in the human intesti
 Roseburia
 This genus, under the phylum firmicutes, is known to be associated with health.
 
+There is some evidence that bariatric surgery works partly because it changes the composition of gut bacteria, especially Roseburia, which can increase up to 12 times.
 
 Christensenellaceae
 Christensenella
@@ -658,6 +725,7 @@ B. Longum as % of total Bifido
 Bacteroidetes/Firmicutes ratio
 
 </Text>
+            <Comments>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4016120/</Comments>
         </Document>
         <Document ID="68">
             <Title>Untitled</Title>
@@ -674,6 +742,12 @@ https://www.indiegogo.com/projects/ubiome-sequencing-your-microbiome#/updates</N
         </Document>
         <Document ID="6">
             <Title>Microbes everywhere!</Title>
+            <Text>The word “microbe” refers to any tiny organism that carries its own genetic information for purposes of propagating itself. Far too small to see with the naked eye, dozens could fit inside a typical human cell. The vast majority of microbes are bacteria, though viruses and phages fit this description too, as well as archaea, the extremophile life forms that live and thrive in environments too challenging for bacteria.
+Because they’re so small, we normally don’t think much about microbes, but they are absolutely everywhere on earth.
+
+[This next few sections give examples of microbes everywhere]
+
+</Text>
         </Document>
         <Document ID="83">
             <Title>Microbiome: reading list</Title>
@@ -702,6 +776,11 @@ If you know a little Python, you can make the same spreadsheet with your samples
             <Title>Overselling the microbiome</Title>
             <Text>Now a warning. Our understanding of the microbiome is in its infancy, with new techniques and discoveries coming along every day. The costs have plummeted dramatically, whether measured in money or in the time and resource commitment needed to explore the science. After all, this book is itself proof for how easy it is for “normal” people can learn and make their own discoveries.
 All of this new interest is a recipe for getting carried away, and you’ll find many examples, especially once you understand the science a bit for yourself. Jonathan Eisen is a microbiologist who has been studying the microbiome for decades and he has created a blog list he calls “Overselling the Microbiome Award”, with many examples.
+</Text>
+        </Document>
+        <Document ID="84">
+            <Text>
+
 </Text>
         </Document>
         <Document ID="78">
@@ -776,34 +855,17 @@ As you can see, the overall level of diversity in my samples has been going down
 
 [Reasons why this might be, next steps, etc]
 
+Another way to look at diversity is think functionally. Rather than discuss the specific species or genus, let’s find clusters of sequences that seem to work together. Scientists have compiled a list of these clusters, called Operational Taxonomic Units (OTUs), which you can use a reference. If your sequences look similar enough to the reference OTU, then we’ll assume that they really are that OTU. Generally people use about 97% similarity based on the 16S sequence.
+
 
 </Text>
         </Document>
-        <Document ID="93">
-            <Title>Looking into your mouth</Title>
-            <Text>Looking into my mouth microbiome
-
-The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I’ve been studying my uBiome mouth test results. The simple GitHub RuBiome utilities I use for analyzing my gut will work for that too, so here’s a short example of how I did it:
-
-First I loaded my uBiome data into two variables, one for each sample: June 2014 (junMouth) and the other from October 2014 (OctMouth), after a visit to my dentist.
-Let’s see which species are new in the later (October) sample:
-octToJunChange &lt;- uBiome_sample_unique(OctMouth,junMouth)
-##   count                        missing.tax_name ## 1  3640                  bacterium NLAE-zl-P562 ## 2  2725                 Streptococcus sanguinis ## 3  2075               Capnocytophaga gingivalis ## 4  1969 Peptostreptococcus sp. oral clone FG014 ## 5  1618                 Granulicatella adiacens
-One of those species, Streptococcus sanguinis looks interesting. Wikipedia says this:
-S. sanguinis is a normal inhabitant of the healthy human mouth where it is particularly found in dental plaque, where it modifies the environment to make it less hospitable for other strains of Streptococcus that cause cavities, such as Streptococcus mutans.
-No cavities? Nice! More good news: this quick check confirms that I don’t have any S. mutans:
-OctMouth[grepl("Streptococcus",OctMouth$tax_name),]$tax_name
-## [1] Streptococcus                      Streptococcus pseudopneumoniae     ## [3] Streptococcus sanguinis            Streptococcus constellatus         ## [5] Streptococcus anginosus group      Streptococcus sp. oral clone GM006 ## [7] Streptococcus thermophilus         Streptococcus oralis               ## [9] Streptococcus gordonii             ## 250 Levels: [Eubacterium] sulci ... Veillonellaceae
-Then I look at the species that disappeared (went extinct) between the two samples:
-junToOctChange &lt;- uBiome_sample_unique(junMouth,OctMouth)
-##   count                        missing.tax_name ## 1  6034                Capnocytophaga granulosa ## 2  4153 Peptostreptococcus sp. oral clone FL008 ## 3  3375         Prevotella sp. oral clone ID019 ## 4  2691                   Streptococcus rubneri ## 5  1571                       Prevotella buccae
-Anything in the genus Capnocytophaga is an opportunistic pathogen, so I say good riddance. Usually they’re fine, but if your immune system dips they can turn bad.
-Streptococcus rubneri was discovered a couple years ago, so little is known about it.
-Prevotella buccae is more interesting. It seems to be implicated in periodontal disease (yuk!) but that genus is involved too in breaking down proteins and carbohydrates.
-Hard to say what’s really going on. Meanwhile, here are the biggest changes (increase) since the first sample:
-junToOctCompare &lt;- uBiome_compare_samples(junMouth,OctMouth)
-##                                  tax_name count_change ## 64         Streptococcus pseudopneumoniae        62007 ## 68         Veillonella sp. oral taxon 780         8065 ## 41                       Neisseria oralis         4693 ## 2  Abiotrophia sp. oral clone P4PA_155 P1         2308 ## 28                 Granulicatella elegans         1987
-Whoah! That first one, Streptococcus pseudopneumoniae, looks nasty! Wikipedia says it may cause pneumonia, though a recent medical journal says more hopefully that it “treads the fine line between commensal and pathogen” which is a scientific gobbleygook way of saying nobody has a clue. All the more reason to keep testing, submitting, and getting more data. 
+        <Document ID="79">
+            <Title>Microbes</Title>
+            <Text>Scientists have known since Pasteur times that our bodies and environment are awash in other species, microbial bystanders that seem to grow everywhere. But the techniques for uncovering which organisms are where and what they are doing was revolutionized in the first decade of the 2000s by those new-fangled gene sequencers that were so usefully applied to human genes.
+The old technique for studying the microbial life around us required taking a sample, inserting it into a culture of some nutrient broth known to be good for breeding microbes, and waiting a few days to see what grows (or doesn’t). That’s still a common way to study microbes, and that couple-of-day incubation period is one reason you don’t get your lab tests back for a few days.
+Now, thanks to new machines originally developed for mass DNA sequencing, the process of finding and understanding microbes has been revolutionized. It’s now possible to search for new life forms without growing them in a culture, and this has made possible a major shift in how to think about life —and what is important and special about human hardware.
+Unlike the genetic discoveries you can make by understanding your DNA (from a low-cost consumer service like 23andme), much of the news from the microbial world is actionable. There’s little, if anything, you can do if you find you have a particular type of gene that gives you, say, a propensity to alzheimers for example. But because the microbes around you are constantly changing anyway, and because you can influence which ones grow and which don’t, the world of the human micro biome is eminently actionable. 
 </Text>
         </Document>
         <Document ID="12">
@@ -863,11 +925,38 @@ See the “Sample MS” PDF file in the Research folder for an example of a docu
 Final Note
 Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template, and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
         </Document>
-        <Document ID="79">
-            <Title>Microbes</Title>
+        <Document ID="93">
+            <Title>Looking into your mouth</Title>
+            <Text>Looking into my mouth microbiome
+
+The gut biome is interesting enough, but bacteria colonize just about every part of the body, so recently I’ve been studying my uBiome mouth test results. The simple GitHub RuBiome utilities I use for analyzing my gut will work for that too, so here’s a short example of how I did it:
+
+First I loaded my uBiome data into two variables, one for each sample: June 2014 (junMouth) and the other from October 2014 (OctMouth), after a visit to my dentist.
+Let’s see which species are new in the later (October) sample:
+octToJunChange &lt;- uBiome_sample_unique(OctMouth,junMouth)
+##   count                        missing.tax_name ## 1  3640                  bacterium NLAE-zl-P562 ## 2  2725                 Streptococcus sanguinis ## 3  2075               Capnocytophaga gingivalis ## 4  1969 Peptostreptococcus sp. oral clone FG014 ## 5  1618                 Granulicatella adiacens
+One of those species, Streptococcus sanguinis looks interesting. Wikipedia says this:
+S. sanguinis is a normal inhabitant of the healthy human mouth where it is particularly found in dental plaque, where it modifies the environment to make it less hospitable for other strains of Streptococcus that cause cavities, such as Streptococcus mutans.
+No cavities? Nice! More good news: this quick check confirms that I don’t have any S. mutans:
+OctMouth[grepl("Streptococcus",OctMouth$tax_name),]$tax_name
+## [1] Streptococcus                      Streptococcus pseudopneumoniae     ## [3] Streptococcus sanguinis            Streptococcus constellatus         ## [5] Streptococcus anginosus group      Streptococcus sp. oral clone GM006 ## [7] Streptococcus thermophilus         Streptococcus oralis               ## [9] Streptococcus gordonii             ## 250 Levels: [Eubacterium] sulci ... Veillonellaceae
+Then I look at the species that disappeared (went extinct) between the two samples:
+junToOctChange &lt;- uBiome_sample_unique(junMouth,OctMouth)
+##   count                        missing.tax_name ## 1  6034                Capnocytophaga granulosa ## 2  4153 Peptostreptococcus sp. oral clone FL008 ## 3  3375         Prevotella sp. oral clone ID019 ## 4  2691                   Streptococcus rubneri ## 5  1571                       Prevotella buccae
+Anything in the genus Capnocytophaga is an opportunistic pathogen, so I say good riddance. Usually they’re fine, but if your immune system dips they can turn bad.
+Streptococcus rubneri was discovered a couple years ago, so little is known about it.
+Prevotella buccae is more interesting. It seems to be implicated in periodontal disease (yuk!) but that genus is involved too in breaking down proteins and carbohydrates.
+Hard to say what’s really going on. Meanwhile, here are the biggest changes (increase) since the first sample:
+junToOctCompare &lt;- uBiome_compare_samples(junMouth,OctMouth)
+##                                  tax_name count_change ## 64         Streptococcus pseudopneumoniae        62007 ## 68         Veillonella sp. oral taxon 780         8065 ## 41                       Neisseria oralis         4693 ## 2  Abiotrophia sp. oral clone P4PA_155 P1         2308 ## 28                 Granulicatella elegans         1987
+Whoah! That first one, Streptococcus pseudopneumoniae, looks nasty! Wikipedia says it may cause pneumonia, though a recent medical journal says more hopefully that it “treads the fine line between commensal and pathogen” which is a scientific gobbleygook way of saying nobody has a clue. All the more reason to keep testing, submitting, and getting more data. 
+</Text>
         </Document>
         <Document ID="87">
             <Title>Diversity through time</Title>
+        </Document>
+        <Document ID="94">
+            <Title>Mar2015</Title>
         </Document>
         <Document ID="95">
             <Title>Looking into my mouth microbiome</Title>
@@ -937,6 +1026,11 @@ which is a scientific gobbleygook way of saying nobody has a clue. All the more 
             <Text>What is A/B testing?
 
 [Here’s a discussion of the science behind A/B testing, why it’s important to compare apples to apples, etc.]
+[This text is mostly a placeholder for now:]
+Humans, like computers, can be broadly described in terms of software and hardware. Our software includes things like language, culture, education, behaviors — the aspects of ourselves that seem most flexible, even arbitrary, but which define us as individuals. There are many ways to improve your software: through education, reading, or interesting conversations with others.
+To improve your hardware, you can of course measure various things about yourself: temperature, blood tests, activity levels. Wearable sensors like the Apple Watch are making this much easier, and in the near future you’ll see an explosion of new and better ways to measure your body’s hardware and with better, more actionable measurement come many ways to modify and optimize your health along the way. All of these new wearable computing devices recognize that you are a unique individual and that we always should treat the patient, not the statistics. So what is the part of you that is fundamentally you?
+The obvious place to start is with DNA, and our human genes. I was excited when 23andme (and other services) came out about ten years ago, letting each of us inexpensively see our internal hardware, perhaps to learn more about the things that make us unique, and maybe peer into our futures, to the degree that biological traits like susceptibility to various diseases or conditions is hereditary and unchangeable.
+But after a while I realized how little of what we learn about DNA is actionable. If you find you have the “gene for”  Alzheimer’s disease or Parkinson’s, or any of the other traits that have been linked to specific genes, what can you do about it? In nearly every case, the advice is exactly what you should be doing even if you don't have that trait: eat well and get lots of exercise.
 
 Example Experiments
 The best way to start is to experiment on yourself. Here are a few examples:
@@ -944,6 +1038,9 @@ The best way to start is to experiment on yourself. Here are a few examples:
 [Note: in this draft these examples are mostly unedited from blog posts.  Need to update them and make them fit the rest of the book, but are here as examples to give the basic idea]
 
 </Text>
+        </Document>
+        <Document ID="96">
+            <Title>Imported Media [10 Sep 2015, 12:08]</Title>
         </Document>
         <Document ID="100">
             <Title>*February 25, 2015* {.date}</Title>
@@ -1054,9 +1151,12 @@ I get back the results.
 
 &lt;/div&gt;</Text>
         </Document>
+        <Document ID="97">
+            <Title>mouth</Title>
+        </Document>
         <Document ID="30">
             <Title>Foreword</Title>
-            <Text>This book is for curious people with little or no knowledge of biology, but who have a reasonable level of comfort with computer software, either as programmer, or as an end-user comfortable installing and running common applications like Excel.  Using plenty of hands-on examples, you’ll learn the basics of the human microbiome and how to study and manipulate the microbes inside you.
+            <Text>This book is for curious people with little or no knowledge of biology who want to learn the basics of the human microbiome in a hands-on, practical way — by experimenting on yourself. We assume you have a reasonable level of comfort with computer software, either as programmer, or as an end-user comfortable installing and running common applications like Excel.  By practicing with your own examples, you’ll learn how to study and manipulate the microbes inside you.
 
 There are four main sections:
 
@@ -1064,7 +1164,7 @@ There are four main sections:
 
 2. Technology. What instruments and tools are available to study the human microbiome? Microscopes have been around for centuries, but in recent decades a whole laboratory of new tools make it possible to study in much more detail. We’ll summarize the major technologies, from gene sequencing to bioinformatics, that let scientists identify and study microbes.
 
-3. How to analyze your own microbiome: we’ll walk step-by-step through the process of getting and then analyzing data about your own microbiome. Starting with easy-to-understand web tools, we’ll walk you through the basics, then show you how to do simple analysis in Excel. For more complicated analysis, we’ll introduce simple (free) programming tools in Python and show step-by-step how to use them to study your own microbiome as well as compare it to others.
+3. How to analyze your own microbiome: we’ll walk step-by-step through the process of getting and then analyzing data from your own microbiome. Starting with the basics of how to interpret the simplified results from a typical diagnostic chart, we’ll show how to analyze the data and read it into Excel. For more complicated analysis, we’ll introduce simple (free) programming tools in Python and show how to analyze your own microbiome as well as compare it to others. We’ll give plenty of examples of experiments you can try on yourself.
 
 4. Organisms to watch: Once you’ve begun the process of studying your own microbes, you’ll want to learn about some of the common ones and what they do. We’ll summarize what scientists already know about these microbes and show you how to design experiments that let you watch for changes over time.
 
@@ -1113,20 +1213,21 @@ Comparing samples
 	&lt;$p&gt;
 Comparison over time	&lt;$p&gt;
 Measuring Diversity	&lt;$p&gt;
-Experiment Examples	&lt;$p&gt;
+Beyond the Microbiome: DNA	&lt;$p&gt;
+Organisms to Watch	&lt;$p&gt;
+Good and Bad	&lt;$p&gt;
+Gut Guardians	&lt;$p&gt;
 A/B Testing	&lt;$p&gt;
 Hacking my sleep	&lt;$p&gt;
 Visit the jungle	&lt;$p&gt;
 Looking into your mouth	&lt;$p&gt;
 Comparing with food	&lt;$p&gt;
-Organisms to Watch	&lt;$p&gt;
-Good and Bad	&lt;$p&gt;
-Gut Guardians	&lt;$p&gt;
 Next Steps	&lt;$p&gt;
 Fermented food	&lt;$p&gt;
 Overselling the microbiome	&lt;$p&gt;
 Annnotated References	&lt;$p&gt;
-Endnotes	&lt;$p&gt;</Text>
+Endnotes	&lt;$p&gt;
+Appendix I Make your own data	&lt;$p&gt;</Text>
         </Document>
         <Document ID="101">
             <Title>mouth</Title>
@@ -1264,11 +1365,7 @@ You cannot mix and match these ranks. If you know something about the number of 
         </Document>
         <Document ID="35">
             <Title>In the air</Title>
-            <Text>Every human body is home to a rich environment of tiny living organisms, trillions of them, with their own genes, their own ways of living and surviving, and their own long histories, permanently intertwined with humanity since the beginning. These microbes inhabit every possible niche inside and outside the body. Covering every inch of skin, lining every part of the nose and ears, they have burrowed deep inside nearly every organ, consuming as well as producing, living in such quantities that together they would weigh somewhere between three and five pounds — about as much as the brain.
-
-The word “microbe” refers to any tiny organism that carries its own genetic information for purposes of propagating itself. Far too small to see with the naked eye, dozens could fit inside a typical human cell. The vast majority of microbes are bacteria, though viruses and phages fit this description too, as well as archaea, the extremophile life forms that live and thrive in environments too challenging for bacteria.
-
- A typical human will have somewhere between [n and m] individual cells — blood, skin, neurons, other tissues — each descended from a single germ cell, the fertilized egg that began dividing itself and multiplying after the moment of conception. By contrast, microbes had to hitch their own rides later, beginning in the womb and turning into a flood at the moment of birth and beyond. But each microbe, like each human cell, remains deeply interconnected with the fates of all the other cells, all the way to the moment of death, and even after that.
+            <Text>
 
 [Examples of odd microbes everywhere]
 
@@ -1287,8 +1384,6 @@ http://tass.ru/en/non-political/745635
 
 
 </Text>
-            <Comments>source?
-</Comments>
         </Document>
         <Document ID="28">
             <Title>Notes</Title>
@@ -1333,7 +1428,90 @@ Just about any food can be fermented, as people in all cultures have known since
         </Document>
         <Document ID="43">
             <Title>Gene sequencing</Title>
-            <Text>Gene sequencing
+            <Text>[An overview of how we know which gene is present.  The process of turning a biological sample into the long genetic string of characters that can be analyzed by computer]
+
+Extract the DNA from a cell
+
+Amplify it using PCR, to make a quantity large enough to study
+
+The chemical base pairs of DNA have slightly different electrical charges that make it possible to different them in the right circumstances.
+
+The original Human Genome Project required tremendous amounts of lab time as researchers painstakingly extracted different segments of DNA and then sequenced them one at a time by hand.
+
+Today, so-called Next Generation sequencers work more like an expensive camera, taking a massive digital image of all the base pairs and then using pattern-matching algorithms to identify the different letters of the genetic code.
+
+Finally, “shotgun” analysis sorts through thousands or millions of DNA snippets to match them like a jigsaw puzzle until the entire sequence can be determined.
+
+
+
+</Text>
+        </Document>
+        <Document ID="29">
+            <Title>Appendix</Title>
+            <Text> All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
+        </Document>
+        <Document ID="104">
+            <Title>Comparing with food</Title>
+            <Text>How does food affect my microbiome?
+
+I recently tested two samples each taken a week apart. For several weeks before and during this period, I carefully tracked all the food I ate using a free app from http://myfitnesspal.com , hoping to get some insights into how diet affects my own microbiome. Here’s how I used these utilities to conduct the analysis.
+
+Begin by setting my working directory using the R command “setwd” or from within the R environment. Then load the utility files using the R “source” command.
+
+setwd("uBiome/sources")
+source("uBiomeCompare.R")
+
+# set your working directory to the place where you keep your data.
+setwd("/uBiome Results")
+
+A&lt;-read.csv("sprague-ubiome-150421.csv")
+B&lt;-read.csv("sprague-ubiome-150428.csv")
+How do the samples compare? I’ll create a new variable A_vs_B and asssign it to the results of running the uBiome_compare_samples function.
+A_vs_B&lt;-uBiome_compare_samples(A,B, rank="species")
+
+head(A_vs_B)
+##                      tax_name count_change
+## 1        [Ruminococcus] obeum        -6949
+## 2  Acidaminococcus fermentans          112
+## 3 Adlercreutzia equolifaciens         -637
+## 4        Alistipes finegoldii         1421
+## 5      Alistipes indistinctus           19
+## 6       Alistipes onderdonkii         1017
+By default, uBiome_compare_samples returns a result sorted alphabetically. Here’s how to sort by species count. For brevity, I’ll show only the top and bottom ten values:
+sortAB &lt;- A_vs_B[order(A_vs_B$count),]
+head(sortAB,10)
+##                               tax_name count_change
+## 54            Coprococcus sp. DJF_CR49       -25077
+## 81 Peptostreptococcaceae bacterium TM5       -23030
+## 71          Methanobrevibacter smithii       -22461
+## 43         Clostridium clostridioforme       -19006
+## 8                  Anaerostipes hadrus       -18478
+## 88                 Ruminococcus bromii       -17735
+## 31                      Blautia faecis       -13980
+## 41                 Clostridium baratii       -13565
+## 1                 [Ruminococcus] obeum        -6949
+## 29            Bifidobacterium animalis        -6455
+tail(sortAB,10)
+##                            tax_name count_change
+## 33           Brachyspira sp. NSH-25         2952
+## 27     Barnesiella intestinihominis         5577
+## 79 Parasutterella excrementihominis         5641
+## 30            Bilophila wadsworthia         5819
+## 85          Roseburia inulinivorans         5898
+## 69            Lactobacillus rogosae         9910
+## 26            Bacteroides uniformis        12303
+## 86             Roseburia sp. 11SE38        25807
+## 61     Faecalibacterium prausnitzii        59182
+## 14           bacterium NLAE-zl-P430        66457
+Negative numbers indicate a drop from the first sample; positive numbers mean there are more in the second sample than in the first. The numbers on the left are references to the original R data frame row before the sort.
+As noted above, all references to count or count_change in these examples are using uBiome’s normalized count, which you can think of as units of parts per million. Dividing by ten thousand gives the percentage.
+In this example, I see a large increase in Faecalibacterium prausnitzii, often considered a marker for health. I’ll want to look at my meals over the test period to see what might have driven this positive change.
+Using the macronutrient data I collected daily with MyFitnessPal (exported to CSV with the handy exporter at https://www.designbyvh.com/myfitnesspal-export-data/) I produced this simple chart to see if my eating habits had an effect on my microbiome:
+
+#
+
+
+As you can see, though I apparently ate about 20% more overall during the week of my test, my dietary cholesterol was conspicuously lower than normal. Did this affect my microbiome?  My next step will be to search the medical and biology literature to see if there is are known relationships between dietary cholesterol and Faecalibacterium.  Will I find something new?  That’s the exciting part about this type of citizen science: armed with my own data and imagination, new discoveries are everywhere.
 </Text>
         </Document>
         <Document ID="36">
@@ -1409,74 +1587,6 @@ Non-Fiction/Umwan	18
 5. Integer quam eros, ullamcorper at auctor ut, semper ac quam. Donec et felis vitae justo laoreet laoreet. 6. Mauris vitae tellus elit, non gravida augue. Fusce in dui mi. Aliquam augue sapien, vulputate at porttitor ut, mollis in ipsum. Sed porta tortor non mauris iaculis vel molestie nisl interdum.
 7. Integer quis dolor et felis blandit auctor sed eget lectus. Donec sagittis ultricies diam, vitae porta nisi vehicula facilisis.
 Non-Fiction/Umwan	19
-</Text>
-        </Document>
-        <Document ID="29">
-            <Title>Endnotes</Title>
-            <Text> All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
-        </Document>
-        <Document ID="104">
-            <Title>Comparing with food</Title>
-            <Text>How does food affect my microbiome?
-
-I recently tested two samples each taken a week apart. For several weeks before and during this period, I carefully tracked all the food I ate using a free app from http://myfitnesspal.com , hoping to get some insights into how diet affects my own microbiome. Here’s how I used these utilities to conduct the analysis.
-
-Begin by setting my working directory using the R command “setwd” or from within the R environment. Then load the utility files using the R “source” command.
-
-setwd("uBiome/sources")
-source("uBiomeCompare.R")
-
-# set your working directory to the place where you keep your data.
-setwd("/uBiome Results")
-
-A&lt;-read.csv("sprague-ubiome-150421.csv")
-B&lt;-read.csv("sprague-ubiome-150428.csv")
-How do the samples compare? I’ll create a new variable A_vs_B and asssign it to the results of running the uBiome_compare_samples function.
-A_vs_B&lt;-uBiome_compare_samples(A,B, rank="species")
-
-head(A_vs_B)
-##                      tax_name count_change
-## 1        [Ruminococcus] obeum        -6949
-## 2  Acidaminococcus fermentans          112
-## 3 Adlercreutzia equolifaciens         -637
-## 4        Alistipes finegoldii         1421
-## 5      Alistipes indistinctus           19
-## 6       Alistipes onderdonkii         1017
-By default, uBiome_compare_samples returns a result sorted alphabetically. Here’s how to sort by species count. For brevity, I’ll show only the top and bottom ten values:
-sortAB &lt;- A_vs_B[order(A_vs_B$count),]
-head(sortAB,10)
-##                               tax_name count_change
-## 54            Coprococcus sp. DJF_CR49       -25077
-## 81 Peptostreptococcaceae bacterium TM5       -23030
-## 71          Methanobrevibacter smithii       -22461
-## 43         Clostridium clostridioforme       -19006
-## 8                  Anaerostipes hadrus       -18478
-## 88                 Ruminococcus bromii       -17735
-## 31                      Blautia faecis       -13980
-## 41                 Clostridium baratii       -13565
-## 1                 [Ruminococcus] obeum        -6949
-## 29            Bifidobacterium animalis        -6455
-tail(sortAB,10)
-##                            tax_name count_change
-## 33           Brachyspira sp. NSH-25         2952
-## 27     Barnesiella intestinihominis         5577
-## 79 Parasutterella excrementihominis         5641
-## 30            Bilophila wadsworthia         5819
-## 85          Roseburia inulinivorans         5898
-## 69            Lactobacillus rogosae         9910
-## 26            Bacteroides uniformis        12303
-## 86             Roseburia sp. 11SE38        25807
-## 61     Faecalibacterium prausnitzii        59182
-## 14           bacterium NLAE-zl-P430        66457
-Negative numbers indicate a drop from the first sample; positive numbers mean there are more in the second sample than in the first. The numbers on the left are references to the original R data frame row before the sort.
-As noted above, all references to count or count_change in these examples are using uBiome’s normalized count, which you can think of as units of parts per million. Dividing by ten thousand gives the percentage.
-In this example, I see a large increase in Faecalibacterium prausnitzii, often considered a marker for health. I’ll want to look at my meals over the test period to see what might have driven this positive change.
-Using the macronutrient data I collected daily with MyFitnessPal (exported to CSV with the handy exporter at https://www.designbyvh.com/myfitnesspal-export-data/) I produced this simple chart to see if my eating habits had an effect on my microbiome:
-
-#
-
-
-As you can see, though I apparently ate about 20% more overall during the week of my test, my dietary cholesterol was conspicuously lower than normal. Did this affect my microbiome?  My next step will be to search the medical and biology literature to see if there is are known relationships between dietary cholesterol and Faecalibacterium.  Will I find something new?  That’s the exciting part about this type of citizen science: armed with my own data and imagination, new discoveries are everywhere.
 </Text>
         </Document>
         <Document ID="51">
@@ -1719,7 +1829,10 @@ Part of the definition of life is the ability to reproduce, and cells do this by
         </Document>
         <Document ID="52">
             <Title>Good and Bad</Title>
-            <Text>As tempting as it is to categorize bacteria into groups like “good” and “bad”, you should avoid that mistake. Very few organisms are always and everywhere either beneficial or harmful. Everything depends on the circumstances.
+            <Text>Now that you know how to find and analyze your data, you’ll want to learn how to interpret it.
+
+The first question most people ask about a specific bacterium is “is it good or bad?”.
+As tempting as it is to categorize bacteria into groups like “good” and “bad”, you should avoid that mistake. Very few organisms are always and everywhere either beneficial or harmful. Everything depends on the circumstances.
 For example, from [Blaser p119]
 
 "viridans" streptococci  "live peacefully in everyone's mouth...a leading cause of heart valve infections...normal residents of the mouth, only occasionally entering the bloodstream and landing on a previously damaged valve....if we mix harmless Viridans with pathogenic Group A strep, viridans always win out. They knock back the strep."
@@ -1729,12 +1842,10 @@ Other examples:
 H.Pylori
 
 </Text>
+            <Comments>See Blaser, p. 199</Comments>
         </Document>
         <Document ID="45">
             <Title>How to Analyze Your Microbiome</Title>
-        </Document>
-        <Document ID="38">
-            <Title>The Technology</Title>
         </Document>
         <Document ID="105">
             <Title>Comparison over time</Title>
@@ -1750,6 +1861,23 @@ uBiome has identified more than 900 unique taxa (groups of organisms) in the hal
 If you know a little Python, you can make the same spreadsheet with your samples using the ubiome.py Python module on the ubiome-opensource GitHub repository; the script that generated my spreadsheet is there too as an example. And while you’re at it, please upload your own uBiome sample results to the same repository so we can compare.
 </Text>
         </Document>
+        <Document ID="38">
+            <Title>The Technology</Title>
+        </Document>
+        <Document ID="60">
+            <Title>uBiomeScreenDownloadData</Title>
+        </Document>
+        <Document ID="46">
+            <Title>The basics: web tools</Title>
+            <Text>After uBiome has notified you of your results, you can go to their web site to learn more.
+
+The first thing you’ll notice is a pretty chart like this one:
+#
+
+This shows the overall breakdown of the bacteria they found in your gut. In this chart, the bacteria are lumped by phyla —the highest, broadest level of classification. If you’re like most Americans, the vast majority of your sample will be one of two phyla: bacteroidetes or firmicutes. 
+
+￼</Text>
+        </Document>
         <Document ID="39">
             <Title>16s rRNA</Title>
             <Text>The 16S shortcut
@@ -1764,16 +1892,6 @@ If you cut up bacterial cells (“lyse” them, to use the technical term) to pu
 Once you have a bunch of that 16S ribosomal RNA, you know that you have bacterial RNA and that’s what the Illumina NextSeq 500 will sequence. This represents a huge subset, a nearly trivial percentage of all the DNA in the overall sample, but combined with one more shortcut, it’s enough to accurately identify the sample.
 The remaining shortcut is possible thanks to years of research of sequencing the genes in bacteria. Scientists in labs around the world have been faithfully digging up samples of bacteria, and performing whole-gene sequencing on what they find. These sequences are kept in a  large public database run by the National Institutes of Health, and if you have a snippet of DNA — even a small snippet — you can do a string compare against all the genes that have already been analyzed. When you find a match, you can be pretty sure that your sample contains this type of bacteria.
 It’s this two-step combination, 16S “skimming” and a database lookup, that makes it cost effective to study the millions of organisms in your microbiome. You don’t have to do a complete gene sequence on every single bacterium; just trust that the tiny subset of RNA in the 16S region is enough to uniquely match something already in the bacterial database.</Text>
-        </Document>
-        <Document ID="53">
-            <Title>Pseudomonas syringae </Title>
-            <Text>
-Pierre Amato :  
-
-</Text>
-        </Document>
-        <Document ID="60">
-            <Title>uBiomeScreenDownloadData</Title>
         </Document>
     </Documents>
 </SearchIndexes>

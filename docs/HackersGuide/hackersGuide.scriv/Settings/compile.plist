@@ -969,7 +969,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<key>SCRCompileOverrideTextAndNotesFormatKey</key>
 	<true/>
 	<key>SCRCompilePDFExportColorInternalLinksKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompilePDFExportGeneratesOutlineKey</key>
 	<true/>
 	<key>SCRCompilePDFInternalLinkColorKey</key>
@@ -978,7 +978,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	ZmZmAIMUrsc+AAGG
 	</data>
 	<key>SCRCompilePDFUnderlineInternalLinksKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompilePageBottomMarginKey</key>
 	<real>1</real>
 	<key>SCRCompilePageBottomMarginUnitsKey</key>
