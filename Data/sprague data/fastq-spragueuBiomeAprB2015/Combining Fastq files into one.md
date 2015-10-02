@@ -67,7 +67,8 @@ and uBiome is here:
 
 Although there are some mismatches, they seem to agree at the highest levels.
 
-[Here is the Excel file](""./sprague-ubiome-150428 vs MGRAST.xlsx") where I did all the calculations:
+[Here is the Excel file]("
+https://github.com/richardsprague/uBiome/blob/master/Data/sprague%20data/fastq-spragueuBiomeAprB2015/sprague-ubiome-150428%20vs%20MGRAST.xlsx") where I did all the calculations.
 
 
 
