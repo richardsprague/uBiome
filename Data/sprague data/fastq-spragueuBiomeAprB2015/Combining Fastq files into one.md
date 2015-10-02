@@ -48,18 +48,24 @@ After the file has successfully uploaded, I submit the job using the default par
 When the job is complete, MG RAST sends me to a page with my results, including this chart:
 
 Click on the download button to get a TSV file that I can just copy/paste into Excel.  
-![MG Rast Phylum](./images/mgrastGutPhylum150428.jpg)
+
+<img src="./images/mgrastGutPhylum150428.jpg" width=480 >
 
 With uBiome, I get the following Phylum-level chart:
+
 ![uBiome Phylum](./images/ubiomeGutPhylum150428.jpg)
 
 As you can see, both are pretty similar, at least at the major taxa levels:
 
 The Genus level looks like this (MGRast):
-![MG Rast Genus](./images/mgrastGutGenus150428.jpg)
+
+<img src="./images/mgrastGutGenus150428.jpg" width=480 >
+
 and uBiome is here:
+
 ![uBiome Genus](./images/ubiomeGutGenus150428.jpg)
-Although there are some mismatches, they seem to agree at a 
+
+Although there are some mismatches, they seem to agree at the highest levels.
 
 
 	
