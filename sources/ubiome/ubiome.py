@@ -14,6 +14,8 @@ import __future__
 from argparse import ArgumentParser
 
 
+# A sampleList is a list of dictionaries, each of which is a field from the standard uBiome JSON taxonomy
+
 class UbiomeSample():
     """ class representation of a well-formed uBiome sample
 
@@ -38,6 +40,8 @@ class UbiomeSample():
         :param fname: string
         :return:
         """
+        import os
+        #print("current directory = ", os.getcwd())
         jsonFile = open(fname)
         sourceJson = json.load(jsonFile)
         self.sampleList = sourceJson["ubiome_bacteriacounts"] # a list of dicts
@@ -109,6 +113,21 @@ class UbiomeSample():
         for taxon in self.sampleList:
             self.taxnamelist = self.taxnamelist + [[taxon["tax_name"],taxon["tax_rank"]]]
         return self.taxnamelist
+
+
+    def diversity(self, rank="species"):
+        """ uses Simpson index: http://codegolf.stackexchange.com/questions/53455/simpson-diversity-index
+        :return int
+        """
+        l = len(self.sampleList)
+        s = [(taxa['tax_name'],int(taxa['count_norm'])) for taxa in self.sampleList if taxa["tax_rank"]==rank]
+        # N = sum(n for (t,n) in s )
+        eT, eN =  list(zip(*s))
+
+
+        d = 1- sum([eN[i]*(eN[i]-1) for i,j in enumerate(eN)])/(sum(eN)*(sum(eN)-1))
+
+        return d # sum(s[i%l]<>s[i/l]for i in range(l*l))/(l-1.)/l
 
 
     def countNormOf(self, taxName):
@@ -313,7 +332,7 @@ class UbiomeMultiSample():
         else:
             with open(filename,'w') as csvFile:
                 #print('writing to csv')
-                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=["tax_name"]+ ["tax_rank"] + [sample[0] for sample in self.samples])
+                ubiomeWriter = csv.DictWriter(csvFile, dialect='excel',fieldnames=["tax_name"]+ ["tax_rank"] + [sample[0] for sample in self.samples])
                 #print('writing to csv')
                 ubiomeWriter.writeheader()
                 for i,taxa in enumerate(self.fullTaxList):
@@ -338,9 +357,9 @@ class ubiomeApp():
 
     def testUnique(self):
         unique=self.sample1.unique(self.sample2)
-        print(len(unique.sampleList))
+        return len(unique.sampleList)
         #print("len esample.unique",len(unique.sampleList))
-        unique.writeCSV("sample1Unique.csv")
+        #unique.writeCSV("sample1Unique.csv")
 
     def runUnique(self):
         unique=self.sample1.unique(self.sample2)
@@ -349,7 +368,7 @@ class ubiomeApp():
 
     def testCompare(self):
         compare=self.sample1.compareWith(self.sample2)
-        compare.writeCSV("sample1Compare.csv")
+        #compare.writeCSV("sample1Compare.csv")
         return compare
 
     def runCompare(self):
@@ -394,5 +413,5 @@ if __name__=="__main__":
 
 
 else:
-    print("uBiomeCompare loaded as a module")
+    print("uBiome loaded as a module")
 

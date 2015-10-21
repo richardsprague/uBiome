@@ -12,18 +12,20 @@ python ubiomeCompare -c "../Data/sprague data/Sprague-ubiomeMay2014.json" "../Da
 >>> len(v.sampleList)
 139
 >>> testRikAll()
-length of fullTaxList= 939
+length of fullTaxList= 1039
 [['tax_name', 'tax_rank'], ['Bacteria', 'superkingdom'], ['Firmicutes', 'phylum'], ['Clostridia', 'class'], ['Clostridiales', 'order'], ['Bacteroidetes/Chlorobi group', 'superphylum'], ['Bacteroidetes', 'phylum'], ['Bacteroidia', 'class'], ['Bacteroidales', 'order'], ['Ruminococcaceae', 'family']]
-length of samples= 8
-May 2014 ---> 939
-Jun 2014 ---> 939
-Oct 2014 ---> 939
-Jan 2015 ---> 939
-Feb 2015 ---> 939
-Apr21 ---> 939
-Apr28 ---> 939
-Jun 2015 ---> 939
-latest sample: ['Jun 2015', 1000000, 684322, 673988, 673880, 219758, 219758, 217323, 216241, 406568]
+length of samples= 9
+May 2014 ---> 1039
+Jun 2014 ---> 1039
+Oct 2014 ---> 1039
+Jan 2015 ---> 1039
+Feb 2015 ---> 1039
+Apr21 ---> 1039
+Apr28 ---> 1039
+Jun 2015 ---> 1039
+Aug 2015 ---> 1039
+latest sample: ['Aug 2015', 1000000, 642701, 622361, 622244, 184516, 184508, 184204, 184136, 307556]
+
 
 
 >>> 5+5
@@ -38,15 +40,17 @@ import sys
 import prettytable
 
 def testRikAll():
-    may14 = ubiome.UbiomeSample("../Data/sprague data/Sprague-ubiomeMay2014.json",name="May 2014")
-    jun14 = ubiome.UbiomeSample("../Data/sprague data/sprague-uBiomeJun2014.json",name="Jun 2014")
-    oct14 = ubiome.UbiomeSample("../Data/sprague data/Sprague-uBiomeOct2014.json",name="Oct 2014")
-    jan = ubiome.UbiomeSample("../Data/sprague data/sprague-ubiomeJan2015x.json",name="Jan 2015")
-    feb = ubiome.UbiomeSample("../Data/sprague data/sprague-ubiomeFeb2015.json",name="Feb 2015")
+    pathPrefix="./ubiome/testdata/"
+    may14 = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiomeMay2014.json",name="May 2014")
+    jun14 = ubiome.UbiomeSample(pathPrefix+"sprague-uBiomeJun2014.json",name="Jun 2014")
+    oct14 = ubiome.UbiomeSample(pathPrefix+"Sprague-uBiomeOct2014.json",name="Oct 2014")
+    jan = ubiome.UbiomeSample(pathPrefix+"sprague-ubiomeJan2015x.json",name="Jan 2015")
+    feb = ubiome.UbiomeSample(pathPrefix+"sprague-ubiomeFeb2015.json",name="Feb 2015")
 
-    aprA = ubiome.UbiomeSample("../Data/sprague data/sprague-ubiome-150421.json",name = "Apr21")
-    aprB = ubiome.UbiomeSample("../Data/sprague data/sprague-ubiome-150428.json",name = "Apr28")
-    jul = ubiome.UbiomeSample("../Data/sprague data/Sprague-ubiomeJul2015.json",name = "Jun 2015")
+    aprA = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150421.json",name = "Apr21")
+    aprB = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150428.json",name = "Apr28")
+    jul = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiomeJul2015.json",name = "Jun 2015")
+    aug = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiome-150815.json",name = "Aug 2015")
 
     aprJulc = aprB.compareWith(jul)
     aprJulu = aprB.unique(jul)
@@ -65,9 +69,10 @@ def testRikAll():
     x.merge(aprA)
     x.merge(aprB)
     x.merge(jul)
+    x.merge(aug)
     #x.writeCSV(sys.stdout)
     x.showContents()
-   # x.writeCSV("spragueResults.csv")
+   # x.writeCSV("spragueResultsThruAug.csv")
 
 DEBUG = True
 
