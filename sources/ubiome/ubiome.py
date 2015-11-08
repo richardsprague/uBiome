@@ -70,7 +70,7 @@ class UbiomeTaxa():
 
         :return: float
         '''
-        return self.count_norm/100
+        return round(self.count_norm/100000,2)
     @property
     def taxon(self):
         return self._taxon
@@ -99,6 +99,7 @@ class UbiomeTaxa():
 
 
 # A sampleList is a list of dictionaries, each of which is a field from the standard uBiome JSON taxonomy
+# _taxalist is the same thing, only made of elements of class UbiomeTaxa
 
 class UbiomeSample():
     """ class representation of a well-formed uBiome sample
@@ -113,11 +114,29 @@ class UbiomeSample():
             self.readJSONfile(fname)
         else:
             self.sampleList = []
-        self._taxnamelist = []
+            self._taxaList = []
+        self._taxnamelist=[]
         if not name:
             self.name = fname
         else:
             self.name = name
+
+    @property
+    def taxaList(self):
+        """ list of all taxa in this sample, represented as a list made of UbiomeTaxa
+
+        :return: list
+        """
+        return self._taxaList
+
+
+    def set_taxaList_JSON(self,sourceJson):
+        allDicts = sourceJson["ubiome_bacteriacounts"] # a list of dicts
+        newDicts = []
+        for taxa_dict in allDicts:
+            taxa_dict['count_norm']=int(taxa_dict['count_norm'])
+            newDicts+=[taxa_dict]
+        self._taxaList = [UbiomeTaxa(taxDict) for taxDict in newDicts ]
 
     def readJSONfile(self,fname):
         """ read a JSON file of the uBiome taxonomy (the one you get from downloading from the uBiome web site)
@@ -128,14 +147,7 @@ class UbiomeSample():
         #print("current directory = ", os.getcwd())
         jsonFile = open(fname)
         sourceJson = json.load(jsonFile)
-        self.sampleList = sourceJson["ubiome_bacteriacounts"] # a list of dicts
-        allDicts = sourceJson["ubiome_bacteriacounts"] # a list of dicts
-        newDicts = []
-        for taxa_dict in allDicts:
-            taxa_dict['count_norm']=int(taxa_dict['count_norm'])
-            newDicts+=[taxa_dict]
-        self._taxaList = [UbiomeTaxa(taxDict) for taxDict in newDicts ]
-        self.sampleList = newDicts
+        self.set_taxaList_JSON(sourceJson)
 
     def readCSVfile(self,fname):
         """
@@ -163,19 +175,22 @@ class UbiomeSample():
         else:
             import prettytable
             uniqueTable = prettytable.PrettyTable(["Tax_Name","Tax_Rank","Count_Norm"])
-            for i in self.sampleList:
-                uniqueTable.add_row([i["tax_name"],i["tax_rank"],i["count_norm"]])
+            # for i in self.sampleList:
+            #     uniqueTable.add_row([i["tax_name"],i["tax_rank"],i["count_norm"]])
+            for i in self._taxaList:
+                uniqueTable.add_row([i.tax_name,i.tax_rank,i.count_norm])
             #print(uniqueTable)
             return uniqueTable
 
-# todo fix bug: sortBy needs to know that count_norm is an integer
+
     def sort(self,sortBy="tax_name"):
         """
         sort the sample (mutably) by sortBy (which is any of the JSON headers)
         :param sortBy:
         :return:
         """
-        self.sampleList = sorted(self.sampleList,key=lambda k:k[sortBy],reverse=True)
+      #  self.sampleList = sorted(self.sampleList,key=lambda k:k[sortBy],reverse=True)
+        self._taxaList = sorted(self._taxaList,key=lambda k:k.__getattribute__(sortBy),reverse=True)
         return True
 
 
@@ -198,11 +213,11 @@ class UbiomeSample():
 
         :return:
         """
-        l = len(self._taxnamelist)
+        l = len(self.taxaList)
         print("length=",l)
         i=0
         while l>10&i<10:
-            print(self._taxnamelist[i])
+            print(self._taxaList[i])
             l=l-1
             i+=1
 
@@ -213,8 +228,10 @@ class UbiomeSample():
         """
         if self._taxnamelist: # already computed, so don't recompute
             return self._taxnamelist
-        for taxon in self.sampleList:
-            self._taxnamelist = self._taxnamelist + [[taxon["tax_name"],taxon["tax_rank"]]]
+        # for taxon in self.sampleList:
+        #     self._taxnamelist = self._taxnamelist + [[taxon["tax_name"],taxon["tax_rank"]]]
+        for taxon in self.taxaList:
+            self._taxnamelist = self._taxnamelist + [[taxon.tax_name,taxon.tax_rank]]
         return self._taxnamelist
 
 
@@ -222,14 +239,11 @@ class UbiomeSample():
         """ uses Simpson index: http://codegolf.stackexchange.com/questions/53455/simpson-diversity-index
         :return int
         """
-        l = len(self.sampleList)
-        s = [(taxa['tax_name'],int(taxa['count_norm'])) for taxa in self.sampleList if taxa["tax_rank"]==rank]
+        l = len(self.taxaList)
+        s = [(taxa.tax_name,int(taxa.count_norm)) for taxa in self.taxaList if taxa.tax_rank == rank]
         # N = sum(n for (t,n) in s )
         eT, eN =  list(zip(*s))
-
-
-        d = 1- sum([eN[i]*(eN[i]-1) for i,j in enumerate(eN)])/(sum(eN)*(sum(eN)-1))
-
+        d = 1 - sum([eN[i]*(eN[i]-1) for i,j in enumerate(eN)])/(sum(eN)*(sum(eN)-1))
         return d # sum(s[i%l]<>s[i/l]for i in range(l*l))/(l-1.)/l
 
 
@@ -238,7 +252,7 @@ class UbiomeSample():
         :param taxName:
         :return:
         '''
-        for taxa in self._taxaList:
+        for taxa in self.taxaList:
             if taxa.tax_name == taxName:
                 return taxa.__getattribute__(field)
 
@@ -278,7 +292,7 @@ class UbiomeSample():
         return self.taxaField(taxName,'dictForm')
 
 # todo add new argument "rank=genus" to return just those taxa that match a tax_rank
-    def unique(self,sample2):
+    def unique_old(self,sample2):
         """
         returns all organisms that are unique to sample 1
         :type sample2: UbiomeSample
@@ -295,12 +309,25 @@ class UbiomeSample():
                "taxon":taxon1["taxon"]
                }] + uniqueList
         return UbiomeDiffSample(uniqueList)
-        #
-        #
-        # uniqueSet = set(self.taxranklist()) - set(sample2.taxranklist())  # all unique taxons
-        # listWithCounts = self.addCountsToList(list(uniqueSet))
-        # returnSample=UbiomeDiffSample(listWithCounts)
-        # return returnSample
+
+    def unique(self,sample2):
+        """
+        returns all organisms that are unique to sample 1
+        :type sample2: UbiomeSample
+        :param sample2:
+        :return: UBiomeDiffSample
+        """
+        uniqueList = []
+        for taxon1 in self.taxaList:
+
+            t=[tax for tax in sample2.taxaList if tax.tax_name == taxon1.tax_name]
+            if not t: # not found sample2, so add to the return list
+              uniqueList = [UbiomeTaxa({"tax_name":taxon1.tax_name,
+               "count_norm":taxon1.count_norm,
+               "tax_rank":taxon1.tax_rank,
+               "taxon":taxon1.taxon
+               })] + uniqueList
+        return UbiomeDiffSample(uniqueList)
 
     def addCountsToList_old(self,taxonList):
         """ given a list of taxa, return another list, of dicts, that contain the same taxa and their corresponding count_norm
@@ -327,7 +354,7 @@ class UbiomeSample():
 
 
 
-    def compareWith(self,sample2):
+    def compareWith_old(self,sample2):
         """ compare the current sample with sample2 and return a uBiomeDiffSample object of the differences
 
         :param sample2: UbiomeSample
@@ -345,7 +372,7 @@ class UbiomeSample():
         diffSample = UbiomeDiffSample(taxList)
         return diffSample
 
-    def compareWith_new(self,sample2):
+    def compareWith(self,sample2):
         """ compare the current sample with sample2 and return a uBiomeDiffSample object of the differences
 
         :param sample2: UbiomeSample
@@ -353,13 +380,14 @@ class UbiomeSample():
         """
 
         taxList = []
-        for taxon1 in self._taxaList:
+        for taxon1 in self.taxaList:
 
 
             if sample2.taxonOf(taxon1.tax_name): #found this taxon in sample2
-                t=[tax for tax in self._taxaList if tax.tax_name == taxon1.tax_name][0]
+                t=[tax for tax in sample2.taxaList if tax.tax_name == taxon1.tax_name][0]
                 countDiff = taxon1.count_norm - t.count_norm
                 taxList = [UbiomeTaxa({"tax_name":taxon1.tax_name,\
+                                       "taxon":taxon1.taxon,\
                                       "count_norm":countDiff,\
                                       "tax_rank":taxon1.tax_rank})] + taxList
         diffSample = UbiomeDiffSample(taxList)
@@ -390,9 +418,14 @@ class UbiomeDiffSample(UbiomeSample):
     """ same as regular uBiome sampleList, except count_norm is a delta, not an absolute number.
 
     """
-    def __init__(self,sampleList):
-        self.sampleList = sampleList
-        self._taxnameList = [UbiomeTaxa(tax) for tax in sampleList]
+    def __init__(self,taxaList):
+        self.sampleList = [{"tax_name":tax.tax_name,\
+                            "count_norm":tax.count_norm,\
+                            "percent":tax.percent,\
+                            "tax_rank":tax.tax_rank,\
+                            "taxon": tax.taxon
+                            } for tax in taxaList]
+        self._taxaList = taxaList
 
 class UbiomeMultiSample():
     """
@@ -416,7 +449,8 @@ class UbiomeMultiSample():
         self.samples = []
         if newSample:
             self.fullTaxList +=newSample.taxnames()
-            self.samples+=[[newSample.name]+[sample["count_norm"] for sample in newSample.sampleList]]
+#            self.samples+=[[newSample.name]+[sample["count_norm"] for sample in newSample.sampleList]]
+            self.samples+=[[newSample.name]+[sample.count_norm for sample in newSample.taxaList]]
 
 
     def alltaxa(self):
@@ -463,7 +497,9 @@ class UbiomeMultiSample():
         for i,taxName in enumerate(sampleTaxNames):
             if taxName not in self.fullTaxList:
                 newTaxNamesL+=[taxName]
-                newTaxRanksL+=[justFullTaxRanks[i]]
+               # newTaxRanksL+=[justFullTaxRanks[i]]
+
+
 
         self.fullTaxList+=newTaxNamesL
         newTaxons = [sample2.taxonOf(taxa[0])for taxa in newTaxNamesL]
