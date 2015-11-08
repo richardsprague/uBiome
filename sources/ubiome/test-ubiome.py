@@ -85,6 +85,12 @@ class MyTestCase(unittest.TestCase):
         latestSample = ['Aug 2015', 1000000, 642701, 622361, 622244, 184516, 184508, 184204, 184136, 307556]
         self.assertEqual(latestSample,[self.sampleMultiSample.samples[len(self.sampleMultiSample.samples)-1][i] for i in range(10)])
 
+    def test_sort(self):
+        self.assertEqual(jun14.taxaList[-1].tax_name,'Anaerostipes hadrus')
+        jun14.sort("tax_name")
+        v = jun14.taxaList[-1].tax_name
+        self.assertEqual(v,'Achromobacter')
+
     def test_multisample_init(self):
         v = ubiome.UbiomeMultiSample(may14)
         self.assertEqual(len(v.fullTaxList),len(may14.taxaList)+1)

@@ -35,7 +35,7 @@ latest sample: ['Sep 2015b', 1000000, 651287, 626270, 625217, 249473, 249473, 24
 10
 
 """
-
+from __future__ import print_function
 __author__ = 'sprague'
 
 import ubiome

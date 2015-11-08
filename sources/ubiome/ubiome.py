@@ -5,12 +5,14 @@
 ### works from the command line in either Python 2.7+ or Python 3+
 ### %python ubiome
 
+from __future__ import print_function, division
 __author__ = 'sprague'
+
 
 import json
 import csv
 import sys
-import __future__
+
 from argparse import ArgumentParser
 
 #todo add __repl__ and __str__ to classes
@@ -171,7 +173,10 @@ class UbiomeSample():
             __import__("prettytable")
         except ImportError:
             #print("no prettyprint available")
-            return
+            pTable = "Tax_Name\tTax_Rank\tCount_Norm\n"
+            for tax in self.taxaList:
+                pTable+=tax.tax_name+"\t"+tax.tax_rank + "\t" + str(tax.percent) + "\n"
+            return pTable
         else:
             import prettytable
             uniqueTable = prettytable.PrettyTable(["Tax_Name","Tax_Rank","Count_Norm"])
@@ -190,7 +195,8 @@ class UbiomeSample():
         :return:
         """
       #  self.sampleList = sorted(self.sampleList,key=lambda k:k[sortBy],reverse=True)
-        self._taxaList = sorted(self._taxaList,key=lambda k:k.__getattribute__(sortBy),reverse=True)
+        #self._taxaList = sorted(self._taxaList,key=lambda k:k.__getattribute__(sortBy),reverse=True)
+        self._taxaList = sorted(self._taxaList,key=lambda k:getattr(k,sortBy),reverse=True)
         return True
 
 
@@ -254,7 +260,8 @@ class UbiomeSample():
         '''
         for taxa in self.taxaList:
             if taxa.tax_name == taxName:
-                return taxa.__getattribute__(field)
+                #return taxa.__getattribute__(field)
+                return getattr(taxa,field)
 
 
     def countNormOf_old(self, taxName):
@@ -292,23 +299,23 @@ class UbiomeSample():
         return self.taxaField(taxName,'dictForm')
 
 # todo add new argument "rank=genus" to return just those taxa that match a tax_rank
-    def unique_old(self,sample2):
-        """
-        returns all organisms that are unique to sample 1
-        :type sample2: UbiomeSample
-        :param sample2:
-        :return: UBiomeDiffSample
-        """
-        uniqueList = []
-        for taxon1 in self.sampleList:
-            t=sample2.taxonOf(taxon1["tax_name"])
-            if not t: # not found sample2, so add to the return list
-              uniqueList = [{"tax_name":taxon1["tax_name"],
-               "count_norm":taxon1["count_norm"],
-               "tax_rank":taxon1["tax_rank"],
-               "taxon":taxon1["taxon"]
-               }] + uniqueList
-        return UbiomeDiffSample(uniqueList)
+#     def unique_old(self,sample2):
+#         """
+#         returns all organisms that are unique to sample 1
+#         :type sample2: UbiomeSample
+#         :param sample2:
+#         :return: UBiomeDiffSample
+#         """
+#         uniqueList = []
+#         for taxon1 in self.sampleList:
+#             t=sample2.taxonOf(taxon1["tax_name"])
+#             if not t: # not found sample2, so add to the return list
+#               uniqueList = [{"tax_name":taxon1["tax_name"],
+#                "count_norm":taxon1["count_norm"],
+#                "tax_rank":taxon1["tax_rank"],
+#                "taxon":taxon1["taxon"]
+#                }] + uniqueList
+#         return UbiomeDiffSample(uniqueList)
 
     def unique(self,sample2):
         """
@@ -329,16 +336,16 @@ class UbiomeSample():
                })] + uniqueList
         return UbiomeDiffSample(uniqueList)
 
-    def addCountsToList_old(self,taxonList):
-        """ given a list of taxa, return another list, of dicts, that contain the same taxa and their corresponding count_norm
-        :param taxonList: list # contains taxnames
-        :return:
-        """
-        if not taxonList:
-            return []
-        else:
-            return [{"tax_name":taxonList[0],"count_norm":self.countNormOf(taxonList[0])}] +\
-                   self.addCountsToList(taxonList[1:])
+    # def addCountsToList_old(self,taxonList):
+    #     """ given a list of taxa, return another list, of dicts, that contain the same taxa and their corresponding count_norm
+    #     :param taxonList: list # contains taxnames
+    #     :return:
+    #     """
+    #     if not taxonList:
+    #         return []
+    #     else:
+    #         return [{"tax_name":taxonList[0],"count_norm":self.countNormOf(taxonList[0])}] +\
+    #                self.addCountsToList(taxonList[1:])
 
 
     def addCountsToList(self,taxonList):
@@ -354,23 +361,23 @@ class UbiomeSample():
 
 
 
-    def compareWith_old(self,sample2):
-        """ compare the current sample with sample2 and return a uBiomeDiffSample object of the differences
-
-        :param sample2: UbiomeSample
-        :return: UBiomeDiffSample
-        """
-
-        taxList = []
-        for taxon1 in self.sampleList:
-            t=sample2.taxonOf(taxon1["tax_name"])
-            if t: #found this taxon in sample2
-                countDiff = int(taxon1["count_norm"]) - int(t["count_norm"])
-                taxList = [{"tax_name":taxon1["tax_name"],\
-                            "taxon":taxon1["taxon"],
-                            "count_norm":countDiff,"tax_rank":taxon1["tax_rank"]}] + taxList
-        diffSample = UbiomeDiffSample(taxList)
-        return diffSample
+    # def compareWith_old(self,sample2):
+    #     """ compare the current sample with sample2 and return a uBiomeDiffSample object of the differences
+    #
+    #     :param sample2: UbiomeSample
+    #     :return: UBiomeDiffSample
+    #     """
+    #
+    #     taxList = []
+    #     for taxon1 in self.sampleList:
+    #         t=sample2.taxonOf(taxon1["tax_name"])
+    #         if t: #found this taxon in sample2
+    #             countDiff = int(taxon1["count_norm"]) - int(t["count_norm"])
+    #             taxList = [{"tax_name":taxon1["tax_name"],\
+    #                         "taxon":taxon1["taxon"],
+    #                         "count_norm":countDiff,"tax_rank":taxon1["tax_rank"]}] + taxList
+    #     diffSample = UbiomeDiffSample(taxList)
+    #     return diffSample
 
     def compareWith(self,sample2):
         """ compare the current sample with sample2 and return a uBiomeDiffSample object of the differences
