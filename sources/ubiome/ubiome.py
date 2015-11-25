@@ -42,11 +42,18 @@ class UbiomeTaxa():
     def __init__(self, ubiomeDict):
         assert(isinstance(ubiomeDict,dict))
         self._parent = ubiomeDict.get('parent',"unknown parent")
-        self._count = ubiomeDict.get('count',"unknown count")
-        self._count_norm=ubiomeDict['count_norm']
+        #self._count = int(ubiomeDict.get('count')) #,"unknown count"))
+        try: self._count = int(ubiomeDict.get('count'))
+        except TypeError:
+            self._count = "unknown count"
+
+        try: self._count_norm = int(ubiomeDict.get('count_norm'))
+        except TypeError:
+            self._count_norm = "unknown count_norm"
+        #self._count_norm=int(ubiomeDict.get('count_norm')) #,"unknown count_norm"))
         self._taxon = ubiomeDict.get('taxon',"unknown taxon")
-        self._tax_name = ubiomeDict['tax_name']
-        self._tax_rank = ubiomeDict['tax_rank']
+        self._tax_name = ubiomeDict.get('tax_name',"unknown tax_name")
+        self._tax_rank = ubiomeDict.get('tax_rank', "unknown tax_rank")
         self._avg = ubiomeDict.get('avg',"unknown avg")
         self._tax_color = ubiomeDict.get('tax_color',"unknown tax_color")
 
@@ -65,14 +72,21 @@ class UbiomeTaxa():
         return self._parent
     @property
     def count(self):
-        return self._count
+            if type(self._count) == int:
+                return self._count
+            try:
+                self._count = int(self._count)
+            except ValueError:
+                assert("bad value for count")
+            return self._count
+
     @property
     def percent(self):
         ''' convert count_norm to percentage of sample
 
         :return: float
         '''
-        return round(self.count_norm/100000,2)
+        return round(self.count_norm/10000,4)
     @property
     def taxon(self):
         return self._taxon
@@ -115,7 +129,7 @@ class UbiomeSample():
         if fname:
             self.readJSONfile(fname)
         else:
-            self.sampleList = []
+            #self.sampleList = []
             self._taxaList = []
         self._taxnamelist=[]
         if not name:
@@ -161,7 +175,8 @@ class UbiomeSample():
         sourceCSV = csv.DictReader(csvFile)
         header = sourceCSV.fieldnames
         for row in sourceCSV:
-            self.sampleList+=[row]
+            self.taxaList+=[UbiomeTaxa(row)]
+
 
 # todo make explicit return values
     def prettyPrint(self):
@@ -191,28 +206,14 @@ class UbiomeSample():
     def sort(self,sortBy="tax_name"):
         """
         sort the sample (mutably) by sortBy (which is any of the JSON headers)
-        :param sortBy:
-        :return:
+        :param str sortBy: any of the valid JSON headers
+        :return: bool
         """
-      #  self.sampleList = sorted(self.sampleList,key=lambda k:k[sortBy],reverse=True)
         #self._taxaList = sorted(self._taxaList,key=lambda k:k.__getattribute__(sortBy),reverse=True)
         self._taxaList = sorted(self._taxaList,key=lambda k:getattr(k,sortBy),reverse=True)
         return True
 
 
-
-    def showContents_old(self):
-        """ display the highlights of this sample (useful for debugging)
-
-        :return:
-        """
-        l = len(self.sampleList)
-        print("length=",l)
-        i=0
-        while l>10&i<10:
-            print(self.sampleList[i])
-            l=l-1
-            i+=1
 
     def showContents(self):
         """ display the highlights of this sample (useful for debugging)
@@ -234,8 +235,6 @@ class UbiomeSample():
         """
         if self._taxnamelist: # already computed, so don't recompute
             return self._taxnamelist
-        # for taxon in self.sampleList:
-        #     self._taxnamelist = self._taxnamelist + [[taxon["tax_name"],taxon["tax_rank"]]]
         for taxon in self.taxaList:
             self._taxnamelist = self._taxnamelist + [[taxon.tax_name,taxon.tax_rank]]
         return self._taxnamelist
@@ -260,20 +259,9 @@ class UbiomeSample():
         '''
         for taxa in self.taxaList:
             if taxa.tax_name == taxName:
-                #return taxa.__getattribute__(field)
                 return getattr(taxa,field)
 
 
-    def countNormOf_old(self, taxName):
-        """
-        returns the count_norm of a given taxName for a sample
-        :param taxName: string representation of a uBiome tax_name
-        :return:
-        """
-        for taxon in self.sampleList:
-            if taxon["tax_name"]==taxName:
-                assert isinstance(taxon, dict)
-                return int(taxon["count_norm"])
 
     def countNormOf(self, taxName):
         """
@@ -283,39 +271,8 @@ class UbiomeSample():
         """
         return self.taxaField(taxName,'count_norm')
 
-    def taxonOf_old(self, taxName):
-            """
-            returns an entire taxon dict of a given taxName for a sample
-            :param taxName: string representation of a uBiome tax_name
-            :return: dict
-            """
-            for taxon in self.sampleList:
-                if taxon["tax_name"]==taxName:
-                    assert isinstance(taxon, dict)
-                    return taxon
-            return None
-
     def taxonOf(self,taxName):
         return self.taxaField(taxName,'dictForm')
-
-# todo add new argument "rank=genus" to return just those taxa that match a tax_rank
-#     def unique_old(self,sample2):
-#         """
-#         returns all organisms that are unique to sample 1
-#         :type sample2: UbiomeSample
-#         :param sample2:
-#         :return: UBiomeDiffSample
-#         """
-#         uniqueList = []
-#         for taxon1 in self.sampleList:
-#             t=sample2.taxonOf(taxon1["tax_name"])
-#             if not t: # not found sample2, so add to the return list
-#               uniqueList = [{"tax_name":taxon1["tax_name"],
-#                "count_norm":taxon1["count_norm"],
-#                "tax_rank":taxon1["tax_rank"],
-#                "taxon":taxon1["taxon"]
-#                }] + uniqueList
-#         return UbiomeDiffSample(uniqueList)
 
     def unique(self,sample2):
         """
@@ -335,17 +292,6 @@ class UbiomeSample():
                "taxon":taxon1.taxon
                })] + uniqueList
         return UbiomeDiffSample(uniqueList)
-
-    # def addCountsToList_old(self,taxonList):
-    #     """ given a list of taxa, return another list, of dicts, that contain the same taxa and their corresponding count_norm
-    #     :param taxonList: list # contains taxnames
-    #     :return:
-    #     """
-    #     if not taxonList:
-    #         return []
-    #     else:
-    #         return [{"tax_name":taxonList[0],"count_norm":self.countNormOf(taxonList[0])}] +\
-    #                self.addCountsToList(taxonList[1:])
 
 
     def addCountsToList(self,taxonList):
@@ -406,18 +352,24 @@ class UbiomeSample():
         :param filename:
         :return:
         """
+        sampleList = [{"tax_name":tax.tax_name,\
+                            "count_norm":tax.count_norm,\
+                            "percent":tax.percent,\
+                            "tax_rank":tax.tax_rank,\
+                            "taxon": tax.taxon
+                            } for tax in self._taxaList]
         if filename==sys.stdout:
-            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=self.sampleList[0].keys())
+            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=sampleList[0].keys())
             #print('writing to csv')
             ubiomeWriter.writeheader()
-            for organism in self.sampleList:
+            for organism in sampleList:
                 ubiomeWriter.writerow(organism)
         else:
             with open(filename,'w') as csvFile:
                 #print('writing to csv')
-                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=self.sampleList[0].keys())
+                ubiomeWriter = csv.DictWriter(csvFile,dialect='excel',fieldnames=sampleList[0].keys())
                 ubiomeWriter.writeheader()
-                for organism in self.sampleList:
+                for organism in sampleList:
                     ubiomeWriter.writerow(organism)
 
 
@@ -433,137 +385,6 @@ class UbiomeDiffSample(UbiomeSample):
                             "taxon": tax.taxon
                             } for tax in taxaList]
         self._taxaList = taxaList
-
-class UbiomeMultiSample():
-    """
-    merge a bunch of samples into a single data frame called 'samples'
-    [ fullTaxList, sample1Quantities, sample2Quantities, ... ]
-
-    fullTaxList is a list containing strings of tax_name; fullTaxList[0] = "tax_name"
-    sampleQuantities is a list where sampleQuantities[0] = "July"  and [1..n] correspond to Quants for fullTaxList[1..n]
-
-    usage: (assuming sample1 and sample2 are of class UbiomeSample)
-
-    x = UbiomeMultiSample()  # initializing
-    x.merge(sample1) #
-
-
-
-
-    """
-    def __init__(self,newSample = []):
-        self.fullTaxList = [["tax_name","tax_rank"]]
-        self.samples = []
-        if newSample:
-            self.fullTaxList +=newSample.taxnames()
-#            self.samples+=[[newSample.name]+[sample["count_norm"] for sample in newSample.sampleList]]
-            self.samples+=[[newSample.name]+[sample.count_norm for sample in newSample.taxaList]]
-
-
-    def alltaxa(self):
-        ''' returns just the taxa in this multisample
-
-        :return: list
-        '''
-        alltaxa = []
-        for sample in self.fullTaxList:
-            taxa = sample[0]
-            alltaxa += [taxa]
-        return alltaxa
-
-
-    def showContents(self):
-        print("length of fullTaxList=",len(self.fullTaxList))
-        print([self.fullTaxList[i] for i in range(10)])
-        print("length of samples=",len(self.samples))
-        for sample in self.samples:
-            print(sample[0],"--->",len(sample))
-        print("latest sample:",[self.samples[len(self.samples)-1][i] for i in range(10)])
-
-    def __str__(self):
-        return "UbiomeMultiSample: len=" + str(len(self.fullTaxList)) + "\n" + "latest sample:"+str([self.samples[len(self.samples)-1][i] for i in range(10)])
-
-
-    def merge(self,sample2):
-        """ merge the current multiSample with sample2.  This operation is mutable
-        so you permanently modify the current UbiomeMultiSample when you do this.
-
-        :param sample2: UbiomeSample
-        :return:
-        """
-
-        # find the taxNames missing from fullTaxList
-        newTaxNamesL = []
-        sampleTaxNames = sample2.taxnames()
-
-        Sample2ZippedList = sample2.taxnames()
-        justSample2TaxNames, justSample2TaxRanks = zip(*Sample2ZippedList)
-        justFullTaxNames, justFullTaxRanks = zip(*self.fullTaxList)
-
-        newTaxRanksL = []
-        for i,taxName in enumerate(sampleTaxNames):
-            if taxName not in self.fullTaxList:
-                newTaxNamesL+=[taxName]
-               # newTaxRanksL+=[justFullTaxRanks[i]]
-
-
-
-        self.fullTaxList+=newTaxNamesL
-        newTaxons = [sample2.taxonOf(taxa[0])for taxa in newTaxNamesL]
-
-        #[sample["count_norm"] for sample in sample2.sampleList]
-        oldSamplesList = self.samples[len(self.samples)-1]
-        newSampleCountsForPreviousTaxa = []
-        for i in range(len(oldSamplesList)-1):
-            taxonForTaxName = sample2.taxonOf(self.fullTaxList[i+1][0])
-            if taxonForTaxName:
-                taxCount = taxonForTaxName["count_norm"]
-            else: taxCount = 0
-            newSampleCountsForPreviousTaxa+=[taxCount]
-        newCounts =  newSampleCountsForPreviousTaxa + [taxon["count_norm"] for taxon in newTaxons]
-
-
-
-
-        self.samples += [[sample2.name] + newCounts]
-
-        # new length of a sample is len(newTaxons)+ len(oldSamplesList)
-        # fill previous samples with count_norm = 0
-        for i, sample in enumerate(self.samples):
-            if len(self.samples[i])<(len(newCounts)+1):
-                self.samples[i]=self.samples[i] + [0 for k in range(len(newTaxons))]
-
-
-
-    def writeCSV(self,filename):
-        """ write the merged bunch of sample to a single CSV file (or sys.stdout)
-
-        :param filename:
-        :return:
-        """
-        if filename==sys.stdout:
-            ubiomeWriter = csv.DictWriter(sys.stdout,dialect='excel',fieldnames=["tax_name"]+ ["tax_rank"] + [sample[0] for sample in self.samples])
-            #print('writing to csv')
-            ubiomeWriter.writeheader()
-            for i,taxa in enumerate(self.fullTaxList):
-                taxName, taxRank = taxa
-                rowDict = ["tax_name",taxName]
-                rankDict = ["tax_rank",taxRank]
-                sampleDict = [[sample[0],sample[i]] for sample in self.samples]
-                ubiomeWriter.writerow(dict([rowDict]+[rankDict] +sampleDict))
-        else:
-            with open(filename,'w') as csvFile:
-                #print('writing to csv')
-                ubiomeWriter = csv.DictWriter(csvFile, dialect='excel',fieldnames=["tax_name"]+ ["tax_rank"] + [sample[0] for sample in self.samples])
-                #print('writing to csv')
-                ubiomeWriter.writeheader()
-                for i,taxa in enumerate(self.fullTaxList):
-                    taxName, taxRank = taxa
-                    rowDict = ["tax_name",taxName]
-                    rankDict = ["tax_rank",taxRank]
-                    sampleDict = [[sample[0],sample[i]] for sample in self.samples]
-                    ubiomeWriter.writerow(dict([rowDict]+[rankDict] +sampleDict))
-
 
 
 

@@ -48,14 +48,22 @@ jun14 = ubiome.UbiomeSample(pathPrefix+"sprague-uBiomeJun2014.json",name="Jun 20
 oct14 = ubiome.UbiomeSample(pathPrefix+"Sprague-uBiomeOct2014.json",name="Oct 2014")
 s1 = ubiome.UbiomeSample(pathPrefix+"sample1.json",name="sample1")
 s2 = ubiome.UbiomeSample(pathPrefix+"sample2.json",name="sample2")
+aug15 = ubiome.UbiomeSample(name="Aug 2015")
+aug15.readCSVfile(pathPrefix+"Sprague-ubiome-150815.csv")
+
+
+#jun14 = ubiome.UbiomeSample(name="Jun 2014")
+#jun14.readCSVfile(pathPrefix+"sprague-uBiomeJun2014.csv")
 
 v = ubiome.UbiomeMultiSample(may14)
 v.merge(jun14)
 v.merge(oct14)
+
+
 def testRikAll():
     pathPrefix="../Data/sprague data/"
     may14 = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiomeMay2014.json",name="May 2014")
-    jun14 = ubiome.UbiomeSample(pathPrefix+"sprague-uBiomeJun2014.json",name="Jun 2014")
+    #jun14 = ubiome.UbiomeSample(pathPrefix+"sprague-uBiomeJun2014.json",name="Jun 2014")
     oct14 = ubiome.UbiomeSample(pathPrefix+"Sprague-uBiomeOct2014.json",name="Oct 2014")
     jan = ubiome.UbiomeSample(pathPrefix+"sprague-ubiomeJan2015x.json",name="Jan 2015")
     feb = ubiome.UbiomeSample(pathPrefix+"sprague-ubiomeFeb2015.json",name="Feb 2015")
@@ -63,32 +71,43 @@ def testRikAll():
     aprA = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150421.json",name = "Apr21")
     aprB = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150428.json",name = "Apr28")
     jul = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiomeJul2015.json",name = "Jun 2015")
-    aug = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiome-150815.json",name = "Aug 2015")
+    aug = aug15 #ubiome.UbiomeSample(pathPrefix+"Sprague-ubiome-150815.json",name = "Aug 2015")
     sep15 = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150915.json",name = "Sep 2015")
     sep15b = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150915b.json",name = "Sep 2015b")
-#    aprJulc = aprB.compareWith(jul)
- #   aprJulu = aprB.unique(jul)
 
- #   aprJulu.sort("count_norm")
- #   aprJuluPretty = aprJulu.prettyPrint()
 
-    #aprJulu.writeCSV(sys.stdout)
-    #aprJulu.prettyPrint()
+    oct156 = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151006.json",name = "Oct 6 2015")
+
+    oct1513 = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151013.json",name = "Oct 13 2015")
+    oct1518b = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151018b.json",name = "Oct 18 2015b")
+    oct1519b = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151019b.json",name = "Oct 19 2015b")
+    oct1520 = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151020.json",name = "Oct 20 2015")
+    oct1521 = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151021.json",name = "Oct 21 2015")
+    oct1526 = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151026.json",name = "Oct 26 2015")
+    nov1503 = ubiome.UbiomeSample(pathPrefix+"/sprague-ubiome-151103b.json",name = "Nov 3 2015b")
 
     x = ubiome.UbiomeMultiSample(may14)
     x.merge(jun14)
-    #x.merge(oct14)
-    # x.merge(jan)
-    # x.merge(feb)
-    # x.merge(aprA)
-    # x.merge(aprB)
-    #x.merge(jul)
+    x.merge(oct14)
+    x.merge(jan)
+    x.merge(feb)
+    x.merge(aprA)
+    x.merge(aprB)
+    x.merge(jul)
     x.merge(aug)
-    #x.merge(sep15)
-    # x.merge(sep15b)
+    x.merge(sep15)
+    x.merge(sep15b)
+    x.merge(oct156)
+    x.merge(oct1513)
+    x.merge(oct1518b)
+    x.merge(oct1519b)
+    x.merge(oct1520)
+    x.merge(oct1521)
+    x.merge(oct1526)
+    x.merge(nov1503)
     # #x.writeCSV(sys.stdout)
     x.showContents()
-    #x.writeCSV("spragueResultsThruSepb.csv")
+    x.writeCSV("sprague-all-thru-nov03.csv")
 
 DEBUG = True
 
