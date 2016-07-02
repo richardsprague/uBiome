@@ -2,8 +2,10 @@
 .Rhistory
 .RData
 uBiome.Rproj
+*.pyc
+*.rtf
 Data/Others
 braintest.RData
-.idea/
+.idea/*
 sources/__pycache__/
 docs/HackersGuide/hackersGuide.scriv/
