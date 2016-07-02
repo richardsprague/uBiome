@@ -1,28 +1,28 @@
 __author__ = 'sprague'
 
 import unittest
+import datetime
+
+
+
 
 # I recognize it's not ideal to import straight from the current directory
 # eventually all tests should be moved out of the package directory, or find a better way to do this.
 import ubiome
+
 import ubiomeMultiSample
+
+#from ..ubiome import UbiomeMultiSample
 
 pathPrefix="./testdata/"
 s1 = ubiome.UbiomeSample(pathPrefix+"sample1.json",name="sample1")
 s2 = ubiome.UbiomeSample(pathPrefix+"sample2.json",name="sample2")
+s3 = ubiome.UbiomeSample(pathPrefix+"sample3.json",name="sample2")
+s4 = ubiome.UbiomeSample(pathPrefix+"sample4.json",name="sample2")
 may14 = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiomeMay2014.json",name="May 2014")
 jun14 = ubiome.UbiomeSample(pathPrefix+"sprague-uBiomeJun2014.json",name="Jun 2014")
-# jun14 = ubiome.UbiomeSample(name="Jun 2014")
-# jun14.readCSVfile(pathPrefix+"sprague-uBiomeJun2014.csv")
-#oct14 = ubiome.UbiomeSample(pathPrefix+"Sprague-uBiomeOct2014.json",name="Oct 2014")
-# jan = ubiome.UbiomeSample(pathPrefix+"sprague-ubiomeJan2015x.json",name="Jan 2015")
-# feb = ubiome.UbiomeSample(pathPrefix+"sprague-ubiomeFeb2015.json",name="Feb 2015")
-#
-# aprA = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150421.json",name = "Apr21")
-# aprB = ubiome.UbiomeSample(pathPrefix+"sprague-ubiome-150428.json",name = "Apr28")
-#jul = ubiome.UbiomeSample(pathPrefix+"Sprague-ubiomeJul2015.json",name = "Jun 2015")
 aug15 = ubiome.UbiomeSample(name="Aug 2015")
-aug15.readCSVfile(pathPrefix+"Sprague-ubiome-150815.csv")
+aug15.load(pathPrefix + "Sprague-ubiome-150815.csv",ftype="CSV")
 aug = aug15 #ubiome.UbiomeSample(pathPrefix+"Sprague-ubiome-150815.json",name = "Aug 2015")
 
 
@@ -30,30 +30,19 @@ class MyTestCase(unittest.TestCase):
 
     def setUp(self):
         x = ubiomeMultiSample.UbiomeMultiSample(may14)
-
         x.merge(jun14)
-       # x.merge(oct14)
-        # x.merge(jan)
-        # x.merge(feb)
-   #     x.merge(aprA)
-   #     x.merge(aprB)
-        #x.merge(jul)
         x.merge(aug)
         self.sampleMultiSample = x
 
-    # TODO  fix Ubiome.UbiomeMultiSample to handle first init properly
-    # def test_multiSample_init(self):
-    #     newMS = ubiome.UbiomeMultiSample()
-    #     newMS.merge(jun14)
-    #
-
-
     def test_unique(self):
         v = may14.unique(jun14)
-        self.assertEqual(len(v.sampleList), 384)
+        self.assertEqual(v.taxaList[8].percent,0.0008)
+        self.assertEqual(len(v.taxaList), 384)
+        
     def test_compare_with(self):
         v = may14.compareWith(jun14)
-        self.assertEqual(len(v.sampleList),139)
+        self.assertEqual(v.taxaList[5].count_norm,-124739)
+        self.assertEqual(len(v.taxaList),139)
 
     def test_taxList_count_norm_is_integer(self):
         v = may14._taxaList[0].count_norm
@@ -74,7 +63,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_diversity(self):
         v = s1.diversity()
-        self.assertEqual(v,0.8565147480876362)
+        self.assertEqual(v,0.5001489102477326)
 
     def test_diversity_rank_genus(self):
         v = s1.diversity(rank="genus")
@@ -82,7 +71,12 @@ class MyTestCase(unittest.TestCase):
 
     def test_taxonOf(self):
         v = may14.taxonOf("Clostridiales")
-        self.assertEqual(v,{'taxon': '186802', 'count': 150137, 'tax_rank': 'order', 'avg': None, 'tax_color': None, 'tax_name': 'Clostridiales', 'parent': '186801', 'count_norm': 594169})
+        assert (isinstance(v, ubiome.UbiomeTaxa))
+        z = v.dictForm # {'taxon': '186802', 'count': 150137, 'tax_rank': 'order', 'avg': None, 'tax_color': None, 'tax_name': 'Clostridiales', 'parent': '186801', 'count_norm': 594169})
+        self.assertEqual(v.tax_name,z["tax_name"])
+        self.assertEqual(v.count_norm,z["count_norm"])
+        self.assertEqual(v.percent,59.4169)
+        #self.assertEqual(v,z)
 
     def test_sampleFullTaxListLength(self):
         self.assertEqual(len(self.sampleMultiSample.fullTaxList), 795)
@@ -104,10 +98,22 @@ class MyTestCase(unittest.TestCase):
         v = ubiomeMultiSample.UbiomeMultiSample(may14)
         self.assertEqual(len(v.fullTaxList),len(may14.taxaList)+1)
         self.assertEqual(v.fullTaxList[57][0],may14.taxaList[56].tax_name) # +1 because fullTaxList[0]="tax_rank"
+        w = ubiomeMultiSample.UbiomeMultiSample()
+        w.merge(s1,mergeField="count")
+        w.merge(s2,mergeField="count")
+        self.assertEqual(w.samples[1][2],8016)  # s2 = sample2.json Firmicutes taxon should be count=8016
 
     def test_alltaxa_isList(self):
         self.assertEqual(len(self.sampleMultiSample.alltaxa()),795)
 
+    def test_found_metadata(self):
+        self.assertEqual(s3.datetime, datetime.datetime(2016,1,11,0,0))
+        self.assertEqual(s3.site,"mouth")
+        self.assertEqual(s2.site,"gut")
+        self.assertEqual(s1.datetime,datetime.datetime(2000,1,1,0,0))
+        self.assertEqual(s1.date, datetime.date(2000, 1, 1))
+        self.assertEqual(s4.date, datetime.date(2015, 8, 22))
+        self.assertEqual(s4.datetime,datetime.datetime(2015,8,22,3,0))
 
     def tearDown(self):
         pass
