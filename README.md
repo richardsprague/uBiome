@@ -4,6 +4,11 @@ uBiome provides access to the raw data from your sample.
 The tools here will make it easier to understand the information
 in those data files.
 
+*Update*:  This is no longer the correct repo. Please use
+ https://github.com/ubiome-opensource/microbiome-tools instead.
+ 
+ Everything else below is here for legacy reasons.  Please ignore!
+
 Before you begin, you will need:
 
 1. An account with http://ubiome.com
