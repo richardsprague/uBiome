@@ -1,13 +1,17 @@
 
-# Getting Started#
-uBiome provides access to the raw data from your sample.
-The tools here will make it easier to understand the information
-in those data files.
+# About #
+These repo contains source code and documentation that I've found useful in managing my uBiome results.
 
-*Update*:  This is no longer the correct repo. Please use
- https://github.com/ubiome-opensource/microbiome-tools instead.
+This is *not* the official uBiome repo, nor is anything here endorsed by uBiome.
+
+The official uBiome repo is here:
+
+https://github.com/ubiome-opensource/microbiome-tools
  
- Everything else below is here for legacy reasons.  Please ignore!
+
+---
+ 
+Everything else below is here for legacy reasons.  Please ignore!
 
 Before you begin, you will need:
 
