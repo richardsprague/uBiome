@@ -10,8 +10,6 @@ https://github.com/ubiome-opensource/microbiome-tools
  
 
 ---
- 
-Everything else below is here for legacy reasons.  Please ignore!
 
 Before you begin, you will need:
 
