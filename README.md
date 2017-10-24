@@ -11,40 +11,22 @@ https://github.com/ubiome-opensource/microbiome-tools
 
 ---
 
-Before you begin, you will need:
+Intro
+----
 
-1. An account with http://ubiome.com
-2. Access to [R](http://www.r-project.org), the (free) open source
- scientific programming language, available for Mac/Windows/Unix.
-
----
-
-# Next #
-
-Check out the [Beginners Guide](./docs/BeginnersGuide.md)  (better yet, check the [Hackers Guide](./docs/HackersGuide/hackersGuide-md/hackersGuide.md))
-
-Download the [RuBiome source files](./sources) and copy to the directory of your choice.
-
-Fire up R and run the program [uBiome.R](uBiome.R) to set the correct working directories.
+During the period from 2014 until late 2017, I sequenced over 500 samples of my microbiome. Inspired by the experiment in [David et al. (2014)](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-7-r89), during most of that time I also carefully tracked the food I ate, my sleep, and other variables like activity or location. 
 
 
----
+Most of my near-daily samples were of my gut, but I also regularly tested my skin, nose, and mouth. Since I’m generally healthy, I didn’t have a specific goal in mind other than to try to understand better what these microbes are doing, so many of my tests were taken while undergoing simple experiments, like eating a specific type of food or visiting a new location.
 
-# Bacteria to watch
+While not necessarily up to the rigorous standards of a formal scientific trial, these “n of 1” studies on myself helped me discover several new interesting facts about my own microbiome, many of which appear to contradict other published studies. In addition, hundreds of people sent me their own test results, letting me compare many different microbiomes. And of course, I also followed the latest developments in scientific publications and the general press as I eagerly tried to learn more.
 
-I use [this Excel file](https://github.com/richardsprague/uBiome/blob/master/Data/sprague%20ubiome%20analysis%202015.xlsx) to analyze each of my samples.
+Watch this site for details of what I did, and the source code showing how.
 
-Divided into "good" vs. "bad", though that is probably an imprecise distinction. Nevertheless it may be useful to watch these particular organisms when you are starting.
+Next
+----
 
-# uBiome Tools
-useful tools for manipulating uBiome information
+Meanwhile, please see all my [microbiome-related posts](http://richardsprague.com/microbiome/)
 
 
-[__uBiome_compare_samples__](./compareSamples.md)
-Given two samples, output all the differences, including the difference in count_norm
 
-[__uBiome_sample_unique__](findUnique.md)
-Given two samples, output which rows are the uniquely found in one but not the other.
-
-[__convert_json_files_to_csv__](convertJsonToCSV.md) Convert all JSON files in a
-directory to CSV files, suitable for reading in Excel or use with the other functions here.
