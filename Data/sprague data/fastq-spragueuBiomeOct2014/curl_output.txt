@@ -1,1 +1,0 @@
-{"timestamp":"Tue May 19 19:36:53 2015","status":"data received successfully","id":"sprague"}
