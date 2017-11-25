@@ -2,12 +2,7 @@
 # About #
 These repo contains source code and documentation that I've found useful in managing my uBiome results.
 
-This is *not* the official uBiome repo, nor is anything here endorsed by uBiome.
-
-The official uBiome repo is here:
-
-https://github.com/ubiome-opensource/microbiome-tools
- 
+This is *not* the official uBiome repo, nor is anything here endorsed by uBiome. See the [official uBiome repo](https://github.com/ubiome-opensource/microbiome-tools) for that.
 
 ---
 
@@ -24,6 +19,15 @@ While not necessarily up to the rigorous standards of a formal scientific trial,
 Watch this site for details of what I did, and the source code showing how.
 
 ![diversityPlot](./images/plotOneYearDiversity-1.png)
+
+Other repos
+---
+
+* [Actino](https://github.com/richardsprague/actino) an R package that lets you read uBiome JSON and CSV files into the excellent open source [Phyloseq package](http://bioconductor.org/packages/release/bioc/html/phyloseq.html) from Bioconductor
+
+* [Kombucha](https://github.com/richardsprague/kombucha) code and data to study a weeklong experiment where I drank lots of kombucha to see what happened to my gut microbiome.
+
+* [Microbiome Hackers Guide](https://github.com/richardsprague/microbiome-hackers-guide) an early draft of a book describing all my experiments.
 
 Next
 ----
