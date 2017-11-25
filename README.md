@@ -23,6 +23,8 @@ While not necessarily up to the rigorous standards of a formal scientific trial,
 
 Watch this site for details of what I did, and the source code showing how.
 
+![diversityPlot](./images/plotOneYearDiversity-1.png)
+
 Next
 ----
 
